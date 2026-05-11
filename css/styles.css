@@ -357,10 +357,12 @@ p { line-height: 1.75; }
   inset: 0;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .hero-content {
-  max-width: 620px;
-  padding: 40px 24px;
+  width: 38%;
+  max-width: 480px;
+  padding: 40px 32px;
 }
 .hero-eyebrow-box {
   display: inline-block;
@@ -376,13 +378,13 @@ p { line-height: 1.75; }
 }
 .hero-content h1 {
   font-family: var(--font-body);
-  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
   font-weight: 900;
   color: var(--navy);
   background: rgba(255,255,255,0.88);
   display: inline;
-  padding: 4px 0;
-  line-height: 1.15;
+  padding: 4px 6px;
+  line-height: 1.2;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   letter-spacing: -0.01em;
