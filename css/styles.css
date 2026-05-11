@@ -970,8 +970,6 @@ p { line-height: 1.75; }
 }
 
 @media (max-width: 900px) {
-  .hero-content h1 { font-size: 2rem; }
-  .hero-eyebrow-box { font-size: 0.7rem; }
   .about-inner { grid-template-columns: 1fr; }
   .about-logo-wrap { flex-direction: row; align-items: center; }
   .feature-inner { grid-template-columns: 1fr; }
@@ -984,10 +982,25 @@ p { line-height: 1.75; }
 }
 
 @media (max-width: 640px) {
-  .hero h1 { font-size: 2rem; }
-  .hero-btns { flex-direction: column; }
-  .hero-btns .btn, .hero-phone { width: 100%; justify-content: center; }
-  .hero-stats { gap: 20px; }
+  /* Hero — stack on mobile */
+  .hero { display: flex; flex-direction: column; min-height: unset; }
+  .hero-bg-img { max-height: 320px; object-fit: cover; object-position: center top; }
+  .hero-overlay { position: static; background: var(--white); }
+  .hero-content {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 20px;
+  }
+  .hero-content h1 { font-size: 2.2rem; background: none; color: var(--navy); padding: 0; }
+  .hero-eyebrow-box { font-size: 0.72rem; }
+  .hero-btns { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+  .btn-book-hero, .btn-phone-hero { flex: 1; justify-content: center; text-align: center; }
+  .btn-calltext-hero { width: 100%; text-align: center; }
+  .btn-phone-hero { font-size: 0.88rem; padding: 12px 14px; border-radius: 50px; }
+
+  /* Other mobile fixes */
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
   .bottom-bar { flex-direction: column; height: auto; padding: 10px 16px; gap: 4px; }
@@ -995,5 +1008,4 @@ p { line-height: 1.75; }
   .trust-inner { gap: 16px; justify-content: flex-start; }
   .header-phone { display: none; }
   .header-right .btn { display: none; }
-  .header-right .btn-sm-only { display: flex !important; }
 }
