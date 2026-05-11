@@ -354,15 +354,15 @@ p { line-height: 1.75; }
 }
 .hero-overlay {
   position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  top: 0; left: 0; right: 0; bottom: 0;
 }
 .hero-content {
-  width: 38%;
-  max-width: 480px;
-  padding: 40px 32px;
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  transform: translateY(-50%);
+  width: 36%;
+  max-width: 420px;
 }
 .hero-eyebrow-box {
   display: inline-block;
