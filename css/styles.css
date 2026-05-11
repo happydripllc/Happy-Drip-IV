@@ -378,7 +378,7 @@ p { line-height: 1.75; }
 }
 .hero-content h1 {
   font-family: var(--font-body);
-  font-size: clamp(1.8rem, 3.5vw, 3rem);
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
   font-weight: 900;
   color: var(--navy);
   background: rgba(255,255,255,0.88);
