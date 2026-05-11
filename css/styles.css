@@ -438,6 +438,27 @@ p { line-height: 1.75; }
 }
 .btn-calltext-hero:hover { background: var(--navy); }
 
+.btn-combined-mobile {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--teal);
+  color: var(--navy);
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 16px 24px;
+  border-radius: 50px;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  flex-direction: column;
+  line-height: 1.3;
+}
+.btn-combined-mobile .phone-num { font-size: 1.15rem; font-weight: 900; }
+.btn-combined-mobile .phone-sub { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.85; }
+.btn-combined-mobile:hover { background: var(--teal-dark); color: var(--white); }
+
 /* ============================================================
    TRUST STRIP
    ============================================================ */
@@ -995,10 +1016,11 @@ p { line-height: 1.75; }
   }
   .hero-content h1 { font-size: 2.2rem; background: none; color: var(--navy); padding: 0; }
   .hero-eyebrow-box { font-size: 0.72rem; }
-  .hero-btns { flex-direction: row; flex-wrap: wrap; gap: 10px; }
-  .btn-book-hero, .btn-phone-hero { flex: 1; justify-content: center; text-align: center; }
-  .btn-calltext-hero { width: 100%; text-align: center; }
-  .btn-phone-hero { font-size: 0.88rem; padding: 12px 14px; border-radius: 50px; }
+  .hero-btns { flex-direction: column; gap: 12px; }
+  .btn-book-hero { width: 100%; text-align: center; }
+  .btn-phone-hero { display: none; }
+  .btn-calltext-hero { display: none; }
+  .btn-combined-mobile { display: flex !important; }
 
   /* Other mobile fixes */
   .footer-grid { grid-template-columns: 1fr; }
