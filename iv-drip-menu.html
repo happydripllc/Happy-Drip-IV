@@ -15,9 +15,23 @@
        IV DRIP MENU — PAGE STYLES
        ====================================================== */
 
+    /* ---- Brand playful colors ---- */
+    :root {
+      --pink:    #e0579a;
+      --coral:   #e87b5a;
+      --sunshine:#f0c030;
+      --mint:    #3ab8cb;
+      --lavender:#c5b4e8;
+      --soft-pink-bg:    #fde8f3;
+      --soft-coral-bg:   #fef0eb;
+      --soft-teal-bg:    #e0f7fa;
+      --soft-lavender-bg:#f0ecfc;
+      --soft-sunshine-bg:#fff9e0;
+    }
+
     /* ---- Page Hero ---- */
     .page-hero {
-      background: linear-gradient(135deg, #0d1b3e 0%, #1a2f5e 60%, #1a4060 100%);
+      background: linear-gradient(135deg, #e8f4fb 0%, #ede8fc 40%, #fde8f3 100%);
       padding: 72px 0 56px;
       position: relative;
       overflow: hidden;
@@ -25,9 +39,18 @@
     .page-hero::before {
       content: '';
       position: absolute;
-      top: -80px; right: -100px;
-      width: 480px; height: 480px;
-      background: radial-gradient(circle, rgba(93,217,232,0.13) 0%, transparent 65%);
+      top: -60px; right: -80px;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(93,217,232,0.18) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(224,87,154,0.12) 0%, transparent 65%);
       border-radius: 50%;
       pointer-events: none;
     }
@@ -39,26 +62,31 @@
     }
     .breadcrumb {
       display: flex; align-items: center; justify-content: center;
-      gap: 8px; font-size: 0.78rem; color: rgba(255,255,255,0.5); margin-bottom: 20px;
+      gap: 8px; font-size: 0.78rem; color: #9b8bb0; margin-bottom: 20px;
     }
-    .breadcrumb a { color: var(--teal); }
-    .breadcrumb span { opacity: 0.4; }
-    .page-hero-inner h1 { color: var(--white); margin-bottom: 18px; font-size: clamp(2rem, 4.5vw, 3rem); }
-    .page-hero-inner h1 em { font-style: normal; color: var(--teal); }
-    .page-hero-inner p { color: rgba(255,255,255,0.75); font-size: 1.05rem; line-height: 1.75; margin-bottom: 0; }
+    .breadcrumb a { color: var(--mint); }
+    .breadcrumb span { opacity: 0.5; }
+    .page-hero-inner h1 { color: var(--navy); margin-bottom: 18px; font-size: clamp(2rem, 4.5vw, 3rem); }
+    .page-hero-inner h1 em { font-style: normal; color: var(--pink); }
+    .page-hero-inner p { color: #5a5070; font-size: 1.05rem; line-height: 1.75; margin-bottom: 0; }
     .hero-pills { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 28px; }
     .hero-pill {
       display: inline-flex; align-items: center; gap: 6px;
-      background: rgba(93,217,232,0.15); border: 1px solid rgba(93,217,232,0.3);
-      color: var(--teal); font-size: 0.76rem; font-weight: 700;
-      padding: 6px 14px; border-radius: 40px; letter-spacing: 0.05em;
+      font-size: 0.76rem; font-weight: 700;
+      padding: 7px 16px; border-radius: 40px; letter-spacing: 0.03em;
+      border: 2px solid transparent;
     }
+    .hero-pill:nth-child(1) { background: var(--soft-teal-bg);    color: #0d7a8a; border-color: var(--mint); }
+    .hero-pill:nth-child(2) { background: var(--soft-pink-bg);    color: #a03070; border-color: var(--pink); }
+    .hero-pill:nth-child(3) { background: var(--soft-coral-bg);   color: #b04020; border-color: var(--coral); }
+    .hero-pill:nth-child(4) { background: var(--soft-lavender-bg);color: #6040b0; border-color: var(--lavender); }
 
     /* ---- Level Tab Nav ---- */
     .level-tabs {
-      background: var(--navy);
+      background: #fff;
       position: sticky; top: 72px; z-index: 100;
-      border-bottom: 3px solid var(--teal-dark);
+      border-bottom: 3px solid var(--mint);
+      box-shadow: 0 2px 12px rgba(58,184,203,0.12);
     }
     .level-tabs-inner {
       display: flex; overflow-x: auto;
@@ -67,36 +95,39 @@
     .level-tabs-inner::-webkit-scrollbar { display: none; }
     .level-tab {
       padding: 15px 24px;
-      color: rgba(255,255,255,0.55); font-weight: 700; font-size: 0.82rem;
+      color: #8888aa; font-weight: 700; font-size: 0.82rem;
       letter-spacing: 0.07em; text-transform: uppercase;
       cursor: pointer; white-space: nowrap;
       border-bottom: 3px solid transparent; margin-bottom: -3px;
       transition: all 0.2s; text-decoration: none; display: block;
     }
-    .level-tab:hover { color: var(--white); }
-    .level-tab.active { color: var(--teal); border-bottom-color: var(--teal); }
+    .level-tab:hover { color: var(--navy); }
+    .level-tab.active { color: var(--pink); border-bottom-color: var(--pink); }
 
     /* ---- Drip Sections ---- */
     .drip-section { padding: 0 0 60px; }
 
-    /* Level intro banner — full-width styled header for each level */
+    /* Level intro banner — playful pastel headers */
     .level-intro-banner {
       position: relative;
-      padding: 40px 0 36px;
-      margin-bottom: 40px;
+      padding: 44px 0 40px;
+      margin-bottom: 44px;
       overflow: hidden;
     }
+    /* Teal/aqua — Level 1 */
     .level-intro-banner.l1 {
-      background: linear-gradient(100deg, #0d1b3e 0%, #0f3550 55%, #1a4060 100%);
-      border-bottom: 3px solid #3ab8cb;
+      background: linear-gradient(110deg, #d0f4f8 0%, #e8f9fb 50%, #f0feff 100%);
+      border-bottom: 4px solid var(--mint);
     }
+    /* Pink/coral — Level 2 */
     .level-intro-banner.l2 {
-      background: linear-gradient(100deg, #1a1200 0%, #3a2800 50%, #4a3200 100%);
-      border-bottom: 3px solid var(--gold);
+      background: linear-gradient(110deg, #fde8f3 0%, #fef0f8 50%, #fff5fc 100%);
+      border-bottom: 4px solid var(--pink);
     }
+    /* Lavender/purple — Level 3 */
     .level-intro-banner.l3 {
-      background: linear-gradient(100deg, #0d1b3e 0%, #1a2050 55%, #22115e 100%);
-      border-bottom: 3px solid var(--teal-dark);
+      background: linear-gradient(110deg, #ede8fc 0%, #f3effd 50%, #f9f7ff 100%);
+      border-bottom: 4px solid var(--lavender);
     }
     .level-intro-inner {
       display: flex;
@@ -108,10 +139,14 @@
       font-size: clamp(5rem, 10vw, 8rem);
       font-weight: 700;
       line-height: 1;
-      color: rgba(255,255,255,0.07);
       flex-shrink: 0;
       user-select: none;
+      opacity: 0.1;
     }
+    .level-intro-banner.l1 .level-big-num { color: var(--mint); }
+    .level-intro-banner.l2 .level-big-num { color: var(--pink); }
+    .level-intro-banner.l3 .level-big-num { color: var(--lavender); }
+
     .level-intro-content { flex: 1; }
     .level-badge {
       display: inline-flex; align-items: center; justify-content: center;
@@ -119,26 +154,29 @@
       text-transform: uppercase; padding: 5px 18px; border-radius: 40px;
       white-space: nowrap; margin-bottom: 10px;
     }
-    .level-badge.l1 { background: #3ab8cb; color: #fff; }
-    .level-badge.l2 { background: var(--gold); color: #fff; }
-    .level-badge.l3 { background: rgba(93,217,232,0.2); color: var(--teal); border: 1px solid rgba(93,217,232,0.4); }
+    .level-badge.l1 { background: var(--mint); color: #fff; }
+    .level-badge.l2 { background: var(--pink); color: #fff; }
+    .level-badge.l3 { background: var(--lavender); color: #fff; }
     .level-intro-content h2 {
-      color: #fff;
+      color: var(--navy);
       font-size: clamp(1.5rem, 3vw, 2.2rem);
       margin-bottom: 8px;
     }
-    .level-intro-content h2 span { color: var(--teal); }
-    .level-intro-content h2 span.gold { color: var(--gold); }
+    .level-intro-banner.l1 .level-intro-content h2 span { color: var(--mint); }
+    .level-intro-banner.l2 .level-intro-content h2 span { color: var(--pink); }
+    .level-intro-banner.l3 .level-intro-content h2 span { color: #8060c8; }
     .level-price-tag {
       display: inline-block;
       font-family: var(--font-heading);
       font-size: 1.8rem;
       font-weight: 700;
-      color: #fff;
       margin-bottom: 10px;
     }
+    .level-intro-banner.l1 .level-price-tag { color: #0d7a8a; }
+    .level-intro-banner.l2 .level-price-tag { color: var(--pink); }
+    .level-intro-banner.l3 .level-price-tag { color: #6040a8; }
     .level-desc {
-      color: rgba(255,255,255,0.65);
+      color: #4a4060;
       font-size: 0.9rem;
       max-width: 560px;
       line-height: 1.65;
@@ -175,17 +213,18 @@
       flex-shrink: 0;
       width: 44px; height: 44px;
       border-radius: 50%;
-      border: 2px solid var(--teal-dark);
+      border: 2px solid var(--pink);
       background: var(--white);
-      color: var(--teal-dark);
+      color: var(--pink);
       font-size: 1.4rem;
       cursor: pointer;
       display: flex; align-items: center; justify-content: center;
       transition: all 0.2s;
       z-index: 2;
+      box-shadow: 0 2px 8px rgba(224,87,154,0.15);
     }
-    .carousel-arrow:hover:not(:disabled) { background: var(--teal-dark); color: var(--white); }
-    .carousel-arrow:disabled { opacity: 0.25; cursor: default; pointer-events: none; }
+    .carousel-arrow:hover:not(:disabled) { background: var(--pink); color: var(--white); }
+    .carousel-arrow:disabled { opacity: 0.2; cursor: default; pointer-events: none; }
 
     /* Arrow bg on white bg sections only */
     .drip-section .carousel-arrow { background: var(--white); }
@@ -203,7 +242,7 @@
       border: none; cursor: pointer;
       transition: all 0.2s; padding: 0;
     }
-    .dot.active { background: var(--teal-dark); transform: scale(1.25); }
+    .dot.active { background: var(--pink); transform: scale(1.25); }
 
     /* ======================================================
        DRIP CARD
@@ -229,26 +268,26 @@
       display: inline-block;
       font-family: var(--font-heading);
       font-size: 1.5rem;
-      color: var(--teal-dark);
+      color: var(--pink);
       font-weight: 700;
       margin-bottom: 12px;
     }
     .drip-tagline {
       font-size: 0.8rem;
       font-style: italic;
-      color: var(--gray);
+      color: #6a6080;
       margin-bottom: 10px;
       line-height: 1.5;
     }
 
     .drip-ingredients {
-      background: var(--light-blue);
+      background: var(--soft-teal-bg);
       padding: 14px 22px;
     }
     .ingredients-label {
       font-size: 0.64rem; font-weight: 800;
       letter-spacing: 0.12em; text-transform: uppercase;
-      color: var(--teal-dark); margin-bottom: 8px;
+      color: #0d7a8a; margin-bottom: 8px;
     }
     .ingredient-pills {
       display: flex; flex-wrap: wrap; gap: 5px;
@@ -259,19 +298,19 @@
       color: var(--navy);
       padding: 3px 10px;
       border-radius: 20px;
-      border: 1px solid rgba(58,184,203,0.25);
+      border: 1px solid rgba(58,184,203,0.35);
       font-weight: 600;
     }
 
     .drip-card-footer { padding: 14px 22px; border-top: 1px solid var(--border); }
     .drip-book-btn {
       display: block; width: 100%; text-align: center;
-      background: var(--teal-dark); color: var(--white);
+      background: var(--pink); color: var(--white);
       padding: 11px; border-radius: 8px;
       font-weight: 700; font-size: 0.84rem;
       transition: background 0.2s;
     }
-    .drip-book-btn:hover { background: var(--navy); }
+    .drip-book-btn:hover { background: #c0408a; }
 
     /* Responsive card widths */
     @media (max-width: 1024px) {
@@ -388,12 +427,12 @@
        INFO NOTE
        ====================================================== */
     .info-note {
-      background: var(--teal-light); border: 1.5px solid var(--teal);
+      background: var(--soft-teal-bg); border: 1.5px solid var(--mint);
       border-radius: var(--radius); padding: 18px 22px;
-      margin-bottom: 44px; display: flex; align-items: flex-start; gap: 12px;
+      margin-bottom: 40px; display: flex; align-items: flex-start; gap: 12px;
     }
     .info-note-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
-    .info-note p { font-size: 0.88rem; color: var(--navy); line-height: 1.6; margin: 0; }
+    .info-note p { font-size: 0.88rem; color: #0d4a55; line-height: 1.6; margin: 0; }
 
     /* Responsive */
     @media (max-width: 900px) {
@@ -1293,14 +1332,14 @@
 <!-- ============================================================
      CTA
      ============================================================ -->
-<section style="background: var(--teal-light); padding: 72px 0; text-align: center;">
+<section style="background: linear-gradient(135deg, #e0f7fa 0%, #fde8f3 50%, #ede8fc 100%); padding: 72px 0; text-align: center;">
   <div class="container" style="max-width: 620px;">
-    <span class="section-label">Ready to Drip?</span>
-    <h2 style="color: var(--navy); margin-bottom: 16px;">Book Your <span style="color: var(--teal-dark);">IV Session</span> Today</h2>
-    <p style="color: var(--gray); margin-bottom: 32px; font-size: 1rem; line-height: 1.7;">Not sure which drip is right for you? We'll help you choose. Every session starts with a quick health consultation so your drip is perfectly customized.</p>
+    <span class="section-label" style="color: var(--pink);">Ready to Drip? 💧</span>
+    <h2 style="color: var(--navy); margin-bottom: 16px;">Book Your <span style="color: var(--pink);">IV Session</span> Today</h2>
+    <p style="color: #5a4a70; margin-bottom: 32px; font-size: 1rem; line-height: 1.7;">Not sure which drip is right for you? We'll help you choose! Every session starts with a quick health consultation so your drip is perfectly customized.</p>
     <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
-      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1rem; padding: 16px 36px;">Book Online</a>
-      <a href="tel:6822836976" class="btn btn-outline" style="font-size: 1rem; padding: 16px 36px;">(682) 283-6976</a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 1rem; padding: 16px 36px; background: var(--pink); border-color: var(--pink);">Book Online</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size: 1rem; padding: 16px 36px; border-color: var(--mint); color: #0d7a8a;">(682) 283-6976</a>
     </div>
   </div>
 </section>
