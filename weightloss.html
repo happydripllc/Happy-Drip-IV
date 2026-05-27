@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Weight Loss | GLP-1 Programs | Happy Drip IV & Wellness — Bedford, TX</title>
+  <meta name="description" content="Medically supervised weight loss with Semaglutide & Tirzepatide (GLP-1) programs at Happy Drip IV & Wellness in Bedford, TX. Transparent pricing, real results." />
+  <link rel="canonical" href="https://www.happydripiv.com/weightloss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ---- Page-specific styles ---- */
+    .page-hero {
+      background: linear-gradient(135deg, #0d1b3e 0%, #1a2f5e 60%, #1a4060 100%);
+      padding: 80px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(93,217,232,0.12) 0%, transparent 65%);
+      border-radius: 50%;
+    }
+    .page-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    .page-hero-content .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.5);
+      margin-bottom: 16px;
+    }
+    .page-hero-content .breadcrumb a { color: var(--teal); }
+    .page-hero-content .breadcrumb span { color: rgba(255,255,255,0.3); }
+    .page-hero-content h1 { color: var(--white); margin-bottom: 20px; font-size: clamp(2rem, 4vw, 3rem); }
+    .page-hero-content h1 em { font-style: normal; color: var(--teal); }
+    .page-hero-content p { color: rgba(255,255,255,0.8); font-size: 1.05rem; margin-bottom: 32px; line-height: 1.75; }
+    .page-hero-img {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .page-hero-img img { width: 100%; height: 400px; object-fit: cover; object-position: center top; display: block; }
+    .hero-pills { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(93,217,232,0.15);
+      border: 1px solid rgba(93,217,232,0.3);
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      border-radius: 40px;
+      letter-spacing: 0.05em;
+    }
+
+    /* ---- Intro section ---- */
+    .wl-intro { padding: 80px 0; background: var(--white); }
+    .wl-intro-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .wl-intro-img { border-radius: var(--radius-lg); overflow: hidden; }
+    .wl-intro-img img { width: 100%; height: 420px; object-fit: cover; display: block; }
+    .wl-intro-content h2 { margin-bottom: 18px; }
+    .wl-intro-content p { color: var(--body-text); margin-bottom: 16px; line-height: 1.8; }
+    .wl-check-list { display: flex; flex-direction: column; gap: 12px; margin: 24px 0; }
+    .wl-check-item { display: flex; align-items: flex-start; gap: 12px; font-size: 0.95rem; color: var(--body-text); }
+    .wl-check-icon {
+      width: 24px; height: 24px;
+      background: var(--teal-light);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal-dark);
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .wl-check-icon svg { width: 13px; height: 13px; }
+
+    /* ---- How it works ---- */
+    .how-it-works { background: var(--light-blue); padding: 80px 0; }
+    .steps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 24px; margin-top: 48px; }
+    .step-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      text-align: center;
+      border: 1.5px solid var(--border);
+      position: relative;
+    }
+    .step-num {
+      width: 48px; height: 48px;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-heading);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+    .step-card h3 { font-size: 1.05rem; margin-bottom: 10px; }
+    .step-card p { font-size: 0.87rem; color: var(--gray); line-height: 1.65; }
+
+    /* ---- Programs / Pricing ---- */
+    .programs-section { padding: 80px 0; background: var(--white); }
+    .programs-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 28px; margin-top: 48px; }
+    .program-card {
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--border);
+      overflow: hidden;
+      transition: all 0.25s;
+      position: relative;
+    }
+    .program-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); border-color: var(--teal); }
+    .program-card.featured { border-color: var(--teal-dark); }
+    .program-card.featured::before {
+      content: 'BEST VALUE';
+      position: absolute; top: 16px; right: 16px;
+      background: var(--gold);
+      color: var(--white);
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      border-radius: 40px;
+    }
+    .program-header { background: var(--navy); padding: 28px 24px; }
+    .program-header.teal { background: var(--teal-dark); }
+    .program-name { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.15em; color: var(--teal); text-transform: uppercase; margin-bottom: 6px; }
+    .program-header.teal .program-name { color: rgba(255,255,255,0.8); }
+    .program-header h3 { color: var(--white); font-size: 1.4rem; margin-bottom: 4px; }
+    .program-price { font-family: var(--font-heading); font-size: 2rem; color: var(--white); font-weight: 700; }
+    .program-price span { font-size: 0.85rem; font-weight: 400; opacity: 0.7; }
+    .program-body { padding: 24px; }
+    .program-features { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+    .program-features li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.88rem; color: var(--body-text);
+    }
+    .program-features li::before {
+      content: '✓';
+      color: var(--teal-dark);
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    /* ---- Telemed section ---- */
+    .telemed-section { background: var(--navy); padding: 80px 0; }
+    .telemed-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .telemed-img { border-radius: var(--radius-lg); overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .telemed-img img { width: 100%; height: 420px; object-fit: cover; object-position: top; display: block; }
+    .telemed-content h2 { color: var(--white); margin-bottom: 18px; }
+    .telemed-content p { color: rgba(255,255,255,0.75); margin-bottom: 16px; line-height: 1.8; }
+    .telemed-features { display: flex; flex-direction: column; gap: 14px; margin: 28px 0; }
+    .telemed-feature { display: flex; align-items: flex-start; gap: 14px; }
+    .telemed-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: rgba(93,217,232,0.15);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--teal); flex-shrink: 0;
+    }
+    .telemed-icon svg { width: 20px; height: 20px; }
+    .telemed-feature-text h4 { color: var(--white); font-size: 0.95rem; margin-bottom: 4px; }
+    .telemed-feature-text p { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin: 0; line-height: 1.5; }
+
+    /* ---- FAQ ---- */
+    .wl-faq { padding: 80px 0; background: var(--off-white); }
+
+    /* ---- Disclaimer ---- */
+    .disclaimer {
+      background: var(--light-gray);
+      padding: 24px;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--gold);
+      margin-top: 40px;
+    }
+    .disclaimer p { font-size: 0.8rem; color: var(--gray); line-height: 1.7; margin: 0; }
+    .disclaimer strong { color: var(--navy); }
+
+    @media (max-width: 900px) {
+      .page-hero-inner { grid-template-columns: 1fr; }
+      .page-hero-img img { height: 280px; }
+      .wl-intro-grid { grid-template-columns: 1fr; }
+      .telemed-inner { grid-template-columns: 1fr; }
+      .telemed-img img { height: 280px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>& Wellness</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
+      <div class="nav-item">
+        <a href="#" class="nav-link active">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss" style="color:var(--teal-dark);font-weight:700;">Medical Weight Loss</a>
+          <a href="/#concierge">Happy Health Clinic (DPC)</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/#aesthetics">Jeuveau® (Botox)</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#iv-therapy" class="nav-link">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#iv-therapy">IV Drip Menu</a>
+          <a href="/#iv-therapy">'I DO' Drips (Bridal)</a>
+          <a href="/#iv-therapy">Groups + Events</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/#payment" class="nav-link">Payment Plans</a></div>
+      <div class="nav-item"><a href="/#faq" class="nav-link">FAQ</a></div>
+    </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link" style="color:var(--teal);">Medical Weight Loss</a>
+    <a href="/#concierge" class="sub-link">Happy Health Clinic (DPC)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/#aesthetics" class="sub-link">Jeuveau® (Botox)</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/#iv-therapy" class="sub-link">IV Drip Menu</a>
+    <a href="/#iv-therapy" class="sub-link">Groups + Events</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+    <a href="tel:6822836976" style="color:#5dd9e8;font-weight:800;">(682) 283-6976</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="background:#3ab8cb;color:#fff;margin:12px 24px;border-radius:50px;text-align:center;">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span style="color:rgba(255,255,255,0.7);">Medical Weight Loss</span>
+      </div>
+      <div class="hero-pills">
+        <span class="hero-pill">GLP-1 Medications</span>
+        <span class="hero-pill">Medically Supervised</span>
+        <span class="hero-pill">Bedford, TX</span>
+      </div>
+      <h1>Medical Weight Loss <em>That Actually Works.</em></h1>
+      <p>Stop struggling alone. Our medically supervised GLP-1 programs — including Semaglutide and Tirzepatide — are designed to help you lose weight safely, sustainably, and on your terms.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Start Your Program</a>
+        <a href="tel:6822836976" class="btn btn-outline-white btn-lg">(682) 283-6976</a>
+      </div>
+    </div>
+    <div class="page-hero-img">
+      <img src="images/GlpInject.png" alt="GLP-1 weight loss injection program at Happy Drip IV & Wellness" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRUST STRIP
+     ============================================================ -->
+<div class="trust-strip">
+  <div class="container trust-inner">
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      Medically Supervised
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      FDA-Approved Medications
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Flexible Monthly Programs
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+      Personalized to You
+    </div>
+    <div class="trust-item">
+      <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      Telemedicine Available
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     INTRO
+     ============================================================ -->
+<section class="wl-intro">
+  <div class="container wl-intro-grid">
+    <div class="wl-intro-img">
+      <img src="images/Prescription.png" alt="Provider reviewing weight loss treatment plan with patient" />
+    </div>
+    <div class="wl-intro-content">
+      <span class="section-label">Our Approach</span>
+      <h2>A Smarter Way to Lose Weight — For Good</h2>
+      <p>At Happy Drip IV & Wellness, we know that weight loss isn't just about willpower. Hormones, metabolism, and biology all play a role — which is why our programs combine the latest GLP-1 medications with real medical oversight and personalized support.</p>
+      <p>Whether you're just getting started or have tried everything else, we meet you where you are and build a plan that fits your life, your body, and your goals.</p>
+      <div class="wl-check-list">
+        <div class="wl-check-item">
+          <div class="wl-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Comprehensive initial consultation with Brittany Adams, APRN FNP-C</span>
+        </div>
+        <div class="wl-check-item">
+          <div class="wl-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>GLP-1 medications including Semaglutide &amp; Tirzepatide</span>
+        </div>
+        <div class="wl-check-item">
+          <div class="wl-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Lab work review and ongoing monitoring</span>
+        </div>
+        <div class="wl-check-item">
+          <div class="wl-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Nutrition guidance and lifestyle coaching</span>
+        </div>
+        <div class="wl-check-item">
+          <div class="wl-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>Monthly check-ins and dose adjustments</span>
+        </div>
+        <div class="wl-check-item">
+          <div class="wl-check-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <span>HSA/FSA accepted — transparent cash-pay pricing</span>
+        </div>
+      </div>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="how-it-works">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Process</span>
+      <h2>How It Works</h2>
+      <p>Getting started is simple. We handle everything from consultation to prescription to ongoing support.</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <h3>Book a Consultation</h3>
+        <p>Schedule your initial appointment online or by phone. In-person or telemedicine available. We review your health history, goals, and eligibility.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <h3>Personalized Plan</h3>
+        <p>Brittany builds a custom treatment plan for you — selecting the right medication, starting dose, and support structure based on your unique needs.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <h3>Start Your Program</h3>
+        <p>Receive your medication and begin your journey. We teach you how to self-administer injections safely and confidently at home.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <h3>Ongoing Support</h3>
+        <p>Monthly check-ins to track your progress, adjust dosing, and keep you on track. We're with you every step of the way until you hit your goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROGRAMS & PRICING
+     ============================================================ -->
+<section class="programs-section" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Transparent Pricing</span>
+      <h2>Weight Loss Programs &amp; Pricing</h2>
+      <p>No hidden fees. No insurance headaches. Just clear, honest pricing with everything included.</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="programs-grid">
+
+      <!-- Semaglutide Monthly -->
+      <div class="program-card">
+        <div class="program-header">
+          <div class="program-name">Semaglutide (Ozempic / Wegovy)</div>
+          <h3>Monthly Program</h3>
+          <div class="program-price">$165–$250 <span>/ month</span></div>
+        </div>
+        <div class="program-body">
+          <ul class="program-features">
+            <li>Monthly Semaglutide injection supply</li>
+            <li>Initial consultation included</li>
+            <li>Dosing guidance &amp; injection training</li>
+            <li>Monthly check-in &amp; dose adjustment</li>
+            <li>Nutrition &amp; lifestyle coaching</li>
+            <li>HSA/FSA accepted</li>
+          </ul>
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Tirzepatide Monthly -->
+      <div class="program-card">
+        <div class="program-header teal">
+          <div class="program-name">Tirzepatide (Mounjaro / Zepbound)</div>
+          <h3>Monthly Program</h3>
+          <div class="program-price">$250–$350 <span>/ month</span></div>
+        </div>
+        <div class="program-body">
+          <ul class="program-features">
+            <li>Monthly Tirzepatide injection supply</li>
+            <li>Initial consultation included</li>
+            <li>Dosing guidance &amp; injection training</li>
+            <li>Monthly check-in &amp; dose adjustment</li>
+            <li>Nutrition &amp; lifestyle coaching</li>
+            <li>HSA/FSA accepted</li>
+          </ul>
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Get Started</a>
+        </div>
+      </div>
+
+      <!-- 90-Day Sema -->
+      <div class="program-card featured">
+        <div class="program-header">
+          <div class="program-name">Semaglutide — Best Value</div>
+          <h3>90-Day Program</h3>
+          <div class="program-price">$450 <span>/ 3 months</span></div>
+        </div>
+        <div class="program-body">
+          <ul class="program-features">
+            <li>Full 90-day Semaglutide supply</li>
+            <li>Initial consultation included</li>
+            <li>3 check-ins with dose adjustments</li>
+            <li>Priority scheduling</li>
+            <li>Nutrition &amp; lifestyle coaching</li>
+            <li>Save vs. monthly pricing</li>
+          </ul>
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;justify-content:center;">Best Value — Book Now</a>
+        </div>
+      </div>
+
+      <!-- 90-Day Tirze -->
+      <div class="program-card featured">
+        <div class="program-header teal">
+          <div class="program-name">Tirzepatide — Best Value</div>
+          <h3>90-Day Program</h3>
+          <div class="program-price">$799 <span>/ 3 months</span></div>
+        </div>
+        <div class="program-body">
+          <ul class="program-features">
+            <li>Full 90-day Tirzepatide supply</li>
+            <li>Initial consultation included</li>
+            <li>3 check-ins with dose adjustments</li>
+            <li>Priority scheduling</li>
+            <li>Nutrition &amp; lifestyle coaching</li>
+            <li>Save vs. monthly pricing</li>
+          </ul>
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-gold" style="width:100%;justify-content:center;">Best Value — Book Now</a>
+        </div>
+      </div>
+
+      <!-- Oral / Insurance -->
+      <div class="program-card">
+        <div class="program-header">
+          <div class="program-name">Oral Medications</div>
+          <h3>Insurance / Oral Option</h3>
+          <div class="program-price">$75 <span>/ visit + pharmacy</span></div>
+        </div>
+        <div class="program-body">
+          <ul class="program-features">
+            <li>Oral weight loss medications</li>
+            <li>Prescription sent to your pharmacy</li>
+            <li>Provider visit fee $75</li>
+            <li>Great for insurance-covered meds</li>
+            <li>Ongoing support &amp; follow-up</li>
+            <li>Telemedicine available</li>
+          </ul>
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book a Visit</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="disclaimer">
+      <p><strong>Medical Disclaimer:</strong> Results vary by individual. GLP-1 medications are prescription-only and require a medical consultation to determine eligibility. Pricing is subject to change. We are a cash-pay practice; we provide itemized invoices for HSA/FSA reimbursement. Contact us at <a href="tel:6822836976" style="color:var(--teal-dark);">(682) 283-6976</a> with any questions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TELEMEDICINE
+     ============================================================ -->
+<section class="telemed-section">
+  <div class="container telemed-inner">
+    <div class="telemed-img">
+      <img src="images/TelemedBrit.png" alt="Brittany Adams APRN offering telemedicine weight loss consultations" />
+    </div>
+    <div class="telemed-content">
+      <span class="section-label" style="color:var(--teal);background:rgba(93,217,232,0.15);">Telemedicine</span>
+      <h2>Start Your Weight Loss Journey From Home</h2>
+      <p>Can't make it in person? No problem. We offer telemedicine weight loss consultations for Texas residents — same expert care, from the comfort of your home.</p>
+      <div class="telemed-features">
+        <div class="telemed-feature">
+          <div class="telemed-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <div class="telemed-feature-text">
+            <h4>Video Consultations</h4>
+            <p>Meet with Brittany virtually for your initial consult, follow-ups, and medication management.</p>
+          </div>
+        </div>
+        <div class="telemed-feature">
+          <div class="telemed-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div class="telemed-feature-text">
+            <h4>Medication Shipped to You</h4>
+            <p>Prescriptions sent directly to your door or local pharmacy — no clinic visit required.</p>
+          </div>
+        </div>
+        <div class="telemed-feature">
+          <div class="telemed-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07"/><path d="M2 2l20 20"/></svg>
+          </div>
+          <div class="telemed-feature-text">
+            <h4>Available Across Texas</h4>
+            <p>Serving patients throughout the DFW Metroplex and all of Texas via telemedicine.</p>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book a Telehealth Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="wl-faq">
+  <div class="container" style="max-width:780px;">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2>Weight Loss Program FAQs</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Am I a candidate for GLP-1 medications?</button>
+        <div class="faq-a" hidden><p>Most adults with a BMI of 27+ or those struggling with weight-related health conditions may qualify. We conduct a thorough health history review at your consultation to determine eligibility. Certain medical conditions may affect candidacy.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What's the difference between Semaglutide and Tirzepatide?</button>
+        <div class="faq-a" hidden><p>Both are GLP-1 receptor agonists that reduce appetite and support weight loss. Tirzepatide (Mounjaro/Zepbound) is a dual GIP/GLP-1 agonist and may produce greater weight loss results for some patients. We'll help you choose the right option at your consultation.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How much weight can I expect to lose?</button>
+        <div class="faq-a" hidden><p>Results vary by individual, but clinical studies show patients lose an average of 10–20% of their body weight over 6–12 months with GLP-1 medications combined with lifestyle changes. Your results depend on consistency, nutrition, activity, and individual response.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you accept insurance for weight loss?</button>
+        <div class="faq-a" hidden><p>We are a cash-pay practice and do not bill insurance directly. However, we provide itemized invoices for HSA/FSA reimbursement on eligible services. Some oral medications may be covered by your pharmacy insurance.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How do I take the injections?</button>
+        <div class="faq-a" hidden><p>Semaglutide and Tirzepatide are weekly self-administered subcutaneous injections. We provide full injection training at your first appointment — most patients find it quick and nearly painless.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can I do this via telemedicine?</button>
+        <div class="faq-a" hidden><p>Yes! We offer telemedicine weight loss consultations for Texas residents. After your virtual visit, medications can be shipped to your door or sent to your local pharmacy.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container cta-content">
+    <span class="section-label" style="color:var(--teal);background:rgba(93,217,232,0.15);margin-bottom:16px;">Ready to Start?</span>
+    <h2>Your Weight Loss Journey Starts Here</h2>
+    <p>Book your consultation today and take the first step toward a healthier, happier you. Same-day and next-day appointments available.</p>
+    <div class="cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book Your Consultation</a>
+      <a href="tel:6822836976" class="btn btn-outline-white btn-lg">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text"><span>Happy Drip IV</span><span>& Wellness</span></div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/weightloss">Medical Weight Loss</a>
+        <a href="/#iv-therapy">IV Therapy</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#provider">About Brittany</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>Weight Loss</h5>
+        <a href="#pricing">Semaglutide Program</a>
+        <a href="#pricing">Tirzepatide Program</a>
+        <a href="#pricing">90-Day Programs</a>
+        <a href="#pricing">Oral Medications</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Consultation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.65);">Subscribe for wellness tips and promotions. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+          <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+          <button type="submit">Go</button>
+        </form>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar">
+  <div class="vip-text">
+    <span class="vip-badge">VIP</span>
+    Join our <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">&nbsp;VIP DRIP CLUB&nbsp;</a> for the best pricing &amp; priority booking!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a></div>
+</div>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
