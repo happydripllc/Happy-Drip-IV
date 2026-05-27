@@ -77,23 +77,77 @@
     .level-tab.active { color: var(--teal); border-bottom-color: var(--teal); }
 
     /* ---- Drip Sections ---- */
-    .drip-section { padding: 72px 0; }
-    .drip-section.alt { background: var(--off-white); }
+    .drip-section { padding: 0 0 60px; }
 
-    .level-header { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; flex-wrap: wrap; }
+    /* Level intro banner — full-width styled header for each level */
+    .level-intro-banner {
+      position: relative;
+      padding: 40px 0 36px;
+      margin-bottom: 40px;
+      overflow: hidden;
+    }
+    .level-intro-banner.l1 {
+      background: linear-gradient(100deg, #0d1b3e 0%, #0f3550 55%, #1a4060 100%);
+      border-bottom: 3px solid #3ab8cb;
+    }
+    .level-intro-banner.l2 {
+      background: linear-gradient(100deg, #1a1200 0%, #3a2800 50%, #4a3200 100%);
+      border-bottom: 3px solid var(--gold);
+    }
+    .level-intro-banner.l3 {
+      background: linear-gradient(100deg, #0d1b3e 0%, #1a2050 55%, #22115e 100%);
+      border-bottom: 3px solid var(--teal-dark);
+    }
+    .level-intro-inner {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    .level-big-num {
+      font-family: var(--font-heading);
+      font-size: clamp(5rem, 10vw, 8rem);
+      font-weight: 700;
+      line-height: 1;
+      color: rgba(255,255,255,0.07);
+      flex-shrink: 0;
+      user-select: none;
+    }
+    .level-intro-content { flex: 1; }
     .level-badge {
       display: inline-flex; align-items: center; justify-content: center;
       font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em;
-      text-transform: uppercase; padding: 5px 16px; border-radius: 40px; white-space: nowrap;
+      text-transform: uppercase; padding: 5px 18px; border-radius: 40px;
+      white-space: nowrap; margin-bottom: 10px;
     }
     .level-badge.l1 { background: #3ab8cb; color: #fff; }
     .level-badge.l2 { background: var(--gold); color: #fff; }
-    .level-badge.l3 { background: var(--navy); color: var(--teal); border: 1px solid var(--teal-dark); }
-    .level-price {
-      font-family: var(--font-heading); font-size: 1.4rem;
-      color: var(--teal-dark); font-weight: 700;
+    .level-badge.l3 { background: rgba(93,217,232,0.2); color: var(--teal); border: 1px solid rgba(93,217,232,0.4); }
+    .level-intro-content h2 {
+      color: #fff;
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 8px;
     }
-    .level-desc { color: var(--gray); font-size: 0.92rem; margin-bottom: 32px; max-width: 660px; line-height: 1.6; }
+    .level-intro-content h2 span { color: var(--teal); }
+    .level-intro-content h2 span.gold { color: var(--gold); }
+    .level-price-tag {
+      display: inline-block;
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .level-desc {
+      color: rgba(255,255,255,0.65);
+      font-size: 0.9rem;
+      max-width: 560px;
+      line-height: 1.65;
+      margin: 0;
+    }
+    @media (max-width: 640px) {
+      .level-big-num { display: none; }
+      .level-intro-banner { padding: 28px 0 24px; margin-bottom: 28px; }
+    }
 
     /* ======================================================
        CAROUSEL
@@ -133,8 +187,8 @@
     .carousel-arrow:hover:not(:disabled) { background: var(--teal-dark); color: var(--white); }
     .carousel-arrow:disabled { opacity: 0.25; cursor: default; pointer-events: none; }
 
-    /* On alt (off-white) sections change arrow bg */
-    .drip-section.alt .carousel-arrow { background: var(--off-white); }
+    /* Arrow bg on white bg sections only */
+    .drip-section .carousel-arrow { background: var(--white); }
 
     /* Dots */
     .carousel-dots {
@@ -499,18 +553,26 @@
      LEVEL 1
      ============================================================ -->
 <section class="drip-section" id="level1">
+
+  <!-- Level Banner -->
+  <div class="level-intro-banner l1">
+    <div class="container level-intro-inner">
+      <div class="level-big-num">01</div>
+      <div class="level-intro-content">
+        <span class="level-badge l1">Level 1</span>
+        <h2>Foundational <span>Wellness</span></h2>
+        <div class="level-price-tag">$100 – $150</div>
+        <p class="level-desc">Our foundational drips — perfect for rehydration, immune support, and everyday wellness. Clean, simple, and effective.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
 
     <div class="info-note">
       <span class="info-note-icon">💡</span>
-      <p>All drips include 1L Normal Saline or Lactated Ringer's. A medical consultation is completed before every treatment to ensure safety and optimal results.</p>
+      <p>All drips include 1L Normal Saline or Lactated Ringer's. A brief medical consultation is completed before every treatment to ensure your safety and best results.</p>
     </div>
-
-    <div class="level-header">
-      <span class="level-badge l1">Level 1</span>
-      <span class="level-price">$100 – $150</span>
-    </div>
-    <p class="level-desc">Our foundational drips — the perfect starting point for rehydration, immune support, and everyday wellness. Clean, simple, and effective.</p>
 
     <div class="carousel-wrap" data-carousel="level1">
       <button class="carousel-arrow prev" aria-label="Previous drips" disabled>&#8249;</button>
@@ -596,13 +658,22 @@
 <!-- ============================================================
      LEVEL 2
      ============================================================ -->
-<section class="drip-section alt" id="level2">
-  <div class="container">
-    <div class="level-header">
-      <span class="level-badge l2">Level 2</span>
-      <span class="level-price">$199</span>
+<section class="drip-section" id="level2">
+
+  <!-- Level Banner -->
+  <div class="level-intro-banner l2">
+    <div class="container level-intro-inner">
+      <div class="level-big-num">02</div>
+      <div class="level-intro-content">
+        <span class="level-badge l2">Level 2</span>
+        <h2>Targeted <span class="gold">Treatments</span></h2>
+        <div class="level-price-tag">$199 each</div>
+        <p class="level-desc">Ten precision formulas for life's everyday challenges — hangovers, beauty, cold & flu, sports recovery, libido, and more.</p>
+      </div>
     </div>
-    <p class="level-desc">Targeted formulas for life's everyday challenges — hangovers, beauty goals, immunity, sports recovery, and more. Ten drips, one price.</p>
+  </div>
+
+  <div class="container">
 
     <div class="carousel-wrap" data-carousel="level2">
       <button class="carousel-arrow prev" aria-label="Previous drips" disabled>&#8249;</button>
@@ -855,12 +926,21 @@
      LEVEL 3
      ============================================================ -->
 <section class="drip-section" id="level3">
-  <div class="container">
-    <div class="level-header">
-      <span class="level-badge l3">Level 3</span>
-      <span class="level-price">$300</span>
+
+  <!-- Level Banner -->
+  <div class="level-intro-banner l3">
+    <div class="container level-intro-inner">
+      <div class="level-big-num">03</div>
+      <div class="level-intro-content">
+        <span class="level-badge l3">Level 3</span>
+        <h2>Advanced <span>Formulas</span></h2>
+        <div class="level-price-tag">$300 each</div>
+        <p class="level-desc">Our most powerful drips — designed for hormones, skin health, migraines, metabolism, anti-aging, and total rejuvenation.</p>
+      </div>
     </div>
-    <p class="level-desc">Our most advanced, targeted formulas — designed for complex health goals including hormones, skin health, migraines, metabolism, and total rejuvenation.</p>
+  </div>
+
+  <div class="container">
 
     <div class="carousel-wrap" data-carousel="level3">
       <button class="carousel-arrow prev" aria-label="Previous drips" disabled>&#8249;</button>
@@ -1228,60 +1308,98 @@
 <!-- ============================================================
      FOOTER
      ============================================================ -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <a href="/" class="site-logo" style="margin-bottom:12px;">
-        <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness" class="logo-icon" style="width:36px;height:36px;" />
-        <div class="logo-text"><span>Happy Drip IV</span><span>& Wellness</span></div>
-      </a>
-      <p>Premium IV therapy &amp; wellness services in Bedford, TX. Led by Brittany Adams, APRN FNP-C.</p>
-      <div class="footer-social">
-        <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-        </a>
-        <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener" aria-label="Facebook">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
-        </a>
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text">
+            <span>Happy Drip IV</span>
+            <span>& Wellness</span>
+          </div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#payment">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>IV Services</h5>
+        <a href="#level1">Level 1 Drips</a>
+        <a href="#level2">Level 2 Drips</a>
+        <a href="#level3">Level 3 Drips</a>
+        <a href="#vitality">NAD+ &amp; Vitality</a>
+        <a href="#addons">Add-On Boosters</a>
+        <a href="#vip">VIP Drip Club</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
       </div>
     </div>
-    <div class="footer-links">
-      <h4>Services</h4>
-      <ul>
-        <li><a href="/iv-drip-menu">IV Drip Menu</a></li>
-        <li><a href="/weightloss">Medical Weight Loss</a></li>
-        <li><a href="/#aesthetics">Aesthetics</a></li>
-        <li><a href="/#iv-therapy">'I DO' Drips</a></li>
-        <li><a href="/#iv-therapy">Groups &amp; Events</a></li>
-      </ul>
-    </div>
-    <div class="footer-links">
-      <h4>Company</h4>
-      <ul>
-        <li><a href="/#about">About Brittany</a></li>
-        <li><a href="/#faq">FAQ</a></li>
-        <li><a href="/#payment">Payment Plans</a></li>
-        <li><a href="/privacy-policy.html">Privacy Policy</a></li>
-      </ul>
-    </div>
-    <div class="footer-contact">
-      <h4>Contact Us</h4>
-      <p><a href="tel:6822836976">(682) 283-6976</a></p>
-      <p>Bedford, TX 76022</p>
-      <p>Serving the DFW Metroplex</p>
-      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:12px; display:inline-block;">Book Now</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved.</p>
-    <p>Brittany Adams, APRN FNP-C | Bedford, TX</p>
   </div>
 </footer>
 
 <!-- Sticky Bottom Bar -->
-<div class="sticky-bar">
-  <a href="tel:6822836976" class="sticky-bar-call">📞 Call/Text</a>
-  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="sticky-bar-book">Book Now — Same Day Available</a>
+<div class="bottom-bar" id="bottomBar" role="complementary" aria-label="VIP Club promotion">
+  <div class="vip-text">
+    <span class="vip-badge">VIP</span>
+    Join our <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">&nbsp;VIP DRIP CLUB&nbsp;</a> for the best pricing &amp; priority booking!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a> for instant confirmation</div>
 </div>
 
 <script src="js/script.js"></script>
