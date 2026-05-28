@@ -370,9 +370,9 @@ p { line-height: 1.75; }
   background: #e0579a;
   color: #fff;
   font-size: 0.88rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: none;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   padding: 9px 22px;
   margin-bottom: 16px;
   border-radius: 50px;
@@ -381,7 +381,7 @@ p { line-height: 1.75; }
 }
 .hero-content h1 {
   font-family: var(--font-body);
-  font-size: clamp(2rem, 3.4vw, 3.4rem);
+  font-size: clamp(2rem, 4vw, 4rem);
   font-weight: 900;
   color: var(--navy);
   background: rgba(255,255,255,0.88);
@@ -405,10 +405,10 @@ p { line-height: 1.75; }
   background: var(--navy);
   color: var(--white);
   font-weight: 800;
-  font-size: 0.88rem;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 16px 32px;
+  padding: 18px 36px;
   border-radius: 4px;
   transition: background 0.2s;
 }
