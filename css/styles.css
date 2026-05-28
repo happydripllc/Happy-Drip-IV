@@ -367,7 +367,7 @@ p { line-height: 1.75; }
 .hero-eyebrow-box {
   display: inline-flex;
   align-items: center;
-  background: var(--navy);
+  background: #e0579a;
   color: #fff;
   font-size: 0.88rem;
   font-weight: 700;
@@ -377,7 +377,7 @@ p { line-height: 1.75; }
   margin-bottom: 16px;
   border-radius: 50px;
   line-height: 1.4;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 12px rgba(224,87,154,0.35);
 }
 .hero-content h1 {
   font-family: var(--font-body);
