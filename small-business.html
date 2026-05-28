@@ -543,6 +543,12 @@
       font-size: 0.82rem; font-weight: 600; color: #7a5800;
       margin-top: 8px;
     }
+    .calc-info-note {
+      background: var(--hhc-teal-soft); border: 1.5px solid var(--hhc-teal);
+      border-radius: 12px; padding: 10px 14px;
+      font-size: 0.78rem; color: var(--hhc-teal-deep);
+      margin: -12px 0 16px; line-height: 1.5;
+    }
 
     /* Results panel */
     .calc-results {
@@ -1074,29 +1080,20 @@
     <div class="hhc-section-header" style="margin-bottom: 48px;">
       <span class="section-label" style="color: var(--hhc-teal-deep);">Run the Numbers</span>
       <h2 style="color: var(--navy);">What Will It Cost <em style="color:var(--hhc-teal);">Your Team?</em></h2>
-      <p style="color: #4a5570;">Plug in your team breakdown and see your estimated monthly membership cost, enrollment fees, and the value of complimentary lab panels included at no extra charge.</p>
+      <p style="color: #4a5570;">Plug in your team breakdown and see your estimated monthly cost, one-time enrollment fees, and the built-in value of complimentary lab panels.</p>
     </div>
 
     <div class="calc-wrap">
 
       <!-- INPUTS -->
       <div class="calc-inputs">
-        <h3 class="calc-section-title">👥 Your Team</h3>
+
+        <!-- MONTHLY RATES -->
+        <h3 class="calc-section-title">👥 Monthly Membership</h3>
 
         <div class="calc-row">
           <div class="calc-label-group">
-            <label class="calc-label">Kids Club <span class="calc-sublabel">Ages 5–20 &bull; $50/mo each</span></label>
-          </div>
-          <div class="calc-stepper">
-            <button class="step-btn" onclick="step('kids',-1)">−</button>
-            <span class="step-val" id="kids-val">0</span>
-            <button class="step-btn" onclick="step('kids',1)">+</button>
-          </div>
-        </div>
-
-        <div class="calc-row">
-          <div class="calc-label-group">
-            <label class="calc-label">Adult Members <span class="calc-sublabel">Ages 21–54 &bull; $100/mo each</span></label>
+            <label class="calc-label">Adult Employees <span class="calc-sublabel">Ages 21–54 &bull; $100/mo each</span></label>
           </div>
           <div class="calc-stepper">
             <button class="step-btn" onclick="step('adults',-1)">−</button>
@@ -1107,7 +1104,7 @@
 
         <div class="calc-row">
           <div class="calc-label-group">
-            <label class="calc-label">Golden Members <span class="calc-sublabel">Ages 55+ &bull; $130/mo each</span></label>
+            <label class="calc-label">Golden Employees <span class="calc-sublabel">Ages 55+ &bull; $130/mo each</span></label>
           </div>
           <div class="calc-stepper">
             <button class="step-btn" onclick="step('golden',-1)">−</button>
@@ -1116,9 +1113,66 @@
           </div>
         </div>
 
+        <div class="calc-row">
+          <div class="calc-label-group">
+            <label class="calc-label">Dependent Kids <span class="calc-sublabel">Ages 5–20 &bull; $50/mo first 2 per family, $25/mo each after</span></label>
+          </div>
+          <div class="calc-stepper">
+            <button class="step-btn" onclick="step('kids',-1)">−</button>
+            <span class="step-val" id="kids-val">0</span>
+            <button class="step-btn" onclick="step('kids',1)">+</button>
+          </div>
+        </div>
+
+        <!-- kid tier note — shown when kids > 0 -->
+        <div id="kids-note" class="calc-info-note" style="display:none;">
+          💡 Kids pricing: first 2 per family = $50/mo each. To get the $25/mo rate, use the family stepper below to tell us how many families have 3+ kids.
+        </div>
+
+        <div class="calc-row" id="extra-kids-row" style="display:none;">
+          <div class="calc-label-group">
+            <label class="calc-label">Extra Kids (3rd+ per family) <span class="calc-sublabel">$25/mo each — beyond first 2 per family</span></label>
+          </div>
+          <div class="calc-stepper">
+            <button class="step-btn" onclick="step('extrakids',-1)">−</button>
+            <span class="step-val" id="extrakids-val">0</span>
+            <button class="step-btn" onclick="step('extrakids',1)">+</button>
+          </div>
+        </div>
+
         <div class="calc-divider"></div>
-        <h3 class="calc-section-title" style="margin-top:0;">💊 Bonus: IV Savings Estimate</h3>
-        <p class="calc-help-text">Optional — enter average monthly IV/wellness spend per employee to see your 10% discount savings.</p>
+
+        <!-- ENROLLMENT FEES -->
+        <h3 class="calc-section-title" style="margin-top:0;">📋 One-Time Enrollment Fees</h3>
+        <p class="calc-help-text">Each employee pays enrollment once. Singles pay $150; employees enrolling a family (spouse and/or kids) pay $200 — regardless of family size.</p>
+
+        <div class="calc-row">
+          <div class="calc-label-group">
+            <label class="calc-label">Single Employees <span class="calc-sublabel">No dependents enrolling &bull; $150 each</span></label>
+          </div>
+          <div class="calc-stepper">
+            <button class="step-btn" onclick="step('singles',-1)">−</button>
+            <span class="step-val" id="singles-val">0</span>
+            <button class="step-btn" onclick="step('singles',1)">+</button>
+          </div>
+        </div>
+
+        <div class="calc-row">
+          <div class="calc-label-group">
+            <label class="calc-label">Employees with Families <span class="calc-sublabel">Enrolling spouse and/or kids &bull; $200 each</span></label>
+          </div>
+          <div class="calc-stepper">
+            <button class="step-btn" onclick="step('families',-1)">−</button>
+            <span class="step-val" id="families-val">0</span>
+            <button class="step-btn" onclick="step('families',1)">+</button>
+          </div>
+        </div>
+
+        <div class="calc-divider"></div>
+
+        <!-- IV SAVINGS -->
+        <h3 class="calc-section-title" style="margin-top:0;">💉 Bonus: IV Savings Estimate</h3>
+        <p class="calc-help-text">Optional — enter average monthly IV/wellness spend per employee to see your 10% discount in action.</p>
 
         <div class="calc-row">
           <div class="calc-label-group">
@@ -1152,17 +1206,17 @@
         </div>
         <div class="calc-result-divider"></div>
         <div class="calc-result-row">
-          <span>One-time enrollment fees</span>
+          <span>One-time enrollment fees<br><small style="font-weight:400;opacity:0.65;">singles × $150 + families × $200</small></span>
           <strong id="r-enrollment">$0</strong>
         </div>
         <div class="calc-result-divider"></div>
         <div class="calc-result-row highlight">
-          <span>🔬 Complimentary lab panels<br><small style="font-weight:400;opacity:0.75;">(1 per enrolled employee, ~$35.25 value each)</small></span>
-          <strong id="r-labs" style="color: var(--hhc-teal-deep);">$0 value</strong>
+          <span>🔬 Complimentary lab panels<br><small style="font-weight:400;opacity:0.75;">1 per employee/yr &bull; ~$35.25 each</small></span>
+          <strong id="r-labs" style="color: var(--hhc-teal);">$0 value</strong>
         </div>
         <div class="calc-result-row highlight" id="iv-savings-row" style="display:none;">
-          <span>💉 Annual IV discount savings<br><small style="font-weight:400;opacity:0.75;">(10% off estimated spend)</small></span>
-          <strong id="r-iv" style="color: var(--hhc-teal-deep);">$0 saved</strong>
+          <span>💉 Annual IV discount savings<br><small style="font-weight:400;opacity:0.75;">10% off estimated spend</small></span>
+          <strong id="r-iv" style="color: var(--hhc-teal);">$0 saved</strong>
         </div>
         <div class="calc-result-divider"></div>
         <div class="calc-result-row net">
@@ -1170,7 +1224,7 @@
           <strong id="r-net">$0</strong>
         </div>
         <div class="calc-result-note">
-          Estimates based on current published rates. Enrollment fees are one-time. Lab panel value based on our cost of $35.25/person. Pricing subject to change.
+          Estimates based on current published rates. Enrollment fees are one-time. Lab panel value based on our cost of $35.25/person. Kids pricing: $50/mo first 2 per family, $25/mo each additional. Pricing subject to change.
         </div>
         <a href="tel:6822836976" class="btn-sb" style="display:block;text-align:center;margin-top:20px;">📞 Get a Custom Quote</a>
       </div>
@@ -1286,66 +1340,80 @@
 <script src="js/script.js"></script>
 <script>
   // ── COST CALCULATOR ──────────────────────────────────────────
-  const counts = { kids: 0, adults: 0, golden: 0 };
-  const rates  = { kids: 50, adults: 100, golden: 130 };
-  const LAB_PANEL_COST = 35.25;
-  const ENROLL_INDIVIDUAL = 150;
+  const counts = { adults: 0, golden: 0, kids: 0, extrakids: 0, singles: 0, families: 0 };
+
+  const LAB_PANEL_COST    = 35.25;
+  const ENROLL_SINGLE     = 150;
   const ENROLL_FAMILY     = 200;
+
+  function fmt(n) {
+    return '$' + Math.round(n).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
 
   function step(tier, dir) {
     counts[tier] = Math.max(0, counts[tier] + dir);
     document.getElementById(tier + '-val').textContent = counts[tier];
+    // show/hide extra kids row when kids > 0
+    if (tier === 'kids' || tier === 'extrakids') {
+      const showKids = counts.kids > 0;
+      document.getElementById('kids-note').style.display      = showKids ? 'block' : 'none';
+      document.getElementById('extra-kids-row').style.display = showKids ? 'flex'  : 'none';
+      if (!showKids) {
+        counts.extrakids = 0;
+        document.getElementById('extrakids-val').textContent = '0';
+      }
+    }
     recalc();
   }
 
   function recalc() {
-    const kids   = counts.kids;
-    const adults = counts.adults;
-    const golden = counts.golden;
-    const totalEmployees = kids + adults + golden;
+    const adults    = counts.adults;
+    const golden    = counts.golden;
+    const kids      = counts.kids;       // first 2 per family @ $50
+    const extrakids = counts.extrakids;  // 3rd+ per family @ $25
+    const singles   = counts.singles;
+    const families  = counts.families;
 
-    // Employee count badge
+    const totalEmployees = adults + golden;
+    const totalMembers   = adults + golden + kids + extrakids;
+
+    // Employee count badge (employees only, not dependents)
     document.getElementById('total-employees').textContent =
       totalEmployees === 1 ? '1 employee' : totalEmployees + ' employees';
 
-    // Min 5 warning
-    const warning = document.getElementById('min-warning');
-    warning.style.display = (totalEmployees > 0 && totalEmployees < 5) ? 'block' : 'none';
+    // Min 5 employee warning
+    document.getElementById('min-warning').style.display =
+      (totalEmployees > 0 && totalEmployees < 5) ? 'block' : 'none';
 
     // Monthly cost
-    const monthly = (kids * rates.kids) + (adults * rates.adults) + (golden * rates.golden);
+    const monthly = (adults * 100) + (golden * 130) + (kids * 50) + (extrakids * 25);
     const annual  = monthly * 12;
 
-    // Enrollment fees — family if 2+ enrolled
-    const enrollable = adults + golden; // kids included in family fee
-    let enrollment = 0;
-    if (enrollable === 1) enrollment = ENROLL_INDIVIDUAL;
-    else if (enrollable > 1) enrollment = ENROLL_FAMILY;
-    // Kids are free if a guardian is enrolled (family fee covers them)
+    // Enrollment fees — singles × $150, families × $200
+    const enrollment = (singles * ENROLL_SINGLE) + (families * ENROLL_FAMILY);
 
-    // Lab panel value — 1 per enrolled employee (adults + golden, not kids)
-    const labPanelValue = enrollable * LAB_PANEL_COST;
+    // Lab panel value — 1 per adult/golden employee (not kids, not family members)
+    const labPanelValue = totalEmployees * LAB_PANEL_COST;
 
-    // IV savings
-    const ivSpendInput = parseFloat(document.getElementById('iv-spend').value) || 0;
-    const ivSavingsMonthly = ivSpendInput * totalEmployees * 0.10;
-    const ivSavingsAnnual  = ivSavingsMonthly * 12;
+    // IV savings — based on employee count only
+    const ivSpend = parseFloat(document.getElementById('iv-spend').value) || 0;
+    const ivSavingsAnnual = ivSpend * totalEmployees * 0.10 * 12;
 
-    // Net annual = annual cost + enrollment - lab panel value - iv savings
+    // Net annual cost
     const net = Math.max(0, annual + enrollment - labPanelValue - ivSavingsAnnual);
 
-    // Update display
-    document.getElementById('r-monthly').textContent    = '$' + monthly.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    document.getElementById('r-annual').textContent     = '$' + annual.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-    document.getElementById('r-enrollment').textContent = '$' + enrollment.toFixed(0);
+    // Update results
+    document.getElementById('r-monthly').textContent    = fmt(monthly);
+    document.getElementById('r-annual').textContent     = fmt(annual);
+    document.getElementById('r-enrollment').textContent = fmt(enrollment);
     document.getElementById('r-labs').textContent       = '$' + labPanelValue.toFixed(2) + ' value';
-    document.getElementById('r-net').textContent        = '$' + net.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    document.getElementById('r-net').textContent        = fmt(net);
 
-    // IV savings row — show only when a spend amount is entered
+    // IV savings row — only visible when spend is entered
     const ivRow = document.getElementById('iv-savings-row');
-    if (ivSpendInput > 0) {
+    if (ivSpend > 0) {
       ivRow.style.display = 'flex';
-      document.getElementById('r-iv').textContent = '$' + ivSavingsAnnual.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' saved';
+      document.getElementById('r-iv').textContent = fmt(ivSavingsAnnual) + ' saved';
     } else {
       ivRow.style.display = 'none';
     }
