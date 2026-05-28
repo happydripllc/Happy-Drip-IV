@@ -456,6 +456,9 @@
       .how-steps::before   { display: none; }
       .perks-highlight-inner { grid-template-columns: 1fr; gap: 28px; }
       .tier-cards          { grid-template-columns: repeat(2, 1fr); }
+      /* Stack calculator at tablet */
+      .calc-wrap           { grid-template-columns: 1fr; }
+      .calc-results        { position: static; }
     }
     @media (max-width: 640px) {
       .sb-hero-content h1  { font-size: 2rem; }
@@ -466,6 +469,9 @@
       .how-steps           { grid-template-columns: 1fr; }
       .tier-cards          { grid-template-columns: 1fr; }
       .calc-wrap           { grid-template-columns: 1fr; }
+      .calc-results        { position: static; }
+      .calc-inputs         { padding: 24px 20px; }
+      .calc-results        { padding: 24px 20px; }
     }
 
     /* ======================================================
@@ -1334,7 +1340,7 @@
     <span class="vip-badge">DPC</span>
     Small Business memberships open — <a href="tel:6822836976">&nbsp;call (682) 283-6976&nbsp;</a> to get a quote!
   </div>
-  <div class="tip">10% off IV &amp; wellness &bull; At-cost labs &bull; 1 free lab panel per employee</div>
+  <div class="tip">10% off IV &bull; At-cost labs &bull; 1 free lab panel/employee</div>
 </div>
 
 <script src="js/script.js"></script>
