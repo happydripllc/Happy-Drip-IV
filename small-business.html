@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Small Business DPC Membership | Happy Health Clinic — Bedford, TX</title>
+  <meta name="description" content="Give your team healthcare they'll actually use. Happy Health Clinic's Small Business DPC membership offers at-cost labs, 10% off IV & wellness, and one complimentary lab panel per enrolled employee. Bedford, TX." />
+  <link rel="canonical" href="https://www.happydripiv.com/small-business" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ======================================================
+       PAGE COLORS
+       ====================================================== */
+    :root {
+      --hhc-teal:       #3ab8cb;
+      --hhc-teal-soft:  #e0f7fa;
+      --hhc-teal-deep:  #0d7a8a;
+      --hhc-mint:       #a8e6cf;
+      --hhc-mint-soft:  #f0faf5;
+      --hhc-pink:       #e0579a;
+      --hhc-pink-soft:  #fdeef6;
+      --hhc-gold:       #f0c030;
+      --hhc-gold-soft:  #fffae0;
+      --hhc-lav:        #c8b4e8;
+      --hhc-lav-soft:   #f0ecfc;
+      --hhc-purple:     #7040b8;
+    }
+
+    /* ======================================================
+       HERO — dark navy, corporate-meets-warm
+       ====================================================== */
+    .sb-hero {
+      background: var(--navy);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .sb-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 10% 50%, rgba(58,184,203,0.18) 0%, transparent 50%),
+        radial-gradient(circle at 90% 20%, rgba(240,192,48,0.12) 0%, transparent 45%),
+        radial-gradient(circle at 60% 90%, rgba(112,64,184,0.10) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .sb-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      min-height: 580px;
+      position: relative; z-index: 1;
+      gap: 0;
+    }
+    .sb-hero-content { padding: 80px 48px 80px 24px; }
+    .sb-eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(58,184,203,0.15);
+      border: 1.5px solid rgba(58,184,203,0.5);
+      color: var(--hhc-teal); font-size: 0.72rem; font-weight: 800;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      padding: 6px 18px; border-radius: 40px; margin-bottom: 22px;
+    }
+    .sb-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.6rem);
+      color: #fff; margin-bottom: 14px; line-height: 1.12;
+    }
+    .sb-hero-content h1 em { font-style: italic; color: var(--hhc-gold); }
+    .sb-hero-tagline {
+      font-size: 1.05rem; color: rgba(255,255,255,0.75); line-height: 1.78;
+      margin-bottom: 32px; max-width: 490px;
+    }
+    .sb-hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-sb {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--hhc-teal); color: #fff;
+      font-weight: 800; font-size: 0.9rem;
+      padding: 14px 30px; border-radius: 50px;
+      transition: all 0.2s;
+      box-shadow: 0 4px 20px rgba(58,184,203,0.4);
+    }
+    .btn-sb:hover { background: var(--hhc-teal-deep); transform: translateY(-2px); }
+    .btn-sb-outline {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: #fff;
+      border: 2px solid rgba(255,255,255,0.4);
+      font-weight: 800; font-size: 0.9rem;
+      padding: 14px 30px; border-radius: 50px; transition: all 0.2s;
+    }
+    .btn-sb-outline:hover { background: rgba(255,255,255,0.08); border-color: #fff; }
+
+    /* Hero stat pills */
+    .sb-hero-stats {
+      display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px;
+    }
+    .sb-stat {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px; padding: 12px 18px; text-align: center;
+    }
+    .sb-stat-num {
+      font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700;
+      color: var(--hhc-gold); display: block; line-height: 1;
+    }
+    .sb-stat-label { font-size: 0.7rem; color: rgba(255,255,255,0.6); font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+
+    /* Hero visual panel */
+    .sb-hero-visual {
+      height: 580px; position: relative;
+      display: flex; align-items: center; justify-content: center;
+      padding: 40px 24px 40px 0;
+    }
+    .sb-hero-card-stack {
+      position: relative; width: 100%; max-width: 380px;
+    }
+    .sb-floating-card {
+      background: rgba(255,255,255,0.07);
+      border: 1.5px solid rgba(58,184,203,0.3);
+      border-radius: 20px; padding: 22px 24px;
+      backdrop-filter: blur(8px);
+      position: relative;
+    }
+    .sb-floating-card + .sb-floating-card {
+      margin-top: 14px;
+      border-color: rgba(240,192,48,0.3);
+    }
+    .sb-floating-card h4 { color: #fff; font-size: 0.9rem; margin-bottom: 5px; }
+    .sb-floating-card p { font-size: 0.8rem; color: rgba(255,255,255,0.65); margin: 0; line-height: 1.5; }
+    .sb-fc-badge {
+      display: inline-block; font-size: 0.65rem; font-weight: 800;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 40px; margin-bottom: 8px;
+    }
+    .sb-fc-badge.teal { background: var(--hhc-teal); color: #fff; }
+    .sb-fc-badge.gold { background: var(--hhc-gold); color: var(--navy); }
+    .sb-fc-badge.purple { background: var(--hhc-purple); color: #fff; }
+
+    /* ======================================================
+       TRUST STRIP
+       ====================================================== */
+    .sb-trust {
+      background: linear-gradient(90deg, var(--hhc-teal-deep) 0%, #0e6070 100%);
+      padding: 16px 0;
+      border-top: 3px solid var(--hhc-gold);
+      border-bottom: 3px solid var(--hhc-teal);
+    }
+    .sb-trust-inner {
+      display: flex; align-items: center; justify-content: center;
+      gap: 32px; flex-wrap: wrap;
+    }
+    .sb-trust-item {
+      display: flex; align-items: center; gap: 8px;
+      color: rgba(255,255,255,0.9); font-size: 0.82rem; font-weight: 700;
+    }
+    .sb-trust-item span { font-size: 1.15rem; }
+
+    /* ======================================================
+       SHARED SECTION STYLES
+       ====================================================== */
+    .sb-section { padding: 80px 0; }
+    .sb-section.alt { background: var(--off-white); }
+    .sb-section.teal-bg { background: linear-gradient(135deg, #e0f7fa 0%, #f0faf5 100%); }
+    .sb-section.navy-bg { background: var(--navy); }
+    .sb-section.gold-bg { background: linear-gradient(135deg, #fffae0 0%, #fff8d0 100%); }
+    .sb-section-header { text-align: center; margin-bottom: 52px; }
+    .sb-section-header h2 { color: var(--navy); margin-bottom: 12px; }
+    .sb-section-header h2 em { font-style: italic; color: var(--hhc-teal); }
+    .sb-section-header p { color: var(--gray); max-width: 640px; margin: 0 auto; font-size: 1rem; line-height: 1.78; }
+
+    /* ======================================================
+       BENEFITS GRID — 2x2
+       ====================================================== */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px; margin-top: 8px;
+    }
+    .benefit-card {
+      background: #fff; border-radius: 20px; padding: 30px 28px;
+      border: 1.5px solid var(--border);
+      transition: all 0.22s; position: relative; overflow: hidden;
+    }
+    .benefit-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    }
+    .benefit-card.bc1::before { background: var(--hhc-teal); }
+    .benefit-card.bc2::before { background: var(--hhc-pink); }
+    .benefit-card.bc3::before { background: var(--hhc-gold); }
+    .benefit-card.bc4::before { background: var(--hhc-purple); }
+    .benefit-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
+    .benefit-icon-wrap {
+      width: 56px; height: 56px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; margin-bottom: 16px;
+    }
+    .bc1 .benefit-icon-wrap { background: var(--hhc-teal-soft); }
+    .bc2 .benefit-icon-wrap { background: var(--hhc-pink-soft); }
+    .bc3 .benefit-icon-wrap { background: var(--hhc-gold-soft); }
+    .bc4 .benefit-icon-wrap { background: var(--hhc-lav-soft); }
+    .benefit-card h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 8px; }
+    .benefit-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.65; margin: 0; }
+
+    /* ======================================================
+       CORE TRUTH CALLOUT
+       ====================================================== */
+    .core-truth {
+      background: var(--navy); border-radius: 24px;
+      padding: 44px 52px; text-align: center;
+      margin: 60px 0 0;
+      position: relative; overflow: hidden;
+    }
+    .core-truth::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 20% 50%, rgba(58,184,203,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(240,192,48,0.10) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .core-truth blockquote {
+      font-family: var(--font-heading); font-style: italic;
+      font-size: clamp(1.4rem, 3vw, 2rem); color: #fff;
+      line-height: 1.4; margin: 0 0 16px; position: relative; z-index: 1;
+    }
+    .core-truth blockquote em { color: var(--hhc-gold); font-style: normal; }
+    .core-truth cite {
+      font-size: 0.8rem; color: rgba(255,255,255,0.5);
+      font-style: normal; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; position: relative; z-index: 1;
+    }
+
+    /* ======================================================
+       WHO IT HELPS — 3 team cards
+       ====================================================== */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .team-card {
+      border-radius: 20px; overflow: hidden;
+      border: 1.5px solid var(--border);
+      background: #fff; transition: all 0.25s;
+    }
+    .team-card:hover { box-shadow: 0 8px 32px rgba(58,184,203,0.15); transform: translateY(-4px); border-color: var(--hhc-teal); }
+    .team-card-header {
+      padding: 28px 24px 22px;
+      display: flex; flex-direction: column; align-items: flex-start;
+    }
+    .team-card-header.shift { background: linear-gradient(135deg, #e0f7fa, #f0faf5); }
+    .team-card-header.family { background: linear-gradient(135deg, var(--hhc-pink-soft), #fff5fc); }
+    .team-card-header.office { background: linear-gradient(135deg, var(--hhc-lav-soft), #f3f0ff); }
+    .team-badge {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 4px 12px; border-radius: 40px;
+      margin-bottom: 12px; display: inline-block;
+    }
+    .shift .team-badge  { background: var(--hhc-teal); color: #fff; }
+    .family .team-badge { background: var(--hhc-pink); color: #fff; }
+    .office .team-badge { background: var(--hhc-purple); color: #fff; }
+    .team-card-icon { font-size: 2rem; margin-bottom: 8px; }
+    .team-card-header h3 { color: var(--navy); font-size: 1.05rem; margin: 0; }
+    .team-card-body { padding: 20px 24px 24px; }
+    .team-outcome {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .team-outcome-item {
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .team-outcome-item .outcome-label {
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--hhc-teal); flex-shrink: 0; margin-top: 2px;
+      min-width: 80px;
+    }
+    .team-outcome-item p { font-size: 0.83rem; color: var(--gray); line-height: 1.55; margin: 0; }
+
+    /* ======================================================
+       HOW IT WORKS — 4 steps
+       ====================================================== */
+    .how-steps {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 20px; margin-top: 8px; position: relative;
+    }
+    .how-steps::before {
+      content: '';
+      position: absolute; top: 30px; left: 12%; right: 12%;
+      height: 2px;
+      background: linear-gradient(to right, var(--hhc-teal), var(--hhc-gold), var(--hhc-pink), var(--hhc-purple));
+      z-index: 0;
+    }
+    .how-step {
+      background: #fff; border-radius: 20px; padding: 28px 20px;
+      border: 1.5px solid var(--border); text-align: center;
+      position: relative; z-index: 1; transition: all 0.25s;
+    }
+    .how-step:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.08); transform: translateY(-4px); }
+    .how-step-num {
+      width: 56px; height: 56px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-heading); font-size: 1.3rem; font-weight: 700;
+      color: #fff; margin: 0 auto 14px;
+    }
+    .hs1 .how-step-num { background: var(--hhc-teal); }
+    .hs2 .how-step-num { background: var(--hhc-gold); }
+    .hs3 .how-step-num { background: var(--hhc-pink); }
+    .hs4 .how-step-num { background: var(--hhc-purple); }
+    .how-step h4 { color: var(--navy); font-size: 0.95rem; margin-bottom: 8px; }
+    .how-step p  { font-size: 0.82rem; color: var(--gray); line-height: 1.6; margin: 0; }
+
+    /* ======================================================
+       MEMBERSHIP PERKS SECTION
+       ====================================================== */
+    .perks-highlight {
+      background: var(--navy); border-radius: 24px; padding: 44px 48px;
+      position: relative; overflow: hidden;
+    }
+    .perks-highlight::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 5% 40%, rgba(58,184,203,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 95% 60%, rgba(240,192,48,0.10) 0%, transparent 45%);
+      pointer-events: none;
+    }
+    .perks-highlight-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 40px; align-items: start; position: relative; z-index: 1;
+    }
+    .perks-highlight-left h2 {
+      color: #fff; font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin-bottom: 12px;
+    }
+    .perks-highlight-left h2 em { font-style: italic; color: var(--hhc-teal); }
+    .perks-highlight-left p { color: rgba(255,255,255,0.7); font-size: 0.92rem; line-height: 1.75; margin-bottom: 0; }
+    .perks-list {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .perks-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      color: rgba(255,255,255,0.88); font-size: 0.88rem; line-height: 1.55;
+    }
+    .perks-list li .perk-check {
+      width: 22px; height: 22px; border-radius: 50%;
+      background: var(--hhc-teal); color: #fff;
+      font-size: 0.7rem; font-weight: 800;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+    }
+    .perks-list li.exclude-item { opacity: 0.55; }
+    .perks-list li.exclude-item .perk-check { background: rgba(255,255,255,0.2); }
+
+    /* Mini requirement callout */
+    .req-callout {
+      background: rgba(240,192,48,0.12);
+      border: 1.5px solid rgba(240,192,48,0.4);
+      border-radius: 12px; padding: 14px 18px;
+      margin-top: 24px;
+      font-size: 0.82rem; color: rgba(255,255,255,0.8); line-height: 1.55;
+    }
+    .req-callout strong { color: var(--hhc-gold); }
+
+    /* ======================================================
+       MEMBERSHIP TIER CARDS
+       ====================================================== */
+    .tier-intro {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px; padding: 18px 24px;
+      margin-bottom: 28px; text-align: center;
+    }
+    .tier-intro p { color: rgba(255,255,255,0.7); font-size: 0.88rem; margin: 0; line-height: 1.6; }
+
+    .tier-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .tier-card {
+      background: rgba(255,255,255,0.06);
+      border: 1.5px solid rgba(255,255,255,0.12);
+      border-radius: 20px; overflow: hidden;
+      transition: all 0.25s;
+    }
+    .tier-card:hover { border-color: rgba(58,184,203,0.5); box-shadow: 0 8px 32px rgba(58,184,203,0.15); transform: translateY(-4px); }
+    .tier-card-header {
+      padding: 22px 18px 18px; text-align: center;
+    }
+    .tier-card-header.kids   { background: linear-gradient(135deg, rgba(58,184,203,0.2), rgba(168,230,207,0.1)); }
+    .tier-card-header.adult  { background: linear-gradient(135deg, rgba(224,87,154,0.15), rgba(255,245,252,0.05)); }
+    .tier-card-header.golden { background: linear-gradient(135deg, rgba(240,192,48,0.2), rgba(255,253,240,0.05)); }
+    .tier-card-header.family { background: linear-gradient(135deg, rgba(200,180,232,0.15), rgba(240,236,252,0.05)); }
+    .tier-label {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 4px 12px; border-radius: 40px;
+      margin-bottom: 10px; display: inline-block;
+    }
+    .kids   .tier-label { background: var(--hhc-teal); color: #fff; }
+    .adult  .tier-label { background: var(--hhc-pink); color: #fff; }
+    .golden .tier-label { background: var(--hhc-gold); color: var(--navy); }
+    .family .tier-label { background: var(--hhc-purple); color: #fff; }
+    .tier-card-header h3 { color: #fff; font-size: 0.95rem; margin-bottom: 4px; }
+    .tier-age { font-size: 0.72rem; color: rgba(255,255,255,0.55); margin-bottom: 14px; }
+    .tier-price {
+      font-family: var(--font-heading); font-size: 1.7rem; font-weight: 700;
+      color: #fff; line-height: 1;
+    }
+    .tier-price span { font-size: 0.78rem; color: rgba(255,255,255,0.5); font-weight: 400; font-family: var(--font-body); }
+    .tier-card-body { padding: 16px 18px 20px; }
+    .tier-detail { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.6; margin-bottom: 10px; }
+    .tier-enrollment {
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(255,255,255,0.06); border-radius: 8px;
+      padding: 8px 12px; font-size: 0.75rem; color: rgba(255,255,255,0.5);
+    }
+    .tier-enrollment strong { color: rgba(255,255,255,0.85); }
+
+    /* ======================================================
+       CTA SECTION
+       ====================================================== */
+    .sb-cta {
+      background: linear-gradient(135deg, #1a2744 0%, #0d1a30 100%);
+      padding: 88px 0; text-align: center; position: relative; overflow: hidden;
+    }
+    .sb-cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 20% 60%, rgba(58,184,203,0.15) 0%, transparent 45%),
+        radial-gradient(circle at 80% 40%, rgba(240,192,48,0.10) 0%, transparent 45%);
+      pointer-events: none;
+    }
+    .sb-cta-inner { position: relative; z-index: 1; }
+    .sb-cta h2 { color: #fff; margin-bottom: 14px; font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+    .sb-cta h2 em { font-style: italic; color: var(--hhc-gold); }
+    .sb-cta p { color: rgba(255,255,255,0.72); max-width: 580px; margin: 0 auto 36px; font-size: 1rem; line-height: 1.78; }
+    .sb-cta-contact {
+      margin-top: 28px; font-size: 0.87rem;
+      color: rgba(255,255,255,0.55); line-height: 2;
+    }
+    .sb-cta-contact a { color: var(--hhc-teal); }
+    .sb-cta-contact strong { color: rgba(255,255,255,0.8); }
+
+    /* ======================================================
+       RESPONSIVE
+       ====================================================== */
+    @media (max-width: 1024px) {
+      .sb-hero-inner       { grid-template-columns: 1fr; }
+      .sb-hero-content     { padding: 56px 24px 40px; }
+      .sb-hero-visual      { display: none; }
+      .benefits-grid       { grid-template-columns: 1fr; }
+      .team-grid           { grid-template-columns: 1fr; }
+      .how-steps           { grid-template-columns: repeat(2, 1fr); }
+      .how-steps::before   { display: none; }
+      .perks-highlight-inner { grid-template-columns: 1fr; gap: 28px; }
+      .tier-cards          { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .sb-hero-content h1  { font-size: 2rem; }
+      .sb-hero-stats       { gap: 10px; }
+      .sb-cta              { padding: 60px 0; }
+      .perks-highlight     { padding: 28px 24px; }
+      .core-truth          { padding: 32px 24px; }
+      .how-steps           { grid-template-columns: 1fr; }
+      .tier-cards          { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  🏢 Small Business DPC memberships now available! At-cost labs &amp; 10% off IV &amp; wellness for your entire team.
+  <a href="tel:6822836976"> Call (682) 283-6976 →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text"><span>Happy Drip IV</span><span>& Wellness</span></div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
+      <div class="nav-item">
+        <a href="#" class="nav-link active" aria-haspopup="true">Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss">Medical Weight Loss</a>
+          <a href="/happy-health-clinic" style="color:var(--teal);">Happy Health Clinic (DPC) ✦</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link" aria-haspopup="true">Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/#aesthetics">Jeuveau® (Botox)</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/iv-drip-menu" class="nav-link" aria-haspopup="true">IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">'I DO' Drips (Bridal)</a>
+          <a href="/#iv-therapy">Groups + Events</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/#payment" class="nav-link">Payment Plans</a></div>
+      <div class="nav-item"><a href="/#faq" class="nav-link">FAQ</a></div>
+    </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/#medical-services" class="sub-link">BC Management</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/#aesthetics" class="sub-link">Jeuveau® (Botox)</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">'I DO' Drips (Bridal)</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+    <a href="tel:6822836976" style="color:#5dd9e8;font-weight:800;">(682) 283-6976</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="background:#3ab8cb;color:#fff;margin:12px 24px;border-radius:50px;text-align:center;">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="sb-hero">
+  <div class="container">
+    <div class="sb-hero-inner">
+
+      <div class="sb-hero-content">
+        <!-- Breadcrumb -->
+        <nav aria-label="Breadcrumb" style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-bottom:22px;display:flex;align-items:center;gap:8px;">
+          <a href="/" style="color:var(--hhc-teal);">Home</a>
+          <span style="opacity:0.5;">›</span>
+          <a href="/happy-health-clinic" style="color:var(--hhc-teal);">Happy Health Clinic</a>
+          <span style="opacity:0.5;">›</span>
+          <span>Small Business</span>
+        </nav>
+
+        <div class="sb-eyebrow">🏢 Small Business DPC — Bedford, TX</div>
+        <h1>Healthcare Your Employees Will <em>Actually Use.</em></h1>
+        <p class="sb-hero-tagline">Your employees are the heartbeat of your business, and their health is the foundation of your success. Direct Primary Care gives your team primary care access for one flat monthly fee.</p>
+
+        <div class="sb-hero-btns">
+          <a href="#perks" class="btn-sb">💚 See Membership Perks</a>
+          <a href="tel:6822836976" class="btn-sb-outline">📞 (682) 283-6976</a>
+        </div>
+
+        <div class="sb-hero-stats">
+          <div class="sb-stat">
+            <span class="sb-stat-num">10%</span>
+            <span class="sb-stat-label">Off IV &amp; Wellness</span>
+          </div>
+          <div class="sb-stat">
+            <span class="sb-stat-num">$0</span>
+            <span class="sb-stat-label">Lab Markup</span>
+          </div>
+          <div class="sb-stat">
+            <span class="sb-stat-num">5+</span>
+            <span class="sb-stat-label">Employees Min.</span>
+          </div>
+          <div class="sb-stat">
+            <span class="sb-stat-num">1</span>
+            <span class="sb-stat-label">Free Lab Panel/Employee</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual panel (desktop only) -->
+      <div class="sb-hero-visual" aria-hidden="true">
+        <div class="sb-hero-card-stack">
+          <div class="sb-floating-card">
+            <span class="sb-fc-badge teal">Included Perk</span>
+            <h4>10% Off IV &amp; Wellness Treatments</h4>
+            <p>All enrolled employees receive 10% off every IV drip and wellness treatment — used or not, the discount is always there.</p>
+          </div>
+          <div class="sb-floating-card">
+            <span class="sb-fc-badge gold">Complimentary</span>
+            <h4>1 Free Basic Lab Panel Per Employee</h4>
+            <p>Every enrolled employee gets one complimentary basic lab panel annually (~$35 per person at our cost).</p>
+          </div>
+          <div class="sb-floating-card">
+            <span class="sb-fc-badge purple">Zero Markup</span>
+            <h4>Labs &amp; POC Testing at Our Cost</h4>
+            <p>Strep, flu, COVID, UTI — all point-of-care tests and labs billed at our actual cost. No markup. Ever.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Trust Strip -->
+<div class="sb-trust">
+  <div class="container sb-trust-inner">
+    <div class="sb-trust-item"><span>💰</span> 10% Off IV &amp; Wellness</div>
+    <div class="sb-trust-item"><span>🔬</span> At-Cost Labs — Zero Markup</div>
+    <div class="sb-trust-item"><span>🧪</span> At-Cost POC Testing</div>
+    <div class="sb-trust-item"><span>🎁</span> 1 Free Lab Panel / Employee</div>
+    <div class="sb-trust-item"><span>👥</span> Min. 5 Employees</div>
+    <div class="sb-trust-item"><span>📍</span> Bedford, TX 76022</div>
+  </div>
+</div>
+
+<!-- ============================================================
+     DPC EXPLAINED
+     ============================================================ -->
+<section class="sb-section" id="about">
+  <div class="container">
+    <div class="sb-section-header">
+      <span class="section-label" style="color:var(--hhc-teal);">What Is DPC?</span>
+      <h2>Simple Access. <em>Real Results.</em></h2>
+      <p>Direct Primary Care (DPC) removes the barriers between your employees and the care they need. One flat monthly fee gives your team direct access to primary care — without the insurance runaround, long wait times, or frustrating referral loops.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4 BENEFITS GRID
+     ============================================================ -->
+<section class="sb-section alt" style="padding-top:0;" id="benefits">
+  <div class="container">
+    <div class="benefits-grid">
+
+      <div class="benefit-card bc1">
+        <div class="benefit-icon-wrap">📈</div>
+        <h3>Boosted Productivity</h3>
+        <p>Minor health issues resolved quickly — same-day access means employees aren't waiting weeks to be seen. Fewer missed shifts. Faster returns. Less disruption to your team.</p>
+      </div>
+
+      <div class="benefit-card bc2">
+        <div class="benefit-icon-wrap">💰</div>
+        <h3>Significant Savings</h3>
+        <p>Early intervention avoids expensive ER visits and unnecessary urgent care trips. When employees have a place to turn before things escalate, everyone saves — you and them.</p>
+      </div>
+
+      <div class="benefit-card bc3">
+        <div class="benefit-icon-wrap">😌</div>
+        <h3>Reduced Stress</h3>
+        <p>Care without traditional insurance frustration or long wait times. Your team gets real answers from a real provider — without spending half the day in a waiting room.</p>
+      </div>
+
+      <div class="benefit-card bc4">
+        <div class="benefit-icon-wrap">🌟</div>
+        <h3>Attract &amp; Retain Talent</h3>
+        <p>High-quality, personal healthcare is a powerful differentiator. Offering a DPC benefit sets you apart as an employer who genuinely invests in their people.</p>
+      </div>
+
+    </div>
+
+    <!-- Core truth pullquote -->
+    <div class="core-truth">
+      <blockquote>"When access is easy, <em>employees use it.</em>"</blockquote>
+      <cite>— The principle behind Happy Health Clinic's Small Business DPC</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHO IT HELPS MOST — 3 team types
+     ============================================================ -->
+<section class="sb-section" id="who-it-helps">
+  <div class="container">
+    <div class="sb-section-header">
+      <span class="section-label" style="color:var(--hhc-teal);">Tailored for Your Team</span>
+      <h2>Who It <em>Helps Most</em></h2>
+      <p>Every workforce is different. Here's how DPC makes a real difference for three common team types — and why it works for all of them.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-card-header shift">
+          <span class="team-badge">Shift-Based Teams</span>
+          <div class="team-card-icon">🏭</div>
+          <h3>Shift-Based &amp; Hourly Workers</h3>
+        </div>
+        <div class="team-card-body">
+          <div class="team-outcome">
+            <div class="team-outcome-item">
+              <span class="outcome-label">Less Missed Work</span>
+              <p>Same-day care access means employees get seen fast — before a small problem becomes a multi-day absence.</p>
+            </div>
+            <div class="team-outcome-item">
+              <span class="outcome-label">Better Outcomes</span>
+              <p>Issues caught early mean less downtime and lower long-term health costs for everyone.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-header family">
+          <span class="team-badge">Family-Heavy Teams</span>
+          <div class="team-card-icon">👨‍👩‍👧</div>
+          <h3>Employees with Families</h3>
+        </div>
+        <div class="team-card-body">
+          <div class="team-outcome">
+            <div class="team-outcome-item">
+              <span class="outcome-label">Real Convenience</span>
+              <p>Kid sick days are less chaotic when the whole family has a provider they can reach quickly — same-day or telehealth.</p>
+            </div>
+            <div class="team-outcome-item">
+              <span class="outcome-label">Continuity of Care</span>
+              <p>Dependents can enroll too, giving families one trusted provider for everything from annual physicals to urgent concerns.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-card-header office">
+          <span class="team-badge">Office Teams</span>
+          <div class="team-card-icon">💼</div>
+          <h3>Office &amp; Desk-Based Staff</h3>
+        </div>
+        <div class="team-card-body">
+          <div class="team-outcome">
+            <div class="team-outcome-item">
+              <span class="outcome-label">Preventive Focus</span>
+              <p>Annual physicals, chronic condition management, and routine screenings handled — keeping your team ahead of problems.</p>
+            </div>
+            <div class="team-outcome-item">
+              <span class="outcome-label">Clear Referrals</span>
+              <p>When specialist care is needed, employees get clear direction and coordination — not a confusing web of calls and callbacks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS — 4 steps
+     ============================================================ -->
+<section class="sb-section teal-bg" id="how-it-works">
+  <div class="container">
+    <div class="sb-section-header">
+      <span class="section-label" style="color:var(--hhc-teal-deep);">Getting Started</span>
+      <h2>How It <em>Works</em></h2>
+      <p>From first conversation to a fully enrolled team — we make it simple, start to finish.</p>
+    </div>
+
+    <div class="how-steps">
+      <div class="how-step hs1">
+        <div class="how-step-num">1</div>
+        <h4>We Partner With You</h4>
+        <p>We design a membership structure tailored to your team size and budget. No cookie-cutter packages — just a plan that fits.</p>
+      </div>
+      <div class="how-step hs2">
+        <div class="how-step-num">2</div>
+        <h4>We Onboard Your Team</h4>
+        <p>Enrollment paperwork and employee education are handled for you. Your team learns what they have, and how to use it.</p>
+      </div>
+      <div class="how-step hs3">
+        <div class="how-step-num">3</div>
+        <h4>Your Team Gets Real Care</h4>
+        <p>At-cost labs, 10% off IV &amp; wellness, at-cost POC testing, and a provider who actually picks up the phone.</p>
+      </div>
+      <div class="how-step hs4">
+        <div class="how-step-num">4</div>
+        <h4>You Save Where It Matters</h4>
+        <p>Fewer disruptions, better retention, and predictable monthly costs. Healthcare that works for your bottom line.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     MEMBERSHIP PERKS (detailed)
+     ============================================================ -->
+<section class="sb-section navy-bg" id="perks">
+  <div class="container">
+    <div class="sb-section-header">
+      <span class="section-label" style="color:var(--hhc-teal);">What's Included</span>
+      <h2 style="color:#fff;">Small Business Membership <em>Perks</em></h2>
+      <p style="color:rgba(255,255,255,0.68);">These are the actual benefits your enrolled employees receive — clear, specific, and no fluff.</p>
+    </div>
+
+    <div class="perks-highlight">
+      <div class="perks-highlight-inner">
+        <div class="perks-highlight-left">
+          <h2>Real value your<br>team will <em>actually feel.</em></h2>
+          <p>Most health benefits go unused because access is too hard. Happy Health Clinic's Small Business DPC membership is designed around one idea: the easier it is to use, the more your team benefits — and so does your business.</p>
+          <div class="req-callout">
+            <strong>Minimum enrollment:</strong> 5 employees required to activate the Small Business plan. Dependents can be added at per-person age-tier rates plus a $200 family enrollment fee.
+          </div>
+        </div>
+        <div>
+          <ul class="perks-list">
+            <li>
+              <span class="perk-check">✓</span>
+              <span><strong>10% off all IV &amp; wellness treatments</strong> for every enrolled employee — every visit, no limits.</span>
+            </li>
+            <li>
+              <span class="perk-check">✓</span>
+              <span><strong>Labs billed at our cost — zero markup.</strong> No hidden fees, no upcharges. Ever.</span>
+            </li>
+            <li>
+              <span class="perk-check">✓</span>
+              <span><strong>At-cost POC testing</strong> — strep, flu, COVID, and UTI testing at our actual cost.</span>
+            </li>
+            <li>
+              <span class="perk-check">✓</span>
+              <span><strong>1 complimentary basic lab panel</strong> per enrolled employee annually (~$35/person at our cost).</span>
+            </li>
+            <li>
+              <span class="perk-check">✓</span>
+              <span><strong>Injectables &amp; aesthetics</strong> at standard pricing — available to enrolled employees.</span>
+            </li>
+            <li>
+              <span class="perk-check">✓</span>
+              <span><strong>Family add-on available</strong> — employees can enroll dependents at per-person age-tier rates.</span>
+            </li>
+            <li class="exclude-item">
+              <span class="perk-check" style="background:rgba(255,255,255,0.15);">✕</span>
+              <span>Excludes discounts on Botox/Jeuveau, dermal filler, and exosomes.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tier pricing cards -->
+    <div style="margin-top:48px;">
+      <div class="sb-section-header" style="margin-bottom:28px;">
+        <h2 style="color:#fff;">Membership <em>Age Tiers</em></h2>
+      </div>
+      <div class="tier-intro">
+        <p>Employees and enrolled dependents are billed at the age-tier rate that matches them. All tiers include the full Small Business perk set listed above.</p>
+      </div>
+      <div class="tier-cards">
+
+        <div class="tier-card">
+          <div class="tier-card-header kids">
+            <span class="tier-label">Kids Club</span>
+            <h3>Children's Membership</h3>
+            <div class="tier-age">Ages 5–20 &bull; Guardian must be enrolled</div>
+            <div class="tier-price">Contact<span> for pricing</span></div>
+          </div>
+          <div class="tier-card-body">
+            <p class="tier-detail">For employee dependents aged 5–20. Guardian must hold an active membership. Two kids enrolled? Additional children added at a reduced rate.</p>
+            <div class="tier-enrollment">
+              <span>Enrollment fee</span>
+              <strong>Included in family fee</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="tier-card">
+          <div class="tier-card-header adult">
+            <span class="tier-label">Adult Member</span>
+            <h3>Individual Adult</h3>
+            <div class="tier-age">Ages 21–54</div>
+            <div class="tier-price">Contact<span> for pricing</span></div>
+          </div>
+          <div class="tier-card-body">
+            <p class="tier-detail">The standard employee tier. Includes all Small Business perks — at-cost labs, 10% IV discount, complimentary annual lab panel, and POC testing at cost.</p>
+            <div class="tier-enrollment">
+              <span>One-time enrollment</span>
+              <strong>Contact for details</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="tier-card">
+          <div class="tier-card-header golden">
+            <span class="tier-label">Golden Member</span>
+            <h3>Senior Membership</h3>
+            <div class="tier-age">Ages 55+</div>
+            <div class="tier-price">Contact<span> for pricing</span></div>
+          </div>
+          <div class="tier-card-body">
+            <p class="tier-detail">All Small Business perks with extended visit times. Ideal for senior employees who benefit from more comprehensive, longer appointments.</p>
+            <div class="tier-enrollment">
+              <span>One-time enrollment</span>
+              <strong>Contact for details</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="tier-card">
+          <div class="tier-card-header family">
+            <span class="tier-label">Family Add-On</span>
+            <h3>Employee + Dependents</h3>
+            <div class="tier-age">Employee + family members</div>
+            <div class="tier-price">Per-person<span style="display:block;font-size:0.72rem;margin-top:2px;">age-tier rates apply</span></div>
+          </div>
+          <div class="tier-card-body">
+            <p class="tier-detail">Employees can enroll their family at the same age-tier rates. One $200 family enrollment fee covers all dependents added at enrollment.</p>
+            <div class="tier-enrollment">
+              <span>Family enrollment fee</span>
+              <strong>$200</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <p style="text-align:center;font-size:0.78rem;color:rgba(255,255,255,0.4);margin-top:16px;">
+        Pricing is TBD — contact us to confirm current rates and get a quote tailored to your team.
+        We ask for a 3-month minimum commitment. Cancel anytime after with 30 days notice.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section class="sb-cta" id="contact">
+  <div class="container sb-cta-inner">
+    <span class="section-label" style="color:var(--hhc-teal);">Ready to Build a Healthier Workplace?</span>
+    <h2>Let's Talk About Your <em>Team.</em></h2>
+    <p>Every business is different. Reach out and we'll put together a DPC plan that fits your team size, your people, and your budget — no pressure, no jargon.</p>
+
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:6822836976" class="btn-sb" style="font-size:1rem;padding:16px 34px;">📞 Call or Text Us</a>
+      <a href="mailto:info@happydripiv.com" class="btn-sb-outline" style="font-size:1rem;padding:16px 34px;">✉️ Email Us</a>
+    </div>
+
+    <div class="sb-cta-contact">
+      <strong>Brittany Adams, APRN FNP-C</strong><br>
+      <strong>813 Brown Trail #6B, Bedford, TX 76022</strong><br>
+      <a href="tel:6822836976">(682) 283-6976</a> &bull;
+      <a href="mailto:info@happydripiv.com">info@happydripiv.com</a><br>
+      Mon–Fri 9:00am – 5:00pm &bull; By appointment only &bull; Telehealth available
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text"><span>Happy Drip IV</span><span>& Wellness</span></div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/happy-health-clinic">Happy Health Clinic</a>
+        <a href="/small-business" style="color:var(--teal);">Small Business DPC ✦</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>Small Business DPC</h5>
+        <a href="#benefits">Why DPC Works</a>
+        <a href="#who-it-helps">Who It Helps Most</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#perks">Membership Perks</a>
+        <a href="#contact">Get a Quote</a>
+        <a href="/happy-health-clinic#membership">Individual Memberships</a>
+      </div>
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, DPC updates, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas</div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="bottom-bar" id="bottomBar" role="complementary">
+  <div class="vip-text">
+    <span class="vip-badge">DPC</span>
+    Small Business memberships open — <a href="tel:6822836976">&nbsp;call (682) 283-6976&nbsp;</a> to get a quote!
+  </div>
+  <div class="tip">10% off IV &amp; wellness &bull; At-cost labs &bull; 1 free lab panel per employee</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
