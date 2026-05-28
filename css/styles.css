@@ -367,21 +367,21 @@ p { line-height: 1.75; }
 .hero-eyebrow-box {
   display: inline-flex;
   align-items: center;
-  background: rgba(255,255,255,0.92);
-  color: var(--teal-dark);
-  font-size: 0.9rem;
-  font-weight: 800;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 700;
   letter-spacing: 0.02em;
   text-transform: none;
   padding: 9px 22px;
   margin-bottom: 16px;
   border-radius: 50px;
   line-height: 1.4;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.25);
 }
 .hero-content h1 {
   font-family: var(--font-body);
-  font-size: clamp(2.6rem, 4.5vw, 4.2rem);
+  font-size: clamp(2rem, 3.4vw, 3.4rem);
   font-weight: 900;
   color: var(--navy);
   background: rgba(255,255,255,0.88);
