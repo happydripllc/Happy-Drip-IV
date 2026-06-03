@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iron Infusion Therapy | Happy Drip IV & Wellness — Bedford, TX</title>
+  <meta name="description" content="IV iron infusion therapy in Bedford, TX. $250 per 200mg infusion. Labs required — use yours or order through us. Administered by Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/iron-infusion" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ======================================================
+       IRON INFUSION — PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --pink:      #e0579a;
+      --teal:      #3ab8cb;
+      --mint:      #3ab8cb;
+      --lavender:  #c5b4e8;
+      --navy:      #1a2744;
+      --sunshine:  #f0c030;
+      --soft-pink-bg:    #fde8f3;
+      --soft-teal-bg:    #e0f7fa;
+      --soft-lavender-bg:#f0ecfc;
+    }
+
+    /* ---- Hero ---- */
+    .page-hero {
+      background: linear-gradient(135deg, #fde8f3 0%, #ede8fc 55%, #e8f4fb 100%);
+      padding: 72px 0 60px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -80px;
+      width: 440px; height: 440px;
+      background: radial-gradient(circle, rgba(197,180,232,0.22) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -60px;
+      width: 320px; height: 320px;
+      background: radial-gradient(circle, rgba(224,87,154,0.14) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero-inner {
+      position: relative; z-index: 1;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; font-size: 0.78rem; color: #9b8bb0; margin-bottom: 20px;
+    }
+    .breadcrumb a { color: var(--mint); }
+    .breadcrumb span { opacity: 0.55; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--pink);
+      background: var(--soft-pink-bg);
+      border: 1.5px solid rgba(224,87,154,0.25);
+      padding: 6px 18px; border-radius: 40px;
+      margin-bottom: 20px;
+    }
+    .page-hero-inner h1 {
+      color: var(--navy);
+      margin-bottom: 20px;
+      font-size: clamp(2.1rem, 5vw, 3.2rem);
+      line-height: 1.15;
+    }
+    .page-hero-inner h1 em { font-style: normal; color: var(--pink); }
+    .page-hero-inner .hero-sub {
+      color: #5a5070; font-size: 1.08rem; line-height: 1.78; margin-bottom: 34px;
+    }
+    .hero-ctas {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    }
+
+    /* ---- Section Utilities ---- */
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 14px;
+    }
+    .section-title em { font-style: normal; color: var(--pink); }
+    .section-title span.teal { color: var(--teal); }
+    .section-title span.lav  { color: #8060c8; }
+    .section-intro {
+      color: #5a5070; font-size: 1rem; line-height: 1.75;
+      max-width: 640px;
+    }
+
+    /* ---- Symptoms Section ---- */
+    .symptoms-section {
+      padding: 80px 0 70px;
+      background: #fff;
+    }
+    .symptoms-header { text-align: center; margin-bottom: 52px; }
+    .symptom-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 48px;
+    }
+    .symptom-card {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1.5px solid #ede8f5;
+      transition: box-shadow 0.25s, transform 0.25s;
+      background: #fff;
+    }
+    .symptom-card:hover {
+      box-shadow: 0 12px 40px rgba(197,180,232,0.22);
+      transform: translateY(-4px);
+    }
+    .symptom-card img {
+      width: 100%; height: 220px; object-fit: cover;
+      display: block;
+    }
+    .symptom-card-body {
+      padding: 22px 22px 24px;
+    }
+    .symptom-card-body h3 {
+      color: var(--navy); font-size: 1.05rem; margin-bottom: 8px;
+    }
+    .symptom-card-body p {
+      color: #6a6080; font-size: 0.88rem; line-height: 1.6; margin: 0;
+    }
+    .symptom-pill-list {
+      background: var(--soft-lavender-bg);
+      border: 1.5px solid rgba(197,180,232,0.45);
+      border-radius: 14px;
+      padding: 22px 26px;
+      display: flex; flex-wrap: wrap; gap: 10px;
+      align-items: center;
+    }
+    .symptom-pill-list p.also-label {
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #7a5fb0;
+      width: 100%; margin: 0 0 4px;
+    }
+    .symptom-pill {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 0.8rem; font-weight: 700;
+      background: #fff; color: #6040b0;
+      border: 1.5px solid rgba(197,180,232,0.6);
+      padding: 6px 14px; border-radius: 40px;
+    }
+    .symptom-pill::before { content: '•'; color: var(--pink); font-size: 1rem; }
+
+    @media (max-width: 860px) {
+      .symptom-cards { grid-template-columns: 1fr; max-width: 440px; margin-left: auto; margin-right: auto; }
+    }
+
+    /* ---- Why IV — 2-col ---- */
+    .why-iv-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #e8f4fb 0%, #ede8fc 100%);
+    }
+    .why-iv-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      margin-top: 44px;
+    }
+    .why-iv-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 34px 32px;
+      border: 1.5px solid rgba(255,255,255,0.8);
+      box-shadow: 0 4px 20px rgba(58,184,203,0.08);
+    }
+    .why-iv-card .card-icon {
+      font-size: 2.2rem; margin-bottom: 14px; display: block;
+    }
+    .why-iv-card h3 {
+      color: var(--navy); font-size: 1.18rem; margin-bottom: 12px;
+    }
+    .why-iv-card p {
+      color: #5a5070; font-size: 0.92rem; line-height: 1.72; margin: 0;
+    }
+    .why-iv-note {
+      margin-top: 28px;
+      background: rgba(240,192,48,0.12);
+      border: 1.5px solid rgba(240,192,48,0.4);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.88rem; color: #6a5400; line-height: 1.6;
+    }
+    .why-iv-note-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 2px; }
+
+    @media (max-width: 700px) {
+      .why-iv-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Candidates ---- */
+    .candidates-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .candidates-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 44px;
+    }
+    .candidates-box {
+      border-radius: 16px;
+      padding: 30px 28px;
+    }
+    .candidates-box.good {
+      background: var(--soft-teal-bg);
+      border: 1.5px solid rgba(58,184,203,0.3);
+    }
+    .candidates-box.contra {
+      background: #fde8f3;
+      border: 1.5px solid rgba(224,87,154,0.25);
+    }
+    .candidates-box h3 {
+      font-size: 1.1rem; margin-bottom: 18px;
+    }
+    .candidates-box.good h3  { color: #0d7a8a; }
+    .candidates-box.contra h3 { color: #a03070; }
+    .candidates-list {
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .candidates-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.9rem; line-height: 1.55; color: #3a3050;
+    }
+    .cand-check {
+      flex-shrink: 0;
+      width: 20px; height: 20px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 800;
+      margin-top: 1px;
+    }
+    .good .cand-check  { background: var(--teal); color: #fff; }
+    .contra .cand-check { background: var(--pink); color: #fff; }
+
+    @media (max-width: 680px) {
+      .candidates-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Process Steps ---- */
+    .process-section {
+      padding: 80px 0;
+      background: var(--soft-teal-bg);
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: calc(12.5% + 14px); right: calc(12.5% + 14px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--lavender));
+      z-index: 0;
+    }
+    .process-step {
+      position: relative; z-index: 1;
+      text-align: center;
+    }
+    .step-num {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: var(--teal);
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+      box-shadow: 0 4px 18px rgba(58,184,203,0.35);
+    }
+    .process-step:nth-child(2) .step-num { background: #8bbbd4; }
+    .process-step:nth-child(3) .step-num { background: var(--lavender); }
+    .process-step:nth-child(4) .step-num { background: var(--pink); }
+    .process-step h3 {
+      color: var(--navy); font-size: 1rem; margin-bottom: 8px;
+    }
+    .process-step p {
+      color: #5a5070; font-size: 0.84rem; line-height: 1.65; margin: 0;
+    }
+
+    @media (max-width: 860px) {
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Pricing ---- */
+    .pricing-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .pricing-cards {
+      display: flex;
+      gap: 24px;
+      margin-top: 44px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .pricing-main-card {
+      flex: 1 1 300px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #fde8f3 0%, #ede8fc 100%);
+      border: 2px solid rgba(224,87,154,0.25);
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .pricing-main-card .price-label {
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--pink); margin-bottom: 8px;
+    }
+    .pricing-main-card .price-big {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem; font-weight: 700;
+      color: var(--navy); line-height: 1;
+      margin-bottom: 4px;
+    }
+    .pricing-main-card .price-sub {
+      font-size: 0.88rem; color: #8060a0; margin-bottom: 20px;
+    }
+    .pricing-main-card .price-note {
+      font-size: 0.82rem; color: #6a5a80; line-height: 1.55;
+    }
+    .pricing-lab-card {
+      flex: 1 1 280px;
+      border-radius: 20px;
+      background: var(--soft-teal-bg);
+      border: 1.5px solid rgba(58,184,203,0.3);
+      padding: 28px 28px 24px;
+    }
+    .pricing-lab-card h4 {
+      color: #0d7a8a; font-size: 0.8rem; font-weight: 800;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .lab-row {
+      display: flex; justify-content: space-between;
+      align-items: center;
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(58,184,203,0.2);
+    }
+    .lab-row:last-of-type { border-bottom: none; }
+    .lab-name { font-size: 0.92rem; font-weight: 700; color: var(--navy); }
+    .lab-includes { font-size: 0.75rem; color: #5a7080; margin-top: 2px; }
+    .lab-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem; font-weight: 700; color: var(--teal);
+    }
+    .pricing-tip {
+      margin-top: 16px;
+      background: rgba(240,192,48,0.12);
+      border: 1.5px solid rgba(240,192,48,0.4);
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 0.82rem; color: #6a5400; line-height: 1.55;
+    }
+    .pricing-tip strong { color: #4a3800; }
+
+    /* ---- FAQ ---- */
+    .faq-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #ede8fc 0%, #fde8f3 100%);
+    }
+    .faq-list {
+      max-width: 740px;
+      margin: 44px auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(197,180,232,0.4);
+    }
+    .faq-item:first-child { border-top: 1px solid rgba(197,180,232,0.4); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 0;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--navy);
+    }
+    .faq-question:hover { color: var(--pink); }
+    .faq-chevron {
+      flex-shrink: 0;
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--soft-pink-bg);
+      border: 1.5px solid rgba(224,87,154,0.25);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.3s;
+      color: var(--pink);
+      font-size: 0.7rem;
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 0 22px;
+      font-size: 0.92rem; color: #5a5070; line-height: 1.75;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ---- CTA Section ---- */
+    .cta-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #e0f7fa 0%, #fde8f3 50%, #ede8fc 100%);
+      text-align: center;
+    }
+    .cta-section h2 { color: var(--navy); margin-bottom: 16px; }
+    .cta-section p  { color: #5a4a70; font-size: 1rem; line-height: 1.7; margin-bottom: 32px; }
+    .cta-btns {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    }
+
+    /* ---- Responsive Utilities ---- */
+    @media (max-width: 640px) {
+      .page-hero { padding: 56px 0 44px; }
+      .symptoms-section,
+      .why-iv-section,
+      .candidates-section,
+      .process-section,
+      .pricing-section,
+      .faq-section,
+      .cta-section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss">Medical Weight Loss</a>
+          <a href="/happy-health-clinic">Happy Health Clinic (DPC)</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/#aesthetics">Jeuveau® (Botox)</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/iv-drip-menu" class="nav-link active" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">'I DO' Drips (Bridal)</a>
+          <a href="/#iv-therapy">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#payment" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/#aesthetics" class="sub-link">Jeuveau® (Botox)</a>
+    <a href="/#aesthetics" class="sub-link">PRP / PFR</a>
+    <a href="/#aesthetics" class="sub-link">VAMP™ Microneedling</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">'I DO' Drips (Bridal)</a>
+    <a href="/#iv-therapy" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+    <a href="tel:6822836976" style="color:#5dd9e8;font-weight:800;">(682) 283-6976</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="background:#3ab8cb;color:#fff;margin:12px 24px;border-radius:50px;text-align:center;">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>›</span>
+      <a href="/iv-drip-menu">IV Therapy</a>
+      <span>›</span>
+      <span>Iron Infusion</span>
+    </nav>
+    <span class="eyebrow">IV Iron Infusion &mdash; Bedford, TX</span>
+    <h1>Finally Feel Like<br><em>Yourself Again.</em></h1>
+    <p class="hero-sub">Iron deficiency is one of the most massively underdiagnosed conditions in the U.S. — affecting millions who've been told their labs are "normal." IV iron bypasses your gut entirely, replenishing your stores faster than any oral supplement ever could.</p>
+    <div class="hero-ctas">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1rem;padding:15px 32px;">Book Your Infusion</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--teal);color:#0d7a8a;">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SYMPTOMS — "Sound Familiar?"
+     ============================================================ -->
+<section class="symptoms-section">
+  <div class="container">
+    <div class="symptoms-header">
+      <span class="section-eyebrow">Recognize These?</span>
+      <h2 class="section-title">Sound <em>Familiar?</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Iron deficiency doesn't always look like what you'd expect. Many patients have been dismissed for years — the fatigue, the fog, the hair loss written off as stress or aging. Sound like you?</p>
+    </div>
+
+    <!-- 3 image cards -->
+    <div class="symptom-cards">
+      <div class="symptom-card">
+        <img src="images/chronic-fatigue.png" alt="Woman on couch looking exhausted — a sign of chronic fatigue from iron deficiency" />
+        <div class="symptom-card-body">
+          <h3>Constant Fatigue &amp; Low Energy</h3>
+          <p>Iron is essential for making hemoglobin, which carries oxygen to every cell. Low iron = your body is literally running low on fuel — even after a full night's sleep.</p>
+        </div>
+      </div>
+      <div class="symptom-card">
+        <img src="images/dizzy-and-lightheaded.png" alt="Woman holding her head, dizzy and lightheaded from iron deficiency anemia" />
+        <div class="symptom-card-body">
+          <h3>Dizziness, Brain Fog &amp; Shortness of Breath</h3>
+          <p>When oxygen delivery is compromised, your brain and muscles feel it first — leaving you lightheaded, unable to concentrate, and winded by everyday activities.</p>
+        </div>
+      </div>
+      <div class="symptom-card">
+        <img src="images/hairloss.png" alt="Hairbrush showing significant hair shedding and thinning from iron deficiency" />
+        <div class="symptom-card-body">
+          <h3>Hair Shedding &amp; Thinning</h3>
+          <p>Your body prioritizes vital organs when iron is low, leaving hair follicles under-nourished. Excess shedding and thinning are among the most common — and most distressing — signs of deficiency.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional symptom pills -->
+    <div class="symptom-pill-list">
+      <p class="also-label">Other common signs of iron deficiency</p>
+      <span class="symptom-pill">Restless legs at night</span>
+      <span class="symptom-pill">Cold hands &amp; feet</span>
+      <span class="symptom-pill">Pale or sallow skin</span>
+      <span class="symptom-pill">Pica (cravings for ice or dirt)</span>
+      <span class="symptom-pill">Postpartum recovery</span>
+      <span class="symptom-pill">Heavy or prolonged periods</span>
+      <span class="symptom-pill">Brittle or spoon-shaped nails</span>
+      <span class="symptom-pill">Frequent headaches</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY IV IRON — 2-col
+     ============================================================ -->
+<section class="why-iv-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Why IV?</span>
+      <h2 class="section-title">Oral Iron Is Slow.<br><span class="teal">IV Iron Works Differently.</span></h2>
+      <p class="section-intro" style="margin:0 auto;">You've probably tried the supplements. Here's why so many patients switch to IV therapy.</p>
+    </div>
+
+    <div class="why-iv-grid">
+      <div class="why-iv-card">
+        <span class="card-icon">💊</span>
+        <h3>The Problem with Oral Iron</h3>
+        <p>Oral iron supplements have to survive your entire digestive tract before even a fraction is absorbed — and for many people, that's a big ask. Absorption rates are often as low as 10–20%, and the side effects (constipation, nausea, dark stools, stomach cramps) cause most people to stop taking it. For those with Crohn's, celiac disease, gastric bypass, or other GI conditions, oral iron barely works at all.</p>
+      </div>
+      <div class="why-iv-card">
+        <span class="card-icon">💉</span>
+        <h3>How IV Iron Changes the Game</h3>
+        <p>IV iron (iron sucrose) bypasses your digestive system entirely, delivering iron directly into your bloodstream where it's immediately available to your bone marrow. You can absorb a full therapeutic dose in a single session — something that would take weeks or months of oral supplementation to achieve. Most patients feel a noticeable difference in energy and clarity within days to weeks of their infusion.</p>
+      </div>
+    </div>
+
+    <div class="why-iv-note">
+      <span class="why-iv-note-icon">💡</span>
+      <span>Good news: not everyone needs IV iron. Mild cases with no GI intolerance may do well with oral iron first. Your provider will review your labs and advise the best approach for your specific situation.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHO IS A GOOD CANDIDATE?
+     ============================================================ -->
+<section class="candidates-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Is This Right for You?</span>
+      <h2 class="section-title">Good Candidates &amp; <em>Contraindications</em></h2>
+      <p class="section-intro" style="margin:0 auto;">A provider review is required before your infusion — here's a general guide to help you understand if IV iron is a fit.</p>
+    </div>
+
+    <div class="candidates-grid">
+      <!-- Good candidates -->
+      <div class="candidates-box good">
+        <h3>✓ You May Be a Great Candidate If...</h3>
+        <ul class="candidates-list">
+          <li>
+            <span class="cand-check">✓</span>
+            <span><strong>Moderate to severe iron deficiency</strong> — labs show low ferritin, iron, or hemoglobin</span>
+          </li>
+          <li>
+            <span class="cand-check">✓</span>
+            <span><strong>GI intolerance to oral iron</strong> — nausea, constipation, or stomach pain with supplements</span>
+          </li>
+          <li>
+            <span class="cand-check">✓</span>
+            <span><strong>Malabsorption conditions</strong> — Crohn's disease, celiac disease, or history of gastric bypass</span>
+          </li>
+          <li>
+            <span class="cand-check">✓</span>
+            <span><strong>Need for rapid correction</strong> — upcoming surgery or a specific health deadline</span>
+          </li>
+          <li>
+            <span class="cand-check">✓</span>
+            <span><strong>Postpartum iron loss</strong> — recovering from pregnancy or significant blood loss</span>
+          </li>
+          <li>
+            <span class="cand-check">✓</span>
+            <span><strong>Chronic or recurrent deficiency</strong> — heavy periods, chronic bleeding, or ongoing depletion</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contraindications -->
+      <div class="candidates-box contra">
+        <h3>✗ IV Iron May Not Be Right If You Have...</h3>
+        <ul class="candidates-list">
+          <li>
+            <span class="cand-check" style="background:var(--pink);">✗</span>
+            <span><strong>Iron overload (hemochromatosis)</strong> — your body already stores too much iron</span>
+          </li>
+          <li>
+            <span class="cand-check" style="background:var(--pink);">✗</span>
+            <span><strong>Prior serious reaction to IV iron</strong> — any history of anaphylaxis or severe adverse reaction</span>
+          </li>
+          <li>
+            <span class="cand-check" style="background:var(--pink);">✗</span>
+            <span><strong>Active infection or sepsis</strong> — iron feeds bacteria; IV iron is deferred until you're clear</span>
+          </li>
+          <li>
+            <span class="cand-check" style="background:var(--pink);">✗</span>
+            <span><strong>Recent major bleeding event</strong> — the underlying source must be identified and addressed first</span>
+          </li>
+        </ul>
+        <p style="font-size:0.82rem;color:#a03070;margin-top:14px;line-height:1.55;">Your provider will confirm candidacy at your visit based on your labs and medical history.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS — 4 STEPS
+     ============================================================ -->
+<section class="process-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">The Process</span>
+      <h2 class="section-title">How It <span class="teal">Works</span></h2>
+      <p class="section-intro" style="margin:0 auto;">Four easy steps stand between you and finally feeling like yourself again.</p>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Order or Bring Labs</h3>
+        <p>You'll need a recent CBC, Ferritin, Iron, and TIBC. Have labs from your doctor? Bring them! Need them? We can order an Anemia Panel ($30) or Iron Panel only ($14).</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Provider Reviews &amp; Clears You</h3>
+        <p>Brittany Adams, APRN FNP-C, reviews your labs and health history to confirm you're a candidate and determine the right dose for your needs.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Infusion in Our Bedford Clinic</h3>
+        <p>Sit back, relax, and let the iron do its thing. Your infusion runs 30–60 minutes in our comfortable, private clinic suite right here in Bedford, TX.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>30-Min Monitoring, Then You're Free</h3>
+        <p>We monitor you for 30 minutes post-infusion to make sure you feel great before you head out. Bring something to watch — many patients love this chill time!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Transparent Pricing</span>
+      <h2 class="section-title">Simple, <em>Honest</em> Pricing</h2>
+      <p class="section-intro" style="margin:0 auto;">No hidden fees, no surprise bills. Here's exactly what to expect.</p>
+    </div>
+
+    <div class="pricing-cards">
+
+      <!-- Main price -->
+      <div class="pricing-main-card">
+        <div class="price-label">Iron Infusion</div>
+        <div class="price-big">$250</div>
+        <div class="price-sub">per 200mg infusion</div>
+        <div class="price-note">
+          Includes provider consultation, IV placement, infusion administration, and 30-minute post-infusion monitoring. Administered by Brittany Adams, APRN FNP-C.
+        </div>
+        <div style="margin-top:24px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);width:100%;justify-content:center;">Book Now</a>
+        </div>
+      </div>
+
+      <!-- Lab pricing -->
+      <div class="pricing-lab-card">
+        <h4>Labs (if needed)</h4>
+        <div class="lab-row">
+          <div>
+            <div class="lab-name">Anemia Panel</div>
+            <div class="lab-includes">CBC + Ferritin + Iron + TIBC</div>
+          </div>
+          <div class="lab-price">$30</div>
+        </div>
+        <div class="lab-row">
+          <div>
+            <div class="lab-name">Iron Panel Only</div>
+            <div class="lab-includes">Iron + TIBC</div>
+          </div>
+          <div class="lab-price">$14</div>
+        </div>
+
+        <div class="pricing-tip">
+          <strong>Already have recent labs?</strong> Bring them! Labs must be within the last 90 days. Required values: CBC, Ferritin, Iron, and TIBC.
+        </div>
+
+        <p style="font-size:0.82rem;color:#5a7080;margin-top:16px;line-height:1.55;">Can't afford your full infusion today? Ask us about our payment plan options at checkout.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Questions? We've Got Answers.</span>
+      <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Is IV iron safe?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Yes — iron sucrose (the form we use) has an excellent safety record. Serious allergic reactions occur in approximately 1 in 200,000 infusions. That's why we monitor you for the full 30 minutes after your infusion is complete. Your safety is our top priority, and Brittany is trained to handle any adverse reactions should they occur.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How long does the appointment take?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Plan for about 1.5 to 2 hours total. The infusion itself runs 30–60 minutes, followed by a required 30-minute observation period. We recommend bringing headphones, a show to watch, or a good book — most patients find it to be a surprisingly relaxing experience!
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Do I need labs before my appointment?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Yes — labs are required before we can administer IV iron. We need to confirm your diagnosis and determine the appropriate dose. The required values are CBC, Ferritin, Iron, and TIBC. If you have recent results (within 90 days), bring them to your appointment. If you don't have labs, we can order them for you: our full Anemia Panel (CBC + Ferritin + Iron + TIBC) is $30, or the Iron Panel only (Iron + TIBC) is $14.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How many infusions will I need?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          That depends entirely on how depleted your iron stores are. Some patients feel dramatically better after a single 200mg infusion. Others with more severe deficiency may need a series of infusions spaced a few weeks apart. Brittany will review your specific labs and advise a personalized plan at your visit.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Can I add other IV vitamins during my visit?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Absolutely! We can run complementary IV add-ons during your post-infusion observation window. Many patients use that 30 minutes to enjoy a Glutathione push, B12 boost, or Vitamin C — turning your iron infusion into a full wellness session. Just let us know when you book or at check-in.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Do you offer home visits or mobile iron infusions?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          No — iron infusions require clinical oversight and emergency equipment on-hand in case of a rare reaction. For your safety, all iron infusions are performed in our Bedford, TX clinic only. We're conveniently located at 813 Brown Trail #6B, Bedford, Texas 76022.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section class="cta-section">
+  <div class="container" style="max-width:640px;">
+    <span class="section-eyebrow" style="color:var(--pink);">Ready to Feel Better?</span>
+    <h2>Book Your <span style="color:var(--pink);">Iron Infusion</span> Today</h2>
+    <p>Don't spend another year feeling exhausted, foggy, and depleted. Our Bedford clinic is ready to help you reclaim your energy. Book online in minutes, or give us a call — we're happy to answer any questions.</p>
+    <div class="cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1rem;padding:16px 36px;">Book Online</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:16px 36px;border-color:var(--teal);color:#0d7a8a;">(682) 283-6976</a>
+    </div>
+    <p style="margin-top:20px;font-size:0.82rem;color:#8a7aa0;">Brittany Adams, APRN FNP-C &bull; 813 Brown Trail #6B, Bedford, TX 76022</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#payment">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>IV Services</h5>
+        <a href="/iv-drip-menu#level1">Level 1 Drips</a>
+        <a href="/iv-drip-menu#level2">Level 2 Drips</a>
+        <a href="/iv-drip-menu#level3">Level 3 Drips</a>
+        <a href="/iv-drip-menu#vitality">NAD+ &amp; Vitality</a>
+        <a href="/iv-drip-menu#addons">Add-On Boosters</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar" id="bottomBar" role="complementary" aria-label="VIP Club promotion">
+  <div class="vip-text">
+    <span class="vip-badge">VIP</span>
+    Join our <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">&nbsp;VIP DRIP CLUB&nbsp;</a> for the best pricing &amp; priority booking!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a> for instant confirmation</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+/* ======================================================
+   FAQ ACCORDION
+   ====================================================== */
+(function () {
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
