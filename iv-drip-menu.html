@@ -616,6 +616,7 @@
             <button class="quiz-opt" data-q="1" data-val="sick">🤒<span>Under the weather or run down</span></button>
             <button class="quiz-opt" data-q="1" data-val="rough">🥴<span>Rough after a big night</span></button>
             <button class="quiz-opt" data-q="1" data-val="pain">🤕<span>Head is pounding</span></button>
+            <button class="quiz-opt" data-q="1" data-val="beauty">🪞<span>Dull skin or hair thinning</span></button>
           </div>
         </div>
 
@@ -627,6 +628,7 @@
             <button class="quiz-opt" data-q="2" data-val="immune">🛡️<span>Feeling like I'm getting sick</span></button>
             <button class="quiz-opt" data-q="2" data-val="nausea">🌊<span>Nausea and dehydration</span></button>
             <button class="quiz-opt" data-q="2" data-val="head">💢<span>Migraine or severe headache</span></button>
+            <button class="quiz-opt" data-q="2" data-val="skin">💅<span>Dull skin, brittle nails, or hair loss</span></button>
           </div>
         </div>
 
@@ -638,6 +640,7 @@
             <button class="quiz-opt" data-q="3" data-val="protected">🌿<span>Strong and protected</span></button>
             <button class="quiz-opt" data-q="3" data-val="recovered">✨<span>Fully recovered, fast</span></button>
             <button class="quiz-opt" data-q="3" data-val="relief">😮‍💨<span>Pain-free and calm</span></button>
+            <button class="quiz-opt" data-q="3" data-val="glowing">🌟<span>Glowing skin and stronger hair</span></button>
           </div>
         </div>
 
@@ -761,11 +764,20 @@
       why: "When your head is pounding and nothing is helping, you need more than fluids. This drip combines targeted anti-nausea and anti-inflammatory medications with magnesium and B vitamins -- often bringing relief within the hour.",
       addons: ["Magnesium push for vascular tension", "Toradol for pain and inflammation", "Zofran for nausea relief"],
       also: "If your headache is more tension-related than migraine, the Myers Cocktail ($150) with a magnesium add-on can work really well."
+    },
+    beauty: {
+      emoji: '✨',
+      name: "Beauty Boost",
+      price: "$199",
+      why: "Dull skin, thinning hair, and brittle nails are often signs your body is missing key nutrients from the inside. The Beauty Boost delivers biotin, glutathione, vitamin C, and B-complex straight into your bloodstream -- bypassing digestion for maximum absorption and real, visible results.",
+      addons: ["Biotin add-on for hair and nail strength", "Glutathione push for skin brightening and detox", "Vitamin C boost for collagen production"],
+      also: "If you're also feeling run down or low energy alongside the skin concerns, the Myers Cocktail ($150) covers the fatigue side while still giving your skin some love."
     }
   };
 
   function getRecommendation() {
-    const q1 = answers[1], q2 = answers[2];
+    const q1 = answers[1], q2 = answers[2], q3 = answers[3];
+    if (q1 === 'beauty' || q2 === 'skin' || q3 === 'glowing') return 'beauty';
     if (q1 === 'pain' || q2 === 'head') return 'migraine';
     if (q1 === 'rough' || q2 === 'nausea') return 'hangover';
     if (q1 === 'sick' || q2 === 'immune') return 'immunity';
