@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groups + Events Mobile IV Therapy | Happy Drip IV & Wellness — Bedford, TX</title>
+  <meta name="description" content="Mobile IV therapy for groups, parties, corporate events, sports teams, weddings and festivals in DFW. Licensed provider comes to your location. Book your group session today." />
+  <link rel="canonical" href="https://www.happydripiv.com/groups-events" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ======================================================
+       GROUPS + EVENTS — PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --pink:      #e0579a;
+      --teal:      #3ab8cb;
+      --mint:      #3ab8cb;
+      --lavender:  #c5b4e8;
+      --navy:      #1a2744;
+      --sunshine:  #f0c030;
+      --soft-pink-bg:    #fde8f3;
+      --soft-teal-bg:    #e0f7fa;
+      --soft-lavender-bg:#f0ecfc;
+    }
+
+    /* ---- Image Placeholder ---- */
+    .img-placeholder {
+      background: linear-gradient(135deg, #fde8f3 0%, #e8f4fb 100%);
+      border: 2px dashed #c5b4e8;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7040b8;
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* ---- Hero ---- */
+    .page-hero {
+      background: var(--navy);
+      padding: 80px 0 70px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -100px;
+      width: 560px; height: 560px;
+      background: radial-gradient(circle, rgba(224,87,154,0.28) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -80px;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, rgba(58,184,203,0.22) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero-glow-center {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px; height: 400px;
+      background: radial-gradient(ellipse, rgba(197,180,232,0.12) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero-inner {
+      position: relative; z-index: 1;
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; justify-content: center;
+      gap: 8px; font-size: 0.78rem; color: rgba(255,255,255,0.45); margin-bottom: 22px;
+    }
+    .breadcrumb a { color: var(--teal); }
+    .breadcrumb span { opacity: 0.55; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--pink);
+      background: rgba(224,87,154,0.12);
+      border: 1.5px solid rgba(224,87,154,0.35);
+      padding: 6px 18px; border-radius: 40px;
+      margin-bottom: 22px;
+    }
+    .page-hero-inner h1 {
+      color: #fff;
+      margin-bottom: 12px;
+      font-size: clamp(2.6rem, 6vw, 4rem);
+      line-height: 1.1;
+    }
+    .page-hero-inner h1 em { font-style: normal; color: var(--pink); }
+    .page-hero-inner .hero-sub {
+      color: rgba(255,255,255,0.72); font-size: 1.08rem; line-height: 1.78; margin-bottom: 40px;
+      max-width: 600px; margin-left: auto; margin-right: auto;
+    }
+    .hero-ctas {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    /* Hero floating stat pills */
+    .hero-stats {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    }
+    .hero-stat-pill {
+      display: flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.08);
+      border: 1.5px solid rgba(255,255,255,0.16);
+      border-radius: 50px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 0.88rem; font-weight: 700;
+      backdrop-filter: blur(6px);
+    }
+    .hero-stat-pill .stat-emoji { font-size: 1.1rem; }
+    .hero-stat-pill .stat-val { color: var(--teal); }
+
+    /* Hero floating emoji badges */
+    .hero-badge {
+      position: absolute;
+      background: rgba(255,255,255,0.10);
+      border: 1.5px solid rgba(255,255,255,0.18);
+      border-radius: 14px;
+      padding: 10px 14px;
+      font-size: 1.4rem;
+      backdrop-filter: blur(8px);
+      animation: floatBadge 4s ease-in-out infinite;
+      z-index: 1;
+    }
+    .hero-badge:nth-child(1) { top: 18%; left: 5%; animation-delay: 0s; }
+    .hero-badge:nth-child(2) { top: 60%; left: 3%; animation-delay: 1.2s; }
+    .hero-badge:nth-child(3) { top: 18%; right: 5%; animation-delay: 0.6s; }
+    .hero-badge:nth-child(4) { top: 62%; right: 4%; animation-delay: 1.8s; }
+
+    @keyframes floatBadge {
+      0%, 100% { transform: translateY(0); }
+      50%       { transform: translateY(-10px); }
+    }
+
+    @media (max-width: 640px) {
+      .hero-badge { display: none; }
+    }
+
+    /* ---- Section Utilities ---- */
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 14px;
+    }
+    .section-title em { font-style: normal; color: var(--pink); }
+    .section-title span.teal { color: var(--teal); }
+    .section-title span.lav  { color: #8060c8; }
+    .section-intro {
+      color: #5a5070; font-size: 1rem; line-height: 1.75;
+      max-width: 640px;
+    }
+
+    /* ---- Event Types Section ---- */
+    .events-section {
+      padding: 88px 0 76px;
+      background: #fff;
+    }
+    .events-header {
+      text-align: center; margin-bottom: 56px;
+    }
+    .event-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .event-card {
+      border-radius: 20px;
+      border: 1.5px solid #ede8f5;
+      overflow: hidden;
+      background: #fff;
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .event-card:hover {
+      box-shadow: 0 14px 44px rgba(197,180,232,0.22);
+      transform: translateY(-5px);
+    }
+    .event-card .img-placeholder {
+      border-radius: 0;
+      border: none;
+      height: 220px;
+      border-bottom: 1.5px solid #ede8f5;
+    }
+    .event-card-body {
+      padding: 22px 22px 26px;
+    }
+    .event-card-emoji {
+      font-size: 1.8rem; margin-bottom: 10px; display: block;
+    }
+    .event-card-body h3 {
+      color: var(--navy); font-size: 1.05rem; margin-bottom: 8px;
+    }
+    .event-card-body p {
+      color: #6a6080; font-size: 0.875rem; line-height: 1.65; margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .event-cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .event-cards-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+    }
+
+    /* ---- Packages Section ---- */
+    .packages-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #fde8f3 0%, #ede8fc 55%, #e8f4fb 100%);
+    }
+    .packages-header {
+      text-align: center; margin-bottom: 52px;
+    }
+    .packages-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .package-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 26px 28px;
+      border: 1.5px solid rgba(197,180,232,0.35);
+      box-shadow: 0 4px 18px rgba(197,180,232,0.12);
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .package-card:hover {
+      box-shadow: 0 12px 36px rgba(197,180,232,0.26);
+      transform: translateY(-4px);
+    }
+    .package-card:nth-child(1) { border-top: 4px solid var(--pink); }
+    .package-card:nth-child(2) { border-top: 4px solid var(--teal); }
+    .package-card:nth-child(3) { border-top: 4px solid #8060c8; }
+    .package-card:nth-child(4) { border-top: 4px solid var(--sunshine); }
+    .package-card:nth-child(5) { border-top: 4px solid #60b080; }
+    .package-card .pkg-num {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: #9080b0; margin-bottom: 8px;
+    }
+    .package-card h3 {
+      color: var(--navy); font-size: 1.1rem; margin-bottom: 10px;
+    }
+    .package-card p {
+      color: #5a5070; font-size: 0.875rem; line-height: 1.68; margin: 0 0 18px;
+    }
+    .pkg-cta-link {
+      font-size: 0.82rem; font-weight: 800; color: var(--pink);
+      text-decoration: none; letter-spacing: 0.04em;
+    }
+    .pkg-cta-link:hover { text-decoration: underline; }
+    .package-custom-badge {
+      display: inline-block;
+      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: rgba(240,192,48,0.14);
+      border: 1.5px solid rgba(240,192,48,0.45);
+      color: #8a6a00;
+      padding: 4px 12px; border-radius: 30px;
+      margin-bottom: 14px;
+    }
+
+    /* Last two package cards span correctly */
+    .packages-grid .package-card:nth-child(4) {
+      grid-column: 1;
+    }
+    .packages-grid .package-card:nth-child(5) {
+      grid-column: 2;
+    }
+
+    @media (max-width: 920px) {
+      .packages-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .packages-grid .package-card:nth-child(4),
+      .packages-grid .package-card:nth-child(5) {
+        grid-column: auto;
+      }
+    }
+    @media (max-width: 580px) {
+      .packages-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- How It Works ---- */
+    .process-section {
+      padding: 80px 0;
+      background: var(--soft-teal-bg);
+    }
+    .process-header {
+      text-align: center; margin-bottom: 52px;
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: calc(12.5% + 14px); right: calc(12.5% + 14px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--lavender), var(--pink));
+      z-index: 0;
+    }
+    .process-step {
+      position: relative; z-index: 1;
+      text-align: center;
+    }
+    .step-num {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .step-num-1 { background: var(--teal); box-shadow: 0 4px 18px rgba(58,184,203,0.35); }
+    .step-num-2 { background: #8bbbd4; box-shadow: 0 4px 18px rgba(139,187,212,0.35); }
+    .step-num-3 { background: var(--lavender); box-shadow: 0 4px 18px rgba(197,180,232,0.45); }
+    .step-num-4 { background: var(--pink); box-shadow: 0 4px 18px rgba(224,87,154,0.35); }
+    .process-step h3 {
+      color: var(--navy); font-size: 1rem; margin-bottom: 8px;
+    }
+    .process-step p {
+      color: #4a5a68; font-size: 0.85rem; line-height: 1.65; margin: 0;
+    }
+
+    @media (max-width: 860px) {
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Why Group IV ---- */
+    .why-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .why-header {
+      text-align: center; margin-bottom: 52px;
+    }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .benefit-card {
+      border-radius: 18px;
+      padding: 28px 24px;
+      border: 1.5px solid #ede8f5;
+      background: #fff;
+      transition: box-shadow 0.22s, transform 0.22s;
+    }
+    .benefit-card:hover {
+      box-shadow: 0 8px 28px rgba(197,180,232,0.18);
+      transform: translateY(-3px);
+    }
+    .benefit-icon {
+      font-size: 2rem; margin-bottom: 12px; display: block;
+    }
+    .benefit-card h3 {
+      color: var(--navy); font-size: 1rem; margin-bottom: 8px;
+    }
+    .benefit-card p {
+      color: #6a6080; font-size: 0.86rem; line-height: 1.65; margin: 0;
+    }
+
+    /* Alternating accent borders */
+    .benefit-card:nth-child(1) { border-top: 3px solid var(--pink); }
+    .benefit-card:nth-child(2) { border-top: 3px solid var(--teal); }
+    .benefit-card:nth-child(3) { border-top: 3px solid #8060c8; }
+    .benefit-card:nth-child(4) { border-top: 3px solid var(--sunshine); }
+    .benefit-card:nth-child(5) { border-top: 3px solid var(--pink); }
+    .benefit-card:nth-child(6) { border-top: 3px solid var(--teal); }
+
+    @media (max-width: 860px) {
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .benefits-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- FAQ ---- */
+    .faq-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #ede8fc 0%, #fde8f3 100%);
+    }
+    .faq-list {
+      max-width: 740px;
+      margin: 44px auto 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(197,180,232,0.4);
+    }
+    .faq-item:first-child { border-top: 1px solid rgba(197,180,232,0.4); }
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 22px 0;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--navy);
+    }
+    .faq-question:hover { color: var(--pink); }
+    .faq-chevron {
+      flex-shrink: 0;
+      width: 24px; height: 24px;
+      border-radius: 50%;
+      background: var(--soft-pink-bg);
+      border: 1.5px solid rgba(224,87,154,0.25);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.3s;
+      color: var(--pink);
+      font-size: 0.7rem;
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 0 22px;
+      font-size: 0.92rem; color: #5a5070; line-height: 1.75;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ---- CTA Section ---- */
+    .cta-section {
+      padding: 88px 0;
+      background: var(--navy);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(224,87,154,0.2) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 400px; height: 400px;
+      background: radial-gradient(circle, rgba(58,184,203,0.18) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .cta-inner {
+      position: relative; z-index: 1;
+      max-width: 680px; margin: 0 auto;
+    }
+    .cta-section .section-eyebrow { color: var(--teal); }
+    .cta-section h2 { color: #fff; margin-bottom: 16px; }
+    .cta-section h2 em { font-style: normal; color: var(--pink); }
+    .cta-section p { color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.75; margin-bottom: 16px; }
+    .deposit-callout {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: rgba(240,192,48,0.12);
+      border: 1.5px solid rgba(240,192,48,0.4);
+      border-radius: 12px;
+      padding: 14px 24px;
+      color: #f0c030;
+      font-size: 0.92rem; font-weight: 700;
+      margin-bottom: 32px;
+    }
+    .deposit-callout .deposit-icon { font-size: 1.2rem; }
+    .cta-btns {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+    .cta-contact-row {
+      display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
+      color: rgba(255,255,255,0.55); font-size: 0.88rem;
+    }
+    .cta-contact-row a { color: var(--teal); font-weight: 700; }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 640px) {
+      .page-hero { padding: 60px 0 50px; }
+      .events-section,
+      .packages-section,
+      .process-section,
+      .why-section,
+      .faq-section,
+      .cta-section { padding: 56px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss">Medical Weight Loss</a>
+          <a href="/happy-health-clinic">Happy Health Clinic (DPC)</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/jeuveau">Jeuveau® (Botox)</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/iv-drip-menu" class="nav-link active" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">'I DO' Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#payment" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/jeuveau" class="sub-link">Jeuveau® (Botox)</a>
+    <a href="/#aesthetics" class="sub-link">PRP / PFR</a>
+    <a href="/#aesthetics" class="sub-link">VAMP™ Microneedling</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">'I DO' Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+    <a href="tel:6822836976" style="color:#5dd9e8;font-weight:800;">(682) 283-6976</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="background:#3ab8cb;color:#fff;margin:12px 24px;border-radius:50px;text-align:center;">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     PAGE HERO — dark navy, festive radial gradients, no image
+     ============================================================ -->
+<section class="page-hero">
+  <!-- Floating emoji badges -->
+  <div class="hero-badge" aria-hidden="true">🎉</div>
+  <div class="hero-badge" aria-hidden="true">🏆</div>
+  <div class="hero-badge" aria-hidden="true">🎬</div>
+  <div class="hero-badge" aria-hidden="true">🏢</div>
+  <div class="hero-glow-center" aria-hidden="true"></div>
+
+  <div class="container page-hero-inner">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span>›</span>
+      <a href="/iv-drip-menu">IV Therapy</a>
+      <span>›</span>
+      <span>Groups + Events</span>
+    </nav>
+
+    <span class="eyebrow">Mobile IV Therapy &mdash; DFW Groups &amp; Events</span>
+    <h1>We Come<br><em>to You.</em></h1>
+    <p class="hero-sub">Happy Drip brings licensed IV therapy directly to your party, your office, your venue — anywhere your crew is gathering. Customized drips, on-site provider, zero hassle.</p>
+
+    <div class="hero-ctas">
+      <a href="tel:6822836976" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1rem;padding:15px 32px;">Call to Book Your Event</a>
+      <a href="mailto:info@happydripiv.com" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:rgba(255,255,255,0.35);color:#fff;"">Email Us</a>
+    </div>
+
+    <!-- Stat pills -->
+    <div class="hero-stats" aria-label="Group IV therapy highlights">
+      <div class="hero-stat-pill">
+        <span class="stat-emoji">👥</span>
+        <span>Groups of <span class="stat-val">4–20+</span></span>
+      </div>
+      <div class="hero-stat-pill">
+        <span class="stat-emoji">📍</span>
+        <span><span class="stat-val">DFW</span> Mobile Service</span>
+      </div>
+      <div class="hero-stat-pill">
+        <span class="stat-emoji">⏱️</span>
+        <span><span class="stat-val">45–60 min</span> sessions</span>
+      </div>
+      <div class="hero-stat-pill">
+        <span class="stat-emoji">💉</span>
+        <span>Licensed <span class="stat-val">APRN</span> On-Site</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EVENT TYPES — 2×3 grid
+     ============================================================ -->
+<section class="events-section">
+  <div class="container">
+    <div class="events-header">
+      <span class="section-eyebrow">We Do It All</span>
+      <h2 class="section-title">What Kind of<br><em>Event</em> Are You Planning?</h2>
+      <p class="section-intro" style="margin:0 auto;">From bachelorettes to brand activations, we bring the drip to your door. Every event type gets a fully customized group menu — no two groups are the same.</p>
+    </div>
+
+    <div class="event-cards-grid">
+
+      <!-- 1: Private Celebrations -->
+      <div class="event-card">
+        <div class="img-placeholder" style="height:220px;">📸 Bachelorette / birthday group IV photo</div>
+        <div class="event-card-body">
+          <span class="event-card-emoji">🎉</span>
+          <h3>Private Celebrations</h3>
+          <p>Birthdays, bachelorette parties, girls' nights, baby showers, reunions — we show up, set the vibe, and make sure everyone feels amazing.</p>
+        </div>
+      </div>
+
+      <!-- 2: Athletic & Performance -->
+      <div class="event-card">
+        <div class="img-placeholder" style="height:220px;">📸 Athletes receiving IV recovery drips</div>
+        <div class="event-card-body">
+          <span class="event-card-emoji">🏆</span>
+          <h3>Athletic &amp; Performance</h3>
+          <p>Sports teams, race day recovery, competitions, and athlete wellness. Recover faster, perform better, and keep your crew at peak condition.</p>
+        </div>
+      </div>
+
+      <!-- 3: VIP & Entertainment -->
+      <div class="event-card">
+        <div class="img-placeholder" style="height:220px;">📸 Backstage / artist lounge IV setup</div>
+        <div class="event-card-body">
+          <span class="event-card-emoji">🎬</span>
+          <h3>VIP &amp; Entertainment</h3>
+          <p>Backstage at concerts, film sets, artist lounges, festivals — we bring IV therapy where the action is. Discreet, professional, and totally on-brand.</p>
+        </div>
+      </div>
+
+      <!-- 4: Corporate Wellness -->
+      <div class="event-card">
+        <div class="img-placeholder" style="height:220px;">📸 Corporate team wellness IV day</div>
+        <div class="event-card-body">
+          <span class="event-card-emoji">🏢</span>
+          <h3>Corporate Wellness</h3>
+          <p>Employee appreciation days, team retreats, and company wellness programs. Boost morale, reduce sick days, and show your team you invest in their health.</p>
+        </div>
+      </div>
+
+      <!-- 5: Large-Scale Events -->
+      <div class="event-card">
+        <div class="img-placeholder" style="height:220px;">📸 Large event / expo IV therapy booth</div>
+        <div class="event-card-body">
+          <span class="event-card-emoji">🎊</span>
+          <h3>Large-Scale Events</h3>
+          <p>Conferences, brand activations, sporting events, and expos. We scale with your event — bringing everything needed to serve large groups efficiently.</p>
+        </div>
+      </div>
+
+      <!-- 6: Travel & Hospitality -->
+      <div class="event-card">
+        <div class="img-placeholder" style="height:220px;">📸 Hotel / villa IV wellness session</div>
+        <div class="event-card-body">
+          <span class="event-card-emoji">✈️</span>
+          <h3>Travel &amp; Hospitality</h3>
+          <p>Jet lag recovery, hotel wellness concierge, villa visits, and pre-travel prep. We come to your hotel room, vacation rental, or resort suite.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PACKAGES
+     ============================================================ -->
+<section class="packages-section" id="packages">
+  <div class="container">
+    <div class="packages-header">
+      <span class="section-eyebrow">Group Packages</span>
+      <h2 class="section-title">Find the Right<br><span class="teal">Package</span> for Your Group</h2>
+      <p class="section-intro" style="margin:0 auto;">All packages are custom quoted based on your group size, drip selections, and event details. Contact us for a personalized quote — no two events are exactly alike.</p>
+    </div>
+
+    <div class="packages-grid">
+
+      <!-- Package 1 -->
+      <div class="package-card">
+        <div class="pkg-num">Package 01</div>
+        <span class="package-custom-badge">Custom Quote</span>
+        <h3>Single Day Event</h3>
+        <p>One-time group session at your location. Perfect for parties and celebrations. Our provider arrives with everything needed, and each person gets a custom drip selection tailored to them.</p>
+        <a href="tel:6822836976" class="pkg-cta-link">Get a Quote →</a>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="package-card">
+        <div class="pkg-num">Package 02</div>
+        <span class="package-custom-badge">Custom Quote</span>
+        <h3>3-Day IV Drip Retainer</h3>
+        <p>Multi-day coverage for extended events, film productions, or team training camps. We're on-call for your crew across multiple sessions — consistent care, consistent results.</p>
+        <a href="tel:6822836976" class="pkg-cta-link">Get a Quote →</a>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="package-card">
+        <div class="pkg-num">Package 03</div>
+        <span class="package-custom-badge">Custom Quote</span>
+        <h3>Comprehensive Team Wellness</h3>
+        <p>Ongoing wellness partnership for sports teams, corporate offices, or touring groups. Build a recurring schedule that keeps your people feeling their best all season long.</p>
+        <a href="tel:6822836976" class="pkg-cta-link">Get a Quote →</a>
+      </div>
+
+      <!-- Package 4 -->
+      <div class="package-card">
+        <div class="pkg-num">Package 04</div>
+        <span class="package-custom-badge">Custom Quote</span>
+        <h3>Telehealth Shield</h3>
+        <p>On-call medical care and telehealth support bundled with IV therapy for large events. Ideal for festivals, conferences, and multi-day productions where medical backup is a priority.</p>
+        <a href="tel:6822836976" class="pkg-cta-link">Get a Quote →</a>
+      </div>
+
+      <!-- Package 5 -->
+      <div class="package-card">
+        <div class="pkg-num">Package 05</div>
+        <span class="package-custom-badge">Custom Quote</span>
+        <h3>À La Carte Group Pricing</h3>
+        <p>Pick your drips and build your group session from the ground up. Flexible pricing based on headcount and drip selection — the most customizable option for groups with varied needs.</p>
+        <a href="tel:6822836976" class="pkg-cta-link">Get a Quote →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS — 4 STEPS
+     ============================================================ -->
+<section class="process-section">
+  <div class="container">
+    <div class="process-header">
+      <span class="section-eyebrow">The Process</span>
+      <h2 class="section-title">How It <span class="teal">Works</span></h2>
+      <p class="section-intro" style="margin:0 auto;">Four easy steps from "we should do this" to everyone leaving your event feeling incredible.</p>
+    </div>
+
+    <div class="process-steps">
+
+      <div class="process-step">
+        <div class="step-num step-num-1">1</div>
+        <h3>Reach Out</h3>
+        <p>Call, text, or fill out our contact form. Tell us about your event — headcount, vibe, location, and date. The more details, the better we can plan for your crew.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num step-num-2">2</div>
+        <h3>Custom Plan</h3>
+        <p>We build your group menu and schedule around your event. A <strong>$300 deposit</strong> locks your date and secures your spot. Book at least 2 weeks in advance.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num step-num-3">3</div>
+        <h3>We Show Up</h3>
+        <p>Your licensed provider arrives at your location with everything needed. Setup takes about 15 minutes — then we're ready to drip. No venue changes required on your end.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num step-num-4">4</div>
+        <h3>Everyone Gets Their Drip</h3>
+        <p>45–60 minute sessions, fully customized per person. We can run multiple people simultaneously. Everyone leaves hydrated, energized, and feeling amazing.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY GROUP IV — benefit icons
+     ============================================================ -->
+<section class="why-section">
+  <div class="container">
+    <div class="why-header">
+      <span class="section-eyebrow">The Benefits</span>
+      <h2 class="section-title">Why <em>Group IV</em> Just Makes Sense</h2>
+      <p class="section-intro" style="margin:0 auto;">IV therapy isn't just for individuals. When your whole crew gets dripped together, the results — and the experience — are on another level.</p>
+    </div>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card">
+        <span class="benefit-icon">⚡</span>
+        <h3>Instant Energy &amp; Hydration</h3>
+        <p>IV fluids and vitamins hit your bloodstream directly — no waiting for supplements to kick in. The whole group feels the difference within the session.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span class="benefit-icon">🔄</span>
+        <h3>Faster Recovery</h3>
+        <p>Whether it's a hangover, travel fatigue, or post-game soreness — IV therapy cuts recovery time significantly so your crew is back in action fast.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span class="benefit-icon">🧠</span>
+        <h3>Mental Clarity &amp; Focus</h3>
+        <p>Our brain-boosting drip options (B-complex, magnesium, NAD+) sharpen focus and lift the fog. Perfect for corporate teams before big meetings or events.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span class="benefit-icon">✨</span>
+        <h3>Morale Boost — It's a Vibe</h3>
+        <p>Group IV is an experience, not just a treatment. It's fun, it's social, and it's something your team or guests will be talking about long after the event.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span class="benefit-icon">🏥</span>
+        <h3>Reduces Sick Days</h3>
+        <p>Regular IV wellness sessions for corporate teams mean stronger immune systems, fewer sick days, and a workforce that actually shows up feeling well.</p>
+      </div>
+
+      <div class="benefit-card">
+        <span class="benefit-icon">🎯</span>
+        <h3>Fully Customizable Per Person</h3>
+        <p>No one-size-fits-all here. Each person in your group chooses (or we recommend) a drip based on their individual needs — everyone gets exactly what they need.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ ACCORDION
+     ============================================================ -->
+<section class="faq-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Got Questions?</span>
+      <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Where do you travel to?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          We serve the DFW area and surrounding communities. Bedford, TX is our home base. If your event is outside the immediate DFW area, contact us directly — we'll let you know if we can accommodate and whether a travel fee applies.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How many people can you accommodate?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          We accommodate groups of 4–20+ depending on the event type, duration, and logistics. We bring enough supplies for your whole crew. Reach out early so we can staff and equip appropriately for your headcount.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How long does it take?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Setup takes approximately 15 minutes once we arrive. Each IV infusion session runs 45–60 minutes per person. We can run multiple people simultaneously, so the total event time depends on your group size and the number of providers. We'll give you a realistic time estimate when you book.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Do you have a minimum group size?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          We recommend at least 4 people for group pricing to apply. Smaller groups are absolutely welcome — just reach out and we'll discuss what makes sense for your situation. We want to make it work for you.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Can everyone get the same drip?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Not necessarily — and that's actually a feature, not a limitation! Each person in your group can choose their own drip, or we can recommend one based on their individual needs and goals. We handle all the customization. Your hangover relief, their energy boost, someone else's beauty drip — we've got the whole crew covered.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA — Big booking section with deposit callout
+     ============================================================ -->
+<section class="cta-section">
+  <div class="cta-inner container">
+    <span class="section-eyebrow">Let's Make It Happen</span>
+    <h2>Ready to Book Your<br><em>Group?</em></h2>
+    <p>Your crew deserves the best. Call or text to start planning your group IV session — we'll build a custom menu and schedule around your event.</p>
+
+    <div class="deposit-callout">
+      <span class="deposit-icon">💳</span>
+      <span><strong>$300 deposit</strong> secures your date &bull; Book at least 2 weeks in advance</span>
+    </div>
+
+    <div class="cta-btns">
+      <a href="tel:6822836976" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1.05rem;padding:16px 36px;">Call / Text (682) 283-6976</a>
+      <a href="mailto:info@happydripiv.com" class="btn btn-outline" style="font-size:1.05rem;padding:16px 36px;border-color:rgba(255,255,255,0.35);color:#fff;">Email Us</a>
+    </div>
+
+    <div class="cta-contact-row">
+      <span>📧 <a href="mailto:info@happydripiv.com">info@happydripiv.com</a></span>
+      <span>📍 Bedford, TX 76022 — Serving DFW &amp; surrounding areas</span>
+    </div>
+
+    <p style="margin-top:24px;font-size:0.8rem;color:rgba(255,255,255,0.38);">Brittany Adams, APRN FNP-C &bull; Licensed provider on-site for every event</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#payment">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>IV Services</h5>
+        <a href="/iv-drip-menu#level1">Level 1 Drips</a>
+        <a href="/iv-drip-menu#level2">Level 2 Drips</a>
+        <a href="/iv-drip-menu#level3">Level 3 Drips</a>
+        <a href="/iv-drip-menu#vitality">NAD+ &amp; Vitality</a>
+        <a href="/iv-drip-menu#addons">Add-On Boosters</a>
+        <a href="/groups-events">Groups + Events</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar" id="bottomBar" role="complementary" aria-label="Group events promotion">
+  <div class="vip-text">
+    <span class="vip-badge">NEW</span>
+    Now booking <a href="tel:6822836976">&nbsp;group events&nbsp;</a> — $300 deposit secures your date!
+  </div>
+  <div class="tip">PRO-TIP: Book 2+ weeks out for best availability &bull; Call/text <a href="tel:6822836976">(682) 283-6976</a></div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+/* ======================================================
+   FAQ ACCORDION
+   ====================================================== */
+(function () {
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
