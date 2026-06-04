@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLP-1 Side Effects: What's Normal? | Happy Drip IV</title>
+  <meta name="description" content="Nausea, hair loss, fatigue, constipation -- Brittany Adams, APRN breaks down every common GLP-1 side effect and exactly what to do about it. Bedford, TX." />
+  <link rel="canonical" href="https://www.happydripiv.com/glp1-side-effects/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    /* ---- Page Hero ---- */
+    .page-hero {
+      background: linear-gradient(135deg, #fde8f3 0%, #ede8fc 50%, #e8f4fb 100%);
+      padding: 80px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 460px; height: 460px;
+      background: radial-gradient(circle, rgba(29,158,117,0.10) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero-content {
+      max-width: 680px;
+      position: relative;
+      z-index: 1;
+    }
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(29,158,117,0.12);
+      border: 1px solid rgba(29,158,117,0.3);
+      color: #1D9E75;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 40px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .page-hero-content h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      color: var(--navy);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .page-hero-content .subhead {
+      font-size: 1.1rem;
+      color: #4a5570;
+      margin-bottom: 24px;
+      line-height: 1.65;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(0,0,0,0.45);
+    }
+    .breadcrumb a { color: #1D9E75; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+
+    /* ---- Intro ---- */
+    .glp1-intro {
+      padding: 72px 0 56px;
+      background: var(--white);
+      text-align: center;
+    }
+    .glp1-intro-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .glp1-intro h2 {
+      color: var(--navy);
+      margin-bottom: 18px;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+    }
+    .glp1-intro p {
+      color: #4a5570;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    /* ---- Symptom Checker ---- */
+    .symptom-section {
+      padding: 64px 0 80px;
+      background: #f7f9fc;
+    }
+    .symptom-section .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .symptom-section .section-header h2 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .symptom-section .section-header p {
+      color: #4a5570;
+      font-size: 0.95rem;
+    }
+
+    .symptom-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .symptom-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1.5px solid #e4e9f0;
+      border-left: 4px solid #1D9E75;
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .symptom-card:hover {
+      box-shadow: 0 6px 24px rgba(29,158,117,0.10);
+    }
+    .symptom-card.is-open {
+      border-color: #1D9E75;
+      box-shadow: 0 6px 28px rgba(29,158,117,0.13);
+    }
+
+    .symptom-trigger {
+      width: 100%;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 24px 24px 20px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .symptom-emoji {
+      font-size: 2rem;
+      line-height: 1;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .symptom-trigger-text {
+      flex: 1;
+    }
+    .symptom-name {
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 4px;
+    }
+    .symptom-teaser {
+      font-size: 0.88rem;
+      color: #6b7a99;
+      line-height: 1.5;
+    }
+    .symptom-chevron {
+      flex-shrink: 0;
+      margin-top: 4px;
+      color: #1D9E75;
+      transition: transform 0.3s;
+    }
+    .symptom-card.is-open .symptom-chevron {
+      transform: rotate(180deg);
+    }
+
+    .symptom-body {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease;
+    }
+    .symptom-body-inner {
+      padding: 0 24px 24px;
+      border-top: 1px solid #edf0f5;
+      padding-top: 20px;
+    }
+
+    .symptom-row {
+      margin-bottom: 16px;
+    }
+    .symptom-row-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #1D9E75;
+      margin-bottom: 6px;
+    }
+    .symptom-row p {
+      font-size: 0.9rem;
+      color: #4a5570;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    /* Timeline bar */
+    .timeline-bar-wrap {
+      margin-top: 6px;
+    }
+    .timeline-bar-track {
+      height: 10px;
+      background: #edf0f5;
+      border-radius: 40px;
+      overflow: hidden;
+      margin-bottom: 6px;
+    }
+    .timeline-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #1D9E75, #3ab8cb);
+      border-radius: 40px;
+      transition: width 0.6s ease;
+    }
+    .timeline-bar-label {
+      font-size: 0.78rem;
+      color: #6b7a99;
+    }
+
+    /* Warning row */
+    .symptom-warn {
+      background: #fff8f0;
+      border-left: 3px solid #e87b5a;
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      margin-bottom: 16px;
+    }
+    .symptom-warn .symptom-row-label {
+      color: #c0552a;
+    }
+    .symptom-warn p {
+      font-size: 0.88rem;
+      color: #7a4530;
+    }
+
+    /* CTA inside card */
+    .symptom-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1D9E75;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.83rem;
+      padding: 10px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      margin-top: 4px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .symptom-cta:hover {
+      background: #178a64;
+      transform: translateY(-1px);
+    }
+
+    /* ---- Bottom CTA ---- */
+    .glp1-cta-section {
+      background: var(--navy);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .glp1-cta-section h2 {
+      color: var(--white);
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      margin-bottom: 18px;
+    }
+    .glp1-cta-section p {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 600px;
+      margin: 0 auto 36px;
+    }
+    .glp1-cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 768px) {
+      .symptom-grid {
+        grid-template-columns: 1fr;
+      }
+      .page-hero {
+        padding: 60px 0 48px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>& Wellness</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
+      <div class="nav-item">
+        <a href="#" class="nav-link active">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss" style="color:var(--teal-dark);font-weight:700;">Medical Weight Loss</a>
+          <a href="/glp1-side-effects/" style="color:var(--teal-dark);font-weight:700;">GLP-1 Side Effects</a>
+          <a href="/#concierge">Happy Health Clinic (DPC)</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/#aesthetics">Jeuveau® (Botox)</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#iv-therapy" class="nav-link">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#iv-therapy">IV Drip Menu</a>
+          <a href="/#iv-therapy">'I DO' Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/#payment" class="nav-link">Payment Plans</a></div>
+      <div class="nav-item"><a href="/#faq" class="nav-link">FAQ</a></div>
+    </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link" style="color:var(--teal);">Medical Weight Loss</a>
+    <a href="/glp1-side-effects/" class="sub-link">GLP-1 Side Effects</a>
+    <a href="/#concierge" class="sub-link">Happy Health Clinic (DPC)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/#aesthetics" class="sub-link">Jeuveau® (Botox)</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/#iv-therapy" class="sub-link">IV Drip Menu</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+    <a href="tel:6822836976" style="color:#5dd9e8;font-weight:800;">(682) 283-6976</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="background:#3ab8cb;color:#fff;margin:12px 24px;border-radius:50px;text-align:center;">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="eyebrow-pill">GLP-1 Guidance -- Bedford, TX</span>
+      <h1>Is this normal on GLP-1s?</h1>
+      <p class="subhead">Real answers from a real provider -- not a Google rabbit hole.</p>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <a href="/weightloss">Medical Weight Loss</a>
+        <span>›</span>
+        <span style="color:#4a5570;">GLP-1 Side Effects</span>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRO
+     ============================================================ -->
+<section class="glp1-intro">
+  <div class="container">
+    <div class="glp1-intro-inner">
+      <h2>We actually explain what's happening.</h2>
+      <p>Most providers hand you a prescription and a pamphlet and call it a day. We do things differently. Below you will find clear, honest answers about what your body is going through on semaglutide or tirzepatide -- what is normal, what actually helps, and when you should reach out to us. Click any symptom to learn more.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTERACTIVE SYMPTOM CHECKER
+     ============================================================ -->
+<section class="symptom-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Common GLP-1 Side Effects</h2>
+      <p>Click any card to expand the full breakdown -- causes, solutions, and when to call us.</p>
+    </div>
+    <div class="symptom-grid" id="symptomGrid">
+
+      <!-- 1. Nausea -->
+      <div class="symptom-card" data-card="0">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-0">
+          <span class="symptom-emoji">🤢</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Nausea</span>
+            <span class="symptom-teaser">The most common complaint -- and the most manageable.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-0" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>Semaglutide and tirzepatide slow gastric emptying, meaning food stays in your stomach longer. Your body is not used to this yet.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Eat smaller meals. Avoid fatty, greasy, or spicy foods. Stay upright after eating. Ginger tea, peppermint, and cold foods tend to be better tolerated. IV hydration can help significantly if nausea is affecting your ability to eat or drink.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 55%;"></div>
+                </div>
+                <div class="timeline-bar-label">Peaks weeks 1-4, usually improves by week 6-8</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>If you cannot keep fluids down for more than 24 hours, are losing weight faster than 2 lbs per week, or nausea is affecting your daily life.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Book IV hydration support →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. Hair Loss -->
+      <div class="symptom-card" data-card="1">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-1">
+          <span class="symptom-emoji">💇</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Hair Loss</span>
+            <span class="symptom-teaser">Scary to see, but usually not permanent.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-1" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>Rapid weight loss -- not the medication itself -- triggers a condition called telogen effluvium. Hair follicles go into a resting phase when your body is under caloric stress.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Make sure you are hitting your protein goals (minimum 80-100g per day). Biotin, zinc, and iron support hair regrowth. Our Beauty Boost IV drip is specifically formulated for this. Hair typically starts returning within 3-6 months.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 70%;"></div>
+                </div>
+                <div class="timeline-bar-label">Starts around weeks 8-16, resolves by months 4-6</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>If hair loss is severe, patchy, or does not improve after 6 months.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Ask about Beauty Boost IV →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Fatigue -->
+      <div class="symptom-card" data-card="2">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-2">
+          <span class="symptom-emoji">😴</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Fatigue</span>
+            <span class="symptom-teaser">Low energy is real -- and fixable.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-2" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>Eating less means fewer calories coming in. If you are not getting enough protein and micronutrients, your body will feel it. This is very common in the first 4-8 weeks.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Prioritize protein and stay hydrated. IV vitamin therapy can replenish B vitamins, magnesium, and other nutrients that dip during caloric restriction. Our Myers Cocktail is a great weekly option while your body adjusts.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 45%;"></div>
+                </div>
+                <div class="timeline-bar-label">Common in weeks 2-8, improves with nutrition</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>If fatigue is severe, you are struggling to function day to day, or you notice heart palpitations.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Book a Myers Cocktail →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. Constipation -->
+      <div class="symptom-card" data-card="3">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-3">
+          <span class="symptom-emoji">💩</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Constipation</span>
+            <span class="symptom-teaser">Nobody talks about it. We will.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-3" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>Slowed gut motility is a direct effect of the medication. When food moves through your system more slowly, everything slows down.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Increase water intake significantly. Add fiber gradually. Magnesium glycinate at night can help. Light movement after meals. Prune juice is not glamorous but it works.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 80%;"></div>
+                </div>
+                <div class="timeline-bar-label">Can persist throughout treatment, usually manageable</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>If you have not had a bowel movement in more than 4-5 days, experience severe abdominal pain, bloating, or vomiting.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Ask Brittany at your next visit →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5. Injection Site Reactions -->
+      <div class="symptom-card" data-card="4">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-4">
+          <span class="symptom-emoji">💉</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Injection Site Reactions</span>
+            <span class="symptom-teaser">A little redness is normal. More than that -- call us.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-4" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>Your immune system recognizes the injection site and responds with mild inflammation. This is expected.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Rotate injection sites every week. Let the medication warm to room temperature before injecting. Apply a cold pack for a few minutes before the injection.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 30%;"></div>
+                </div>
+                <div class="timeline-bar-label">Most common in the first few weeks, improves with technique</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>If you have significant swelling, warmth, spreading redness, pus, or a lump that does not go away within a week.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Questions about injection technique? Call us →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6. Muscle Loss -->
+      <div class="symptom-card" data-card="5">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-5">
+          <span class="symptom-emoji">💪</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Muscle Loss</span>
+            <span class="symptom-teaser">This is the one worth being proactive about.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-5" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>When you lose weight rapidly, your body does not always differentiate between fat and muscle. Without enough protein and resistance training, muscle loss happens alongside fat loss.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Protein is non-negotiable -- aim for 0.7-1g per pound of body weight daily. Resistance training at least 2-3 times per week. Our Performance Boost IV drip supports muscle recovery and amino acid replenishment.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 90%;"></div>
+                </div>
+                <div class="timeline-bar-label">Ongoing risk -- prevention is the best strategy</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>If you notice significant weakness, difficulty with normal tasks, or your strength is declining noticeably.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Ask about Performance Boost IV →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7. Mood Changes -->
+      <div class="symptom-card" data-card="6">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-6">
+          <span class="symptom-emoji">🧠</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Mood Changes</span>
+            <span class="symptom-teaser">Some people feel amazing. Some feel off. Both are valid.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-6" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>GLP-1 receptors exist in the brain, not just the gut. The medication affects dopamine pathways, which can influence mood, motivation, and even anxiety in some people. Caloric restriction also affects serotonin.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Keep protein and B vitamins up. Get outside and move -- even short walks help. Be honest with your provider about how you are feeling. These effects are real and worth discussing.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 60%;"></div>
+                </div>
+                <div class="timeline-bar-label">Variable -- can improve or fluctuate throughout treatment</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>If you are experiencing persistent low mood, anxiety, irritability, or any thoughts of self-harm. Always tell us.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Reach out anytime -- we take this seriously →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8. Weight Plateau -->
+      <div class="symptom-card" data-card="7">
+        <button class="symptom-trigger" aria-expanded="false" aria-controls="symptom-body-7">
+          <span class="symptom-emoji">📊</span>
+          <span class="symptom-trigger-text">
+            <span class="symptom-name">Weight Plateau</span>
+            <span class="symptom-teaser">You have not failed. Your body is adapting.</span>
+          </span>
+          <svg class="symptom-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="symptom-body" id="symptom-body-7" role="region">
+          <div class="symptom-body-inner">
+            <div class="symptom-row">
+              <div class="symptom-row-label">Why it happens</div>
+              <p>Metabolic adaptation is real. As you lose weight, your body becomes more efficient and requires fewer calories. Dose adjustments, activity changes, and strategic breaks can all help.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">What helps</div>
+              <p>Track protein and calories honestly. Consider a movement routine if you have not started one. Talk to Brittany about whether a dose adjustment makes sense. IV vitamin therapy can support metabolism during a stall.</p>
+            </div>
+            <div class="symptom-row">
+              <div class="symptom-row-label">Timeline</div>
+              <div class="timeline-bar-wrap">
+                <div class="timeline-bar-track">
+                  <div class="timeline-bar-fill" style="width: 65%;"></div>
+                </div>
+                <div class="timeline-bar-label">Often happens around weeks 8-16 and again later</div>
+              </div>
+            </div>
+            <div class="symptom-warn">
+              <div class="symptom-row-label">When to reach out</div>
+              <p>Anytime you feel stuck -- we would rather hear from you than have you give up.</p>
+            </div>
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="symptom-cta">Book a check-in with Brittany →</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /symptom-grid -->
+  </div>
+</section>
+
+<!-- ============================================================
+     BOTTOM CTA
+     ============================================================ -->
+<section class="glp1-cta-section">
+  <div class="container">
+    <h2>Ready to get started the right way?</h2>
+    <p>Brittany walks every patient through what to expect before the first injection -- and she is available when questions come up. No ghost providers, no pamphlets, no guesswork.</p>
+    <div class="glp1-cta-btns">
+      <a href="/weightloss" class="btn btn-primary btn-lg">Start Your Program</a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg">Book a Consult</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text"><span>Happy Drip IV</span><span>& Wellness</span></div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/weightloss">Medical Weight Loss</a>
+        <a href="/glp1-side-effects/">GLP-1 Side Effects</a>
+        <a href="/#iv-therapy">IV Therapy</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#provider">About Brittany</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>Weight Loss</h5>
+        <a href="/weightloss#pricing">Semaglutide Program</a>
+        <a href="/weightloss#pricing">Tirzepatide Program</a>
+        <a href="/weightloss#pricing">90-Day Programs</a>
+        <a href="/weightloss#pricing">Oral Medications</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Consultation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.65);">Subscribe for wellness tips and promotions. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+          <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+          <button type="submit">Go</button>
+        </form>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar">
+  <div class="vip-text">
+    <span class="vip-badge">VIP</span>
+    Join our <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">&nbsp;VIP DRIP CLUB&nbsp;</a> for the best pricing &amp; priority booking!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a></div>
+</div>
+
+<script src="../js/script.js" defer></script>
+<script>
+  // Symptom card accordion
+  (function() {
+    var grid = document.getElementById('symptomGrid');
+    if (!grid) return;
+
+    var cards = grid.querySelectorAll('.symptom-card');
+    var currentOpen = null;
+
+    cards.forEach(function(card) {
+      var trigger = card.querySelector('.symptom-trigger');
+      var body = card.querySelector('.symptom-body');
+
+      trigger.addEventListener('click', function() {
+        var isOpen = card.classList.contains('is-open');
+
+        // Close current open card
+        if (currentOpen && currentOpen !== card) {
+          currentOpen.classList.remove('is-open');
+          currentOpen.querySelector('.symptom-trigger').setAttribute('aria-expanded', 'false');
+          currentOpen.querySelector('.symptom-body').style.maxHeight = '0';
+        }
+
+        if (isOpen) {
+          // Close this card
+          card.classList.remove('is-open');
+          trigger.setAttribute('aria-expanded', 'false');
+          body.style.maxHeight = '0';
+          currentOpen = null;
+        } else {
+          // Open this card
+          card.classList.add('is-open');
+          trigger.setAttribute('aria-expanded', 'true');
+          body.style.maxHeight = body.scrollHeight + 'px';
+          currentOpen = card;
+
+          // Smooth scroll card into view
+          setTimeout(function() {
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 100);
+        }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
