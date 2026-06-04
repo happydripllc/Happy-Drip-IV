@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeuveau® Neurotoxin (Botox Alternative) | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="Jeuveau® neurotoxin injections in Bedford, TX. FDA-approved botulinum toxin dedicated exclusively to aesthetics. Smooth forehead lines, crow's feet, and more. Administered by Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/jeuveau" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ======================================================
+       JEUVEAU — PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --pink:      #e0579a;
+      --lav:       #c5b4e8;
+      --teal:      #3ab8cb;
+      --navy:      #1a2744;
+      --gold:      #f0c030;
+      --soft-pink-bg:    #fde8f3;
+      --soft-teal-bg:    #e0f7fa;
+      --soft-lavender-bg:#f0ecfc;
+    }
+
+    /* ---- Hero ---- */
+    .jeuv-hero {
+      background: linear-gradient(135deg, #fde8f3 0%, #f0ecfc 50%, #ede8fc 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .jeuv-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -100px;
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(197,180,232,0.25) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .jeuv-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -50px; left: -70px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(224,87,154,0.12) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .jeuv-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      min-height: 540px;
+      position: relative; z-index: 1;
+    }
+    .jeuv-hero-content {
+      padding: 72px 48px 72px 24px;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; color: #9b8bb0; margin-bottom: 20px;
+    }
+    .breadcrumb a { color: var(--teal); }
+    .breadcrumb span { opacity: 0.55; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--pink);
+      background: var(--soft-pink-bg);
+      border: 1.5px solid rgba(224,87,154,0.25);
+      padding: 6px 18px; border-radius: 40px;
+      margin-bottom: 20px;
+    }
+    .jeuv-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: var(--navy); margin-bottom: 12px; line-height: 1.15;
+    }
+    .jeuv-hero-content h1 em { font-style: normal; color: var(--pink); }
+    .jeuv-hero-tagline {
+      font-size: 1.05rem; color: #4a4060; line-height: 1.78;
+      margin-bottom: 32px; max-width: 480px;
+    }
+    .jeuv-hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .jeuv-hero-img {
+      height: 540px; position: relative;
+      padding: 24px 24px 24px 0;
+    }
+    .jeuv-hero-img img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
+      display: block; border-radius: 24px;
+    }
+    .jeuv-hero-img::before {
+      content: '';
+      position: absolute; inset: 24px 24px 24px 0;
+      background:
+        linear-gradient(to left,  rgba(240,236,252,0.5) 0%, transparent 22%),
+        linear-gradient(to right, #fde8f3 0%, transparent 22%),
+        linear-gradient(to bottom, rgba(253,232,243,0.5) 0%, transparent 18%),
+        linear-gradient(to top,   rgba(240,236,252,0.5) 0%, transparent 18%);
+      z-index: 1;
+      pointer-events: none;
+      border-radius: 24px;
+    }
+
+    @media (max-width: 860px) {
+      .jeuv-hero-inner { grid-template-columns: 1fr; min-height: auto; }
+      .jeuv-hero-content { padding: 56px 24px 32px; text-align: center; }
+      .breadcrumb { justify-content: center; }
+      .jeuv-hero-btns { justify-content: center; }
+      .jeuv-hero-img { height: 320px; padding: 0 24px 40px; }
+      .jeuv-hero-img::before { inset: 0 24px 40px 24px; }
+    }
+
+    /* ---- Section Utilities ---- */
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--teal);
+      margin-bottom: 10px;
+    }
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 14px;
+    }
+    .section-title em { font-style: normal; color: var(--pink); }
+    .section-title .lav  { color: #8060c8; }
+    .section-intro {
+      color: #5a5070; font-size: 1rem; line-height: 1.75;
+      max-width: 640px;
+    }
+
+    /* ---- What Is Jeuveau — 2-col ---- */
+    .what-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      margin-top: 0;
+    }
+    .what-img-wrap {
+      position: relative;
+    }
+    .what-img-wrap img {
+      width: 100%; border-radius: 20px;
+      box-shadow: 0 12px 44px rgba(197,180,232,0.22);
+      display: block;
+    }
+    .what-img-badge {
+      position: absolute;
+      bottom: -18px; right: -18px;
+      background: linear-gradient(135deg, var(--pink), var(--lav));
+      color: #fff; border-radius: 14px;
+      padding: 14px 20px;
+      font-size: 0.78rem; font-weight: 800; text-align: center;
+      line-height: 1.4;
+      box-shadow: 0 6px 24px rgba(224,87,154,0.28);
+    }
+    .what-img-badge span { display: block; font-size: 1.5rem; font-weight: 700; margin-bottom: 2px; }
+    .what-content { }
+    .what-content h2 { color: var(--navy); font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 18px; line-height: 1.2; }
+    .what-content h2 em { font-style: normal; color: var(--pink); }
+    .what-content p { color: #5a5070; font-size: 0.95rem; line-height: 1.78; margin-bottom: 16px; }
+    .what-stats {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 14px; margin-top: 24px;
+    }
+    .what-stat {
+      background: var(--soft-lavender-bg);
+      border: 1.5px solid rgba(197,180,232,0.4);
+      border-radius: 12px; padding: 16px 18px;
+    }
+    .what-stat .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem; font-weight: 700;
+      color: var(--pink); display: block; margin-bottom: 2px;
+    }
+    .what-stat .stat-label {
+      font-size: 0.78rem; color: #6a5a80; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+    }
+
+    @media (max-width: 800px) {
+      .what-grid { grid-template-columns: 1fr; gap: 32px; }
+      .what-img-badge { right: 8px; bottom: -14px; }
+      .what-stats { grid-template-columns: 1fr 1fr; }
+    }
+
+    /* ---- Treatment Areas ---- */
+    .areas-section {
+      padding: 88px 0 80px;
+      background: linear-gradient(135deg, #fde8f3 0%, #f0ecfc 100%);
+    }
+    .areas-header { text-align: center; margin-bottom: 52px; }
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+    .area-card {
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1.5px solid rgba(197,180,232,0.35);
+      transition: box-shadow 0.25s, transform 0.25s;
+      text-align: center;
+    }
+    .area-card:hover {
+      box-shadow: 0 12px 40px rgba(197,180,232,0.28);
+      transform: translateY(-4px);
+    }
+    .area-card img {
+      width: 100%; height: 160px; object-fit: cover; display: block;
+    }
+    .area-card-body { padding: 16px 14px 20px; }
+    .area-card-body h3 { color: var(--navy); font-size: 0.92rem; margin-bottom: 6px; line-height: 1.3; }
+    .area-units {
+      display: inline-block;
+      background: var(--soft-pink-bg);
+      color: var(--pink);
+      border: 1.5px solid rgba(224,87,154,0.2);
+      font-size: 0.72rem; font-weight: 800;
+      padding: 4px 10px; border-radius: 40px;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 1000px) {
+      .areas-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (max-width: 620px) {
+      .areas-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ---- Comparison ---- */
+    .compare-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .compare-header { text-align: center; margin-bottom: 48px; }
+    .compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .compare-card {
+      border-radius: 20px;
+      padding: 36px 32px;
+      text-align: center;
+    }
+    .compare-card.botox {
+      background: #f6f4fb;
+      border: 2px solid rgba(197,180,232,0.4);
+    }
+    .compare-card.jeuveau {
+      background: linear-gradient(135deg, #fde8f3 0%, #f0ecfc 100%);
+      border: 2px solid rgba(224,87,154,0.3);
+      box-shadow: 0 8px 36px rgba(224,87,154,0.10);
+    }
+    .compare-card .compare-label {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; margin-bottom: 6px;
+    }
+    .compare-card.botox .compare-label  { color: #8060c8; }
+    .compare-card.jeuveau .compare-label { color: var(--pink); }
+    .compare-card h3 {
+      font-size: 1.6rem; margin-bottom: 20px;
+    }
+    .compare-card.botox h3  { color: #6040a0; }
+    .compare-card.jeuveau h3 { color: var(--navy); }
+    .compare-list {
+      list-style: none; text-align: left;
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .compare-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.88rem; color: #4a4060; line-height: 1.55;
+    }
+    .compare-list li .dot {
+      flex-shrink: 0;
+      width: 18px; height: 18px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.62rem; font-weight: 800; margin-top: 1px;
+    }
+    .compare-card.botox .dot  { background: var(--lav); color: #fff; }
+    .compare-card.jeuveau .dot { background: var(--pink); color: #fff; }
+    .compare-card.jeuveau .we-offer {
+      margin-top: 24px;
+      background: var(--pink);
+      color: #fff; border-radius: 40px;
+      padding: 10px 22px;
+      font-size: 0.78rem; font-weight: 800;
+      display: inline-block; letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 640px) {
+      .compare-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- How It Works ---- */
+    .process-section {
+      padding: 88px 0 80px;
+      background: var(--soft-lavender-bg);
+    }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: calc(12.5% + 14px); right: calc(12.5% + 14px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--pink), var(--lav));
+      z-index: 0;
+    }
+    .process-step {
+      position: relative; z-index: 1;
+      text-align: center;
+    }
+    .step-num {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .process-step:nth-child(1) .step-num { background: var(--pink); box-shadow: 0 4px 18px rgba(224,87,154,0.35); }
+    .process-step:nth-child(2) .step-num { background: #c890b8; box-shadow: 0 4px 18px rgba(200,144,184,0.3); }
+    .process-step:nth-child(3) .step-num { background: var(--lav); box-shadow: 0 4px 18px rgba(197,180,232,0.35); }
+    .process-step:nth-child(4) .step-num { background: #8060c8; box-shadow: 0 4px 18px rgba(128,96,200,0.3); }
+    .process-step h3 { color: var(--navy); font-size: 1rem; margin-bottom: 8px; }
+    .process-step p  { color: #5a5070; font-size: 0.84rem; line-height: 1.65; margin: 0; }
+
+    @media (max-width: 860px) {
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Pricing ---- */
+    .pricing-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .pricing-callout {
+      max-width: 680px;
+      margin: 40px auto 0;
+      background: linear-gradient(135deg, #fde8f3 0%, #f0ecfc 100%);
+      border: 2px solid rgba(224,87,154,0.25);
+      border-radius: 20px;
+      padding: 40px 44px;
+      text-align: center;
+    }
+    .pricing-callout .price-eyebrow {
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--pink);
+      margin-bottom: 10px; display: block;
+    }
+    .pricing-callout h3 {
+      color: var(--navy); font-size: 1.5rem; margin-bottom: 14px;
+    }
+    .pricing-callout p {
+      color: #5a5070; font-size: 0.95rem; line-height: 1.75; margin-bottom: 28px;
+    }
+    .pricing-callout .price-btns {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    }
+
+    /* ---- Pre & Post Care ---- */
+    .care-section {
+      padding: 88px 0 80px;
+      background: linear-gradient(135deg, #e0f7fa 0%, #f0ecfc 100%);
+    }
+    .care-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 44px;
+    }
+    .care-box {
+      background: #fff;
+      border-radius: 18px;
+      padding: 32px 30px;
+    }
+    .care-box.pre  { border-top: 4px solid var(--teal); }
+    .care-box.post { border-top: 4px solid var(--pink); }
+    .care-box h3 {
+      font-size: 1.05rem; margin-bottom: 20px;
+    }
+    .care-box.pre h3  { color: #0d7a8a; }
+    .care-box.post h3 { color: #a03070; }
+    .care-list {
+      display: flex; flex-direction: column; gap: 12px;
+    }
+    .care-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.88rem; line-height: 1.55; color: #3a3050;
+    }
+    .care-dot {
+      flex-shrink: 0;
+      width: 20px; height: 20px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 900; margin-top: 1px;
+    }
+    .pre  .care-dot { background: var(--teal); color: #fff; }
+    .post .care-dot { background: var(--pink); color: #fff; }
+
+    @media (max-width: 680px) {
+      .care-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- FAQ ---- */
+    .faq-section {
+      padding: 88px 0 80px;
+      background: linear-gradient(135deg, #fde8f3 0%, #f0ecfc 100%);
+    }
+    .faq-list {
+      max-width: 740px;
+      margin: 44px auto 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .faq-item {
+      border-bottom: 1px solid rgba(197,180,232,0.4);
+    }
+    .faq-item:first-child { border-top: 1px solid rgba(197,180,232,0.4); }
+    .faq-question {
+      width: 100%;
+      background: none; border: none;
+      padding: 22px 0;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px;
+      cursor: pointer; text-align: left;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--navy);
+    }
+    .faq-question:hover { color: var(--pink); }
+    .faq-chevron {
+      flex-shrink: 0;
+      width: 24px; height: 24px; border-radius: 50%;
+      background: var(--soft-pink-bg);
+      border: 1.5px solid rgba(224,87,154,0.25);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.3s;
+      color: var(--pink); font-size: 0.7rem;
+    }
+    .faq-item.open .faq-chevron { transform: rotate(180deg); }
+    .faq-answer {
+      display: none;
+      padding: 0 0 22px;
+      font-size: 0.92rem; color: #5a5070; line-height: 1.75;
+    }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ---- CTA Section ---- */
+    .cta-section {
+      padding: 88px 0 80px;
+      background: linear-gradient(135deg, #fde8f3 0%, #ede8fc 50%, #e8f4fb 100%);
+      text-align: center;
+    }
+    .cta-section h2 { color: var(--navy); margin-bottom: 16px; }
+    .cta-section p  { color: #5a4a70; font-size: 1rem; line-height: 1.7; margin-bottom: 32px; max-width: 540px; margin-left: auto; margin-right: auto; }
+    .cta-btns {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    }
+
+    /* ---- Responsive Utilities ---- */
+    @media (max-width: 640px) {
+      .what-section,
+      .areas-section,
+      .compare-section,
+      .process-section,
+      .pricing-section,
+      .care-section,
+      .faq-section,
+      .cta-section { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss">Medical Weight Loss</a>
+          <a href="/happy-health-clinic">Happy Health Clinic (DPC)</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link active" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/jeuveau">Jeuveau® (Botox)</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/iv-drip-menu" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">'I DO' Drips (Bridal)</a>
+          <a href="/#iv-therapy">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#payment" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/jeuveau" class="sub-link">Jeuveau® (Botox)</a>
+    <a href="/#aesthetics" class="sub-link">PRP / PFR</a>
+    <a href="/#aesthetics" class="sub-link">VAMP™ Microneedling</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">'I DO' Drips (Bridal)</a>
+    <a href="/#iv-therapy" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+    <a href="tel:6822836976" style="color:#5dd9e8;font-weight:800;">(682) 283-6976</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="background:#3ab8cb;color:#fff;margin:12px 24px;border-radius:50px;text-align:center;">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="jeuv-hero">
+  <div class="container">
+    <div class="jeuv-hero-inner">
+
+      <div class="jeuv-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>›</span>
+          <span>Aesthetics</span>
+          <span>›</span>
+          <span>Jeuveau®</span>
+        </nav>
+        <span class="eyebrow">Jeuveau® Neurotoxin &mdash; Bedford, TX</span>
+        <h1>Look Refreshed.<br><em>Feel Like You.</em></h1>
+        <p class="jeuv-hero-tagline">Jeuveau® (prabotulinumtoxinA-xvfs) is the first FDA-approved neurotoxin developed <em>exclusively</em> for aesthetic use — the "new tox" designed to smooth lines and restore a naturally refreshed, rested look without changing what makes you, you.</p>
+        <div class="jeuv-hero-btns">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1rem;padding:15px 32px;">Book a Consultation</a>
+          <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--lav);color:#6040b0;">(682) 283-6976</a>
+        </div>
+      </div>
+
+      <div class="jeuv-hero-img">
+        <img src="images/botox_forehead_wrinkles.png" alt="Woman smiling while receiving a forehead neurotoxin injection at Happy Drip IV & Wellness in Bedford, TX" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT IS JEUVEAU — 2 COL
+     ============================================================ -->
+<section class="what-section">
+  <div class="container">
+    <div class="what-grid">
+
+      <div class="what-img-wrap">
+        <img src="images/botox vial.jpg" alt="Jeuveau® neurotoxin vial product shot" />
+        <div class="what-img-badge">
+          <span>67–70%</span>
+          of patients achieved notable improvement in clinical trials
+        </div>
+      </div>
+
+      <div class="what-content">
+        <span class="section-eyebrow">The New Tox</span>
+        <h2>What Is <em>Jeuveau®?</em></h2>
+        <p>Jeuveau® (prabotulinumtoxinA-xvfs) is an FDA-approved botulinum toxin type A — but unlike BOTOX®, it was developed from day one with a singular focus: <strong>aesthetic results</strong>. Using a modern Hi-Pure™ manufacturing process, Jeuveau® delivers a highly purified formulation specifically designed for cosmetic use.</p>
+        <p>Like all neurotoxins, Jeuveau® works by temporarily blocking nerve signals to targeted facial muscles, allowing them to relax. The result? Softer lines, smoother skin, and a refreshed appearance — without a "frozen" look. The procedure itself is quick, comfortable, and requires no downtime.</p>
+        <p>Brittany Adams, APRN FNP-C, will assess your facial anatomy and goals to determine the right treatment plan for you.</p>
+        <div class="what-stats">
+          <div class="what-stat">
+            <span class="stat-num">2–3</span>
+            <span class="stat-label">Days to Initial Results</span>
+          </div>
+          <div class="what-stat">
+            <span class="stat-num">7–14</span>
+            <span class="stat-label">Days to Full Effect</span>
+          </div>
+          <div class="what-stat">
+            <span class="stat-num">3–4</span>
+            <span class="stat-label">Months Duration</span>
+          </div>
+          <div class="what-stat">
+            <span class="stat-num">10–15</span>
+            <span class="stat-label">Minute Procedure</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TREATMENT AREAS
+     ============================================================ -->
+<section class="areas-section">
+  <div class="container">
+    <div class="areas-header">
+      <span class="section-eyebrow">Common Treatment Areas</span>
+      <h2 class="section-title">Where Can <em>Jeuveau®</em> Help?</h2>
+      <p class="section-intro" style="margin:0 auto;">Jeuveau® is used to smooth dynamic wrinkles — the lines caused by repeated muscle movement. Unit ranges are estimates; your exact dose will be determined at consultation based on your anatomy and goals.</p>
+    </div>
+
+    <div class="areas-grid">
+
+      <div class="area-card">
+        <img src="images/glpinject.png" alt="Glabella injection — 11 lines treatment" />
+        <div class="area-card-body">
+          <h3>Glabella<br><span style="font-weight:400;color:#8060a0;">"11" Lines</span></h3>
+          <span class="area-units">20–45 units</span>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="images/botox_forehead_wrinkles.png" alt="Forehead lines neurotoxin treatment" />
+        <div class="area-card-body">
+          <h3>Forehead<br><span style="font-weight:400;color:#8060a0;">Horizontal Lines</span></h3>
+          <span class="area-units">6–25 units</span>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="images/botox_crows_feet_wrinkles.png" alt="Crow's feet injection at side of eye" />
+        <div class="area-card-body">
+          <h3>Crow's Feet<br><span style="font-weight:400;color:#8060a0;">Eye Corners</span></h3>
+          <span class="area-units">6–20 units</span>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="images/wrinkle_treatment_botox.png" alt="Jawline masseter neurotoxin slimming treatment" />
+        <div class="area-card-body">
+          <h3>Jawline<br><span style="font-weight:400;color:#8060a0;">Masseter Slimming</span></h3>
+          <span class="area-units">20–25 units</span>
+        </div>
+      </div>
+
+      <div class="area-card">
+        <img src="images/filler_wrinkles_treatment.png" alt="Nefertiti neck lift neurotoxin treatment" />
+        <div class="area-card-body">
+          <h3>Nefertiti<br><span style="font-weight:400;color:#8060a0;">Neck Lift</span></h3>
+          <span class="area-units">24–40 units</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     JEUVEAU VS BOTOX COMPARISON
+     ============================================================ -->
+<section class="compare-section">
+  <div class="container">
+    <div class="compare-header">
+      <span class="section-eyebrow">Know the Difference</span>
+      <h2 class="section-title">Jeuveau® vs <span class="lav">BOTOX®</span></h2>
+      <p class="section-intro" style="margin:0 auto;">Both are FDA-approved and highly effective. Here's what sets them apart — and why we're proud to offer Jeuveau®.</p>
+    </div>
+
+    <div class="compare-grid">
+
+      <div class="compare-card botox">
+        <div class="compare-label">The Classic</div>
+        <h3>BOTOX®</h3>
+        <ul class="compare-list">
+          <li><span class="dot">✓</span> FDA-approved botulinum toxin type A</li>
+          <li><span class="dot">✓</span> Decades-long track record</li>
+          <li><span class="dot">✓</span> Used for both medical &amp; aesthetic purposes</li>
+          <li><span class="dot">✓</span> Well-studied, trusted globally</li>
+          <li><span class="dot">·</span> Developed originally for medical indications</li>
+        </ul>
+      </div>
+
+      <div class="compare-card jeuveau">
+        <div class="compare-label">What We Offer</div>
+        <h3>Jeuveau®</h3>
+        <ul class="compare-list">
+          <li><span class="dot">✓</span> FDA-approved botulinum toxin type A</li>
+          <li><span class="dot">✓</span> Newer formulation, modern manufacturing (Hi-Pure™)</li>
+          <li><span class="dot">✓</span> Designed <em>exclusively</em> for aesthetic use</li>
+          <li><span class="dot">✓</span> 67.5–70% notable improvement in clinical trials</li>
+          <li><span class="dot">✓</span> "The new tox" — built for beauty from day one</li>
+        </ul>
+        <span class="we-offer">We Offer Jeuveau® ✨</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     THE EXPERIENCE — HOW IT WORKS
+     ============================================================ -->
+<section class="process-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">The Experience</span>
+      <h2 class="section-title">How It <em>Works</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Four simple steps stand between you and your most refreshed, glowy self.</p>
+    </div>
+
+    <div class="process-steps">
+
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Consultation</h3>
+        <p>We discuss your goals, assess your facial anatomy, and determine the right areas and units for your natural, refreshed look.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Prep</h3>
+        <p>Clean, makeup-free skin. Topical numbing cream is available if desired — though most patients find they don't need it.</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Treatment</h3>
+        <p>A quick 10–15 minute procedure with tiny, precise injections. Most patients describe it as a small pinch — then it's done!</p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>Glow Up</h3>
+        <p>No downtime — head straight back to your day. Initial results in 2–3 days, full glow in 7–14 days. Enjoy for 3–4 months!</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="pricing-section" id="pricing">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Pricing</span>
+      <h2 class="section-title">Your Personalized <em>Quote</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Because every face is unique, so is every treatment plan. Jeuveau® is priced per unit — the exact number of units you need will be determined at your consultation based on your anatomy and goals.</p>
+    </div>
+
+    <div class="pricing-callout">
+      <span class="price-eyebrow">Priced Per Unit at Consultation</span>
+      <h3>No guesswork. No surprise bills.</h3>
+      <p>During your consultation, Brittany Adams, APRN FNP-C, will evaluate your facial anatomy, discuss your desired results, and give you a transparent, personalized quote before any treatment begins. Contact us or book online to get started.</p>
+      <div class="price-btns">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1rem;padding:15px 32px;">Book a Consultation</a>
+        <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--teal);color:#0d7a8a;">(682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRE & POST CARE
+     ============================================================ -->
+<section class="care-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Aftercare &amp; Prep</span>
+      <h2 class="section-title">Pre &amp; Post <em>Care</em></h2>
+      <p class="section-intro" style="margin:0 auto;">A little preparation goes a long way toward the best results and smoothest recovery.</p>
+    </div>
+
+    <div class="care-grid">
+
+      <div class="care-box pre">
+        <h3>Before Your Appointment</h3>
+        <ul class="care-list">
+          <li>
+            <span class="care-dot">✓</span>
+            <span>Come with a clean, <strong>makeup-free face</strong> on the day of your appointment</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span><strong>Avoid alcohol</strong> for at least 24 hours before your treatment</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span><strong>Avoid blood-thinning supplements</strong> (fish oil, vitamin E, aspirin, NSAIDs) for 1 week prior, if medically safe for you to do so</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span><strong>Consult your doctor</strong> before stopping any prescribed blood-thinning medication — never stop without medical guidance</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span>Let us know about any <strong>skin infections, cold sores, or active breakouts</strong> near the treatment area</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="care-box post">
+        <h3>After Your Treatment</h3>
+        <ul class="care-list">
+          <li>
+            <span class="care-dot">✓</span>
+            <span><strong>No strenuous exercise</strong> for 24 hours post-treatment — keep your heart rate down</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span>Avoid <strong>excessive heat</strong> — saunas, hot tubs, and steam rooms for 24 hours</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span><strong>Do not lie flat</strong> or bend forward for at least 4 hours after your appointment</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span><strong>Do not rub, massage, or apply pressure</strong> to the treated areas for 24 hours</span>
+          </li>
+          <li>
+            <span class="care-dot">✓</span>
+            <span>Results take <strong>2–3 days to appear</strong> and reach full effect at 7–14 days — be patient with your glow!</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq-section">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Questions? We've Got Answers.</span>
+      <h2 class="section-title">Frequently Asked <em>Questions</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How is Jeuveau® different from BOTOX®?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Both Jeuveau® and BOTOX® are FDA-approved botulinum toxin type A products and work the same way — by temporarily relaxing facial muscles to smooth dynamic wrinkles. The key difference is focus: BOTOX® was originally developed for medical indications and later approved for aesthetics. Jeuveau® was built from day one as an aesthetic-only neurotoxin, using a modern Hi-Pure™ manufacturing process. It's the "new tox" — and many patients love the results.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How many units will I need?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          It depends on the treatment area and your individual anatomy — muscle strength, facial structure, and your desired outcome all play a role. General estimates by area: Glabella ("11" lines): 20–45 units; Forehead lines: 6–25 units; Crow's feet: 6–20 units per side; Jawline / Masseter: 20–25 units per side; Nefertiti Neck Lift: 24–40 units. Brittany will assess you in person and give you a personalized recommendation before any treatment begins.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How long until I see results?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          You'll typically begin to notice softening of lines within 2–3 days of your treatment. Full results develop over 7–14 days as the neurotoxin fully takes effect. If you have a special event coming up, we recommend scheduling at least 2 weeks in advance to see your optimal results in time.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          How long do results last?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Results from Jeuveau® typically last approximately 3–4 months, though this varies from person to person. Factors like metabolism, activity level, and the treatment area can influence how quickly results fade. Many patients schedule maintenance appointments every 3–4 months to keep their results fresh. Over time, some patients find they need slightly fewer units as treated muscles become conditioned.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          Is it painful?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          Most patients are surprised by how easy it is! Jeuveau® injections feel like a brief, tiny pinch — many describe it as less uncomfortable than a flu shot. The needles used are extremely fine, and the procedure takes only 10–15 minutes. We offer topical numbing cream if desired, though most patients don't find it necessary.
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          What's the downtime?
+          <span class="faq-chevron" aria-hidden="true">&#8964;</span>
+        </button>
+        <div class="faq-answer">
+          None! You can return to your normal activities immediately after treatment. You may notice minor redness or small bumps at the injection sites — these typically resolve within a few hours. The main post-care guidelines are: avoid strenuous exercise for 24 hours, skip the sauna or hot tub for a day, don't lie flat for at least 4 hours after your appointment, and avoid rubbing the treated areas.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section class="cta-section">
+  <div class="container" style="max-width:640px;">
+    <span class="section-eyebrow" style="color:var(--pink);">Ready for Your Refresh?</span>
+    <h2>Book Your <span style="color:var(--pink);">Jeuveau®</span> Consultation</h2>
+    <p>Natural, refreshed, and still completely you. Our Bedford clinic is ready to help you look as good as you feel. Book your consultation online in minutes — or give us a call, we'd love to chat.</p>
+    <div class="cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1rem;padding:16px 36px;">Book Online</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:16px 36px;border-color:var(--teal);color:#0d7a8a;">(682) 283-6976</a>
+    </div>
+    <p style="margin-top:20px;font-size:0.82rem;color:#8a7aa0;">Brittany Adams, APRN FNP-C &bull; 813 Brown Trail #6B, Bedford, TX 76022</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#payment">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau® (Botox)</a>
+        <a href="/#aesthetics">Laser Treatments</a>
+        <a href="/#aesthetics">Dermal Fillers</a>
+        <a href="/#aesthetics">PRP / PFR</a>
+        <a href="/#aesthetics">VAMP™ Microneedling</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar" id="bottomBar" role="complementary" aria-label="Aesthetics promotion">
+  <div class="vip-text">
+    <span class="vip-badge">NEW</span>
+    Introducing <a href="/jeuveau">&nbsp;Jeuveau®&nbsp;</a> — the aesthetic-only neurotoxin. Book your glow-up today!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a> for instant confirmation</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+/* ======================================================
+   FAQ ACCORDION
+   ====================================================== */
+(function () {
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
