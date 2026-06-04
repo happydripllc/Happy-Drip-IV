@@ -617,6 +617,7 @@
             <button class="quiz-opt" data-q="1" data-val="rough">🥴<span>Rough after a big night</span></button>
             <button class="quiz-opt" data-q="1" data-val="pain">🤕<span>Head is pounding</span></button>
             <button class="quiz-opt" data-q="1" data-val="beauty">🪞<span>Dull skin or hair thinning</span></button>
+            <button class="quiz-opt" data-q="1" data-val="sore">🏋️<span>Sore muscles after training</span></button>
           </div>
         </div>
 
@@ -629,6 +630,7 @@
             <button class="quiz-opt" data-q="2" data-val="nausea">🌊<span>Nausea and dehydration</span></button>
             <button class="quiz-opt" data-q="2" data-val="head">💢<span>Migraine or severe headache</span></button>
             <button class="quiz-opt" data-q="2" data-val="skin">💅<span>Dull skin, brittle nails, or hair loss</span></button>
+            <button class="quiz-opt" data-q="2" data-val="muscle">💪<span>Muscle soreness or slow recovery</span></button>
           </div>
         </div>
 
@@ -641,6 +643,7 @@
             <button class="quiz-opt" data-q="3" data-val="recovered">✨<span>Fully recovered, fast</span></button>
             <button class="quiz-opt" data-q="3" data-val="relief">😮‍💨<span>Pain-free and calm</span></button>
             <button class="quiz-opt" data-q="3" data-val="glowing">🌟<span>Glowing skin and stronger hair</span></button>
+            <button class="quiz-opt" data-q="3" data-val="perform">🏆<span>Ready to train harder tomorrow</span></button>
           </div>
         </div>
 
@@ -704,7 +707,7 @@
   .quiz-q.active { display:block; }
   .quiz-q-text { font-size:1.15rem; font-weight:800; color:var(--navy); margin-bottom:20px; text-align:center; }
   .quiz-options {
-    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+    display:grid; grid-template-columns:1fr 1fr 1fr; gap:14px;
   }
   .quiz-opt {
     display:flex; flex-direction:column; align-items:center; gap:10px;
@@ -772,12 +775,21 @@
       why: "Dull skin, thinning hair, and brittle nails are often signs your body is missing key nutrients from the inside. The Beauty Boost delivers biotin, glutathione, vitamin C, and B-complex straight into your bloodstream -- bypassing digestion for maximum absorption and real, visible results.",
       addons: ["Biotin add-on for hair and nail strength", "Glutathione push for skin brightening and detox", "Vitamin C boost for collagen production"],
       also: "If you're also feeling run down or low energy alongside the skin concerns, the Myers Cocktail ($150) covers the fatigue side while still giving your skin some love."
+    },
+    performance: {
+      emoji: '🏋️',
+      name: "Performance Boost Drip",
+      price: "$199",
+      why: "Sore muscles and slow recovery usually mean your body is depleted of electrolytes, amino acids, and the nutrients it needs to rebuild. This drip replenishes everything fast -- so you bounce back quicker, reduce inflammation, and feel ready to go again sooner.",
+      addons: ["Magnesium for muscle relaxation and cramp relief", "B12 shot for energy and oxygen delivery", "Toradol for post-workout inflammation and soreness"],
+      also: "If you're an athlete doing serious training volume, the Myers Cocktail ($150) is a solid weekly maintenance drip to keep your baseline topped off between harder sessions."
     }
   };
 
   function getRecommendation() {
     const q1 = answers[1], q2 = answers[2], q3 = answers[3];
     if (q1 === 'beauty' || q2 === 'skin' || q3 === 'glowing') return 'beauty';
+    if (q1 === 'sore' || q2 === 'muscle' || q3 === 'perform') return 'performance';
     if (q1 === 'pain' || q2 === 'head') return 'migraine';
     if (q1 === 'rough' || q2 === 'nausea') return 'hangover';
     if (q1 === 'sick' || q2 === 'immune') return 'immunity';
