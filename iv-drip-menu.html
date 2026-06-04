@@ -577,6 +577,286 @@
 </section>
 
 <!-- ============================================================
+     DRIP FINDER QUIZ
+     ============================================================ -->
+<section id="drip-finder" style="background: linear-gradient(135deg, #f0ecfc 0%, #fde8f3 60%, #e0f7fa 100%); padding: 64px 0;">
+  <div class="container">
+    <div style="text-align:center; margin-bottom: 36px;">
+      <span style="display:inline-block; background:#1D9E75; color:#fff; font-size:0.7rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:5px 16px; border-radius:40px; margin-bottom:14px;">Not Sure Where to Start?</span>
+      <h2 style="color:var(--navy); font-size:clamp(1.6rem,3vw,2.4rem); margin-bottom:10px;">Find Your <em style="color:#1D9E75; font-style:italic;">Perfect Drip</em></h2>
+      <p style="color:#4a5570; max-width:520px; margin:0 auto; font-size:0.97rem; line-height:1.7;">Answer 4 quick questions and we'll point you to the drip that fits how you're feeling right now.</p>
+    </div>
+
+    <div id="quiz-wrap" style="max-width:720px; margin:0 auto;">
+
+      <!-- Progress bar -->
+      <div style="margin-bottom:28px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+          <span id="quiz-progress-label" style="font-size:0.78rem; font-weight:700; color:#1D9E75;">Question 1 of 4</span>
+          <span id="quiz-step-dots" style="display:flex; gap:6px;">
+            <span class="qdot active"></span>
+            <span class="qdot"></span>
+            <span class="qdot"></span>
+            <span class="qdot"></span>
+          </span>
+        </div>
+        <div style="background:rgba(255,255,255,0.5); border-radius:40px; height:6px; overflow:hidden;">
+          <div id="quiz-bar" style="height:100%; width:25%; background:linear-gradient(90deg,#1D9E75,#3ab8cb); border-radius:40px; transition:width 0.4s;"></div>
+        </div>
+      </div>
+
+      <!-- Questions container -->
+      <div id="quiz-questions">
+
+        <!-- Q1: How are you feeling? -->
+        <div class="quiz-q active" data-q="1">
+          <p class="quiz-q-text">How are you feeling right now?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-q="1" data-val="tired">😴<span>Exhausted and drained</span></button>
+            <button class="quiz-opt" data-q="1" data-val="sick">🤒<span>Under the weather or run down</span></button>
+            <button class="quiz-opt" data-q="1" data-val="rough">🥴<span>Rough after a big night</span></button>
+            <button class="quiz-opt" data-q="1" data-val="pain">🤕<span>Head is pounding</span></button>
+          </div>
+        </div>
+
+        <!-- Q2: Main symptom -->
+        <div class="quiz-q" data-q="2">
+          <p class="quiz-q-text">What's bothering you most?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-q="2" data-val="fatigue">⚡<span>Low energy and brain fog</span></button>
+            <button class="quiz-opt" data-q="2" data-val="immune">🛡️<span>Feeling like I'm getting sick</span></button>
+            <button class="quiz-opt" data-q="2" data-val="nausea">🌊<span>Nausea and dehydration</span></button>
+            <button class="quiz-opt" data-q="2" data-val="head">💢<span>Migraine or severe headache</span></button>
+          </div>
+        </div>
+
+        <!-- Q3: Desired outcome -->
+        <div class="quiz-q" data-q="3">
+          <p class="quiz-q-text">What do you want to walk out feeling?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-q="3" data-val="energized">🔋<span>Recharged and clear-headed</span></button>
+            <button class="quiz-opt" data-q="3" data-val="protected">🌿<span>Strong and protected</span></button>
+            <button class="quiz-opt" data-q="3" data-val="recovered">✨<span>Fully recovered, fast</span></button>
+            <button class="quiz-opt" data-q="3" data-val="relief">😮‍💨<span>Pain-free and calm</span></button>
+          </div>
+        </div>
+
+        <!-- Q4: Add-on preference -->
+        <div class="quiz-q" data-q="4">
+          <p class="quiz-q-text">Any extras you'd like to add on?</p>
+          <div class="quiz-options">
+            <button class="quiz-opt" data-q="4" data-val="b12">💉<span>B12 shot for a quick boost</span></button>
+            <button class="quiz-opt" data-q="4" data-val="glutathione">✨<span>Glutathione for glow + detox</span></button>
+            <button class="quiz-opt" data-q="4" data-val="zinc">🛡️<span>Extra zinc for immune support</span></button>
+            <button class="quiz-opt" data-q="4" data-val="none">🙅<span>Just the drip, keep it simple</span></button>
+          </div>
+        </div>
+
+      </div><!-- /quiz-questions -->
+
+      <!-- Result screen -->
+      <div id="quiz-result" style="display:none;">
+        <div style="background:#fff; border-radius:24px; padding:36px 40px; box-shadow:0 8px 40px rgba(29,158,117,0.12); border:2px solid rgba(29,158,117,0.15);">
+          <div style="text-align:center; margin-bottom:28px;">
+            <span id="result-badge" style="display:inline-block; font-size:0.68rem; font-weight:800; letter-spacing:0.12em; text-transform:uppercase; padding:5px 16px; border-radius:40px; background:#1D9E75; color:#fff; margin-bottom:14px;">Your Recommended Drip</span>
+            <div id="result-emoji" style="font-size:3rem; margin-bottom:8px;"></div>
+            <h3 id="result-name" style="color:var(--navy); font-size:1.8rem; margin-bottom:4px;"></h3>
+            <p id="result-price" style="color:#1D9E75; font-weight:800; font-size:1.1rem; margin-bottom:16px;"></p>
+            <p id="result-why" style="color:#4a5570; line-height:1.75; max-width:480px; margin:0 auto;"></p>
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:28px;">
+            <div style="background:#f0faf5; border-radius:16px; padding:20px;">
+              <p style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:#1D9E75; margin-bottom:10px;">Suggested Add-Ons</p>
+              <ul id="result-addons" style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px;"></ul>
+            </div>
+            <div style="background:#f0ecfc; border-radius:16px; padding:20px;">
+              <p style="font-size:0.72rem; font-weight:800; text-transform:uppercase; letter-spacing:0.1em; color:var(--navy); margin-bottom:10px;">Also Consider</p>
+              <p id="result-also" style="font-size:0.88rem; color:#4a5570; line-height:1.6; margin:0;"></p>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+            <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"
+               style="display:inline-flex; align-items:center; gap:8px; background:#1D9E75; color:#fff; font-weight:800; font-size:0.9rem; padding:14px 28px; border-radius:50px; box-shadow:0 4px 16px rgba(29,158,117,0.3); transition:all 0.2s; text-decoration:none;">
+              Book This Drip
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <button onclick="resetQuiz()"
+               style="display:inline-flex; align-items:center; gap:8px; background:transparent; color:var(--navy); border:2px solid var(--border); font-weight:700; font-size:0.9rem; padding:14px 24px; border-radius:50px; cursor:pointer; transition:all 0.2s;">
+              Retake Quiz
+            </button>
+          </div>
+        </div>
+      </div><!-- /quiz-result -->
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .qdot { width:10px; height:10px; border-radius:50%; background:rgba(29,158,117,0.2); display:inline-block; transition:all 0.3s; }
+  .qdot.active { background:#1D9E75; transform:scale(1.2); }
+  .quiz-q { display:none; }
+  .quiz-q.active { display:block; }
+  .quiz-q-text { font-size:1.15rem; font-weight:800; color:var(--navy); margin-bottom:20px; text-align:center; }
+  .quiz-options {
+    display:grid; grid-template-columns:1fr 1fr; gap:14px;
+  }
+  .quiz-opt {
+    display:flex; flex-direction:column; align-items:center; gap:10px;
+    background:#fff; border:2px solid rgba(29,158,117,0.15); border-radius:18px;
+    padding:22px 16px; cursor:pointer; transition:all 0.2s;
+    font-family:var(--font-body); font-size:0.88rem; font-weight:700; color:var(--navy);
+    text-align:center; line-height:1.4;
+  }
+  .quiz-opt:hover { border-color:#1D9E75; background:#f0faf5; transform:translateY(-2px); box-shadow:0 6px 20px rgba(29,158,117,0.12); }
+  .quiz-opt.selected { border-color:#1D9E75; background:#f0faf5; box-shadow:0 0 0 3px rgba(29,158,117,0.15); }
+  .quiz-opt span { font-size:0.85rem; }
+  .quiz-opt > :first-child { font-size:2rem; }
+  #result-addons li { display:flex; align-items:center; gap:8px; font-size:0.84rem; color:#1D9E75; font-weight:700; }
+  #result-addons li::before { content:'✓'; flex-shrink:0; }
+  @media (max-width:640px) {
+    .quiz-options { grid-template-columns:1fr 1fr; gap:10px; }
+    .quiz-opt { padding:16px 10px; font-size:0.8rem; }
+    #quiz-wrap { padding: 0 4px; }
+    #quiz-result > div { padding:24px 20px; }
+    #quiz-result > div > div:nth-child(3) { grid-template-columns:1fr; }
+  }
+</style>
+
+<script>
+(function() {
+  const answers = {};
+
+  const drips = {
+    myers: {
+      emoji: '⚡',
+      name: "Myers Cocktail",
+      price: "$150",
+      why: "Based on your answers, your body is craving a full reset. The Myers Cocktail delivers magnesium, B vitamins, vitamin C, and calcium directly into your bloodstream -- giving you fast, lasting energy and mental clarity without the crash.",
+      addons: ["B12 shot for sustained energy", "Glutathione for cellular detox", "Extra magnesium for muscle tension"],
+      also: "If you want a bigger immune push, the Immunity Boost ($199) is worth a look -- it adds high-dose vitamin C and zinc to the Myers base."
+    },
+    hangover: {
+      emoji: '🥴',
+      name: "Hangover Recovery",
+      price: "$199",
+      why: "You need rapid rehydration, nausea relief, and a nutrient reload -- and that's exactly what this drip is built for. Saline, B vitamins, anti-nausea support, and electrolytes get you back to human fast.",
+      addons: ["B12 shot to cut through the fog", "Glutathione to help your liver detox", "Toradol (anti-inflammatory) for headache relief"],
+      also: "If your headache is severe and throbbing, the Migraine Relief drip ($300) may be a better fit -- it includes targeted pain and nausea medication."
+    },
+    immunity: {
+      emoji: '🛡️',
+      name: "Immunity Boost",
+      price: "$199",
+      why: "Your immune system is waving a red flag and this drip answers the call. High-dose vitamin C, zinc, B vitamins, and antioxidants flood your system to help your body fight back before things get worse.",
+      addons: ["Extra zinc for added immune support", "Glutathione to reduce oxidative stress", "B12 shot to keep your energy up while you recover"],
+      also: "Feeling rundown rather than actively sick? The Myers Cocktail ($150) is a gentler full-body option that still packs a solid immune punch."
+    },
+    migraine: {
+      emoji: '🤕',
+      name: "Migraine Relief",
+      price: "$300",
+      why: "When your head is pounding and nothing is helping, you need more than fluids. This drip combines targeted anti-nausea and anti-inflammatory medications with magnesium and B vitamins -- often bringing relief within the hour.",
+      addons: ["Magnesium push for vascular tension", "Toradol for pain and inflammation", "Zofran for nausea relief"],
+      also: "If your headache is more tension-related than migraine, the Myers Cocktail ($150) with a magnesium add-on can work really well."
+    }
+  };
+
+  function getRecommendation() {
+    const q1 = answers[1], q2 = answers[2];
+    if (q1 === 'pain' || q2 === 'head') return 'migraine';
+    if (q1 === 'rough' || q2 === 'nausea') return 'hangover';
+    if (q1 === 'sick' || q2 === 'immune') return 'immunity';
+    return 'myers';
+  }
+
+  function showResult() {
+    const key = getRecommendation();
+    const d = drips[key];
+    document.getElementById('quiz-questions').style.display = 'none';
+    document.getElementById('quiz-progress-label').textContent = 'Your result is ready!';
+    document.getElementById('quiz-bar').style.width = '100%';
+    document.querySelectorAll('.qdot').forEach(dot => dot.classList.add('active'));
+
+    document.getElementById('result-emoji').textContent = d.emoji;
+    document.getElementById('result-name').textContent = d.name;
+    document.getElementById('result-price').textContent = d.price;
+    document.getElementById('result-why').textContent = d.why;
+    document.getElementById('result-also').textContent = d.also;
+
+    const addonList = document.getElementById('result-addons');
+    addonList.innerHTML = '';
+
+    // Personalize addon based on Q4 answer
+    const q4 = answers[4];
+    const personalAddon = {
+      b12: 'B12 shot for an instant energy boost',
+      glutathione: 'Glutathione for glow and cellular detox',
+      zinc: 'Zinc boost for immune defense',
+      none: null
+    }[q4];
+
+    const addonsToShow = personalAddon
+      ? [personalAddon, ...d.addons.filter(a => !a.toLowerCase().includes(personalAddon.split(' ')[0].toLowerCase()))].slice(0, 3)
+      : d.addons;
+
+    addonsToShow.forEach(a => {
+      const li = document.createElement('li');
+      li.textContent = a;
+      addonList.appendChild(li);
+    });
+
+    document.getElementById('quiz-result').style.display = 'block';
+  }
+
+  function updateProgress(step) {
+    document.getElementById('quiz-progress-label').textContent = `Question ${step} of 4`;
+    document.getElementById('quiz-bar').style.width = (step / 4 * 100) + '%';
+    document.querySelectorAll('.qdot').forEach((dot, i) => {
+      dot.classList.toggle('active', i < step);
+    });
+  }
+
+  document.querySelectorAll('.quiz-opt').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const q = parseInt(this.dataset.q);
+      const val = this.dataset.val;
+
+      // Highlight selected
+      document.querySelectorAll(`.quiz-opt[data-q="${q}"]`).forEach(b => b.classList.remove('selected'));
+      this.classList.add('selected');
+      answers[q] = val;
+
+      // Slight delay for visual feedback then advance
+      setTimeout(() => {
+        if (q < 4) {
+          document.querySelector(`.quiz-q[data-q="${q}"]`).classList.remove('active');
+          document.querySelector(`.quiz-q[data-q="${q + 1}"]`).classList.add('active');
+          updateProgress(q + 1);
+        } else {
+          showResult();
+        }
+      }, 300);
+    });
+  });
+
+  window.resetQuiz = function() {
+    Object.keys(answers).forEach(k => delete answers[k]);
+    document.querySelectorAll('.quiz-opt').forEach(b => b.classList.remove('selected'));
+    document.querySelectorAll('.quiz-q').forEach(q => q.classList.remove('active'));
+    document.querySelector('.quiz-q[data-q="1"]').classList.add('active');
+    document.getElementById('quiz-questions').style.display = 'block';
+    document.getElementById('quiz-result').style.display = 'none';
+    document.getElementById('quiz-progress-label').textContent = 'Question 1 of 4';
+    document.getElementById('quiz-bar').style.width = '25%';
+    document.querySelectorAll('.qdot').forEach((dot, i) => dot.classList.toggle('active', i === 0));
+  };
+})();
+</script>
+
+<!-- ============================================================
      STICKY LEVEL TABS
      ============================================================ -->
 <div class="level-tabs" role="navigation" aria-label="Drip level navigation">
