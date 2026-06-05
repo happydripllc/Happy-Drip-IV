@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peptide Therapy Bedford TX | Happy Drip IV &amp; Wellness</title>
+  <meta name="description" content="Personalized peptide therapy protocols for recovery, anti-aging, weight loss &amp; longevity. Prescribed by Brittany Adams, APRN, FNP-C in Bedford, TX." />
+  <link rel="canonical" href="https://www.happydripiv.com/peptide-therapy/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <style>
+    /* ---- Page Hero ---- */
+    .page-hero {
+      background: linear-gradient(135deg, #e0f7fa 0%, #f0ecfc 50%, #fde8f3 100%);
+      padding: 80px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 460px; height: 460px;
+      background: radial-gradient(circle, rgba(29,158,117,0.10) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero-content {
+      max-width: 700px;
+      position: relative;
+      z-index: 1;
+    }
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(29,158,117,0.10);
+      border: 1px solid rgba(29,158,117,0.3);
+      color: #1D9E75;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 40px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .page-hero-content h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      color: var(--navy);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .page-hero-content .subhead {
+      font-size: 1.1rem;
+      color: #4a5570;
+      margin-bottom: 32px;
+      line-height: 1.65;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(0,0,0,0.45);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a { color: #1D9E75; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+    .hero-cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-teal {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1D9E75;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-teal:hover { background: #178a64; transform: translateY(-1px); }
+    .btn-outline-navy {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 13px 28px;
+      border-radius: 50px;
+      border: 2px solid var(--navy);
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-navy:hover { background: var(--navy); color: #fff; }
+
+    /* ---- What Is Peptide Therapy ---- */
+    .peptide-intro {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .peptide-intro-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .peptide-intro-text h2 {
+      color: var(--navy);
+      margin-bottom: 20px;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+    }
+    .peptide-intro-text p {
+      color: #4a5570;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      font-size: 1rem;
+    }
+    .peptide-info-box {
+      background: var(--navy);
+      border-radius: 20px;
+      padding: 40px 36px;
+      color: #fff;
+    }
+    .peptide-info-box h3 {
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+      opacity: 0.85;
+      font-family: var(--font-body);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.75rem;
+    }
+    .peptide-info-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .peptide-info-box li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: rgba(255,255,255,0.9);
+    }
+    .peptide-info-box .info-dot {
+      width: 8px;
+      height: 8px;
+      background: #1D9E75;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+
+    /* ---- Use Cases Grid ---- */
+    .use-cases {
+      padding: 80px 0;
+      background: #f7f9fc;
+    }
+    .use-cases .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .use-cases .section-header h2 {
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+    .use-cases .section-header p {
+      color: #4a5570;
+      font-size: 0.95rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    .use-cases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .use-card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1.5px solid #e4e9f0;
+      overflow: hidden;
+      padding: 32px 28px;
+      position: relative;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .use-card:hover {
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+    }
+    .use-card-top-border {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      border-radius: 16px 16px 0 0;
+    }
+    .border-teal { background: #1D9E75; }
+    .border-pink { background: #e87b9e; }
+    .border-lavender { background: #9b7ee8; }
+    .border-gold { background: #e8b84b; }
+    .border-mint { background: #4bcfb5; }
+    .use-card-emoji {
+      font-size: 2.2rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .use-card h3 {
+      color: var(--navy);
+      font-size: 1.15rem;
+      margin-bottom: 12px;
+    }
+    .use-card p {
+      color: #4a5570;
+      font-size: 0.88rem;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .use-card-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .use-pill {
+      display: inline-block;
+      background: #f0f4f8;
+      color: #4a5570;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 5px 12px;
+      border-radius: 30px;
+      letter-spacing: 0.04em;
+    }
+    .use-card-names {
+      font-size: 0.78rem;
+      color: #1D9E75;
+      font-weight: 700;
+    }
+    .use-card-note {
+      font-size: 0.78rem;
+      color: #8a94b0;
+      font-style: italic;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    /* ---- NAD+ Callout ---- */
+    .nad-section {
+      background: var(--navy);
+      padding: 80px 0;
+    }
+    .nad-inner {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .nad-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1D9E75;
+      background: rgba(29,158,117,0.15);
+      padding: 5px 14px;
+      border-radius: 30px;
+      margin-bottom: 20px;
+    }
+    .nad-inner h2 {
+      color: #fff;
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      margin-bottom: 20px;
+    }
+    .nad-inner > p {
+      color: rgba(255,255,255,0.75);
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 40px;
+    }
+    .nad-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .nad-option {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(29,158,117,0.35);
+      border-radius: 16px;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .nad-option h4 {
+      color: #1D9E75;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .nad-option p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.88rem;
+      line-height: 1.65;
+      margin: 0;
+    }
+    .nad-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1D9E75;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .nad-cta:hover { background: #178a64; transform: translateY(-1px); }
+
+    /* ---- Why Happy Drip Trust Cards ---- */
+    .why-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .why-section .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .why-section .section-header h2 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .why-card {
+      background: #f7f9fc;
+      border-radius: 16px;
+      padding: 36px 28px;
+      border: 1.5px solid #e4e9f0;
+    }
+    .why-card h3 {
+      color: var(--navy);
+      font-size: 1.05rem;
+      margin-bottom: 14px;
+    }
+    .why-card p {
+      color: #4a5570;
+      font-size: 0.88rem;
+      line-height: 1.75;
+      margin: 0;
+    }
+    .why-card-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(29,158,117,0.12);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 18px;
+      color: #1D9E75;
+    }
+    .why-card-icon svg { width: 22px; height: 22px; }
+
+    /* ---- Pricing ---- */
+    .pricing-section {
+      padding: 80px 0;
+      background: #e8f8f2;
+      text-align: center;
+    }
+    .pricing-section h2 {
+      color: var(--navy);
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      margin-bottom: 16px;
+    }
+    .pricing-section > .container > p {
+      color: #4a5570;
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+    .pricing-note {
+      margin-top: 18px;
+      font-size: 0.8rem;
+      color: #6b7a99;
+    }
+
+    /* ---- Bottom CTA Crosslinks ---- */
+    .crosslink-section {
+      background: var(--navy);
+      padding: 80px 0;
+    }
+    .crosslink-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .crosslink-card {
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 40px 36px;
+      border-top: 4px solid transparent;
+    }
+    .crosslink-card.accent-pink { border-top-color: #e87b9e; }
+    .crosslink-card.accent-teal { border-top-color: #1D9E75; }
+    .crosslink-label {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .crosslink-card.accent-pink .crosslink-label { color: #e87b9e; }
+    .crosslink-card.accent-teal .crosslink-label { color: #1D9E75; }
+    .crosslink-card h3 {
+      display: none;
+    }
+    .crosslink-card p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.9rem;
+      line-height: 1.75;
+      margin-bottom: 24px;
+    }
+    .crosslink-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      text-decoration: none;
+      transition: gap 0.2s;
+    }
+    .crosslink-card.accent-pink .crosslink-link { color: #e87b9e; }
+    .crosslink-card.accent-teal .crosslink-link { color: #1D9E75; }
+    .crosslink-link:hover { gap: 12px; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .peptide-intro-grid { grid-template-columns: 1fr; }
+      .use-cases-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr; }
+      .crosslink-grid { grid-template-columns: 1fr; }
+      .nad-options { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .use-cases-grid { grid-template-columns: 1fr; }
+      .page-hero { padding: 60px 0 48px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
+      <div class="nav-item">
+        <a href="#" class="nav-link active">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss" style="color:var(--teal-dark);font-weight:700;">Medical Weight Loss</a>
+          <a href="/glp1-side-effects/">GLP-1 Side Effects</a>
+          <a href="/happy-health-clinic">Happy Health Clinic (DPC)</a>
+          <a href="/peptide-therapy/">Peptide Therapy</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/#aesthetics">Jeuveau® (Botox)</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#iv-therapy" class="nav-link">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#iv-therapy">IV Drip Menu</a>
+          <a href="/#iv-therapy">'I DO' Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/#payment" class="nav-link">Payment Plans</a></div>
+      <div class="nav-item"><a href="/#faq" class="nav-link">FAQ</a></div>
+    </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link" style="color:var(--teal);">Medical Weight Loss</a>
+    <a href="/glp1-side-effects/" class="sub-link">GLP-1 Side Effects</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/#aesthetics" class="sub-link">Jeuveau® (Botox)</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/#iv-therapy" class="sub-link">IV Drip Menu</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+    <a href="tel:6822836976" style="color:#5dd9e8;font-weight:800;">(682) 283-6976</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="background:#3ab8cb;color:#fff;margin:12px 24px;border-radius:50px;text-align:center;">Book Now</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="eyebrow-pill">Peptide Therapy -- Bedford, TX</span>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span>Medical Services</span>
+        <span>›</span>
+        <span style="color:#4a5570;">Peptide Therapy</span>
+      </nav>
+      <h1>Peptide therapy: the tool your body's been missing</h1>
+      <p class="subhead">These aren't supplements. They're signaling molecules your body already knows how to use -- we're just giving it more to work with.</p>
+      <div class="hero-cta-row">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book a Consult</a>
+        <a href="tel:6822836976" class="btn-outline-navy">(682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT IS PEPTIDE THERAPY
+     ============================================================ -->
+<section class="peptide-intro">
+  <div class="container">
+    <div class="peptide-intro-grid">
+      <div class="peptide-intro-text">
+        <span class="section-label">What Is Peptide Therapy</span>
+        <h2>Your body already speaks this language.</h2>
+        <p>Peptides are short chains of amino acids that act as messengers in the body. They tell cells to repair, regenerate, produce hormones, reduce inflammation, or protect tissue. Unlike synthetic drugs, most peptides work WITH your body's existing pathways rather than overriding them.</p>
+        <p>Brittany prescribes individualized peptide protocols based on your labs, goals, and health history through licensed 503A compounding pharmacies. You get a real prescription from a real provider -- not a research-grade product shipped from a grey-market website.</p>
+      </div>
+      <div class="peptide-info-box">
+        <h3>The basics</h3>
+        <ul>
+          <li>
+            <span class="info-dot"></span>
+            <span>Short chains of amino acids -- the building blocks your body already uses to communicate between cells</span>
+          </li>
+          <li>
+            <span class="info-dot"></span>
+            <span>Work with your body's existing pathways rather than overriding or suppressing them</span>
+          </li>
+          <li>
+            <span class="info-dot"></span>
+            <span>Prescribed and monitored by a licensed provider -- Brittany Adams, APRN, FNP-C -- through a 503A compounding pharmacy</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     USE CASES GRID
+     ============================================================ -->
+<section class="use-cases">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Treat</span>
+      <h2>What peptide therapy can do for you</h2>
+      <p>These protocols aren't one-size-fits-all. Brittany builds each plan around your specific goals and health picture.</p>
+    </div>
+    <div class="use-cases-grid">
+
+      <!-- Card 1: Recovery and Healing -->
+      <div class="use-card">
+        <div class="use-card-top-border border-teal"></div>
+        <span class="use-card-emoji">🩹</span>
+        <h3>Recovery and Healing</h3>
+        <p>Injury recovery, tissue repair, gut healing, and reducing chronic inflammation. Some of the most clinically studied peptides fall in this category -- and results can be significant for people who've hit a wall with standard treatments.</p>
+        <div class="use-card-pills">
+          <span class="use-pill">Tissue Repair Peptides</span>
+          <span class="use-pill">Anti-Inflammatory Peptides</span>
+        </div>
+        <div class="use-card-names">Common options: BPC-157, TB-500</div>
+      </div>
+
+      <!-- Card 2: Body Composition and Weight Loss -->
+      <div class="use-card">
+        <div class="use-card-top-border border-pink"></div>
+        <span class="use-card-emoji">🔥</span>
+        <h3>Body Composition and Weight Loss</h3>
+        <p>Fat metabolism support, muscle preservation, and body recomposition. These work especially well alongside a GLP-1 program to make sure you're losing fat -- not muscle.</p>
+        <div class="use-card-pills">
+          <span class="use-pill">Fat Metabolism Support</span>
+          <span class="use-pill">Muscle Preservation</span>
+        </div>
+        <div class="use-card-names">Common options: AOD-9604, GHK-Cu</div>
+      </div>
+
+      <!-- Card 3: Longevity and Anti-Aging -->
+      <div class="use-card">
+        <div class="use-card-top-border border-lavender"></div>
+        <span class="use-card-emoji">⏳</span>
+        <h3>Longevity and Anti-Aging</h3>
+        <p>Cellular repair, telomere support, skin and collagen health, oxidative stress reduction. If longevity is the goal, this category is where to start.</p>
+        <div class="use-card-pills">
+          <span class="use-pill">Cellular Repair</span>
+          <span class="use-pill">Collagen and Skin</span>
+        </div>
+        <div class="use-card-names">Common options: Epitalon, GHK-Cu</div>
+      </div>
+
+      <!-- Card 4: Growth Hormone Optimization -->
+      <div class="use-card">
+        <div class="use-card-top-border border-gold"></div>
+        <span class="use-card-emoji">💪</span>
+        <h3>Growth Hormone Optimization</h3>
+        <p>Natural growth hormone stimulation for better sleep, muscle recovery, body composition, and energy. A gentler, more sustainable alternative to direct GH therapy.</p>
+        <div class="use-card-pills">
+          <span class="use-pill">GH Secretagogues</span>
+          <span class="use-pill">Sleep and Recovery</span>
+        </div>
+        <div class="use-card-names">Common options: Sermorelin, CJC-1295/Ipamorelin</div>
+      </div>
+
+      <!-- Card 5: Cognitive and Neuroprotective Support -->
+      <div class="use-card">
+        <div class="use-card-top-border border-mint"></div>
+        <span class="use-card-emoji">🧠</span>
+        <h3>Cognitive and Neuroprotective Support</h3>
+        <p>Brain fog, focus, stress resilience, and mood support. This is an emerging and exciting category -- available by consult only. Brittany will evaluate whether you're a good candidate.</p>
+        <div class="use-card-pills">
+          <span class="use-pill">Cognitive Support</span>
+          <span class="use-pill">Neuroprotection</span>
+        </div>
+        <p class="use-card-note">Available by consult -- Brittany evaluates each patient individually</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     NAD+ CALLOUT
+     ============================================================ -->
+<section class="nad-section">
+  <div class="container">
+    <div class="nad-inner">
+      <span class="nad-label">Also Available</span>
+      <h2>NAD+: where peptide therapy meets IV therapy</h2>
+      <p>NAD+ is a coenzyme involved in hundreds of metabolic processes -- energy production, DNA repair, how your cells age. It sits at the intersection of everything we do here. Available as a high-dose IV infusion or as a subcutaneous injection protocol. One of the most requested longevity treatments Brittany offers, and one she uses herself.</p>
+      <div class="nad-options">
+        <div class="nad-option">
+          <h4>IV Infusion</h4>
+          <p>High-dose, fast delivery. Pairs well with your existing IV protocol.</p>
+        </div>
+        <div class="nad-option">
+          <h4>Subcutaneous</h4>
+          <p>Ongoing protocol for sustained cellular support.</p>
+        </div>
+      </div>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="nad-cta">Ask about NAD+ at your next visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY HAPPY DRIP
+     ============================================================ -->
+<section class="why-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Why Happy Drip</span>
+      <h2>What makes this different</h2>
+    </div>
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Prescribed by a real provider</h3>
+        <p>Brittany evaluates every patient individually. No cookie-cutter protocols, no online quiz that spits out a stack. Your protocol is built around your labs, your goals, and your full health picture.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>503A compounding pharmacy sourced</h3>
+        <p>Pharmaceutical-grade compounds from licensed compounding pharmacies. Not research-grade, not grey market. You know exactly what you're getting and where it came from.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="why-card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Integrated with your full picture</h3>
+        <p>Peptides work best as part of a complete protocol. Brittany looks at your labs, your GLP-1 program if applicable, your hormones, and your goals before recommending anything. It's all connected.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="pricing-section">
+  <div class="container">
+    <h2>Simple, transparent starting point</h2>
+    <p>Peptide protocols are individualized so pricing depends on what you're prescribed. Starting at $150/month. Book a consult and we'll build your protocol together.</p>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book a peptide consult</a>
+    <p class="pricing-note">Cash-pay practice. We provide itemized invoices for HSA/FSA submission.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOTTOM CROSSLINKS
+     ============================================================ -->
+<section class="crosslink-section">
+  <div class="container">
+    <div class="crosslink-grid">
+
+      <div class="crosslink-card accent-pink">
+        <div class="crosslink-label">GLP-1 Program</div>
+        <p>Peptides pair especially well with our GLP-1 weight loss program -- muscle preservation and fat metabolism support in one protocol.</p>
+        <a href="/weightloss" class="crosslink-link">
+          Learn about our weight loss program
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="crosslink-card accent-teal">
+        <div class="crosslink-label">GLP-1 Side Effects</div>
+        <p>Already on semaglutide or tirzepatide and dealing with fatigue or muscle loss? There's a peptide protocol for that.</p>
+        <a href="/glp1-side-effects/" class="crosslink-link">
+          Read Brittany's GLP-1 guide
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/weightloss">Medical Weight Loss</a>
+        <a href="/glp1-side-effects/">GLP-1 Side Effects</a>
+        <a href="/peptide-therapy/">Peptide Therapy</a>
+        <a href="/#iv-therapy">IV Therapy</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#provider">About Brittany</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>Peptide Therapy</h5>
+        <a href="/peptide-therapy/">Recovery and Healing</a>
+        <a href="/peptide-therapy/">Body Composition</a>
+        <a href="/peptide-therapy/">Longevity and Anti-Aging</a>
+        <a href="/peptide-therapy/">Growth Hormone Optimization</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book a Consult</a>
+      </div>
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.65);">Subscribe for wellness tips and promotions. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+          <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+          <button type="submit">Go</button>
+        </form>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar">
+  <div class="vip-text">
+    <span class="vip-badge">VIP</span>
+    Join our <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">&nbsp;VIP DRIP CLUB&nbsp;</a> for the best pricing &amp; priority booking!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a></div>
+</div>
+
+<script src="../js/script.js" defer></script>
+</body>
+</html>
