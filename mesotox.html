@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Korean Glass Skin MesoTox Facial | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="Korean Glass Skin MesoTox Facial in Bedford, TX. Hyperdilute neurotoxin + microneedling for poreless, dewy skin and natural expression. No frozen look. Administered by Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/mesotox" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ======================================================
+       MESOTOX — PAGE STYLES
+       Korean Glass Skin aesthetic: warm peach, jade, cream
+       ====================================================== */
+
+    :root {
+      --peach:     #f5874a;
+      --peach-lt:  #fde8d8;
+      --jade:      #38a67c;
+      --jade-lt:   #e0f5ec;
+      --rose:      #e0579a;
+      --rose-lt:   #fde8f3;
+      --navy:      #1a2744;
+      --teal:      #3ab8cb;
+      --gold:      #c8880a;
+      --gold-lt:   #fef5e0;
+      --cream:     #fef8f3;
+    }
+
+    /* ---- Hero ---- */
+    .meso-hero {
+      background: linear-gradient(135deg, #fff5f0 0%, #fdedf6 45%, #f0f5fe 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .meso-hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -80px;
+      width: 440px; height: 440px;
+      background: radial-gradient(circle, rgba(245,135,74,0.14) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .meso-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -60px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(56,166,124,0.12) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .meso-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      min-height: 560px;
+      position: relative; z-index: 1;
+    }
+    .meso-hero-content {
+      padding: 72px 48px 72px 24px;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; color: #9b8b80; margin-bottom: 20px;
+    }
+    .breadcrumb a { color: var(--teal); }
+    .breadcrumb span { opacity: 0.5; }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--peach);
+      background: var(--peach-lt);
+      border: 1.5px solid rgba(245,135,74,0.28);
+      padding: 6px 18px; border-radius: 40px;
+      margin-bottom: 20px;
+    }
+    .meso-hero-content h1 {
+      font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+      color: var(--navy); margin-bottom: 12px; line-height: 1.15;
+    }
+    .meso-hero-content h1 em { font-style: normal; color: var(--peach); }
+    .meso-hero-tagline {
+      font-size: 1.05rem; color: #4a4030; line-height: 1.78;
+      margin-bottom: 32px; max-width: 480px;
+    }
+    .meso-hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .meso-hero-img {
+      height: 560px; position: relative;
+      padding: 28px 24px 28px 0;
+    }
+    .meso-hero-img img {
+      width: 100%; height: 100%; object-fit: cover; object-position: center top;
+      display: block; border-radius: 24px;
+    }
+    .meso-hero-img::before {
+      content: '';
+      position: absolute; inset: 28px 24px 28px 0;
+      background:
+        linear-gradient(to left,  rgba(240,245,254,0.4) 0%, transparent 22%),
+        linear-gradient(to right, #fff5f0 0%, transparent 22%),
+        linear-gradient(to bottom, rgba(255,245,240,0.4) 0%, transparent 18%),
+        linear-gradient(to top,   rgba(240,237,246,0.4) 0%, transparent 18%);
+      z-index: 1;
+      pointer-events: none;
+      border-radius: 24px;
+    }
+    /* Floating badge on hero image */
+    .meso-hero-badge {
+      position: absolute;
+      top: 52px; left: -16px;
+      background: linear-gradient(135deg, var(--jade), #2a8060);
+      color: #fff; border-radius: 14px;
+      padding: 12px 18px;
+      font-size: 0.78rem; font-weight: 800; text-align: center;
+      line-height: 1.4;
+      box-shadow: 0 6px 24px rgba(56,166,124,0.32);
+      z-index: 2;
+    }
+    .meso-hero-badge span { display: block; font-size: 1.4rem; margin-bottom: 2px; }
+
+    @media (max-width: 860px) {
+      .meso-hero-inner { grid-template-columns: 1fr; min-height: auto; }
+      .meso-hero-content { padding: 56px 24px 32px; text-align: center; }
+      .breadcrumb { justify-content: center; }
+      .meso-hero-btns { justify-content: center; }
+      .meso-hero-img { height: 320px; padding: 0 24px 40px; }
+      .meso-hero-img::before { inset: 0 24px 40px 24px; }
+      .meso-hero-badge { display: none; }
+    }
+
+    /* ---- Shared Section Utilities ---- */
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.7rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--jade);
+      margin-bottom: 10px;
+    }
+    .section-eyebrow.peach { color: var(--peach); }
+    .section-eyebrow.rose  { color: var(--rose); }
+    .section-title {
+      color: var(--navy);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 14px;
+    }
+    .section-title em  { font-style: normal; color: var(--peach); }
+    .section-title .jade { color: var(--jade); }
+    .section-intro {
+      color: #5a4a40; font-size: 0.98rem; line-height: 1.8;
+      max-width: 640px;
+    }
+
+    /* ---- Quick-Stat Bar ---- */
+    .stat-bar {
+      background: var(--navy);
+      padding: 28px 0;
+    }
+    .stat-bar-inner {
+      display: flex; justify-content: space-around; align-items: center;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .stat-item { text-align: center; }
+    .stat-item .s-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.9rem; font-weight: 700;
+      color: var(--peach); display: block; line-height: 1;
+    }
+    .stat-item .s-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: rgba(255,255,255,0.65);
+      margin-top: 4px;
+    }
+    .stat-bar-divider {
+      width: 1px; height: 40px;
+      background: rgba(255,255,255,0.12);
+    }
+    @media (max-width: 640px) {
+      .stat-bar-inner { gap: 12px; }
+      .stat-bar-divider { display: none; }
+      .stat-item .s-num { font-size: 1.5rem; }
+    }
+
+    /* ---- What Is MesoTox — 2-col ---- */
+    .what-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-top: 40px;
+    }
+    .what-content h2 {
+      color: var(--navy); font-size: clamp(1.6rem, 3vw, 2.2rem);
+      margin-bottom: 18px; line-height: 1.2;
+    }
+    .what-content h2 em { font-style: normal; color: var(--peach); }
+    .what-content p {
+      color: #5a4a40; font-size: 0.95rem; line-height: 1.82; margin-bottom: 16px;
+    }
+    /* Skin-layer delivery diagram */
+    .delivery-diagram {
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 32px 28px;
+      border: 1.5px solid rgba(245,135,74,0.2);
+      box-shadow: 0 8px 36px rgba(245,135,74,0.08);
+    }
+    .delivery-diagram h4 {
+      font-size: 0.78rem; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--jade);
+      margin-bottom: 20px; text-align: center;
+    }
+    /* Skin layer SVG container */
+    .skin-svg { width: 100%; display: block; }
+
+    /* Info callout inside diagram */
+    .diagram-note {
+      margin-top: 18px;
+      background: var(--jade-lt);
+      border-left: 3px solid var(--jade);
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 0.82rem; color: #2a5040; line-height: 1.6;
+    }
+
+    @media (max-width: 800px) {
+      .what-grid { grid-template-columns: 1fr; gap: 36px; }
+    }
+
+    /* ---- Benefits — icon grid ---- */
+    .benefits-section {
+      padding: 88px 0 80px;
+      background: linear-gradient(160deg, #fff5f0 0%, #fdedf6 50%, #f0f9f6 100%);
+    }
+    .benefits-header { text-align: center; margin-bottom: 52px; }
+    .benefits-header .section-intro { margin: 0 auto; }
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .benefit-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 28px 24px;
+      border: 1.5px solid rgba(245,135,74,0.15);
+      box-shadow: 0 4px 20px rgba(245,135,74,0.07);
+      transition: transform 0.22s, box-shadow 0.22s;
+    }
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 36px rgba(245,135,74,0.13);
+    }
+    .benefit-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; margin-bottom: 16px;
+    }
+    .benefit-icon.peach  { background: var(--peach-lt); }
+    .benefit-icon.jade   { background: var(--jade-lt); }
+    .benefit-icon.rose   { background: var(--rose-lt); }
+    .benefit-icon.gold   { background: var(--gold-lt); }
+    .benefit-card h4 {
+      color: var(--navy); font-size: 0.95rem; font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .benefit-card p {
+      color: #6a5a50; font-size: 0.88rem; line-height: 1.65; margin: 0;
+    }
+    @media (max-width: 860px) {
+      .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 520px) {
+      .benefits-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- How It Works — 3 steps ---- */
+    .how-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .how-header { text-align: center; margin-bottom: 52px; }
+    .how-steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      position: relative;
+    }
+    .how-steps::before {
+      content: '';
+      position: absolute;
+      top: 36px; left: calc(16.6% + 16px); right: calc(16.6% + 16px);
+      height: 2px;
+      background: linear-gradient(to right, var(--peach), var(--jade));
+      z-index: 0;
+    }
+    .how-step {
+      text-align: center;
+      position: relative; z-index: 1;
+    }
+    .how-step-num {
+      width: 72px; height: 72px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem; font-weight: 700; color: #fff;
+      margin: 0 auto 20px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+    }
+    .how-step-num.s1 { background: linear-gradient(135deg, var(--peach), #e06030); }
+    .how-step-num.s2 { background: linear-gradient(135deg, var(--rose), #c04080); }
+    .how-step-num.s3 { background: linear-gradient(135deg, var(--jade), #2a7a5a); }
+    .how-step h4 {
+      color: var(--navy); font-size: 1rem; font-weight: 800; margin-bottom: 10px;
+    }
+    .how-step p {
+      color: #6a5a50; font-size: 0.88rem; line-height: 1.7; margin: 0;
+    }
+
+    @media (max-width: 720px) {
+      .how-steps::before { display: none; }
+      .how-steps { grid-template-columns: 1fr; gap: 28px; }
+      .how-step { display: flex; align-items: flex-start; gap: 16px; text-align: left; }
+      .how-step-num { width: 52px; height: 52px; font-size: 1.3rem; flex-shrink: 0; margin: 0; }
+      .how-step-text { flex: 1; }
+    }
+
+    /* ---- Who It's For ---- */
+    .who-section {
+      padding: 88px 0 80px;
+      background: var(--navy);
+    }
+    .who-header { text-align: center; margin-bottom: 52px; }
+    .who-header .section-eyebrow { color: var(--peach); }
+    .who-header .section-title { color: #fff; }
+    .who-header .section-intro { color: rgba(255,255,255,0.7); margin: 0 auto; }
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+    .who-card {
+      background: rgba(255,255,255,0.06);
+      border: 1.5px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+      padding: 28px 26px;
+      transition: background 0.22s, border-color 0.22s;
+    }
+    .who-card:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(245,135,74,0.35);
+    }
+    .who-card-icon {
+      font-size: 1.6rem; margin-bottom: 12px;
+    }
+    .who-card h4 {
+      color: var(--peach); font-size: 0.95rem; font-weight: 800;
+      margin-bottom: 8px; letter-spacing: 0.02em;
+    }
+    .who-card p {
+      color: rgba(255,255,255,0.65); font-size: 0.88rem; line-height: 1.7; margin: 0;
+    }
+    @media (max-width: 640px) {
+      .who-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Treatment Details — quick reference ---- */
+    .details-section {
+      padding: 88px 0 80px;
+      background: var(--cream);
+    }
+    .details-header { text-align: center; margin-bottom: 52px; }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .detail-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      border: 1.5px solid rgba(245,135,74,0.15);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+    .detail-card .d-icon {
+      font-size: 1.6rem; margin-bottom: 10px;
+    }
+    .detail-card .d-value {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem; font-weight: 700; color: var(--peach);
+      margin-bottom: 4px; line-height: 1.2;
+    }
+    .detail-card .d-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: #8a7a70;
+    }
+    @media (max-width: 720px) {
+      .details-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 440px) {
+      .details-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Comparison Section ---- */
+    .compare-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .compare-header { text-align: center; margin-bottom: 52px; }
+    .compare-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .compare-card {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 36px rgba(0,0,0,0.06);
+    }
+    .compare-card-header {
+      padding: 20px 28px;
+      text-align: center;
+    }
+    .compare-card.meso .compare-card-header {
+      background: linear-gradient(135deg, var(--peach), var(--rose));
+    }
+    .compare-card.trad .compare-card-header {
+      background: linear-gradient(135deg, #8890a8, #5a6080);
+    }
+    .compare-card-header .compare-label {
+      font-size: 0.68rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: rgba(255,255,255,0.8);
+      margin-bottom: 4px;
+    }
+    .compare-card-header h3 {
+      color: #fff; font-size: 1.3rem; margin: 0;
+    }
+    .compare-rows {
+      background: #fff;
+      border: 1.5px solid rgba(0,0,0,0.07);
+      border-top: none;
+      border-radius: 0 0 20px 20px;
+    }
+    .compare-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    .compare-row:last-child { border-bottom: none; }
+    .compare-row .c-dot {
+      width: 22px; height: 22px; border-radius: 50%;
+      flex-shrink: 0; margin-top: 1px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 800; color: #fff;
+    }
+    .compare-card.meso .c-dot { background: var(--peach); }
+    .compare-card.trad .c-dot { background: #8890a8; }
+    .compare-row .c-text { flex: 1; }
+    .compare-row .c-text strong {
+      display: block; font-size: 0.78rem; font-weight: 800;
+      text-transform: uppercase; letter-spacing: 0.06em; color: #8a8a9a;
+      margin-bottom: 2px;
+    }
+    .compare-row .c-text span {
+      font-size: 0.9rem; color: var(--navy); line-height: 1.5;
+    }
+    .compare-card.meso .c-text strong { color: var(--peach); }
+
+    @media (max-width: 640px) {
+      .compare-wrap { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Complementary Callout ---- */
+    .combo-section {
+      padding: 72px 0;
+      background: linear-gradient(135deg, var(--jade-lt) 0%, var(--peach-lt) 100%);
+    }
+    .combo-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 22px;
+      margin-top: 40px;
+    }
+    .combo-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 28px 24px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      border: 1.5px solid rgba(56,166,124,0.15);
+    }
+    .combo-card-icon { font-size: 2rem; margin-bottom: 14px; }
+    .combo-card h4 { color: var(--navy); font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
+    .combo-card p { color: #6a5a50; font-size: 0.88rem; line-height: 1.65; margin: 0 0 16px; }
+    @media (max-width: 720px) {
+      .combo-inner { grid-template-columns: 1fr; }
+    }
+
+    /* ---- FAQ ---- */
+    .faq-section {
+      padding: 88px 0 80px;
+      background: var(--cream);
+    }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item {
+      border: 1.5px solid rgba(245,135,74,0.18);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #fff;
+      transition: box-shadow 0.22s;
+    }
+    .faq-item.open {
+      box-shadow: 0 6px 28px rgba(245,135,74,0.1);
+    }
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 24px; gap: 12px;
+      text-align: left;
+    }
+    .faq-question span {
+      font-weight: 700; font-size: 0.95rem; color: var(--navy); line-height: 1.4;
+    }
+    .faq-chevron {
+      flex-shrink: 0; width: 22px; height: 22px;
+      border-radius: 50%; background: var(--peach-lt);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.28s, background 0.22s;
+    }
+    .faq-chevron svg { color: var(--peach); }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+      background: var(--peach);
+    }
+    .faq-item.open .faq-chevron svg { color: #fff; }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1), padding 0.28s;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-answer { max-height: 300px; padding: 0 24px 22px; }
+    .faq-answer p {
+      color: #6a5a50; font-size: 0.92rem; line-height: 1.78; margin: 0;
+    }
+
+    /* ---- Bottom CTA ---- */
+    .meso-cta {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--peach) 0%, var(--rose) 50%, #c83880 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .meso-cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+      pointer-events: none;
+    }
+    .meso-cta-inner { position: relative; z-index: 1; }
+    .meso-cta h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem); color: #fff;
+      margin-bottom: 16px; line-height: 1.2;
+    }
+    .meso-cta p {
+      font-size: 1.05rem; color: rgba(255,255,255,0.88);
+      max-width: 560px; margin: 0 auto 36px; line-height: 1.7;
+    }
+    .meso-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      background: #fff; color: var(--peach);
+      font-weight: 800; font-size: 0.95rem;
+      padding: 16px 34px; border-radius: 50px;
+      text-decoration: none; transition: all 0.22s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-white:hover { background: #fff8f5; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.12); }
+    .btn-outline-white {
+      background: transparent; color: #fff;
+      border: 2px solid rgba(255,255,255,0.6);
+      font-weight: 700; font-size: 0.95rem;
+      padding: 16px 34px; border-radius: 50px;
+      text-decoration: none; transition: all 0.22s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  ✨ Now offering Korean Glass Skin MesoTox Facial! Dewy, poreless results with zero downtime.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss">Medical Weight Loss</a>
+          <a href="/glp1-side-effects/">GLP-1 Side Effects</a>
+          <a href="/happy-health-clinic">Happy Health Clinic (DPC)</a>
+          <a href="/peptide-therapy/">Peptide Therapy</a>
+          <a href="/#medical-services">BC Management</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#aesthetics" class="nav-link active" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/#aesthetics">Laser Treatments</a>
+          <a href="/#aesthetics">Dermal Fillers</a>
+          <a href="/jeuveau">Jeuveau® (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/#aesthetics">PRP / PFR</a>
+          <a href="/#aesthetics">VAMP™ Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/iv-drip-menu" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">'I DO' Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#payment" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/glp1-side-effects/" class="sub-link">GLP-1 Side Effects</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/#aesthetics" class="sub-link">Laser Treatments</a>
+    <a href="/#aesthetics" class="sub-link">Dermal Fillers</a>
+    <a href="/jeuveau" class="sub-link">Jeuveau® (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/#aesthetics" class="sub-link">PRP / PFR</a>
+    <a href="/#aesthetics" class="sub-link">VAMP™ Microneedling</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">'I DO' Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="meso-hero" aria-label="Korean Glass Skin MesoTox Facial">
+  <div class="container meso-hero-inner">
+
+    <div class="meso-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">/</span>
+        <a href="/#aesthetics">Aesthetics</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Korean Glass Skin MesoTox</span>
+      </nav>
+
+      <span class="eyebrow">Korean Aesthetic Technique</span>
+
+      <h1>Glass Skin<br><em>Without the Freeze.</em></h1>
+
+      <p class="meso-hero-tagline">
+        Hyperdilute neurotoxin + microneedling deliver glow from within -- tightening pores, controlling sebum, and refining texture while keeping your expressions 100% you.
+      </p>
+
+      <div class="meso-hero-btns">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">
+          Book MesoTox Consultation
+        </a>
+        <a href="tel:6822836976" class="btn btn-secondary">
+          Call (682) 283-6976
+        </a>
+      </div>
+    </div>
+
+    <div class="meso-hero-img">
+      <img src="images/wedding-facials.png" alt="Glowing, dewy glass skin result from Korean MesoTox facial" />
+      <div class="meso-hero-badge">
+        <span>✨</span>
+        Korean-Origin<br>Technique
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     QUICK-STAT BAR
+     ============================================================ -->
+<section class="stat-bar" aria-label="Treatment at a glance">
+  <div class="container stat-bar-inner">
+    <div class="stat-item">
+      <span class="s-num">30–45</span>
+      <span class="s-label">Min Treatment</span>
+    </div>
+    <div class="stat-bar-divider" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="s-num">0</span>
+      <span class="s-label">Downtime</span>
+    </div>
+    <div class="stat-bar-divider" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="s-num">5–7</span>
+      <span class="s-label">Days to Results</span>
+    </div>
+    <div class="stat-bar-divider" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="s-num">0.25mm</span>
+      <span class="s-label">Needle Depth</span>
+    </div>
+    <div class="stat-bar-divider" aria-hidden="true"></div>
+    <div class="stat-item">
+      <span class="s-num">100%</span>
+      <span class="s-label">Expression Maintained</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT IS MESOTOX
+     ============================================================ -->
+<section class="what-section" aria-labelledby="what-heading">
+  <div class="container">
+    <span class="section-eyebrow">The Science of Glow</span>
+    <h2 id="what-heading" class="section-title">What Is <em>MesoTox?</em></h2>
+
+    <div class="what-grid">
+      <div class="what-content">
+        <p>
+          MesoTox is a Korean-origin aesthetic technique that combines the collagen-stimulating power of microneedling with a hyperdiluted neurotoxin -- delivered directly into the dermis, not the muscle. The result? Your skin gets smarter, not stiffer.
+        </p>
+        <p>
+          Traditional Botox targets the muscles underneath your skin to smooth wrinkles by limiting movement. MesoTox works differently: by depositing tiny amounts of neurotoxin into the dermal layer at just 0.25mm depth, it regulates sebum production, minimizes pore size, tightens fine skin texture, and creates that signature Korean "glass skin" radiance -- all without touching a single facial muscle.
+        </p>
+        <p>
+          The microneedling portion creates controlled micro-channels that drive the neurotoxin deep into the dermis while simultaneously triggering collagen remodeling. You get a two-for-one: the glow boost of microneedling and the pore-refining, sebum-controlling effects of neurotoxin -- in a single 30-45 minute session with zero downtime.
+        </p>
+        <p>
+          This is skin quality maintenance at its finest. No frozen forehead. No "done" look. Just luminous, poreless, dewy skin that looks like yours -- but better.
+        </p>
+      </div>
+
+      <div class="delivery-diagram">
+        <h4>How Delivery Works</h4>
+        <!-- SVG Skin Layer Diagram -->
+        <svg class="skin-svg" viewBox="0 0 340 240" xmlns="http://www.w3.org/2000/svg" aria-label="Diagram showing neurotoxin delivery into the dermis via microneedling">
+          <!-- Skin surface -->
+          <rect x="0" y="0" width="340" height="240" rx="12" fill="#fef8f3"/>
+
+          <!-- Epidermis layer -->
+          <rect x="20" y="30" width="300" height="38" rx="6" fill="#fde8d8" stroke="#f5a060" stroke-width="1.2"/>
+          <text x="30" y="53" fill="#c06030" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">EPIDERMIS</text>
+          <text x="140" y="53" fill="#c06030" font-family="Nunito Sans, sans-serif" font-size="10" opacity="0.7">outermost skin layer</text>
+
+          <!-- Dermis layer -->
+          <rect x="20" y="72" width="300" height="70" rx="6" fill="#e0f5ec" stroke="#38a67c" stroke-width="1.4"/>
+          <text x="30" y="93" fill="#1a7050" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">DERMIS</text>
+          <text x="100" y="93" fill="#1a7050" font-family="Nunito Sans, sans-serif" font-size="10" opacity="0.7">collagen, elastin, sebaceous glands</text>
+
+          <!-- Subcutaneous / muscle -->
+          <rect x="20" y="146" width="300" height="52" rx="6" fill="#f0ecfc" stroke="#9880c8" stroke-width="1.2"/>
+          <text x="30" y="168" fill="#6050a0" font-family="Nunito Sans, sans-serif" font-size="11" font-weight="700">SUBCUTANEOUS + MUSCLE</text>
+          <text x="30" y="183" fill="#6050a0" font-family="Nunito Sans, sans-serif" font-size="10" opacity="0.7">traditional Botox targets here -- MesoTox stays above</text>
+
+          <!-- Microneedle 1 -->
+          <line x1="90" y1="10" x2="90" y2="110" stroke="#f5874a" stroke-width="2.5" stroke-linecap="round"/>
+          <polygon points="90,112 86,100 94,100" fill="#f5874a"/>
+          <!-- Neurotoxin dots in dermis -->
+          <circle cx="90" cy="100" r="5" fill="#38a67c" opacity="0.85"/>
+          <circle cx="90" cy="114" r="3.5" fill="#38a67c" opacity="0.55"/>
+
+          <!-- Microneedle 2 -->
+          <line x1="155" y1="10" x2="155" y2="120" stroke="#f5874a" stroke-width="2.5" stroke-linecap="round"/>
+          <polygon points="155,122 151,110 159,110" fill="#f5874a"/>
+          <circle cx="155" cy="110" r="5" fill="#38a67c" opacity="0.85"/>
+          <circle cx="155" cy="124" r="3.5" fill="#38a67c" opacity="0.55"/>
+
+          <!-- Microneedle 3 -->
+          <line x1="220" y1="10" x2="220" y2="107" stroke="#f5874a" stroke-width="2.5" stroke-linecap="round"/>
+          <polygon points="220,109 216,97 224,97" fill="#f5874a"/>
+          <circle cx="220" cy="97" r="5" fill="#38a67c" opacity="0.85"/>
+          <circle cx="220" cy="111" r="3.5" fill="#38a67c" opacity="0.55"/>
+
+          <!-- Labels -->
+          <text x="245" y="20" fill="#f5874a" font-family="Nunito Sans, sans-serif" font-size="10" font-weight="700">Microneedle</text>
+          <text x="247" y="31" fill="#f5874a" font-family="Nunito Sans, sans-serif" font-size="10">0.25mm depth</text>
+
+          <!-- Neurotoxin key -->
+          <circle cx="247" cy="108" r="5" fill="#38a67c"/>
+          <text x="257" y="112" fill="#1a7050" font-family="Nunito Sans, sans-serif" font-size="10" font-weight="700">Neurotoxin deposit</text>
+          <text x="247" y="126" fill="#1a7050" font-family="Nunito Sans, sans-serif" font-size="10">stays in dermis</text>
+        </svg>
+
+        <div class="diagram-note">
+          The neurotoxin never reaches the muscle layer -- your face moves freely and naturally while your skin reaps all the benefits.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BENEFITS
+     ============================================================ -->
+<section class="benefits-section" aria-labelledby="benefits-heading">
+  <div class="container">
+    <div class="benefits-header">
+      <span class="section-eyebrow">Why You'll Love It</span>
+      <h2 id="benefits-heading" class="section-title">Six Reasons Your Skin<br>Will <em>Thank You</em></h2>
+      <p class="section-intro">MesoTox isn't just about looking good for a moment -- it's a skin health investment that compounds over time with quarterly maintenance.</p>
+    </div>
+
+    <div class="benefits-grid">
+
+      <div class="benefit-card">
+        <div class="benefit-icon jade">🪟</div>
+        <h4>Poreless Appearance</h4>
+        <p>Neurotoxin in the dermis reduces sebaceous gland activity and tightens pore walls, giving that smooth, blurred filter look in real life.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon peach">✨</div>
+        <h4>Radiant Glass Skin Glow</h4>
+        <p>Microneedling triggers collagen and elastin production, building a dewy luminosity from within that no highlighter can fake.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon gold">💧</div>
+        <h4>Sebum Control</h4>
+        <p>Oily T-zone? Hyperdilute neurotoxin calms overactive sebaceous glands, reducing shine and the breakouts that come with it.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon rose">🌸</div>
+        <h4>Natural Expression Maintained</h4>
+        <p>Because the neurotoxin stays in the dermis -- not the muscle -- you laugh, raise your eyebrows, and emote exactly the same as always.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon jade">🛡️</div>
+        <h4>Preventive, Not Just Corrective</h4>
+        <p>Start in your 20s or early 30s and maintain the skin quality you have now, rather than trying to reverse damage later.</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon peach">⏱️</div>
+        <h4>Zero Downtime</h4>
+        <p>Walk in, glow out. Minimal redness resolves within hours and you can wear makeup the same day. Lunch-break friendly.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="how-section" aria-labelledby="how-heading">
+  <div class="container">
+    <div class="how-header">
+      <span class="section-eyebrow peach">The Process</span>
+      <h2 id="how-heading" class="section-title">Three Steps to <em>Glass Skin</em></h2>
+      <p class="section-intro" style="margin: 0 auto;">Simple, clinical, effective -- and done in under an hour.</p>
+    </div>
+
+    <div class="how-steps">
+
+      <div class="how-step">
+        <div class="how-step-num s1">1</div>
+        <div class="how-step-text">
+          <h4>Prep &amp; Cleanse</h4>
+          <p>We cleanse your skin, apply a topical numbing cream, and prep the neurotoxin to a precise hyperdiluted concentration. The lower the concentration, the more it behaves as a dermal treatment rather than a muscle blocker.</p>
+        </div>
+      </div>
+
+      <div class="how-step">
+        <div class="how-step-num s2">2</div>
+        <div class="how-step-text">
+          <h4>Microneedling Delivery</h4>
+          <p>Using a medical-grade microneedling pen set to 0.25mm depth, we apply the diluted neurotoxin as the device creates micro-channels across the treatment area. The channels drive the solution into the dermis while triggering your skin's natural healing response.</p>
+        </div>
+      </div>
+
+      <div class="how-step">
+        <div class="how-step-num s3">3</div>
+        <div class="how-step-text">
+          <h4>Collagen Remodeling Begins</h4>
+          <p>The micro-injury triggers collagen and elastin production over the next 2 weeks. Meanwhile, the neurotoxin begins regulating sebum and tightening pores within 5-7 days. Peak results appear at 2 weeks -- right when your skin is glowing hardest.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHO IT'S FOR
+     ============================================================ -->
+<section class="who-section" aria-labelledby="who-heading">
+  <div class="container">
+    <div class="who-header">
+      <span class="section-eyebrow">Is This You?</span>
+      <h2 id="who-heading" class="section-title">Who <em>MesoTox</em> Is For</h2>
+      <p class="section-intro">MesoTox is a maintenance treatment built for patients who want to invest in their skin quality now -- not play catch-up later.</p>
+    </div>
+
+    <div class="who-grid">
+
+      <div class="who-card">
+        <div class="who-card-icon">🌱</div>
+        <h4>The Prevention-Minded 20s-30s Client</h4>
+        <p>You're not trying to erase anything -- you're trying to maintain the skin you have and build a foundation for graceful aging. MesoTox is your secret weapon before fine lines ever start.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">✨</div>
+        <h4>The Glow-Over-Frozen Client</h4>
+        <p>You love the idea of neurotoxin but hate the idea of looking "done." MesoTox gives you all the skin-quality benefits with zero change to your natural movement or expression.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">💎</div>
+        <h4>The Texture + Pore Client</h4>
+        <p>Large pores, uneven texture, oily skin, dull complexion -- MesoTox targets all of these at the source, in the dermis, where skincare products often can't reach on their own.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">🔄</div>
+        <h4>The Quarterly Maintenance Client</h4>
+        <p>Think of this like a high-performance facial -- but one that actually remodels your skin from the inside. Quarterly sessions compound results over time for long-term glass skin goals.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TREATMENT DETAILS
+     ============================================================ -->
+<section class="details-section" aria-labelledby="details-heading">
+  <div class="container">
+    <div class="details-header">
+      <span class="section-eyebrow">Quick Reference</span>
+      <h2 id="details-heading" class="section-title">Treatment <em>Details</em></h2>
+    </div>
+
+    <div class="details-grid">
+
+      <div class="detail-card">
+        <div class="d-icon">⏱️</div>
+        <span class="d-value">30-45 min</span>
+        <span class="d-label">Session Length</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">😌</div>
+        <span class="d-value">Minimal</span>
+        <span class="d-label">Discomfort (topical numbing)</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🏃</div>
+        <span class="d-value">Zero</span>
+        <span class="d-label">Downtime</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">💄</div>
+        <span class="d-value">Same Day</span>
+        <span class="d-label">Makeup OK</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">✨</div>
+        <span class="d-value">5-7 Days</span>
+        <span class="d-label">Initial Results Visible</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🌟</div>
+        <span class="d-value">2 Weeks</span>
+        <span class="d-label">Peak Glow</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">📅</div>
+        <span class="d-value">3-4 Months</span>
+        <span class="d-label">Results Duration</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🔁</div>
+        <span class="d-value">Quarterly</span>
+        <span class="d-label">Recommended Maintenance</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">📏</div>
+        <span class="d-value">0.25mm</span>
+        <span class="d-label">Needle Depth (dermal only)</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMPARISON: MesoTox vs Traditional Botox
+     ============================================================ -->
+<section class="compare-section" aria-labelledby="compare-heading">
+  <div class="container">
+    <div class="compare-header">
+      <span class="section-eyebrow rose">Know the Difference</span>
+      <h2 id="compare-heading" class="section-title">MesoTox vs. <em>Traditional Botox</em></h2>
+      <p class="section-intro" style="margin: 0 auto 0;">Two different goals, two different techniques. Here's how to know which is right for you -- or whether you want both.</p>
+    </div>
+
+    <div class="compare-wrap">
+
+      <!-- MesoTox Card -->
+      <div class="compare-card meso">
+        <div class="compare-card-header">
+          <div class="compare-label">Our Newest Treatment</div>
+          <h3>Korean Glass Skin MesoTox</h3>
+        </div>
+        <div class="compare-rows">
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">✓</div>
+            <div class="c-text">
+              <strong>Injection Target</strong>
+              <span>Dermis only (0.25mm) -- muscles untouched</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">✓</div>
+            <div class="c-text">
+              <strong>Primary Goal</strong>
+              <span>Skin quality: pores, texture, glow, sebum control</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">✓</div>
+            <div class="c-text">
+              <strong>Expression</strong>
+              <span>100% natural movement maintained</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">✓</div>
+            <div class="c-text">
+              <strong>Best For</strong>
+              <span>Glow, pore refinement, preventive maintenance</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">✓</div>
+            <div class="c-text">
+              <strong>Ideal Age Range</strong>
+              <span>20s-30s (and maintenance-minded at any age)</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">✓</div>
+            <div class="c-text">
+              <strong>Collagen Stimulation</strong>
+              <span>Yes -- microneedling triggers active remodeling</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">✓</div>
+            <div class="c-text">
+              <strong>The Look</strong>
+              <span>Dewy, luminous, poreless glass skin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Traditional Botox Card -->
+      <div class="compare-card trad">
+        <div class="compare-card-header">
+          <div class="compare-label">Also Available at Happy Drip</div>
+          <h3>Traditional Jeuveau® / Botox</h3>
+        </div>
+        <div class="compare-rows">
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">→</div>
+            <div class="c-text">
+              <strong>Injection Target</strong>
+              <span>Intramuscular (4mm+ depth)</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">→</div>
+            <div class="c-text">
+              <strong>Primary Goal</strong>
+              <span>Wrinkle reduction by relaxing facial muscles</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">→</div>
+            <div class="c-text">
+              <strong>Expression</strong>
+              <span>Reduced movement in treated areas</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">→</div>
+            <div class="c-text">
+              <strong>Best For</strong>
+              <span>Forehead lines, crow's feet, glabellar wrinkles</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">→</div>
+            <div class="c-text">
+              <strong>Ideal Age Range</strong>
+              <span>30s+ or earlier for deep dynamic wrinkles</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">→</div>
+            <div class="c-text">
+              <strong>Collagen Stimulation</strong>
+              <span>No direct collagen benefit</span>
+            </div>
+          </div>
+          <div class="compare-row">
+            <div class="c-dot" aria-hidden="true">→</div>
+            <div class="c-text">
+              <strong>The Look</strong>
+              <span>Smoothed, line-free, refreshed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pro tip -->
+    <p style="text-align:center; color:#8a7a70; font-size:0.9rem; margin-top:32px; font-style:italic;">
+      Pro tip: MesoTox and traditional Jeuveau® can absolutely be combined in the same visit -- skin quality from MesoTox, wrinkle correction from Jeuveau®. Ask us about pairing them.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMPLEMENTARY SERVICES
+     ============================================================ -->
+<section class="combo-section" aria-labelledby="combo-heading">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color: var(--jade);">Level It Up</span>
+      <h2 id="combo-heading" class="section-title">Pair It With <span class="jade">Happy Drip</span> Wellness</h2>
+      <p class="section-intro" style="margin:0 auto;">Glass skin starts from the inside out. Our IV and wellness services are the perfect complement to your MesoTox treatment.</p>
+    </div>
+
+    <div class="combo-inner">
+
+      <div class="combo-card">
+        <div class="combo-card-icon">💉</div>
+        <h4>Beauty Boost IV Drip</h4>
+        <p>Glutathione, biotin, vitamin C -- the skin-glow trifecta delivered directly into your bloodstream. Book it the week before your MesoTox for next-level radiance.</p>
+        <a href="/iv-drip-menu" class="btn btn-secondary" style="font-size:0.85rem; padding:10px 22px;">View IV Menu</a>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-card-icon">⚡</div>
+        <h4>NAD+ Therapy</h4>
+        <p>NAD+ supports cellular repair and anti-aging at the DNA level -- complementing MesoTox's surface remodeling with deep cellular renewal. The ultimate longevity pairing.</p>
+        <a href="/peptide-therapy/" class="btn btn-secondary" style="font-size:0.85rem; padding:10px 22px;">Learn About NAD+</a>
+      </div>
+
+      <div class="combo-card">
+        <div class="combo-card-icon">🍃</div>
+        <h4>Hydration + Glutathione Push</h4>
+        <p>Systemic hydration and antioxidant loading from the inside supports your skin's healing response post-MesoTox and amplifies the glow factor for weeks.</p>
+        <a href="/iv-drip-menu" class="btn btn-secondary" style="font-size:0.85rem; padding:10px 22px;">View IV Menu</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq-section" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="faq-header">
+      <span class="section-eyebrow">Got Questions?</span>
+      <h2 id="faq-heading" class="section-title">MesoTox <em>FAQs</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Does MesoTox prevent wrinkles?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes -- indirectly but meaningfully. MesoTox improves overall skin quality: better collagen density, tighter pores, and healthier sebum regulation all create a more resilient skin structure. Healthier skin forms fewer wrinkles over time. Think of it as preventive maintenance rather than wrinkle correction. If you already have deeper dynamic wrinkles you want to address, combine MesoTox with traditional Jeuveau® for a comprehensive approach.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>How often should I get MesoTox?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Quarterly (every 3-4 months) is the sweet spot for most patients. The neurotoxin effect on sebaceous glands and pore size lasts about 3 months, and spacing sessions quarterly also allows your collagen remodeling from each microneedling session to fully mature before the next round. Over time, many patients find their skin quality continues to improve with consistent maintenance -- it compounds.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can I combine MesoTox with traditional Jeuveau® or Botox?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely, and it's actually a popular combination. MesoTox handles skin quality at the dermal level -- pores, texture, glow, sebum. Traditional Jeuveau® handles dynamic wrinkles at the muscle level. They work on completely different layers and don't interfere with each other. Many patients get both in the same visit: MesoTox across the full face for glow and pore refinement, then traditional Jeuveau® in specific muscle zones for line smoothing. Ask us about a combined treatment plan.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is MesoTox safe? Will I have side effects?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, MesoTox is safe when performed by a licensed and experienced provider (hi, that's Brittany). Because the neurotoxin is hyperdiluted and delivered only to the dermis at 0.25mm depth, it never reaches the muscles -- eliminating the risk of muscle overrelaxation, drooping, or the "frozen" look. Typical post-treatment responses include mild redness and minor pinpoint marks that resolve within a few hours. Bruising is possible but uncommon. You can wear makeup the same day.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>How much does MesoTox hurt?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Very minimal discomfort. We apply a topical numbing cream before the treatment, which takes the edge off the microneedling sensation almost entirely. The 0.25mm needle depth is one of the shallowest settings used in medical aesthetics -- significantly less sensation than deeper microneedling treatments. Most patients rate it a 1-2 out of 10 with numbing. If you're particularly sensitive, let us know and we can accommodate.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>How is MesoTox different from a regular microneedling facial?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Standard microneedling uses a serum (often hyaluronic acid, growth factors, or vitamin C) to take advantage of the micro-channels created by the needles. MesoTox uses hyperdiluted neurotoxin instead. This adds a completely different layer of benefit: sebum regulation and pore tightening that regular serums can't provide. You still get all the collagen-stimulating benefits of microneedling, plus the dermal neurotoxin effects on top -- it's an upgrade in a single step.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Who is NOT a good candidate for MesoTox?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>MesoTox is not appropriate if you are pregnant or breastfeeding, have a known allergy to botulinum toxin products, have active skin infections or breakouts in the treatment area, or are currently taking certain blood thinners. It's also not recommended if you have a neuromuscular condition such as myasthenia gravis. During your consultation, Brittany will review your health history to confirm you're a good candidate and customize the treatment plan for you.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOTTOM CTA
+     ============================================================ -->
+<section class="meso-cta" aria-label="Book MesoTox Consultation">
+  <div class="container meso-cta-inner">
+    <h2>Ready for Your<br>Glass Skin Era?</h2>
+    <p>
+      Book a MesoTox consultation with Brittany and get a personalized plan for poreless, dewy, luminous skin -- on your terms, with your expressions fully intact.
+    </p>
+    <div class="meso-cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-white">
+        ✨ Book MesoTox Consultation
+      </a>
+      <a href="tel:6822836976" class="btn-outline-white">
+        Call (682) 283-6976
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col footer-brand">
+        <a href="/" class="footer-logo-link" aria-label="Happy Drip IV & Wellness Home">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness" class="footer-logo" />
+        </a>
+        <p>Bedford, TX's home for IV therapy, integrative medicine &amp; aesthetic wellness. Cash-pay, transparent pricing, no insurance hassle.</p>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/#aesthetics">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#payment">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Aesthetics Services -->
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau® (Botox)</a>
+        <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        <a href="/#aesthetics">Laser Treatments</a>
+        <a href="/#aesthetics">Dermal Fillers</a>
+        <a href="/#aesthetics">PRP / PFR</a>
+        <a href="/#aesthetics">VAMP™ Microneedling</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar" id="bottomBar" role="complementary" aria-label="MesoTox promotion">
+  <div class="vip-text">
+    <span class="vip-badge">NEW</span>
+    Korean Glass Skin <a href="/mesotox">&nbsp;MesoTox Facial&nbsp;</a> is here -- dewy, poreless, zero downtime!
+  </div>
+  <div class="tip">PRO-TIP: Combine MesoTox + IV Beauty Boost for next-level glass skin results</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+/* ======================================================
+   FAQ ACCORDION
+   ====================================================== */
+(function () {
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+
+      // Close all
+      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+
+      // Open clicked (if it was closed)
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
