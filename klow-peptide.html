@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KLOW Peptide Blend | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="KLOW peptide blend (BPC-157, KPV, TB-500, GHK-Cu) for healing, inflammation, and cellular renewal. Prescribed by Brittany Adams, APRN FNP-C in Bedford, TX." />
+  <link rel="canonical" href="https://www.happydripiv.com/klow-peptide" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    /* ======================================================
+       KLOW PEPTIDE — PAGE STYLES
+       Matches peptide-therapy teal palette
+       ====================================================== */
+
+    :root {
+      --klow-teal:    #1D9E75;
+      --klow-teal-lt: #e0f5ec;
+      --klow-navy:    #1a2744;
+      --klow-pink:    #e0579a;
+      --klow-lav:     #c5b4e8;
+      --klow-lav-lt:  #f0ecfc;
+      --klow-cream:   #f7f9fc;
+    }
+
+    /* ---- Hero ---- */
+    .klow-hero {
+      background: linear-gradient(135deg, #e0f7fa 0%, #f0ecfc 50%, #fde8f3 100%);
+      padding: 80px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .klow-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 460px; height: 460px;
+      background: radial-gradient(circle, rgba(29,158,117,0.10) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .klow-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -60px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(197,180,232,0.12) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .klow-hero-content {
+      max-width: 700px;
+      position: relative;
+      z-index: 1;
+    }
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(29,158,117,0.10);
+      border: 1px solid rgba(29,158,117,0.3);
+      color: var(--klow-teal);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 40px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; color: rgba(0,0,0,0.45);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--klow-teal); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+    .klow-hero-content h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      color: var(--klow-navy);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .klow-hero-content .subhead {
+      font-size: 1.1rem;
+      color: #4a5570;
+      margin-bottom: 32px;
+      line-height: 1.65;
+    }
+    .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-teal {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--klow-teal); color: #fff;
+      font-weight: 800; font-size: 0.95rem;
+      padding: 14px 28px; border-radius: 50px;
+      text-decoration: none; transition: background 0.2s, transform 0.2s;
+    }
+    .btn-teal:hover { background: #178a64; transform: translateY(-1px); }
+    .btn-outline-navy {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--klow-navy);
+      font-weight: 800; font-size: 0.95rem;
+      padding: 13px 28px; border-radius: 50px;
+      border: 2px solid var(--klow-navy);
+      text-decoration: none; transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-navy:hover { background: var(--klow-navy); color: #fff; }
+
+    /* ---- Quick-Stat Bar ---- */
+    .klow-stat-bar {
+      background: var(--klow-navy);
+      padding: 28px 0;
+    }
+    .klow-stat-bar-inner {
+      display: flex; justify-content: space-around; align-items: center;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .klow-stat { text-align: center; }
+    .klow-stat .ks-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem; font-weight: 700;
+      color: var(--klow-teal); display: block; line-height: 1;
+    }
+    .klow-stat .ks-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: rgba(255,255,255,0.6);
+      margin-top: 4px;
+    }
+    .klow-stat-divider {
+      width: 1px; height: 40px;
+      background: rgba(255,255,255,0.12);
+    }
+    @media (max-width: 640px) {
+      .klow-stat-bar-inner { gap: 12px; }
+      .klow-stat-divider { display: none; }
+      .klow-stat .ks-num { font-size: 1.5rem; }
+    }
+
+    /* ---- Section Utilities ---- */
+    .section-label {
+      display: block;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--klow-teal);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      color: var(--klow-navy);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 14px; line-height: 1.2;
+    }
+    .section-intro {
+      color: #4a5570; font-size: 1rem; line-height: 1.75;
+      max-width: 640px;
+    }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-header .section-intro { margin: 12px auto 0; }
+
+    /* ---- What is KLOW — 2-col ---- */
+    .klow-intro {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .klow-intro-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .klow-intro-text h2 {
+      color: var(--klow-navy);
+      margin-bottom: 20px;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+    }
+    .klow-intro-text p {
+      color: #4a5570; line-height: 1.8;
+      margin-bottom: 18px; font-size: 1rem;
+    }
+    .klow-info-box {
+      background: var(--klow-navy);
+      border-radius: 20px;
+      padding: 40px 36px;
+      color: #fff;
+    }
+    .klow-info-box h3 {
+      color: #fff; font-size: 0.75rem;
+      margin-bottom: 24px; opacity: 0.85;
+      font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .klow-info-box ul {
+      list-style: none; padding: 0; margin: 0;
+      display: flex; flex-direction: column; gap: 20px;
+    }
+    .klow-info-box li {
+      display: flex; align-items: flex-start; gap: 14px;
+      font-size: 0.95rem; line-height: 1.6;
+      color: rgba(255,255,255,0.9);
+    }
+    .klow-info-box .info-dot {
+      width: 8px; height: 8px;
+      background: var(--klow-teal);
+      border-radius: 50%;
+      flex-shrink: 0; margin-top: 7px;
+    }
+    @media (max-width: 800px) {
+      .klow-intro-grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+
+    /* ---- 4 Component Cards ---- */
+    .components-section {
+      padding: 80px 0;
+      background: var(--klow-cream);
+    }
+    .components-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .comp-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px 32px;
+      border: 1.5px solid rgba(29,158,117,0.12);
+      box-shadow: 0 4px 24px rgba(0,0,0,0.04);
+      transition: transform 0.22s, box-shadow 0.22s;
+      position: relative;
+      overflow: hidden;
+    }
+    .comp-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(29,158,117,0.1);
+    }
+    .comp-card-accent {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+    }
+    .comp-card-accent.teal   { background: linear-gradient(to right, var(--klow-teal), #2ac090); }
+    .comp-card-accent.pink   { background: linear-gradient(to right, var(--klow-pink), #f080b0); }
+    .comp-card-accent.lav    { background: linear-gradient(to right, var(--klow-lav), #a090e0); }
+    .comp-card-accent.gold   { background: linear-gradient(to right, #d4a020, #e8c060); }
+    .comp-card .comp-name-row {
+      display: flex; align-items: center; gap: 12px;
+      margin-bottom: 16px;
+    }
+    .comp-card .comp-emoji {
+      width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+    }
+    .comp-emoji.teal-bg { background: var(--klow-teal-lt); }
+    .comp-emoji.pink-bg { background: #fde8f3; }
+    .comp-emoji.lav-bg  { background: var(--klow-lav-lt); }
+    .comp-emoji.gold-bg { background: #fef5e0; }
+    .comp-card h3 {
+      color: var(--klow-navy);
+      font-size: 1.1rem; margin: 0;
+    }
+    .comp-card h3 small {
+      display: block;
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .comp-card h3 small.teal-text { color: var(--klow-teal); }
+    .comp-card h3 small.pink-text { color: var(--klow-pink); }
+    .comp-card h3 small.lav-text  { color: #8060c8; }
+    .comp-card h3 small.gold-text { color: #b08a10; }
+    .comp-card p {
+      color: #4a5570; font-size: 0.92rem; line-height: 1.75;
+      margin: 0 0 16px;
+    }
+    .comp-card .comp-highlights {
+      display: flex; flex-wrap: wrap; gap: 8px;
+    }
+    .comp-card .comp-pill {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 700;
+      padding: 5px 14px; border-radius: 30px;
+      letter-spacing: 0.04em;
+    }
+    .comp-pill.teal-pill { background: var(--klow-teal-lt); color: var(--klow-teal); }
+    .comp-pill.pink-pill { background: #fde8f3; color: var(--klow-pink); }
+    .comp-pill.lav-pill  { background: var(--klow-lav-lt); color: #6050a0; }
+    .comp-pill.gold-pill { background: #fef5e0; color: #8a6800; }
+    @media (max-width: 640px) {
+      .components-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Who It's For ---- */
+    .who-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .who-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 48px;
+    }
+    .who-card {
+      background: var(--klow-cream);
+      border-radius: 18px;
+      padding: 28px 24px;
+      border: 1.5px solid rgba(29,158,117,0.12);
+      transition: border-color 0.22s;
+    }
+    .who-card:hover { border-color: var(--klow-teal); }
+    .who-card-icon { font-size: 1.6rem; margin-bottom: 14px; }
+    .who-card h4 {
+      color: var(--klow-navy); font-size: 0.95rem;
+      font-weight: 800; margin-bottom: 8px;
+    }
+    .who-card p {
+      color: #5a6580; font-size: 0.88rem; line-height: 1.7; margin: 0;
+    }
+    @media (max-width: 720px) {
+      .who-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- How It Works (synergy) ---- */
+    .synergy-section {
+      padding: 80px 0;
+      background: var(--klow-navy);
+    }
+    .synergy-header .section-label { color: var(--klow-teal); }
+    .synergy-header .section-title { color: #fff; }
+    .synergy-header .section-intro { color: rgba(255,255,255,0.7); margin: 12px auto 0; }
+    .synergy-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .synergy-step {
+      text-align: center;
+      padding: 24px 16px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 18px;
+    }
+    .synergy-step .step-num {
+      width: 40px; height: 40px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--klow-teal); color: #fff;
+      font-weight: 800; font-size: 0.9rem;
+      margin: 0 auto 14px;
+    }
+    .synergy-step h4 {
+      color: var(--klow-teal); font-size: 0.88rem;
+      font-weight: 800; margin-bottom: 8px;
+    }
+    .synergy-step p {
+      color: rgba(255,255,255,0.65); font-size: 0.82rem;
+      line-height: 1.65; margin: 0;
+    }
+    @media (max-width: 720px) {
+      .synergy-steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 440px) {
+      .synergy-steps { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Treatment Details ---- */
+    .details-section {
+      padding: 80px 0;
+      background: var(--klow-cream);
+    }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 48px;
+    }
+    .detail-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      border: 1.5px solid rgba(29,158,117,0.12);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+    .detail-card .d-icon { font-size: 1.6rem; margin-bottom: 10px; }
+    .detail-card .d-value {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem; font-weight: 700;
+      color: var(--klow-teal); margin-bottom: 4px; line-height: 1.2;
+    }
+    .detail-card .d-label {
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: #8a8a9a;
+    }
+    @media (max-width: 640px) {
+      .details-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ---- FAQ ---- */
+    .faq-section {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item {
+      border: 1.5px solid rgba(29,158,117,0.18);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      background: #fff;
+      transition: box-shadow 0.22s;
+    }
+    .faq-item.open { box-shadow: 0 6px 28px rgba(29,158,117,0.1); }
+    .faq-question {
+      width: 100%; background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 24px; gap: 12px; text-align: left;
+    }
+    .faq-question span {
+      font-weight: 700; font-size: 0.95rem;
+      color: var(--klow-navy); line-height: 1.4;
+    }
+    .faq-chevron {
+      flex-shrink: 0; width: 22px; height: 22px;
+      border-radius: 50%; background: var(--klow-teal-lt);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.28s, background 0.22s;
+    }
+    .faq-chevron svg { color: var(--klow-teal); }
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+      background: var(--klow-teal);
+    }
+    .faq-item.open .faq-chevron svg { color: #fff; }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.38s cubic-bezier(0.4,0,0.2,1), padding 0.28s;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-answer { max-height: 400px; padding: 0 24px 22px; }
+    .faq-answer p {
+      color: #5a6580; font-size: 0.92rem; line-height: 1.78; margin: 0;
+    }
+
+    /* ---- Bottom CTA ---- */
+    .klow-cta {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--klow-teal) 0%, #178a64 50%, #0a6a48 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .klow-cta::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Ccircle cx='30' cy='30' r='20'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+      pointer-events: none;
+    }
+    .klow-cta-inner { position: relative; z-index: 1; }
+    .klow-cta h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      color: #fff; margin-bottom: 16px; line-height: 1.2;
+    }
+    .klow-cta p {
+      font-size: 1.05rem; color: rgba(255,255,255,0.88);
+      max-width: 560px; margin: 0 auto 36px; line-height: 1.7;
+    }
+    .klow-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white {
+      background: #fff; color: var(--klow-teal);
+      font-weight: 800; font-size: 0.95rem;
+      padding: 16px 34px; border-radius: 50px;
+      text-decoration: none; transition: all 0.22s;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn-white:hover { background: #f0faf5; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(0,0,0,0.12); }
+    .btn-outline-white {
+      background: transparent; color: #fff;
+      border: 2px solid rgba(255,255,255,0.6);
+      font-weight: 700; font-size: 0.95rem;
+      padding: 16px 34px; border-radius: 50px;
+      text-decoration: none; transition: all 0.22s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.12); border-color: #fff; }
+
+    /* ---- Cross-links ---- */
+    .cross-section {
+      padding: 60px 0;
+      background: var(--klow-cream);
+    }
+    .cross-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .cross-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 28px 24px;
+      text-align: center;
+      border: 1.5px solid rgba(29,158,117,0.12);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+    .cross-card-icon { font-size: 2rem; margin-bottom: 14px; }
+    .cross-card h4 { color: var(--klow-navy); font-size: 1rem; font-weight: 800; margin-bottom: 8px; }
+    .cross-card p { color: #5a6580; font-size: 0.88rem; line-height: 1.65; margin: 0 0 16px; }
+    @media (max-width: 720px) {
+      .cross-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  🧬 Now offering KLOW peptide therapy -- advanced 4-peptide healing blend.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book a consult →</a>
+</div>
+
+<!-- ============================================================
+     HEADER (placeholder — will be replaced by nav script)
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link active" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/weightloss" class="dropdown-parent">Medical Weight Loss</a>
+          <a href="/glp1-side-effects/" class="dropdown-child">GLP-1 Side Effects</a>
+          <a href="/happy-health-clinic" class="dropdown-parent">Happy Health Clinic (DPC)</a>
+          <a href="/happy-health-clinic" class="dropdown-child">Individual Plans</a>
+          <a href="/small-business" class="dropdown-child">Small Business DPC</a>
+          <a href="/peptide-therapy/" class="dropdown-parent">Peptide Therapy</a>
+          <a href="/klow-peptide" class="dropdown-child">KLOW Peptide</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau® (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">'I DO' Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/#payment" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/glp1-side-effects/" class="sub-link nested">GLP-1 Side Effects</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/happy-health-clinic" class="sub-link nested">Individual Plans</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau® (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">'I DO' Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/#payment">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="klow-hero" aria-label="KLOW Peptide Blend">
+  <div class="container">
+    <div class="klow-hero-content">
+      <span class="eyebrow-pill">Advanced Peptide Blend</span>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <a href="/peptide-therapy/">Peptide Therapy</a>
+        <span>›</span>
+        <span style="color:#4a5570;">KLOW Peptide</span>
+      </nav>
+      <h1>KLOW: four peptides,<br>one coordinated signal</h1>
+      <p class="subhead">
+        BPC-157, KPV, TB-500, and GHK-Cu working together to target healing, inflammation, and cellular renewal from four different angles at once. This isn't a supplement stack -- it's a precision protocol.
+      </p>
+      <div class="hero-cta-row">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book a Consult</a>
+        <a href="tel:6822836976" class="btn-outline-navy">(682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUICK-STAT BAR
+     ============================================================ -->
+<section class="klow-stat-bar" aria-label="KLOW at a glance">
+  <div class="container klow-stat-bar-inner">
+    <div class="klow-stat">
+      <span class="ks-num">4</span>
+      <span class="ks-label">Peptides in Blend</span>
+    </div>
+    <div class="klow-stat-divider" aria-hidden="true"></div>
+    <div class="klow-stat">
+      <span class="ks-num">4+</span>
+      <span class="ks-label">Pathways Targeted</span>
+    </div>
+    <div class="klow-stat-divider" aria-hidden="true"></div>
+    <div class="klow-stat">
+      <span class="ks-num">SubQ</span>
+      <span class="ks-label">Injection Method</span>
+    </div>
+    <div class="klow-stat-divider" aria-hidden="true"></div>
+    <div class="klow-stat">
+      <span class="ks-num">Rx</span>
+      <span class="ks-label">Prescribed Protocol</span>
+    </div>
+    <div class="klow-stat-divider" aria-hidden="true"></div>
+    <div class="klow-stat">
+      <span class="ks-num">503A</span>
+      <span class="ks-label">Pharmacy Sourced</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT IS KLOW
+     ============================================================ -->
+<section class="klow-intro" aria-labelledby="klow-what-heading">
+  <div class="container">
+    <div class="klow-intro-grid">
+      <div class="klow-intro-text">
+        <span class="section-label">What Is KLOW</span>
+        <h2 id="klow-what-heading">One blend. Four pathways. Coordinated healing.</h2>
+        <p>
+          KLOW is a multi-peptide blend formulated to address healing, inflammation, tissue repair, and cellular renewal simultaneously. Instead of targeting one pathway at a time, KLOW combines four clinically studied peptides into a single subcutaneous injection protocol.
+        </p>
+        <p>
+          Each component works on a different mechanism -- gut healing, tissue repair, anti-inflammation, collagen remodeling -- but they converge toward the same goal: getting your body's repair systems back online and running at full capacity.
+        </p>
+        <p>
+          Brittany prescribes KLOW through a licensed 503A compounding pharmacy with individualized dosing based on your labs, goals, and health history. This is a real prescription, not a grey-market product.
+        </p>
+      </div>
+      <div class="klow-info-box">
+        <h3>Why a blend?</h3>
+        <ul>
+          <li>
+            <span class="info-dot"></span>
+            <span>Single-peptide protocols target one pathway. KLOW targets four at once for a coordinated regenerative signal.</span>
+          </li>
+          <li>
+            <span class="info-dot"></span>
+            <span>One injection per day instead of managing multiple vials, doses, and schedules separately.</span>
+          </li>
+          <li>
+            <span class="info-dot"></span>
+            <span>The components are synergistic -- BPC-157 supports gut barrier integrity while KPV calms the inflammatory cascade that damages it.</span>
+          </li>
+          <li>
+            <span class="info-dot"></span>
+            <span>Prescribed and monitored by Brittany Adams, APRN, FNP-C. Your protocol is built around your labs and adjusted over time.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     THE 4 COMPONENTS
+     ============================================================ -->
+<section class="components-section" aria-labelledby="comp-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Four Components</span>
+      <h2 id="comp-heading" class="section-title">What's inside KLOW -- and what each one does</h2>
+      <p class="section-intro">Each peptide in the KLOW blend serves a distinct role. Together, they create a coordinated regenerative signal that's greater than the sum of its parts.</p>
+    </div>
+
+    <div class="components-grid">
+
+      <!-- BPC-157 -->
+      <div class="comp-card">
+        <div class="comp-card-accent teal"></div>
+        <div class="comp-name-row">
+          <div class="comp-emoji teal-bg">🩹</div>
+          <h3>BPC-157 <small class="teal-text">Body Protection Compound</small></h3>
+        </div>
+        <p>A pentadecapeptide originally derived from gastric proteins. BPC-157 supports gut lining integrity, connective tissue repair, and angiogenesis (new blood vessel formation). It's one of the most clinically studied healing peptides and serves as the foundation of the KLOW blend.</p>
+        <div class="comp-highlights">
+          <span class="comp-pill teal-pill">Gut Healing</span>
+          <span class="comp-pill teal-pill">Tissue Repair</span>
+          <span class="comp-pill teal-pill">Angiogenesis</span>
+        </div>
+      </div>
+
+      <!-- KPV -->
+      <div class="comp-card">
+        <div class="comp-card-accent pink"></div>
+        <div class="comp-name-row">
+          <div class="comp-emoji pink-bg">🔥</div>
+          <h3>KPV <small class="pink-text">Anti-Inflammatory Tripeptide</small></h3>
+        </div>
+        <p>A tripeptide fragment of alpha-melanocyte-stimulating hormone (alpha-MSH). KPV works directly inside the cell nucleus to inhibit NF-kB and MAPK -- two master switches that control chronic inflammation. This is the "calm down" signal in the blend.</p>
+        <div class="comp-highlights">
+          <span class="comp-pill pink-pill">NF-kB Inhibition</span>
+          <span class="comp-pill pink-pill">Inflammation Control</span>
+          <span class="comp-pill pink-pill">Immune Modulation</span>
+        </div>
+      </div>
+
+      <!-- TB-500 -->
+      <div class="comp-card">
+        <div class="comp-card-accent lav"></div>
+        <div class="comp-name-row">
+          <div class="comp-emoji lav-bg">🔄</div>
+          <h3>TB-500 <small class="lav-text">Thymosin Beta-4 Fragment</small></h3>
+        </div>
+        <p>A synthetic analog of thymosin beta-4, a protein involved in cell migration, new vessel formation, and organized wound repair. TB-500 has systemic distribution -- it doesn't just work locally. It travels to wherever the body needs repair support.</p>
+        <div class="comp-highlights">
+          <span class="comp-pill lav-pill">Cell Migration</span>
+          <span class="comp-pill lav-pill">Wound Repair</span>
+          <span class="comp-pill lav-pill">Systemic Distribution</span>
+        </div>
+      </div>
+
+      <!-- GHK-Cu -->
+      <div class="comp-card">
+        <div class="comp-card-accent gold"></div>
+        <div class="comp-name-row">
+          <div class="comp-emoji gold-bg">✨</div>
+          <h3>GHK-Cu <small class="gold-text">Copper Peptide</small></h3>
+        </div>
+        <p>A naturally occurring copper-binding tripeptide found in human plasma. GHK-Cu drives collagen production, remodels the extracellular matrix, and breaks down damaged collagen so healthy tissue can replace it. The anti-aging and skin quality component of the blend.</p>
+        <div class="comp-highlights">
+          <span class="comp-pill gold-pill">Collagen Production</span>
+          <span class="comp-pill gold-pill">Matrix Remodeling</span>
+          <span class="comp-pill gold-pill">Cellular Renewal</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHO IT'S FOR
+     ============================================================ -->
+<section class="who-section" aria-labelledby="who-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Is This You?</span>
+      <h2 id="who-heading" class="section-title">Who KLOW is for</h2>
+      <p class="section-intro">KLOW targets patients who are dealing with stubborn healing, chronic inflammation, or accelerated aging that hasn't responded to single-agent approaches.</p>
+    </div>
+
+    <div class="who-grid">
+
+      <div class="who-card">
+        <div class="who-card-icon">🩹</div>
+        <h4>Chronic Inflammation</h4>
+        <p>Joint pain, gut issues, autoimmune flares, or systemic inflammation that won't resolve. KLOW's KPV and BPC-157 hit inflammation from both the signaling and barrier-integrity sides.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">🏋️</div>
+        <h4>Injury Recovery</h4>
+        <p>Post-surgical healing, sports injuries, tendon/ligament repair, or slow-healing wounds. TB-500 and BPC-157 together accelerate tissue repair from two directions.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">🫁</div>
+        <h4>Gut Dysfunction</h4>
+        <p>Leaky gut, IBS, food sensitivities, or gut lining damage. BPC-157 supports gut barrier integrity while KPV calms the inflammation driving the damage cycle.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">⏳</div>
+        <h4>Accelerated Aging</h4>
+        <p>Loss of skin elasticity, poor wound healing, and systemic repair slowdown. GHK-Cu drives collagen production and matrix remodeling for whole-body cellular renewal.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">🔄</div>
+        <h4>Post-Procedure Recovery</h4>
+        <p>After surgery, aesthetic procedures, or dental work. KLOW supports faster, cleaner healing by activating repair from multiple pathways simultaneously.</p>
+      </div>
+
+      <div class="who-card">
+        <div class="who-card-icon">🧬</div>
+        <h4>Longevity-Focused Patients</h4>
+        <p>Proactive patients investing in cellular health and repair capacity before problems show up. GHK-Cu and BPC-157 support long-term tissue quality and resilience.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW THE SYNERGY WORKS
+     ============================================================ -->
+<section class="synergy-section" aria-labelledby="synergy-heading">
+  <div class="container">
+    <div class="synergy-header section-header">
+      <span class="section-label">The KLOW Synergy</span>
+      <h2 id="synergy-heading" class="section-title">Why a blend works better than individual peptides</h2>
+      <p class="section-intro">Each peptide addresses a different link in the repair chain. Together, they create a coordinated signal that covers the full cycle from damage to renewal.</p>
+    </div>
+
+    <div class="synergy-steps">
+
+      <div class="synergy-step">
+        <div class="step-num">1</div>
+        <h4>Calm the Fire</h4>
+        <p>KPV shuts down the NF-kB inflammatory cascade at the nuclear level, stopping the damage loop before repair can begin.</p>
+      </div>
+
+      <div class="synergy-step">
+        <div class="step-num">2</div>
+        <h4>Rebuild the Barrier</h4>
+        <p>BPC-157 restores gut lining and connective tissue integrity, sealing the leaks that let inflammation spread.</p>
+      </div>
+
+      <div class="synergy-step">
+        <div class="step-num">3</div>
+        <h4>Deploy Repair Cells</h4>
+        <p>TB-500 promotes cell migration and new vessel formation, getting repair resources to where they're needed -- systemically.</p>
+      </div>
+
+      <div class="synergy-step">
+        <div class="step-num">4</div>
+        <h4>Remodel and Renew</h4>
+        <p>GHK-Cu drives collagen production and breaks down damaged matrix, replacing old tissue with new. The renewal phase.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TREATMENT DETAILS
+     ============================================================ -->
+<section class="details-section" aria-labelledby="details-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Quick Reference</span>
+      <h2 id="details-heading" class="section-title">Treatment Details</h2>
+    </div>
+
+    <div class="details-grid">
+
+      <div class="detail-card">
+        <div class="d-icon">💉</div>
+        <span class="d-value">SubQ</span>
+        <span class="d-label">Injection Method</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">📅</div>
+        <span class="d-value">Daily</span>
+        <span class="d-label">Loading Phase (4 weeks)</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🔄</div>
+        <span class="d-value">5x/week</span>
+        <span class="d-label">Maintenance Phase</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">⏱️</div>
+        <span class="d-value">8 Weeks</span>
+        <span class="d-label">Typical Protocol</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🏠</div>
+        <span class="d-value">At Home</span>
+        <span class="d-label">Self-Administered</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🧊</div>
+        <span class="d-value">Refrigerated</span>
+        <span class="d-label">Storage After Reconstitution</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🔬</div>
+        <span class="d-value">Labs First</span>
+        <span class="d-label">Baseline Required</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">👩‍⚕️</div>
+        <span class="d-value">Rx Only</span>
+        <span class="d-label">Provider Prescribed</span>
+      </div>
+
+      <div class="detail-card">
+        <div class="d-icon">🏥</div>
+        <span class="d-value">503A</span>
+        <span class="d-label">Compounding Pharmacy</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="faq-section" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Got Questions?</span>
+      <h2 id="faq-heading" class="section-title">KLOW Peptide FAQs</h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>What does KLOW stand for?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>KLOW is the brand name for a specific 4-peptide blend containing BPC-157, KPV, TB-500, and GHK-Cu. The name refers to the blend itself rather than being an acronym. It's formulated so that all four components can be delivered in a single daily subcutaneous injection rather than managing multiple separate peptide protocols.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>How is KLOW different from taking BPC-157 or TB-500 alone?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Single-peptide protocols target one pathway. KLOW targets four simultaneously: inflammation control (KPV), barrier repair (BPC-157), systemic tissue repair (TB-500), and collagen remodeling (GHK-Cu). The components are synergistic -- for example, KPV calms the inflammation that's damaging tissue while BPC-157 rebuilds the damaged tissue. You're addressing the full repair cycle rather than one piece of it. It also simplifies dosing: one injection per day instead of managing multiple vials and schedules.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>How long does it take to see results?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Most patients begin noticing changes within the first 2-3 weeks -- particularly with inflammation reduction, sleep quality, and general energy. Tissue repair and gut healing benefits typically become more apparent in weeks 4-6. Collagen remodeling and skin quality improvements from GHK-Cu are more gradual and compound over the full 8-week protocol and beyond. Every patient's timeline varies based on what we're targeting and your starting point.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Do I need labs before starting KLOW?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Brittany requires baseline labs before prescribing any peptide protocol. This ensures KLOW is appropriate for you, helps us identify what we're targeting, and gives us data to measure your progress against. If you don't have recent labs, we can order them through the clinic at cost.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Can I combine KLOW with GLP-1 therapy?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, and it's a popular combination. Many patients on semaglutide or tirzepatide experience GI side effects and tissue changes during weight loss. KLOW's BPC-157 supports gut lining integrity while GHK-Cu helps maintain skin elasticity and collagen production during body composition changes. Brittany evaluates each case individually to make sure the timing and dosing work together safely.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Is KLOW safe? What are the side effects?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>KLOW is well-tolerated by most patients when prescribed and monitored by a licensed provider. The most common side effect is mild injection site irritation (redness, slight itch) that resolves within an hour. Some patients report mild fatigue during the first few days as the body's repair processes ramp up. Serious adverse effects are rare. Brittany monitors your progress throughout the protocol and adjusts dosing if needed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>How do I store and administer the injections?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>KLOW arrives as a lyophilized (freeze-dried) powder that you reconstitute with bacteriostatic water. Once mixed, it's stored in the refrigerator. You self-administer a subcutaneous injection daily -- typically in the abdominal area, similar to insulin. Brittany walks you through the reconstitution process, injection technique, and dosing at your initial visit. Most patients are comfortable doing it on their own after the first session.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false">
+          <span>Where does the KLOW blend come from?</span>
+          <span class="faq-chevron" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </button>
+        <div class="faq-answer">
+          <p>Brittany prescribes KLOW through a licensed 503A compounding pharmacy. This means the blend is made to order based on a valid prescription from a licensed provider -- not purchased off the shelf from a grey-market website. 503A pharmacies are regulated, inspected, and held to pharmaceutical compounding standards. You're getting a real Rx product with verified purity and potency.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CROSS-LINKS
+     ============================================================ -->
+<section class="cross-section" aria-label="Related services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Pairs Well With</span>
+      <h2 class="section-title">Complementary protocols</h2>
+    </div>
+
+    <div class="cross-grid">
+
+      <div class="cross-card">
+        <div class="cross-card-icon">🧬</div>
+        <h4>Peptide Therapy</h4>
+        <p>Explore our full peptide menu -- BPC-157, Sermorelin, CJC-1295/Ipamorelin, NAD+, and more. Each protocol is customized to your goals.</p>
+        <a href="/peptide-therapy/" class="btn-teal" style="font-size:0.85rem; padding:10px 22px;">View Peptide Therapy</a>
+      </div>
+
+      <div class="cross-card">
+        <div class="cross-card-icon">💧</div>
+        <h4>IV Therapy</h4>
+        <p>Support your KLOW protocol with IV hydration, glutathione, and vitamin infusions for enhanced systemic delivery and recovery.</p>
+        <a href="/iv-drip-menu" class="btn-teal" style="font-size:0.85rem; padding:10px 22px;">View IV Menu</a>
+      </div>
+
+      <div class="cross-card">
+        <div class="cross-card-icon">⚖️</div>
+        <h4>GLP-1 Weight Loss</h4>
+        <p>Combining KLOW with semaglutide or tirzepatide? BPC-157 supports gut health while GHK-Cu helps maintain skin quality during weight loss.</p>
+        <a href="/weightloss" class="btn-teal" style="font-size:0.85rem; padding:10px 22px;">Weight Loss Program</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BOTTOM CTA
+     ============================================================ -->
+<section class="klow-cta" aria-label="Book KLOW consultation">
+  <div class="container klow-cta-inner">
+    <h2>Ready to start KLOW?</h2>
+    <p>
+      Book a consultation with Brittany to review your labs, discuss your goals, and find out if KLOW is the right protocol for you. Real provider, real Rx, real results.
+    </p>
+    <div class="klow-cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-white">
+        🧬 Book KLOW Consultation
+      </a>
+      <a href="tel:6822836976" class="btn-outline-white">
+        Call (682) 283-6976
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-col footer-brand">
+        <a href="/" class="footer-logo-link" aria-label="Happy Drip IV & Wellness Home">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness" class="footer-logo" />
+        </a>
+        <p>Bedford, TX's home for IV therapy, integrative medicine &amp; aesthetic wellness. Cash-pay, transparent pricing, no insurance hassle.</p>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#payment">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Peptide Therapy</h5>
+        <a href="/peptide-therapy/">All Peptide Protocols</a>
+        <a href="/klow-peptide">KLOW Peptide Blend</a>
+        <a href="/iv-drip-menu">IV Therapy</a>
+        <a href="/weightloss">GLP-1 Weight Loss</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar" id="bottomBar" role="complementary" aria-label="Peptide therapy promotion">
+  <div class="vip-text">
+    <span class="vip-badge">NEW</span>
+    KLOW peptide blend -- 4 peptides, one coordinated healing protocol. <a href="/klow-peptide">&nbsp;Learn more&nbsp;</a>
+  </div>
+  <div class="tip">PRO-TIP: Pair KLOW with IV therapy and GLP-1 for a comprehensive wellness protocol</div>
+</div>
+
+<script src="js/script.js"></script>
+<script>
+(function () {
+  document.querySelectorAll('.faq-question').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function (openItem) {
+        openItem.classList.remove('open');
+        openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
