@@ -920,6 +920,54 @@ p { line-height: 1.75; }
 .payment-card p { font-size: 0.83rem; color: var(--gray); line-height: 1.6; }
 
 /* ============================================================
+   PARTNER / AFFILIATE STRIP
+   ============================================================ */
+.partner-strip {
+  padding: 40px 0;
+  background: #f7f9fc;
+  border-top: 1px solid #e8ecf2;
+  border-bottom: 1px solid #e8ecf2;
+}
+.partner-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+.partner-strip-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a94a8;
+  white-space: nowrap;
+}
+.partner-strip-logos {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.partner-strip-logos img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(20%);
+  opacity: 0.8;
+  transition: opacity 0.2s, filter 0.2s;
+}
+.partner-strip-logos img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+.partner-strip-logos img.logo-round {
+  height: 56px;
+  border-radius: 50%;
+}
+
+/* ============================================================
    FOOTER
    ============================================================ */
 .site-footer {
