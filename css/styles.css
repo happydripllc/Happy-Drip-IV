@@ -297,13 +297,14 @@ p { line-height: 1.75; }
 .dropdown .dropdown-group:last-child { border-bottom: none; }
 .dropdown .dropdown-group-title {
   display: block !important;
-  font-size: 0.7rem !important;
-  font-weight: 800 !important;
-  letter-spacing: 0.1em !important;
-  text-transform: uppercase !important;
-  color: var(--teal) !important;
-  padding: 8px 14px 4px !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  color: var(--navy) !important;
+  padding: 9px 14px 5px !important;
   cursor: pointer;
+  border-radius: 8px;
 }
 .dropdown .dropdown-group-title:hover {
   background: var(--light-blue) !important;
