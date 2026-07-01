@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testosterone Replacement Therapy (TRT) | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="TRT for low testosterone in Bedford, TX. Lab testing, personalized dosing, and ongoing management by Brittany Adams, APRN FNP-C. Cash-pay, no insurance required." />
+  <link rel="canonical" href="https://www.happydripiv.com/trt" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260630" />
+  <style>
+    :root {
+      --trt-navy:    #1a2744;
+      --trt-teal:    #1D9E75;
+      --trt-amber:   #d97706;
+      --trt-amber-lt:#fef3c7;
+      --trt-cream:   #f7f9fc;
+    }
+
+    /* ---- Hero ---- */
+    .trt-hero {
+      background: linear-gradient(135deg, #fef3c7 0%, #e0f5ec 55%, #e0f7fa 100%);
+      padding: 80px 0 64px;
+      position: relative; overflow: hidden;
+    }
+    .trt-hero::before {
+      content: '';
+      position: absolute; top: -80px; right: -80px;
+      width: 460px; height: 460px;
+      background: radial-gradient(circle, rgba(217,119,6,0.08) 0%, transparent 65%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .trt-hero-content {
+      max-width: 700px; position: relative; z-index: 1;
+    }
+    .eyebrow-pill {
+      display: inline-flex; align-items: center;
+      background: rgba(29,158,117,0.10);
+      border: 1px solid rgba(29,158,117,0.3);
+      color: var(--trt-teal);
+      font-size: 0.75rem; font-weight: 800;
+      padding: 6px 16px; border-radius: 40px;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; color: rgba(0,0,0,0.45);
+      margin-bottom: 24px;
+    }
+    .breadcrumb a { color: var(--trt-teal); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+    .trt-hero-content h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      color: var(--trt-navy); margin-bottom: 16px; line-height: 1.15;
+    }
+    .trt-hero-content .subhead {
+      font-size: 1.1rem; color: #4a5570;
+      margin-bottom: 32px; line-height: 1.65;
+    }
+    .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-teal {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--trt-teal); color: #fff;
+      font-weight: 800; font-size: 0.95rem;
+      padding: 14px 28px; border-radius: 50px;
+      text-decoration: none; transition: background 0.2s, transform 0.2s;
+    }
+    .btn-teal:hover { background: #178a64; transform: translateY(-1px); }
+    .btn-outline-navy {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--trt-navy);
+      font-weight: 800; font-size: 0.95rem;
+      padding: 13px 28px; border-radius: 50px;
+      border: 2px solid var(--trt-navy);
+      text-decoration: none; transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-navy:hover { background: var(--trt-navy); color: #fff; }
+
+    /* ---- Stat Bar ---- */
+    .trt-stat-bar { background: var(--trt-navy); padding: 28px 0; }
+    .trt-stat-bar-inner {
+      display: flex; justify-content: space-around; align-items: center;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .trt-stat { text-align: center; }
+    .trt-stat .sn { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--trt-teal); display: block; line-height: 1; }
+    .trt-stat .sl { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-top: 4px; }
+    .trt-stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.12); }
+    @media (max-width: 640px) {
+      .trt-stat-bar-inner { gap: 12px; }
+      .trt-stat-divider { display: none; }
+      .trt-stat .sn { font-size: 1.5rem; }
+    }
+
+    /* ---- Section utilities ---- */
+    .section-label { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--trt-teal); margin-bottom: 12px; }
+    .section-title { color: var(--trt-navy); font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 14px; line-height: 1.2; }
+    .section-intro { color: #4a5570; font-size: 1rem; line-height: 1.75; max-width: 640px; }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-header .section-intro { margin: 12px auto 0; }
+
+    /* ---- Symptoms ---- */
+    .symptoms-section { padding: 80px 0; background: #fff; }
+    .symptoms-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 60px; align-items: center; }
+    .symptoms-text h2 { color: var(--trt-navy); margin-bottom: 20px; font-size: clamp(1.5rem, 3vw, 2.1rem); }
+    .symptoms-text p { color: #4a5570; line-height: 1.8; margin-bottom: 18px; font-size: 1rem; }
+    .symptom-box {
+      background: var(--trt-navy); border-radius: 20px; padding: 40px 36px; color: #fff;
+    }
+    .symptom-box h3 { color: rgba(255,255,255,0.7); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 24px; }
+    .symptom-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+    .symptom-list li { display: flex; align-items: flex-start; gap: 14px; font-size: 0.95rem; line-height: 1.6; color: rgba(255,255,255,0.9); }
+    .symp-dot { width: 8px; height: 8px; background: var(--trt-teal); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+    @media (max-width: 800px) { .symptoms-grid { grid-template-columns: 1fr; gap: 32px; } }
+
+    /* ---- Benefits ---- */
+    .benefits-section { padding: 80px 0; background: var(--trt-cream); }
+    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .benefit-card {
+      background: #fff; border-radius: 20px; padding: 36px 28px;
+      border-top: 4px solid var(--trt-teal);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .benefit-icon { font-size: 2rem; margin-bottom: 16px; display: block; }
+    .benefit-card h3 { font-size: 1.05rem; color: var(--trt-navy); margin-bottom: 10px; }
+    .benefit-card p { font-size: 0.9rem; color: #4a5570; line-height: 1.7; }
+    @media (max-width: 780px) { .benefits-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 500px) { .benefits-grid { grid-template-columns: 1fr; } }
+
+    /* ---- How It Works ---- */
+    .process-section { padding: 80px 0; background: #fff; }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 48px; }
+    .process-step { text-align: center; }
+    .ps-num {
+      width: 56px; height: 56px; background: var(--trt-teal); color: #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; font-weight: 800; margin: 0 auto 18px;
+    }
+    .process-step h3 { font-size: 1rem; color: var(--trt-navy); margin-bottom: 8px; }
+    .process-step p { font-size: 0.88rem; color: #4a5570; line-height: 1.7; }
+    .process-connector { display: none; }
+    @media (max-width: 760px) { .process-steps { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+
+    /* ---- Candidate section ---- */
+    .candidate-section { padding: 80px 0; background: var(--trt-navy); }
+    .candidate-section .section-label { color: rgba(255,255,255,0.5); }
+    .candidate-section .section-title { color: #fff; }
+    .candidate-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
+    .candidate-col { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 36px 28px; }
+    .candidate-col h3 { font-size: 1rem; font-weight: 800; margin-bottom: 20px; color: #fff; }
+    .candidate-col h3.green { color: var(--trt-teal); }
+    .candidate-col h3.red { color: #f87171; }
+    .candidate-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+    .candidate-col li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.9rem; color: rgba(255,255,255,0.8); line-height: 1.6; }
+    .check-dot { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; font-size: 0.7rem; font-weight: 800; }
+    .check-dot.green { background: rgba(29,158,117,0.25); color: var(--trt-teal); }
+    .check-dot.red { background: rgba(248,113,113,0.2); color: #f87171; }
+    @media (max-width: 640px) { .candidate-cols { grid-template-columns: 1fr; } }
+
+    /* ---- FAQ ---- */
+    .trt-faq { padding: 80px 0; background: var(--trt-cream); }
+    .faq-list { max-width: 760px; margin: 48px auto 0; display: flex; flex-direction: column; gap: 16px; }
+    .faq-item { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .faq-q {
+      width: 100%; background: none; border: none; text-align: left; cursor: pointer;
+      padding: 22px 24px; font-size: 1rem; font-weight: 700; color: var(--trt-navy);
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    }
+    .faq-q .faq-icon { font-size: 1.4rem; color: var(--trt-teal); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 24px 22px; font-size: 0.95rem; color: #4a5570; line-height: 1.75; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ---- CTA ---- */
+    .trt-cta {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #fef3c7 0%, #e0f5ec 100%);
+      text-align: center;
+    }
+    .trt-cta h2 { color: var(--trt-navy); font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 16px; }
+    .trt-cta p { color: #4a5570; font-size: 1.05rem; max-width: 560px; margin: 0 auto 36px; line-height: 1.7; }
+    .cta-btn-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <a href="/glp1-side-effects/" class="dropdown-group-item">GLP-1 Side Effects</a>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/glp1-side-effects/" class="sub-link nested">GLP-1 Side Effects</a>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="trt-hero">
+  <div class="container">
+    <div class="trt-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <a href="/mens-health">Men's Health</a>
+        <span>›</span>
+        <span>Testosterone (TRT)</span>
+      </nav>
+      <span class="eyebrow-pill">Men's Health</span>
+      <h1>Testosterone Replacement Therapy -- Feel Like Yourself Again</h1>
+      <p class="subhead">Low testosterone is one of the most underdiagnosed conditions in men over 30. We run the labs, interpret the results, and create a personalized TRT plan -- all under the care of Brittany Adams, APRN FNP-C.</p>
+      <div class="hero-cta-row">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Schedule a Lab Visit</a>
+        <a href="tel:6822836976" class="btn-outline-navy">Call (682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAR -->
+<section class="trt-stat-bar">
+  <div class="container trt-stat-bar-inner">
+    <div class="trt-stat">
+      <span class="sn">1--2%</span>
+      <span class="sl">Testosterone drops per year after 30</span>
+    </div>
+    <div class="trt-stat-divider"></div>
+    <div class="trt-stat">
+      <span class="sn">40%</span>
+      <span class="sl">Of men over 45 have low T</span>
+    </div>
+    <div class="trt-stat-divider"></div>
+    <div class="trt-stat">
+      <span class="sn">Lab + Rx</span>
+      <span class="sl">Testing and treatment in one place</span>
+    </div>
+    <div class="trt-stat-divider"></div>
+    <div class="trt-stat">
+      <span class="sn">Cash-Pay</span>
+      <span class="sl">No insurance hassle</span>
+    </div>
+  </div>
+</section>
+
+<!-- SYMPTOMS -->
+<section class="symptoms-section">
+  <div class="container">
+    <div class="symptoms-grid">
+      <div class="symptoms-text">
+        <span class="section-label">Is This You?</span>
+        <h2>Low Testosterone Shows Up in Ways You Might Not Expect</h2>
+        <p>Most men attribute their symptoms to aging, stress, or "just getting older." Sometimes that's true. But low testosterone is a measurable, treatable medical condition -- and the difference in how you feel on optimized levels can be significant.</p>
+        <p>The only way to know for sure is through bloodwork. We test total testosterone, free testosterone, LH, FSH, estradiol, and other relevant markers to get a complete picture before recommending any treatment.</p>
+        <p>We do not prescribe TRT without lab confirmation. Your safety and long-term health come first.</p>
+      </div>
+      <div class="symptom-box">
+        <h3>Common Signs of Low Testosterone</h3>
+        <ul class="symptom-list">
+          <li><span class="symp-dot"></span>Persistent fatigue, low energy, or poor motivation</li>
+          <li><span class="symp-dot"></span>Decreased sex drive or libido</li>
+          <li><span class="symp-dot"></span>Difficulty building or maintaining muscle</li>
+          <li><span class="symp-dot"></span>Increased body fat, especially around the abdomen</li>
+          <li><span class="symp-dot"></span>Brain fog, difficulty concentrating, or mood changes</li>
+          <li><span class="symp-dot"></span>Erectile dysfunction or reduced morning erections</li>
+          <li><span class="symp-dot"></span>Decreased bone density or joint discomfort</li>
+          <li><span class="symp-dot"></span>Sleep disturbances or poor sleep quality</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What TRT Can Do</span>
+      <h2 class="section-title">Benefits of Optimized Testosterone Levels</h2>
+      <p class="section-intro">When testosterone is restored to a healthy physiological range, most men report meaningful improvements across multiple areas of health and well-being.</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">&#9889;</span>
+        <h3>More Energy &amp; Drive</h3>
+        <p>Reduced fatigue is one of the first things men notice on TRT -- often within the first few weeks of starting treatment.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">&#128170;</span>
+        <h3>Improved Body Composition</h3>
+        <p>Optimized testosterone supports lean muscle development and makes it easier to reduce stubborn body fat, especially when combined with consistent training.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">&#10084;</span>
+        <h3>Restored Libido &amp; Sexual Function</h3>
+        <p>TRT often improves sex drive and can complement ED treatment, particularly when low T is a contributing factor.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">&#129504;</span>
+        <h3>Sharper Mental Clarity</h3>
+        <p>Many men report improved focus, mood stability, and reduced brain fog after their testosterone levels are optimized.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">&#128564;</span>
+        <h3>Better Sleep Quality</h3>
+        <p>Low T is linked to disrupted sleep. Restoring healthy levels can improve sleep depth and duration.</p>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">&#129460;</span>
+        <h3>Long-Term Bone &amp; Joint Health</h3>
+        <p>Testosterone plays an important role in maintaining bone mineral density, reducing fracture risk and supporting joint health as you age.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Process</span>
+      <h2 class="section-title">From Labs to Treatment -- Here's How It Works</h2>
+      <p class="section-intro">We don't guess -- we test. Every TRT plan starts with comprehensive bloodwork and a thorough evaluation.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="ps-num">1</div>
+        <h3>Initial Consultation</h3>
+        <p>Book a visit with Brittany to discuss your symptoms, health history, and goals. We'll determine which labs are appropriate.</p>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">2</div>
+        <h3>Lab Work</h3>
+        <p>We order a comprehensive hormone panel including total testosterone, free testosterone, estradiol, LH, FSH, PSA, hematocrit, and more.</p>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">3</div>
+        <h3>Results Review</h3>
+        <p>Once labs are back, Brittany reviews results with you and -- if TRT is appropriate -- develops a personalized treatment protocol.</p>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">4</div>
+        <h3>Ongoing Management</h3>
+        <p>TRT requires regular monitoring. We schedule follow-up labs and dose adjustments to keep you in the optimal range safely.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CANDIDATE -->
+<section class="candidate-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Candidacy</span>
+      <h2 class="section-title">Is TRT Right for You?</h2>
+    </div>
+    <div class="candidate-cols">
+      <div class="candidate-col">
+        <h3 class="green">Good Candidates for TRT</h3>
+        <ul>
+          <li><span class="check-dot green">&#10003;</span>Lab-confirmed low testosterone (typically below 300 ng/dL)</li>
+          <li><span class="check-dot green">&#10003;</span>Symptoms consistent with testosterone deficiency</li>
+          <li><span class="check-dot green">&#10003;</span>Adult men not actively trying to conceive</li>
+          <li><span class="check-dot green">&#10003;</span>No contraindicated conditions (assessed at consultation)</li>
+          <li><span class="check-dot green">&#10003;</span>Committed to regular monitoring and follow-up</li>
+        </ul>
+      </div>
+      <div class="candidate-col">
+        <h3 class="red">Important Considerations</h3>
+        <ul>
+          <li><span class="check-dot red">&#10007;</span>TRT suppresses natural testosterone production and affects fertility -- discuss this before starting if you plan to have children</li>
+          <li><span class="check-dot red">&#10007;</span>Not recommended for men with prostate or breast cancer</li>
+          <li><span class="check-dot red">&#10007;</span>Requires regular hematocrit monitoring to watch for elevated red blood cell count</li>
+          <li><span class="check-dot red">&#10007;</span>Should not be combined with certain heart medications without cardiology clearance</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="trt-faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How do I know if I have low testosterone?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">The only reliable way to diagnose low testosterone is through blood testing. Symptoms alone aren't enough -- many conditions mimic low T. We order a comprehensive hormone panel and interpret results in the context of your symptoms and overall health picture.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What form of testosterone do you prescribe?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">We discuss all options with you at your consultation. Common forms include weekly or twice-weekly testosterone cypionate injections (the most common), topical gels or creams, and subcutaneous pellets. Each has different absorption profiles and monitoring needs. Your preference and lifestyle factor into the recommendation.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Will TRT affect my fertility?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Yes -- exogenous testosterone suppresses LH and FSH, which signals the testes to reduce or stop natural testosterone and sperm production. If you're planning to have children, we need to discuss this before starting TRT. There are fertility-preserving alternatives we can explore, such as clomiphene citrate.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How quickly will I feel results?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Many men notice improved energy and mood within the first 3--6 weeks. Libido improvements typically follow at 3--6 weeks. Body composition changes (muscle gain, fat loss) take longer -- usually 3--6 months of consistent treatment. Optimal results come over time and with proper dosing.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How often do I need lab work while on TRT?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">We typically check labs at 6--8 weeks after starting or adjusting your dose, then every 3--6 months once you're stable. We monitor testosterone levels, hematocrit, PSA, and estradiol at minimum. Regular follow-up is non-negotiable for safe, effective therapy.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What does TRT cost as a cash-pay patient?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Visit costs vary based on the services involved. Lab work pricing depends on which panel is ordered. We're transparent about pricing at your consultation and can discuss options to keep ongoing management affordable. Ask about our payment plan options through Cherry financing.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER STRIP -->
+<section class="partner-strip">
+  <div class="container partner-strip-inner">
+    <span class="partner-strip-label">Trusted Partners</span>
+    <div class="partner-strip-logos">
+      <a href="https://www.crunch.com/perks" target="_blank" rel="noopener" aria-label="Crunch Perks">
+        <img src="images/crunch-perks.png" alt="Crunch Perks" class="logo-round" />
+      </a>
+      <a href="https://us.fullscript.com/welcome/happydripiv" target="_blank" rel="noopener" aria-label="Fullscript">
+        <img src="images/fullscript.png" alt="Fullscript" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="trt-cta">
+  <div class="container">
+    <h2>Ready to Find Out Where Your Levels Stand?</h2>
+    <p>Get lab-backed answers and a personalized plan from Brittany Adams, APRN FNP-C. Cash-pay, no insurance required, same-day or next-day appointments.</p>
+    <div class="cta-btn-row">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book a Lab Visit</a>
+      <a href="tel:6822836976" class="btn-outline-navy">Call (682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="site-logo footer-logo">
+        <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+        <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
+      </a>
+      <p class="footer-tagline">Bedford's boutique IV therapy &amp; wellness studio.</p>
+      <p class="footer-address">813 Brown Trail #6B &bull; Bedford TX 76022</p>
+      <a href="tel:6822836976" class="footer-phone">(682) 283-6976</a>
+    </div>
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/weightloss">Medical Weight Loss</a></li>
+        <li><a href="/peptide-therapy/">Peptide Therapy</a></li>
+        <li><a href="/iv-drip-menu">IV Drip Menu</a></li>
+        <li><a href="/jeuveau">Jeuveau&reg; (Botox)</a></li>
+        <li><a href="/mesotox">Korean Glass Skin MesoTox</a></li>
+        <li><a href="/iron-infusion">Iron Infusion</a></li>
+        <li><a href="/sexual-health">Sexual Health (ED)</a></li>
+        <li><a href="/trt">Testosterone (TRT)</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Visit Us</h4>
+      <ul>
+        <li><a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a></li>
+        <li><a href="/payment-plans">Payment Plans</a></li>
+        <li><a href="/happy-health-clinic">Happy Health Clinic (DPC)</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Happy Drip IV &amp; Wellness. All rights reserved. &bull; Brittany Adams, APRN FNP-C &bull; Bedford, TX</p>
+    <p class="footer-disclaimer">This page is for informational purposes only and does not constitute medical advice. Consult a qualified healthcare provider before starting any new treatment.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+  });
+</script>
+
+</body>
+</html>

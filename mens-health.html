@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Men's Health -- ED &amp; TRT | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="Men's health services in Bedford, TX -- ED treatment (sildenafil/tadalafil) and testosterone replacement therapy (TRT). Cash-pay, no insurance needed. Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/mens-health" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260630" />
+  <style>
+    :root {
+      --mh-navy:  #1a2744;
+      --mh-teal:  #1D9E75;
+      --mh-cream: #f7f9fc;
+    }
+    .mh-hero {
+      background: linear-gradient(135deg, #fef3c7 0%, #e0f5ec 50%, #e0f7fa 100%);
+      padding: 100px 0 72px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .mh-hero::before {
+      content: ''; position: absolute; top: -80px; right: -80px;
+      width: 440px; height: 440px;
+      background: radial-gradient(circle, rgba(29,158,117,0.09) 0%, transparent 65%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .mh-hero-content { max-width: 680px; margin: 0 auto; position: relative; z-index: 1; }
+    .eyebrow-pill {
+      display: inline-flex; align-items: center;
+      background: rgba(29,158,117,0.10); border: 1px solid rgba(29,158,117,0.3);
+      color: var(--mh-teal); font-size: 0.75rem; font-weight: 800;
+      padding: 6px 16px; border-radius: 40px; letter-spacing: 0.08em;
+      text-transform: uppercase; margin-bottom: 20px;
+    }
+    .mh-hero-content h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); color: var(--mh-navy); margin-bottom: 18px; line-height: 1.12; }
+    .mh-hero-content p { font-size: 1.1rem; color: #4a5570; max-width: 580px; margin: 0 auto 36px; line-height: 1.7; }
+    .hero-cta-row { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .btn-teal {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--mh-teal); color: #fff; font-weight: 800; font-size: 0.95rem;
+      padding: 14px 28px; border-radius: 50px; text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-teal:hover { background: #178a64; transform: translateY(-1px); }
+    .btn-outline-navy {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--mh-navy); font-weight: 800; font-size: 0.95rem;
+      padding: 13px 28px; border-radius: 50px; border: 2px solid var(--mh-navy);
+      text-decoration: none; transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-navy:hover { background: var(--mh-navy); color: #fff; }
+
+    /* Service Cards */
+    .mh-services { padding: 80px 0; background: #fff; }
+    .mh-services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px; }
+    .mh-service-card {
+      border-radius: 24px; overflow: hidden;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+      display: flex; flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .mh-service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.13); }
+    .card-header {
+      padding: 44px 40px 36px; position: relative; overflow: hidden;
+    }
+    .card-header.teal-bg { background: linear-gradient(135deg, #1D9E75 0%, #148f67 100%); }
+    .card-header.navy-bg { background: linear-gradient(135deg, #1a2744 0%, #243660 100%); }
+    .card-header-icon { font-size: 2.8rem; margin-bottom: 16px; display: block; }
+    .card-header h2 { font-size: 1.6rem; color: #fff; margin-bottom: 8px; line-height: 1.2; }
+    .card-header .card-tag {
+      display: inline-block; background: rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.9); font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 20px; margin-bottom: 14px;
+    }
+    .card-header p { color: rgba(255,255,255,0.82); font-size: 0.95rem; line-height: 1.65; }
+    .card-body { padding: 36px 40px; background: #fff; flex: 1; display: flex; flex-direction: column; }
+    .card-points { list-style: none; padding: 0; margin: 0 0 28px; display: flex; flex-direction: column; gap: 12px; }
+    .card-points li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.92rem; color: #4a5570; line-height: 1.6; }
+    .cp-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+    .cp-dot.teal { background: var(--mh-teal); }
+    .cp-dot.navy { background: var(--mh-navy); }
+    .card-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-weight: 800; font-size: 0.95rem; border-radius: 50px;
+      padding: 13px 28px; text-decoration: none; margin-top: auto;
+      transition: background 0.2s, color 0.2s, transform 0.2s;
+    }
+    .card-cta.teal { background: var(--mh-teal); color: #fff; }
+    .card-cta.teal:hover { background: #178a64; transform: translateY(-1px); }
+    .card-cta.navy { background: var(--mh-navy); color: #fff; }
+    .card-cta.navy:hover { background: #111d38; transform: translateY(-1px); }
+    @media (max-width: 680px) { .mh-services-grid { grid-template-columns: 1fr; } }
+
+    /* Why Us */
+    .why-us { padding: 80px 0; background: var(--mh-cream); }
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .why-card { background: #fff; border-radius: 16px; padding: 32px 24px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .why-icon { font-size: 2rem; margin-bottom: 14px; display: block; }
+    .why-card h3 { font-size: 1rem; color: var(--mh-navy); margin-bottom: 8px; }
+    .why-card p { font-size: 0.88rem; color: #4a5570; line-height: 1.7; }
+    .section-label { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mh-teal); margin-bottom: 12px; }
+    .section-title { color: var(--mh-navy); font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 14px; line-height: 1.2; }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    @media (max-width: 680px) { .why-grid { grid-template-columns: 1fr; } }
+
+    /* CTA */
+    .mh-cta { padding: 80px 0; background: var(--mh-navy); text-align: center; }
+    .mh-cta h2 { color: #fff; font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 16px; }
+    .mh-cta p { color: rgba(255,255,255,0.72); font-size: 1.05rem; max-width: 520px; margin: 0 auto 36px; line-height: 1.7; }
+    .cta-btn-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <a href="/glp1-side-effects/" class="dropdown-group-item">GLP-1 Side Effects</a>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <a href="/glp1-side-effects/" class="sub-link nested">GLP-1 Side Effects</a>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="mh-hero">
+  <div class="container">
+    <div class="mh-hero-content">
+      <span class="eyebrow-pill">Men's Health</span>
+      <h1>Men's Health Services in Bedford, TX</h1>
+      <p>ED treatment and testosterone replacement therapy -- handled by a qualified provider who takes your symptoms seriously. No insurance required, no waiting weeks for an appointment.</p>
+      <div class="hero-cta-row">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book a Visit</a>
+        <a href="tel:6822836976" class="btn-outline-navy">Call (682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE CARDS -->
+<section class="mh-services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Two Services, One Clinic</h2>
+    </div>
+    <div class="mh-services-grid">
+
+      <div class="mh-service-card">
+        <div class="card-header teal-bg">
+          <span class="card-tag">Sexual Health</span>
+          <span class="card-header-icon">&#128274;</span>
+          <h2>ED Treatment</h2>
+          <p>Sildenafil and tadalafil prescribed after a thorough medical evaluation. Same-day prescriptions available, fully discreet.</p>
+        </div>
+        <div class="card-body">
+          <ul class="card-points">
+            <li><span class="cp-dot teal"></span>Generic sildenafil (Viagra&reg;) and tadalafil (Cialis&reg;)</li>
+            <li><span class="cp-dot teal"></span>As-needed or daily dosing options</li>
+            <li><span class="cp-dot teal"></span>Comprehensive intake -- safety is evaluated first</li>
+            <li><span class="cp-dot teal"></span>Cash-pay: no EOB, no insurance record</li>
+            <li><span class="cp-dot teal"></span>Can be combined with TRT if low T is a factor</li>
+          </ul>
+          <a href="/sexual-health" class="card-cta teal">Learn About ED Treatment &rarr;</a>
+        </div>
+      </div>
+
+      <div class="mh-service-card">
+        <div class="card-header navy-bg">
+          <span class="card-tag">Hormone Health</span>
+          <span class="card-header-icon">&#9878;</span>
+          <h2>Testosterone Replacement Therapy</h2>
+          <p>Lab-confirmed diagnosis, personalized protocol, and ongoing monitoring -- not a one-size-fits-all approach.</p>
+        </div>
+        <div class="card-body">
+          <ul class="card-points">
+            <li><span class="cp-dot navy"></span>Comprehensive hormone panel before any treatment</li>
+            <li><span class="cp-dot navy"></span>Injection, topical, or pellet options discussed</li>
+            <li><span class="cp-dot navy"></span>Regular follow-up labs included in ongoing management</li>
+            <li><span class="cp-dot navy"></span>Addresses energy, body composition, mood, and libido</li>
+            <li><span class="cp-dot navy"></span>Fertility implications discussed upfront</li>
+          </ul>
+          <a href="/trt" class="card-cta navy">Learn About TRT &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Why Happy Drip</span>
+      <h2 class="section-title">A Different Kind of Men's Health Visit</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <span class="why-icon">&#128203;</span>
+        <h3>Qualified Provider</h3>
+        <p>Brittany Adams, APRN FNP-C is a board-certified family nurse practitioner with full prescriptive authority in Texas -- not a telehealth questionnaire.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">&#9200;</span>
+        <h3>Fast Access</h3>
+        <p>Same-day and next-day appointments are routinely available. No referrals, no primary care bottleneck, no 6-week wait.</p>
+      </div>
+      <div class="why-card">
+        <span class="why-icon">&#128179;</span>
+        <h3>Cash-Pay Simple</h3>
+        <p>No insurance means no claim history, no EOB mailed to your house, and no prior authorizations. Transparent pricing discussed at your visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER STRIP -->
+<section class="partner-strip">
+  <div class="container partner-strip-inner">
+    <span class="partner-strip-label">Trusted Partners</span>
+    <div class="partner-strip-logos">
+      <a href="https://www.crunch.com/perks" target="_blank" rel="noopener" aria-label="Crunch Perks">
+        <img src="images/crunch-perks.png" alt="Crunch Perks" class="logo-round" />
+      </a>
+      <a href="https://us.fullscript.com/welcome/happydripiv" target="_blank" rel="noopener" aria-label="Fullscript">
+        <img src="images/fullscript.png" alt="Fullscript" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="mh-cta">
+  <div class="container">
+    <h2>Ready to Feel Like Yourself Again?</h2>
+    <p>Book a confidential visit with Brittany Adams, APRN FNP-C. Same-day and next-day appointments available in Bedford, TX.</p>
+    <div class="cta-btn-row">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book Online</a>
+      <a href="tel:6822836976" class="btn-outline-navy" style="color:#fff; border-color:rgba(255,255,255,0.4);">Call (682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="/" class="site-logo footer-logo">
+        <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+        <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
+      </a>
+      <p class="footer-tagline">Bedford's boutique IV therapy &amp; wellness studio.</p>
+      <p class="footer-address">813 Brown Trail #6B &bull; Bedford TX 76022</p>
+      <a href="tel:6822836976" class="footer-phone">(682) 283-6976</a>
+    </div>
+    <div class="footer-links">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="/weightloss">Medical Weight Loss</a></li>
+        <li><a href="/peptide-therapy/">Peptide Therapy</a></li>
+        <li><a href="/iv-drip-menu">IV Drip Menu</a></li>
+        <li><a href="/jeuveau">Jeuveau&reg; (Botox)</a></li>
+        <li><a href="/mesotox">Korean Glass Skin MesoTox</a></li>
+        <li><a href="/iron-infusion">Iron Infusion</a></li>
+        <li><a href="/sexual-health">Sexual Health (ED)</a></li>
+        <li><a href="/trt">Testosterone (TRT)</a></li>
+      </ul>
+    </div>
+    <div class="footer-links">
+      <h4>Visit Us</h4>
+      <ul>
+        <li><a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a></li>
+        <li><a href="/payment-plans">Payment Plans</a></li>
+        <li><a href="/happy-health-clinic">Happy Health Clinic (DPC)</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Happy Drip IV &amp; Wellness. All rights reserved. &bull; Brittany Adams, APRN FNP-C &bull; Bedford, TX</p>
+    <p class="footer-disclaimer">This page is for informational purposes only and does not constitute medical advice. Consult a qualified healthcare provider before starting any new treatment.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
