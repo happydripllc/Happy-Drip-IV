@@ -364,6 +364,9 @@ p { line-height: 1.75; }
   background: var(--navy-mid);
   padding: 16px 0;
   border-top: 1px solid rgba(93,217,232,0.2);
+  max-height: calc(100vh - 72px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 .mobile-nav.open { display: block; }
 .mobile-nav a {
@@ -951,12 +954,11 @@ p { line-height: 1.75; }
   justify-content: center;
 }
 .partner-strip-logos img {
-  height: 140px;
+  height: 80px;
   width: auto;
-  max-width: 260px;
   object-fit: contain;
   filter: grayscale(20%);
-  opacity: 0.9;
+  opacity: 0.85;
   transition: opacity 0.2s, filter 0.2s;
 }
 .partner-strip-logos img:hover {
@@ -964,7 +966,7 @@ p { line-height: 1.75; }
   filter: grayscale(0%);
 }
 .partner-strip-logos img.logo-round {
-  height: 140px;
+  height: 90px;
   border-radius: 50%;
 }
 
