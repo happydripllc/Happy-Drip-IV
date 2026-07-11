@@ -364,11 +364,19 @@ p { line-height: 1.75; }
   background: var(--navy-mid);
   padding: 16px 0;
   border-top: 1px solid rgba(93,217,232,0.2);
-  max-height: calc(100vh - 72px);
+}
+.mobile-nav.open {
+  display: block;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  z-index: 799;
+  padding-bottom: 100px;
 }
-.mobile-nav.open { display: block; }
 .mobile-nav a {
   display: block;
   padding: 11px 24px;
