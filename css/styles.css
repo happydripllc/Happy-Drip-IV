@@ -951,11 +951,11 @@ p { line-height: 1.75; }
   justify-content: center;
 }
 .partner-strip-logos img {
-  height: 48px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   filter: grayscale(20%);
-  opacity: 0.8;
+  opacity: 0.85;
   transition: opacity 0.2s, filter 0.2s;
 }
 .partner-strip-logos img:hover {
@@ -963,7 +963,7 @@ p { line-height: 1.75; }
   filter: grayscale(0%);
 }
 .partner-strip-logos img.logo-round {
-  height: 56px;
+  height: 90px;
   border-radius: 50%;
 }
 
