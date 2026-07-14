@@ -1,2 +1,3 @@
 # Cloudflare Pages redirects
 /home    /    301
+/glp1-side-effects/*    /glp1-medications/side-effects/    301

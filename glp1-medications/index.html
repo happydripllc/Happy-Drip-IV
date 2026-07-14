@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GLP-1 Medications: Benefits &amp; Science Explained | Happy Drip IV</title>
+  <meta name="description" content="How semaglutide and tirzepatide actually work, the clinical benefits beyond weight loss, and how to know which GLP-1 is right for you. Bedford, TX." />
+  <link rel="canonical" href="https://www.happydripiv.com/glp1-medications/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css?v=20260714" />
+  <style>
+    /* ---- Page Hero ---- */
+    .page-hero {
+      background: linear-gradient(135deg, #fde8f3 0%, #ede8fc 50%, #e8f4fb 100%);
+      padding: 80px 0 64px;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 460px; height: 460px;
+      background: radial-gradient(circle, rgba(29,158,117,0.10) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .page-hero-content {
+      max-width: 720px;
+      position: relative;
+      z-index: 1;
+    }
+    .eyebrow-pill {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(29,158,117,0.12);
+      border: 1px solid rgba(29,158,117,0.3);
+      color: #1D9E75;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 40px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .page-hero-content h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      color: var(--navy);
+      margin-bottom: 16px;
+      line-height: 1.15;
+    }
+    .page-hero-content .subhead {
+      font-size: 1.1rem;
+      color: #4a5570;
+      margin-bottom: 28px;
+      line-height: 1.65;
+      max-width: 600px;
+    }
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: rgba(0,0,0,0.45);
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .breadcrumb a { color: #1D9E75; text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+
+    /* ---- Intro ---- */
+    .glp1-intro {
+      padding: 72px 0 56px;
+      background: var(--white);
+      text-align: center;
+    }
+    .glp1-intro-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .glp1-intro h2 {
+      color: var(--navy);
+      margin-bottom: 18px;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+    }
+    .glp1-intro p {
+      color: #4a5570;
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+
+    /* ---- How It Works ---- */
+    .mech-section { padding: 64px 0 80px; background: #f7f9fc; }
+    .mech-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 24px; margin-top: 48px; }
+    .mech-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      border: 1.5px solid var(--border);
+    }
+    .mech-icon {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      background: rgba(29,158,117,0.1);
+      display: flex; align-items: center; justify-content: center;
+      color: #1D9E75;
+      margin-bottom: 18px;
+    }
+    .mech-icon svg { width: 26px; height: 26px; }
+    .mech-card h3 { font-size: 1.08rem; margin-bottom: 10px; }
+    .mech-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.7; }
+
+    /* ---- Benefits ---- */
+    .benefits-section { padding: 80px 0; background: var(--white); }
+    .benefit-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-top: 48px; }
+    .benefit-card {
+      border-radius: var(--radius-lg);
+      border: 1.5px solid var(--border);
+      padding: 28px 26px;
+      background: var(--off-white);
+    }
+    .benefit-card .stat {
+      font-family: var(--font-heading);
+      font-size: 1.7rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+      margin-bottom: 8px;
+    }
+    .benefit-card h3 { font-size: 1rem; margin-bottom: 8px; }
+    .benefit-card p { font-size: 0.88rem; color: var(--gray); line-height: 1.65; margin: 0; }
+
+    /* ---- Comparison ---- */
+    .compare-section { background: var(--navy); padding: 80px 0; }
+    .compare-section .section-header h2 { color: var(--white); }
+    .compare-section .section-header p { color: rgba(255,255,255,0.7); }
+    .compare-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin-top: 48px; }
+    .compare-card {
+      background: rgba(255,255,255,0.05);
+      border: 1.5px solid rgba(255,255,255,0.12);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+    }
+    .compare-card .compare-name { font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal); margin-bottom: 8px; }
+    .compare-card h3 { color: var(--white); font-size: 1.3rem; margin-bottom: 14px; }
+    .compare-card p { color: rgba(255,255,255,0.72); font-size: 0.92rem; line-height: 1.75; margin: 0; }
+
+    /* ---- Safety Callout ---- */
+    .safety-callout { padding: 48px 0; background: #f0faf5; }
+    .safety-callout-box {
+      border: 2px solid #1D9E75;
+      border-radius: 20px;
+      padding: 36px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      background: #fff;
+    }
+    .safety-callout-box .label { font-size: 0.7rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #1D9E75; margin-bottom: 10px; }
+    .safety-callout-box h3 { color: var(--navy); font-size: 1.3rem; margin-bottom: 10px; }
+    .safety-callout-box p { color: #4a5570; line-height: 1.7; margin: 0; }
+    .safety-callout-cta {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #1D9E75; color: #fff; font-weight: 800; font-size: 0.9rem;
+      padding: 14px 28px; border-radius: 50px; white-space: nowrap; text-decoration: none;
+      box-shadow: 0 4px 16px rgba(29,158,117,0.25);
+    }
+
+    /* ---- FAQ ---- */
+    .glp1-faq { padding: 80px 0; background: var(--off-white); }
+
+    /* ---- Disclaimer ---- */
+    .disclaimer {
+      background: var(--light-gray);
+      padding: 24px;
+      border-radius: var(--radius);
+      border-left: 4px solid var(--gold);
+      margin-top: 40px;
+    }
+    .disclaimer p { font-size: 0.8rem; color: var(--gray); line-height: 1.7; margin: 0; }
+    .disclaimer strong { color: var(--navy); }
+
+    @media (max-width: 768px) {
+      .page-hero { padding: 60px 0 48px; }
+      .safety-callout-box { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>& Wellness</span>
+      </div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="eyebrow-pill">GLP-1 Science — Bedford, TX</span>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <a href="/weightloss">Medical Weight Loss</a>
+        <span>›</span>
+        <span style="color:#4a5570;">GLP-1 Medications</span>
+      </nav>
+      <h1>The Benefits &amp; Science Behind GLP-1 Medications</h1>
+      <p class="subhead">How semaglutide and tirzepatide actually work in your body, what the research shows about the results, and how to decide which one is right for you.</p>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="/weightloss" class="btn btn-primary btn-lg">See Programs &amp; Pricing</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">Book a Consult</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRO
+     ============================================================ -->
+<section class="glp1-intro">
+  <div class="container">
+    <div class="glp1-intro-inner">
+      <h2>What Is a GLP-1, Really?</h2>
+      <p>GLP-1 (glucagon-like peptide-1) is a hormone your gut already makes every time you eat. It tells your pancreas to release insulin, tells your brain you're full, and slows down digestion so that fullness lasts.</p>
+      <p>Medications like semaglutide and tirzepatide are lab-made versions of that hormone, built to stay active in your system for about a week instead of a few minutes. That's the entire premise — amplifying a signal your body already sends, just for longer and more consistently.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS
+     ============================================================ -->
+<section class="mech-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Mechanism</span>
+      <h2>How GLP-1 Medications Work</h2>
+      <p>Four things happen in your body at once, which is why the results tend to compound over time.</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="mech-grid">
+      <div class="mech-card">
+        <div class="mech-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+        </div>
+        <h3>Appetite Regulation</h3>
+        <p>Acts on receptors in the brain that control hunger signals, reducing food noise and cravings throughout the day.</p>
+      </div>
+      <div class="mech-card">
+        <div class="mech-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Slower Gastric Emptying</h3>
+        <p>Food stays in the stomach longer, so you feel full sooner and stay satisfied for hours after a meal.</p>
+      </div>
+      <div class="mech-card">
+        <div class="mech-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Blood Sugar Regulation</h3>
+        <p>Prompts insulin release only when blood sugar is elevated, helping stabilize glucose without spikes or crashes.</p>
+      </div>
+      <div class="mech-card">
+        <div class="mech-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9.5 2A5.5 5.5 0 004 7.5v0A5.5 5.5 0 004 12v3a5.5 5.5 0 005.5 5.5h5A5.5 5.5 0 0020 15v-3a5.5 5.5 0 000-4.5A5.5 5.5 0 0014.5 2z"/></svg>
+        </div>
+        <h3>Reward Pathway Effects</h3>
+        <p>Influences dopamine signaling tied to food reward, which is part of why cravings for highly palatable foods often ease.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BENEFITS
+     ============================================================ -->
+<section class="benefits-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Research</span>
+      <h2>Benefits Beyond the Scale</h2>
+      <p>Clinical trials on semaglutide and tirzepatide have measured effects well beyond weight loss alone.</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <div class="stat">10–20%+</div>
+        <h3>Total Body Weight Loss</h3>
+        <p>Clinical trials consistently show patients losing 10–20% or more of starting body weight over 6–12 months when combined with lifestyle changes.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="stat">A1C</div>
+        <h3>Improved Blood Sugar Control</h3>
+        <p>Meaningfully lowers A1C and fasting glucose, which is why these medications were developed for type 2 diabetes in the first place.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="stat">Heart</div>
+        <h3>Cardiovascular Risk Reduction</h3>
+        <p>Studies have linked GLP-1 therapy to reduced risk of major cardiac events in patients with existing heart disease or risk factors.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="stat">Joints</div>
+        <h3>Reduced Joint &amp; Mobility Strain</h3>
+        <p>Less body weight means less daily load on knees, hips, and lower back — patients often report improved mobility as weight comes down.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="stat">Signal</div>
+        <h3>Appetite Control Without Constant Willpower</h3>
+        <p>Reduces the mental effort of dieting by quieting hunger and food noise at the source, instead of relying on willpower alone.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="stat">Support</div>
+        <h3>Sustainable With Medical Oversight</h3>
+        <p>Paired with lab monitoring, dose titration, and nutrition guidance, results are more likely to hold long term than with diet alone.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     COMPARISON
+     ============================================================ -->
+<section class="compare-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label" style="color:var(--teal);background:rgba(93,217,232,0.15);">Choosing a Medication</span>
+      <h2>Semaglutide vs. Tirzepatide</h2>
+      <p>Both are effective. The difference comes down to how many hormone pathways each one targets.</p>
+      <div class="section-divider"></div>
+    </div>
+    <div class="compare-grid">
+      <div class="compare-card">
+        <div class="compare-name">Semaglutide — Ozempic / Wegovy</div>
+        <h3>Single-Pathway GLP-1 Agonist</h3>
+        <p>Targets the GLP-1 receptor only. Well-studied, effective, and typically the starting point for most patients. Strong track record for both weight loss and blood sugar control.</p>
+      </div>
+      <div class="compare-card">
+        <div class="compare-name">Tirzepatide — Mounjaro / Zepbound</div>
+        <h3>Dual GIP/GLP-1 Agonist</h3>
+        <p>Targets both the GIP and GLP-1 receptors, which in trials has produced greater average weight loss for some patients. Often considered when semaglutide results plateau.</p>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Find Out Which One's Right for You</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SAFETY CALLOUT
+     ============================================================ -->
+<section class="safety-callout">
+  <div class="container">
+    <div class="safety-callout-box">
+      <div style="flex: 1; min-width: 260px;">
+        <p class="label">Patient Resource</p>
+        <h3>Wondering what to expect once you start?</h3>
+        <p>We break down every common GLP-1 side effect — what's normal, what helps, and when to actually call us.</p>
+      </div>
+      <a href="/glp1-medications/side-effects/" class="safety-callout-cta">
+        Read the GLP-1 Side Effects guide
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="glp1-faq">
+  <div class="container" style="max-width:780px;">
+    <div class="section-header">
+      <span class="section-label">FAQ</span>
+      <h2>GLP-1 Science FAQs</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How exactly does a GLP-1 medication cause weight loss?</button>
+        <div class="faq-a" hidden><p>It slows how quickly your stomach empties and acts on appetite centers in the brain, so you feel full on less food and think about food less throughout the day. Over weeks, that calorie reduction adds up to meaningful weight loss.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Are GLP-1 medications safe long-term?</button>
+        <div class="faq-a" hidden><p>Semaglutide and tirzepatide have years of clinical trial and real-world data behind them, including long-term cardiovascular and safety studies. As with any prescription medication, ongoing monitoring matters, which is why we do regular check-ins and lab review.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Will I gain the weight back if I stop taking it?</button>
+        <div class="faq-a" hidden><p>Appetite and hunger signals tend to return once the medication is stopped, so weight regain is common without a maintenance plan. We work with patients on tapering strategies and lifestyle habits designed to help hold results.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Is tirzepatide really more effective than semaglutide?</button>
+        <div class="faq-a" hidden><p>In head-to-head trial data, tirzepatide has produced somewhat greater average weight loss for many patients because it targets an additional hormone pathway. That said, individual response varies, and semaglutide works extremely well for many people.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do GLP-1s help with anything besides weight loss?</button>
+        <div class="faq-a" hidden><p>Yes — clinical research also shows benefits for blood sugar control, cardiovascular risk reduction, and in some studies, improvements in sleep apnea and joint pain related to excess weight.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What's the difference between Ozempic, Wegovy, Mounjaro, and Zepbound?</button>
+        <div class="faq-a" hidden><p>Ozempic and Wegovy are both semaglutide; Mounjaro and Zepbound are both tirzepatide. The brand names differ by FDA-approved use and dosing, but the active medication in each pair is the same. We prescribe based on what's clinically appropriate for you.</p></div>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Medical Disclaimer:</strong> This page is for educational purposes and is not a substitute for individualized medical advice. GLP-1 medications are prescription-only and require a medical consultation to determine eligibility. Contact us at <a href="tel:6822836976" style="color:var(--teal-dark);">(682) 283-6976</a> with any questions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container cta-content">
+    <span class="section-label" style="color:var(--teal);background:rgba(93,217,232,0.15);margin-bottom:16px;">Ready to Start?</span>
+    <h2>See Programs, Pricing &amp; Next Steps</h2>
+    <p>Brittany will walk you through eligibility, dosing, and what to expect before you ever start an injection.</p>
+    <div class="cta-btns">
+      <a href="/weightloss" class="btn btn-primary btn-lg">View Weight Loss Programs</a>
+      <a href="tel:6822836976" class="btn btn-outline-white btn-lg">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<!-- Partner Strip -->
+<section class="partner-strip" aria-label="Our partners">
+  <div class="container partner-strip-inner">
+    <span class="partner-strip-label">Trusted Partners</span>
+    <div class="partner-strip-logos">
+      <img src="../images/crunch-perks.png" alt="Crunch Fitness Perks Program Official Partner" class="logo-round" />
+      <img src="../images/Fullscript.png" alt="Fullscript" />
+      <img src="../images/WestdaleHillsGolf.png" alt="Westdale Hills Golf" />
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text"><span>Happy Drip IV</span><span>& Wellness</span></div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/weightloss">Medical Weight Loss</a>
+        <a href="/glp1-medications/">GLP-1 Medications</a>
+        <a href="/glp1-medications/side-effects/">GLP-1 Side Effects</a>
+        <a href="/iv-drip-menu">IV Therapy</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#provider">About Brittany</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h5>Weight Loss</h5>
+        <a href="/weightloss#pricing">Semaglutide Program</a>
+        <a href="/weightloss#pricing">Tirzepatide Program</a>
+        <a href="/weightloss#pricing">90-Day Programs</a>
+        <a href="/phentermine">Oral Medications</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Consultation</a>
+      </div>
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <p style="font-size:0.83rem;color:rgba(255,255,255,0.65);">Subscribe for wellness tips and promotions. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+        <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+          <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+          <button type="submit">Go</button>
+        </form>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved.</div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar">
+  <div class="vip-text">
+    <span class="vip-badge">VIP</span>
+    Join our <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">&nbsp;VIP DRIP CLUB&nbsp;</a> for the best pricing &amp; priority booking!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a></div>
+</div>
+
+<script src="../js/script.js" defer></script>
+</body>
+</html>
