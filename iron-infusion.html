@@ -448,12 +448,164 @@
       display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
     }
 
+    /* ---- Iron Dose Estimate Calculator ---- */
+    .calc-section {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #f0ecfc 0%, #fde8f3 100%);
+    }
+    .calc-card {
+      max-width: 620px;
+      margin: 44px auto 0;
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px 36px 32px;
+      border: 1.5px solid rgba(197,180,232,0.4);
+      box-shadow: 0 12px 40px rgba(58,184,203,0.10);
+    }
+    .calc-fields {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .calc-field {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .calc-field label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .calc-field .calc-unit-label {
+      display: block;
+      font-weight: 400;
+      color: #8060a0;
+      font-size: 0.76rem;
+      margin-top: 2px;
+    }
+    .calc-input-group {
+      display: flex;
+      align-items: center;
+      border: 1.5px solid rgba(197,180,232,0.5);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #faf8fd;
+      transition: border-color 0.15s;
+    }
+    .calc-input-group:focus-within { border-color: var(--pink); }
+    .calc-input-group input {
+      flex: 1;
+      min-width: 0;
+      border: none;
+      background: transparent;
+      padding: 13px 14px;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--navy);
+    }
+    .calc-input-group input:focus { outline: none; }
+    .calc-input-group input::placeholder { color: #b0a0c0; font-weight: 400; }
+    /* Hide native number spinners so custom unit toggle reads cleanly */
+    .calc-input-group input::-webkit-outer-spin-button,
+    .calc-input-group input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+    .calc-input-group input[type="number"] { -moz-appearance: textfield; }
+    .calc-unit-toggle {
+      display: flex;
+      border-left: 1.5px solid rgba(197,180,232,0.5);
+      flex-shrink: 0;
+    }
+    .calc-unit-btn {
+      padding: 13px 14px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      font-family: 'Nunito Sans', sans-serif;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      color: #8060a0;
+    }
+    .calc-unit-btn.active { background: var(--navy); color: #fff; }
+
+    .calc-error {
+      color: var(--pink);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin: 12px 2px 0;
+      min-height: 1.2em;
+    }
+
+    .calc-readout {
+      background: var(--navy);
+      border-radius: 16px;
+      padding: 28px 28px 24px;
+      margin-top: 14px;
+      position: relative;
+      overflow: hidden;
+    }
+    .calc-readout::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--pink), var(--teal));
+    }
+    .calc-readout-label {
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 10px;
+    }
+    .calc-readout-value {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.1rem, 6vw, 2.7rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1;
+    }
+    .calc-readout-sub {
+      color: rgba(255,255,255,0.72);
+      font-size: 0.88rem;
+      margin-top: 12px;
+      line-height: 1.6;
+    }
+
+    .calc-disclaimer {
+      margin-top: 20px;
+      background: rgba(240,192,48,0.12);
+      border: 1.5px solid rgba(240,192,48,0.4);
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 0.85rem;
+      color: #6a5400;
+      line-height: 1.65;
+    }
+    .calc-disclaimer strong { color: #4a3800; }
+
+    .calc-cta {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-top: 18px;
+      font-size: 0.98rem;
+      padding: 15px 24px;
+    }
+
+    @media (max-width: 560px) {
+      .calc-fields { grid-template-columns: 1fr; }
+      .calc-card { padding: 26px 22px; }
+    }
+
     /* ---- Responsive Utilities ---- */
     @media (max-width: 640px) {
       .page-hero { padding: 56px 0 44px; }
       .symptoms-section,
       .why-iv-section,
       .candidates-section,
+      .calc-section,
       .process-section,
       .pricing-section,
       .faq-section,
@@ -767,6 +919,115 @@
     </div>
   </div>
 </section>
+
+<!-- ============================================================
+     IRON DOSE ESTIMATE CALCULATOR
+     ============================================================ -->
+<section class="calc-section" id="dose-estimate">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow">Not Sure What to Expect?</span>
+      <h2 class="section-title">Iron Dose <em>Estimate</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Get a rough sense of how many infusion visits a series might take, using the same starting formula providers use to set expectations. This isn't your treatment plan — just a feel for what's ahead.</p>
+    </div>
+
+    <div class="calc-card">
+      <div class="calc-fields">
+        <div class="calc-field">
+          <label for="calcWeight">Your weight</label>
+          <div class="calc-input-group">
+            <input type="number" id="calcWeight" inputmode="decimal" placeholder="e.g. 150" min="0" />
+            <div class="calc-unit-toggle">
+              <button type="button" class="calc-unit-btn active" id="calcUnitLb">lb</button>
+              <button type="button" class="calc-unit-btn" id="calcUnitKg">kg</button>
+            </div>
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="calcHgb">Current hemoglobin <span class="calc-unit-label">g/dL, from your labs</span></label>
+          <div class="calc-input-group">
+            <input type="number" id="calcHgb" inputmode="decimal" placeholder="e.g. 9.8" step="0.1" min="0" />
+          </div>
+        </div>
+      </div>
+
+      <div id="calcError" class="calc-error" role="alert"></div>
+
+      <div class="calc-readout" aria-live="polite">
+        <div class="calc-readout-label">Estimated Visits</div>
+        <div class="calc-readout-value" id="calcResult">—</div>
+        <div class="calc-readout-sub" id="calcSummary">Enter your weight and a recent hemoglobin value to see your estimate.</div>
+      </div>
+
+      <div class="calc-disclaimer">
+        <strong>This is an estimate, not a prescription.</strong> Your actual number of infusions depends on your full iron panel (ferritin, iron, TIBC/TSAT) and CBC, reviewed by Brittany. Some patients need fewer visits, some need more, and some aren't candidates for infusion at all until other labs are checked. Use this to get a feel for what to expect — then book a consult for your real plan.
+      </div>
+
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary calc-cta" style="background:var(--pink);border-color:var(--pink);">Book a consult to get your personalized plan</a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var calcUnit = 'lb';
+  var weightEl = document.getElementById('calcWeight');
+  var hgbEl = document.getElementById('calcHgb');
+  var errorEl = document.getElementById('calcError');
+  var resultEl = document.getElementById('calcResult');
+  var summaryEl = document.getElementById('calcSummary');
+  var unitLbBtn = document.getElementById('calcUnitLb');
+  var unitKgBtn = document.getElementById('calcUnitKg');
+
+  function getWeightKg() {
+    var raw = parseFloat(weightEl.value);
+    if (isNaN(raw) || raw <= 0) return 0;
+    return calcUnit === 'lb' ? raw * 0.453592 : raw;
+  }
+
+  function calcDose() {
+    var w = getWeightKg();
+    var hgb = parseFloat(hgbEl.value);
+    var target = 15;
+    errorEl.textContent = '';
+
+    if (!w || isNaN(hgb) || hgb <= 0) {
+      resultEl.textContent = '—';
+      summaryEl.textContent = 'Enter your weight and a recent hemoglobin value to see your estimate.';
+      return;
+    }
+
+    if (hgb >= target) {
+      resultEl.textContent = '—';
+      summaryEl.textContent = '';
+      errorEl.textContent = 'Your hemoglobin looks like it may already be in a normal range — check with the office.';
+      return;
+    }
+
+    // Ganzoni-based estimate — total deficit is never surfaced to the patient view
+    var deficit = w * (target - hgb) * 2.4 + 500;
+    var visits = Math.ceil(deficit / 200);
+
+    resultEl.textContent = visits + (visits === 1 ? ' visit' : ' visits');
+    summaryEl.textContent = "Estimated series length based on your weight and hemoglobin — Brittany will confirm your exact plan and spacing after reviewing your full labs.";
+  }
+
+  unitLbBtn.addEventListener('click', function() {
+    calcUnit = 'lb';
+    unitLbBtn.classList.add('active');
+    unitKgBtn.classList.remove('active');
+    calcDose();
+  });
+  unitKgBtn.addEventListener('click', function() {
+    calcUnit = 'kg';
+    unitKgBtn.classList.add('active');
+    unitLbBtn.classList.remove('active');
+    calcDose();
+  });
+  weightEl.addEventListener('input', calcDose);
+  hgbEl.addEventListener('input', calcDose);
+})();
+</script>
 
 <!-- ============================================================
      HOW IT WORKS — 4 STEPS
