@@ -472,6 +472,9 @@
       flex-direction: column;
       gap: 8px;
     }
+    .calc-field-full {
+      margin-top: 18px;
+    }
     .calc-field label {
       font-size: 0.85rem;
       font-weight: 700;
@@ -565,6 +568,10 @@
       font-weight: 700;
       color: #fff;
       line-height: 1;
+    }
+    .calc-readout-value.is-text {
+      font-size: clamp(1.2rem, 3.2vw, 1.5rem);
+      line-height: 1.35;
     }
     .calc-readout-sub {
       color: rgba(255,255,255,0.72);
@@ -950,13 +957,19 @@
           </div>
         </div>
       </div>
+      <div class="calc-field calc-field-full">
+        <label for="calcFerritin">Your ferritin <span class="calc-unit-label">ng/mL, from your labs</span></label>
+        <div class="calc-input-group">
+          <input type="number" id="calcFerritin" inputmode="decimal" placeholder="e.g. 18" min="0" />
+        </div>
+      </div>
 
       <div id="calcError" class="calc-error" role="alert"></div>
 
       <div class="calc-readout" aria-live="polite">
         <div class="calc-readout-label">Estimated Visits</div>
         <div class="calc-readout-value" id="calcResult">—</div>
-        <div class="calc-readout-sub" id="calcSummary">Enter your weight and a recent hemoglobin value to see your estimate.</div>
+        <div class="calc-readout-sub" id="calcSummary">Enter your weight, hemoglobin, and ferritin to see your estimate.</div>
       </div>
 
       <div class="calc-disclaimer">
@@ -973,6 +986,7 @@
   var calcUnit = 'lb';
   var weightEl = document.getElementById('calcWeight');
   var hgbEl = document.getElementById('calcHgb');
+  var ferritinEl = document.getElementById('calcFerritin');
   var errorEl = document.getElementById('calcError');
   var resultEl = document.getElementById('calcResult');
   var summaryEl = document.getElementById('calcSummary');
@@ -985,22 +999,40 @@
     return calcUnit === 'lb' ? raw * 0.453592 : raw;
   }
 
+  // Ferritin-based candidacy check (patient view only sees ferritin, not TSAT,
+  // so anything in the "needs a full panel" middle range is treated as not-yet-estimable)
+  function ferritinLooksEligible(ferritin) {
+    if (ferritin > 500) return false; // possible iron overload — needs provider review
+    if (ferritin < 100) return true;  // clear deficiency range
+    return false; // 100–500 depends on TSAT/full panel Brittany would review
+  }
+
   function calcDose() {
     var w = getWeightKg();
     var hgb = parseFloat(hgbEl.value);
+    var ferritin = parseFloat(ferritinEl.value);
     var target = 15;
     errorEl.textContent = '';
 
-    if (!w || isNaN(hgb) || hgb <= 0) {
+    if (!w || isNaN(hgb) || hgb <= 0 || isNaN(ferritin) || ferritin <= 0) {
+      resultEl.classList.remove('is-text');
       resultEl.textContent = '—';
-      summaryEl.textContent = 'Enter your weight and a recent hemoglobin value to see your estimate.';
+      summaryEl.textContent = 'Enter your weight, hemoglobin, and ferritin to see your estimate.';
       return;
     }
 
     if (hgb >= target) {
+      resultEl.classList.remove('is-text');
       resultEl.textContent = '—';
       summaryEl.textContent = '';
       errorEl.textContent = 'Your hemoglobin looks like it may already be in a normal range — check with the office.';
+      return;
+    }
+
+    if (!ferritinLooksEligible(ferritin)) {
+      resultEl.classList.add('is-text');
+      resultEl.textContent = 'Book a consult to find out';
+      summaryEl.textContent = "Your ferritin alone isn't enough to size up a series — that depends on your full iron panel, reviewed by Brittany.";
       return;
     }
 
@@ -1008,8 +1040,9 @@
     var deficit = w * (target - hgb) * 2.4 + 500;
     var visits = Math.ceil(deficit / 200);
 
+    resultEl.classList.remove('is-text');
     resultEl.textContent = visits + (visits === 1 ? ' visit' : ' visits');
-    summaryEl.textContent = "Estimated series length based on your weight and hemoglobin — Brittany will confirm your exact plan and spacing after reviewing your full labs.";
+    summaryEl.textContent = "Estimated series length based on your weight, hemoglobin, and ferritin — Brittany will confirm your exact plan and spacing after reviewing your full labs.";
   }
 
   unitLbBtn.addEventListener('click', function() {
@@ -1026,6 +1059,7 @@
   });
   weightEl.addEventListener('input', calcDose);
   hgbEl.addEventListener('input', calcDose);
+  ferritinEl.addEventListener('input', calcDose);
 })();
 </script>
 
