@@ -933,9 +933,9 @@
 <section class="calc-section" id="dose-estimate">
   <div class="container">
     <div style="text-align:center;">
-      <span class="section-eyebrow">Not Sure What to Expect?</span>
-      <h2 class="section-title">Iron Dose <em>Estimate</em></h2>
-      <p class="section-intro" style="margin:0 auto;">Get a rough sense of how many infusion visits a series might take, using the same starting formula providers use to set expectations. This isn't your treatment plan — just a feel for what's ahead.</p>
+      <span class="section-eyebrow">Curious If Iron Is Right for You?</span>
+      <h2 class="section-title">Check If You <em>Qualify</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Not sure if iron infusions are even the right move? Enter a few numbers from your labs and get a general sense of whether you might be a candidate. Brittany always confirms with your complete panel before treatment.</p>
     </div>
 
     <div class="calc-card">
@@ -967,9 +967,9 @@
       <div id="calcError" class="calc-error" role="alert"></div>
 
       <div class="calc-readout" aria-live="polite">
-        <div class="calc-readout-label">Estimated Visits</div>
+        <div class="calc-readout-label">Candidacy Check</div>
         <div class="calc-readout-value" id="calcResult">—</div>
-        <div class="calc-readout-sub" id="calcSummary">Enter your weight, hemoglobin, and ferritin to see your estimate.</div>
+        <div class="calc-readout-sub" id="calcSummary">Enter your weight, hemoglobin, and ferritin to see your result.</div>
       </div>
 
       <div class="calc-disclaimer">
@@ -1000,7 +1000,7 @@
   }
 
   // Ferritin-based candidacy check (patient view only sees ferritin, not TSAT,
-  // so anything in the "needs a full panel" middle range is treated as not-yet-estimable)
+  // so anything in the "needs a full panel" middle range is treated as uncertain)
   function ferritinLooksEligible(ferritin) {
     if (ferritin > 500) return false; // possible iron overload — needs provider review
     if (ferritin < 100) return true;  // clear deficiency range
@@ -1017,32 +1017,27 @@
     if (!w || isNaN(hgb) || hgb <= 0 || isNaN(ferritin) || ferritin <= 0) {
       resultEl.classList.remove('is-text');
       resultEl.textContent = '—';
-      summaryEl.textContent = 'Enter your weight, hemoglobin, and ferritin to see your estimate.';
+      summaryEl.textContent = 'Enter your weight, hemoglobin, and ferritin to see your result.';
       return;
     }
 
     if (hgb >= target) {
-      resultEl.classList.remove('is-text');
-      resultEl.textContent = '—';
-      summaryEl.textContent = '';
-      errorEl.textContent = 'Your hemoglobin looks like it may already be in a normal range — check with the office.';
+      resultEl.classList.add('is-text');
+      resultEl.textContent = 'Probably not';
+      summaryEl.textContent = "Your hemoglobin looks like it may already be in a normal range, so iron infusions may not be needed right now — check with the office if you're not feeling like yourself.";
       return;
     }
 
     if (!ferritinLooksEligible(ferritin)) {
       resultEl.classList.add('is-text');
-      resultEl.textContent = 'Book a consult to find out';
-      summaryEl.textContent = "Your ferritin alone isn't enough to size up a series — that depends on your full iron panel, reviewed by Brittany.";
+      resultEl.textContent = 'Possibly';
+      summaryEl.textContent = "Your ferritin alone doesn't give a clear answer — Brittany will need to look at your full iron panel to know for sure.";
       return;
     }
 
-    // Ganzoni-based estimate — total deficit is never surfaced to the patient view
-    var deficit = w * (target - hgb) * 2.4 + 500;
-    var visits = Math.ceil(deficit / 200);
-
-    resultEl.classList.remove('is-text');
-    resultEl.textContent = visits + (visits === 1 ? ' visit' : ' visits');
-    summaryEl.textContent = "Estimated series length based on your weight, hemoglobin, and ferritin — Brittany will confirm your exact plan and spacing after reviewing your full labs.";
+    resultEl.classList.add('is-text');
+    resultEl.textContent = 'Probably';
+    summaryEl.textContent = "Your numbers suggest you may be a good candidate for iron infusions — Brittany will confirm with your full labs at your visit.";
   }
 
   unitLbBtn.addEventListener('click', function() {
