@@ -467,6 +467,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 18px;
     }
+    .calc-fields + .calc-fields {
+      margin-top: 18px;
+    }
     .calc-field {
       display: flex;
       flex-direction: column;
@@ -957,10 +960,24 @@
           </div>
         </div>
       </div>
+      <div class="calc-fields">
+        <div class="calc-field">
+          <label for="calcFerritin">Ferritin <span class="calc-unit-label">ng/mL, from your labs</span></label>
+          <div class="calc-input-group">
+            <input type="number" id="calcFerritin" inputmode="decimal" placeholder="e.g. 18" min="0" />
+          </div>
+        </div>
+        <div class="calc-field">
+          <label for="calcTsat">TSAT <span class="calc-unit-label">%, from your labs</span></label>
+          <div class="calc-input-group">
+            <input type="number" id="calcTsat" inputmode="decimal" placeholder="e.g. 15" min="0" max="100" />
+          </div>
+        </div>
+      </div>
       <div class="calc-field calc-field-full">
-        <label for="calcFerritin">Your ferritin <span class="calc-unit-label">ng/mL, from your labs</span></label>
+        <label for="calcIron">Serum iron <span class="calc-unit-label">mcg/dL, from your labs</span></label>
         <div class="calc-input-group">
-          <input type="number" id="calcFerritin" inputmode="decimal" placeholder="e.g. 18" min="0" />
+          <input type="number" id="calcIron" inputmode="decimal" placeholder="e.g. 40" min="0" />
         </div>
       </div>
 
@@ -969,7 +986,7 @@
       <div class="calc-readout" aria-live="polite">
         <div class="calc-readout-label">Candidacy Check</div>
         <div class="calc-readout-value" id="calcResult">—</div>
-        <div class="calc-readout-sub" id="calcSummary">Enter your weight, hemoglobin, and ferritin to see your result.</div>
+        <div class="calc-readout-sub" id="calcSummary">Enter your weight and labs above to see your result.</div>
       </div>
 
       <div class="calc-disclaimer">
@@ -987,6 +1004,8 @@
   var weightEl = document.getElementById('calcWeight');
   var hgbEl = document.getElementById('calcHgb');
   var ferritinEl = document.getElementById('calcFerritin');
+  var tsatEl = document.getElementById('calcTsat');
+  var ironEl = document.getElementById('calcIron');
   var errorEl = document.getElementById('calcError');
   var resultEl = document.getElementById('calcResult');
   var summaryEl = document.getElementById('calcSummary');
@@ -999,25 +1018,35 @@
     return calcUnit === 'lb' ? raw * 0.453592 : raw;
   }
 
-  // Ferritin-based candidacy check (patient view only sees ferritin, not TSAT,
-  // so anything in the "needs a full panel" middle range is treated as uncertain)
-  function ferritinLooksEligible(ferritin) {
-    if (ferritin > 500) return false; // possible iron overload — needs provider review
-    if (ferritin < 100) return true;  // clear deficiency range
-    return false; // 100–500 depends on TSAT/full panel Brittany would review
+  // Mirrors the protocol's ferritin/TSAT threshold table.
+  // Serum iron is collected for Brittany's review but isn't an independent
+  // gate here — it only has an established threshold as part of the TSAT ratio.
+  function evalCandidacy(ferritin, tsat) {
+    if (ferritin > 500) return 'no';   // possible iron overload — needs provider review
+    if (ferritin < 100) return 'yes';  // clear deficiency range
+    if (ferritin <= 300) {
+      if (isNaN(tsat)) return 'possibly';
+      return tsat < 20 ? 'yes' : 'no';
+    }
+    return 'no'; // ferritin 300–500
   }
 
   function calcDose() {
     var w = getWeightKg();
     var hgb = parseFloat(hgbEl.value);
     var ferritin = parseFloat(ferritinEl.value);
+    var tsat = parseFloat(tsatEl.value);
+    var iron = parseFloat(ironEl.value);
     var target = 15;
     errorEl.textContent = '';
 
-    if (!w || isNaN(hgb) || hgb <= 0 || isNaN(ferritin) || ferritin <= 0) {
+    var allEntered = w && !isNaN(hgb) && hgb > 0 && !isNaN(ferritin) && ferritin > 0 &&
+      !isNaN(tsat) && tsat > 0 && !isNaN(iron) && iron > 0;
+
+    if (!allEntered) {
       resultEl.classList.remove('is-text');
       resultEl.textContent = '—';
-      summaryEl.textContent = 'Enter your weight, hemoglobin, and ferritin to see your result.';
+      summaryEl.textContent = 'Enter your weight and labs above to see your result.';
       return;
     }
 
@@ -1028,16 +1057,21 @@
       return;
     }
 
-    if (!ferritinLooksEligible(ferritin)) {
+    var candidacy = evalCandidacy(ferritin, tsat);
+
+    if (candidacy === 'yes') {
+      resultEl.classList.add('is-text');
+      resultEl.textContent = 'Probably';
+      summaryEl.textContent = "Your numbers suggest you may be a good candidate for iron infusions — Brittany will confirm with your full labs at your visit.";
+    } else if (candidacy === 'no') {
+      resultEl.classList.add('is-text');
+      resultEl.textContent = 'Probably not';
+      summaryEl.textContent = "Your labs don't point clearly toward iron infusion right now — Brittany can go over what's next if you're still not feeling like yourself.";
+    } else {
       resultEl.classList.add('is-text');
       resultEl.textContent = 'Possibly';
-      summaryEl.textContent = "Your ferritin alone doesn't give a clear answer — Brittany will need to look at your full iron panel to know for sure.";
-      return;
+      summaryEl.textContent = "Your labs don't give a clear answer on their own — Brittany will need to look at your full panel to know for sure.";
     }
-
-    resultEl.classList.add('is-text');
-    resultEl.textContent = 'Probably';
-    summaryEl.textContent = "Your numbers suggest you may be a good candidate for iron infusions — Brittany will confirm with your full labs at your visit.";
   }
 
   unitLbBtn.addEventListener('click', function() {
@@ -1055,6 +1089,8 @@
   weightEl.addEventListener('input', calcDose);
   hgbEl.addEventListener('input', calcDose);
   ferritinEl.addEventListener('input', calcDose);
+  tsatEl.addEventListener('input', calcDose);
+  ironEl.addEventListener('input', calcDose);
 })();
 </script>
 
@@ -1123,23 +1159,34 @@
       <!-- Lab pricing -->
       <div class="pricing-lab-card">
         <h4>Labs (if needed)</h4>
+
+        <!-- Required labs warning -->
+        <div style="background:#fff3cd;border:2px solid #e6ac00;border-radius:10px;padding:14px 16px;margin-bottom:18px;">
+          <p style="font-size:0.85rem;font-weight:800;color:#7a5500;margin:0 0 6px;display:flex;align-items:center;gap:6px;">
+            ⚠️ TWO VALUES ARE REQUIRED — WITHOUT BOTH, WE CANNOT TREAT YOU
+          </p>
+          <p style="font-size:0.82rem;color:#7a5500;margin:0;line-height:1.6;">
+            We <strong>must</strong> have both <strong>Hemoglobin (Hgb) or a CBC</strong> <em>and</em> <strong>Serum Ferritin</strong> before your appointment. Ferritin alone is not enough — we cannot calculate your dose or confirm it's safe to infuse without your Hgb level. Appointments will be rescheduled if both values are not on file.
+          </p>
+        </div>
+
         <div class="lab-row">
           <div>
-            <div class="lab-name">Anemia Panel</div>
-            <div class="lab-includes">CBC + Ferritin + Iron + TIBC</div>
+            <div class="lab-name">Anemia Panel <span style="font-size:0.7rem;font-weight:800;background:#e6ac00;color:#fff;padding:2px 7px;border-radius:20px;margin-left:6px;vertical-align:middle;">RECOMMENDED</span></div>
+            <div class="lab-includes">CBC (includes Hgb) + Ferritin + Iron + TIBC — covers everything we need</div>
           </div>
           <div class="lab-price">$30</div>
         </div>
         <div class="lab-row">
           <div>
             <div class="lab-name">Iron Panel Only</div>
-            <div class="lab-includes">Iron + TIBC</div>
+            <div class="lab-includes">Iron + TIBC — <strong style="color:#c04000;">does not include Hgb or Ferritin.</strong> Must pair with a CBC.</div>
           </div>
           <div class="lab-price">$14</div>
         </div>
 
         <div class="pricing-tip">
-          <strong>Already have recent labs?</strong> Bring them! Labs must be within the last 90 days. Required values: CBC, Ferritin, Iron, and TIBC.
+          <strong>Already have labs?</strong> Bring them — but confirm they include <strong>both Hgb (or CBC) and Ferritin</strong>. Labs must be within the last 90 days. Ferritin only = appointment rescheduled.
         </div>
 
         <p style="font-size:0.82rem;color:#5a7080;margin-top:16px;line-height:1.55;">Can't afford your full infusion today? Ask us about our payment plan options.</p>
@@ -1187,7 +1234,7 @@
           <span class="faq-chevron" aria-hidden="true">&#8964;</span>
         </button>
         <div class="faq-answer">
-          Yes — labs are required before we can administer IV iron. We need to confirm your diagnosis and determine the appropriate dose. The required values are CBC, Ferritin, Iron, and TIBC. If you have recent results (within 90 days), bring them to your appointment. If you don't have labs, we can order them for you: our full Anemia Panel (CBC + Ferritin + Iron + TIBC) is $30, or the Iron Panel only (Iron + TIBC) is $14.
+          Yes — labs are required before we can administer IV iron, and we need <strong>two specific values</strong>: <strong>Hemoglobin (Hgb) or a CBC</strong> <em>and</em> <strong>Serum Ferritin</strong>. Ferritin alone is not sufficient — without your Hgb level we cannot calculate a safe dose or confirm you're a candidate. Appointments will be rescheduled if both values aren't on file. If you have recent results (within 90 days) that include both, bring them. If not, our Anemia Panel ($30) covers everything we need in one draw: CBC (which includes Hgb), Ferritin, Iron, and TIBC.
         </div>
       </div>
 
