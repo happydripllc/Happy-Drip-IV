@@ -379,7 +379,7 @@
 
     .tier-cards {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
     .tier-card {
@@ -392,7 +392,6 @@
     .tier-card-header {
       padding: 22px 18px 18px; text-align: center;
     }
-    .tier-card-header.kids   { background: linear-gradient(135deg, rgba(58,184,203,0.2), rgba(168,230,207,0.1)); }
     .tier-card-header.adult  { background: linear-gradient(135deg, rgba(224,87,154,0.15), rgba(255,245,252,0.05)); }
     .tier-card-header.golden { background: linear-gradient(135deg, rgba(240,192,48,0.2), rgba(255,253,240,0.05)); }
     .tier-card-header.family { background: linear-gradient(135deg, rgba(200,180,232,0.15), rgba(240,236,252,0.05)); }
@@ -401,7 +400,6 @@
       text-transform: uppercase; padding: 4px 12px; border-radius: 40px;
       margin-bottom: 10px; display: inline-block;
     }
-    .kids   .tier-label { background: var(--hhc-teal); color: #fff; }
     .adult  .tier-label { background: var(--hhc-pink); color: #fff; }
     .golden .tier-label { background: var(--hhc-gold); color: var(--navy); }
     .family .tier-label { background: var(--hhc-purple); color: #fff; }
@@ -1052,22 +1050,6 @@
       <div class="tier-cards">
 
         <div class="tier-card">
-          <div class="tier-card-header kids">
-            <span class="tier-label">Kids Club</span>
-            <h3>Children's Membership</h3>
-            <div class="tier-age">Ages 5–20 &bull; Guardian must be enrolled</div>
-            <div class="tier-price">$50<span>/month</span></div>
-          </div>
-          <div class="tier-card-body">
-            <p class="tier-detail">For employee dependents aged 5–20. Enroll two kids and any additional children join for just <strong>$25/month</strong>.</p>
-            <div class="tier-enrollment">
-              <span>Enrollment fee</span>
-              <strong>Included in family fee</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="tier-card">
           <div class="tier-card-header adult">
             <span class="tier-label">Adult Member</span>
             <h3>Individual Adult</h3>
@@ -1103,11 +1085,11 @@
           <div class="tier-card-header family">
             <span class="tier-label">Family Add-On</span>
             <h3>Employee + Dependents</h3>
-            <div class="tier-age">Employee + family members</div>
+            <div class="tier-age">Spouse &amp; kids, ages 5–20</div>
             <div class="tier-price">Per-person<span style="display:block;font-size:0.72rem;margin-top:2px;">age-tier rates apply</span></div>
           </div>
           <div class="tier-card-body">
-            <p class="tier-detail">Employees can enroll their family at the same age-tier rates. One enrollment fee of $200 covers all dependents.</p>
+            <p class="tier-detail">Employees can enroll their family at the same age-tier rates. Kids (ages 5–20, guardian must be enrolled) are <strong>$50/month</strong> for the first two — any additional children join for just <strong>$25/month</strong>. One enrollment fee of $200 covers all dependents.</p>
             <div class="tier-enrollment">
               <span>Family enrollment fee</span>
               <strong>$200</strong>
