@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=20260714" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
   <style>
     /* ======================================================
        HAPPY HEALTH CLINIC — PAGE COLORS
@@ -195,7 +195,6 @@
       border-bottom: 2px solid var(--border);
     }
     .plan-panel-header.individual { background: linear-gradient(120deg, #e0f7fa 0%, #f0ecfc 100%); }
-    .plan-panel-header.business   { background: linear-gradient(120deg, #e8f4fb 0%, #ede8fc 100%); border-bottom: 2px solid var(--hhc-teal); }
     .plan-type-badge {
       display: inline-flex; align-items: center; gap: 6px;
       font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em;
@@ -203,13 +202,28 @@
       margin-bottom: 14px;
     }
     .individual .plan-type-badge { background: var(--hhc-teal); color: #fff; }
-    .business   .plan-type-badge { background: var(--hhc-purple); color: #fff; }
-    .plan-panel-header h3 { font-size: 1.4rem; margin-bottom: 8px; }
-    .individual .plan-panel-header h3 { color: var(--navy); }
-    .business   .plan-panel-header h3 { color: var(--navy); }
-    .plan-panel-header p  { font-size: 0.88rem; line-height: 1.65; max-width: 680px; }
-    .individual .plan-panel-header p { color: #4a5570; }
-    .business   .plan-panel-header p { color: #4a5570; }
+    .plan-panel-header h3 { font-size: 1.4rem; margin-bottom: 8px; color: var(--navy); }
+    .plan-panel-header p  { font-size: 0.88rem; line-height: 1.65; max-width: 680px; color: #4a5570; }
+
+    /* Small Business callout (replaces full pricing panel on this page) */
+    .biz-callout {
+      display: flex; align-items: center; gap: 24px;
+      background: #fff; border: 1.5px solid var(--hhc-lav);
+      border-radius: 20px; padding: 28px 32px;
+      flex-wrap: wrap;
+    }
+    .biz-callout-icon { font-size: 2.2rem; flex-shrink: 0; }
+    .biz-callout-text { flex: 1; min-width: 240px; }
+    .biz-callout-text h3 { color: var(--navy); font-size: 1.15rem; margin-bottom: 6px; }
+    .biz-callout-text p { color: #4a5570; font-size: 0.9rem; line-height: 1.6; margin: 0; }
+    .biz-callout .btn-hhc-outline {
+      flex-shrink: 0; white-space: nowrap;
+      border-color: var(--hhc-purple); color: var(--hhc-purple);
+    }
+    .biz-callout .btn-hhc-outline:hover { background: var(--hhc-purple); color: #fff; }
+    @media (max-width: 560px) {
+      .biz-callout { flex-direction: column; text-align: center; padding: 28px 24px; }
+    }
     .plan-benefits {
       list-style: none; padding: 0; margin: 18px 0 0;
       display: flex; flex-wrap: wrap; gap: 10px 28px;
@@ -669,7 +683,7 @@
     <div class="hhc-section-header">
       <span class="section-label" style="color:var(--hhc-teal-deep);">Join the Happy Health Family</span>
       <h2>Two Plans. <em>One Goal.</em></h2>
-      <p>Choose the plan that fits your life — Individual or Small Business — then select your age tier below. Pricing coming soon; contact us to get on the waitlist!</p>
+      <p>Individual &amp; family membership tiers are below. Pricing coming soon; contact us to get on the waitlist!</p>
     </div>
 
     <!-- ── INDIVIDUAL PLAN ── -->
@@ -743,67 +757,17 @@
       </div>
     </div>
 
-    <!-- ── SMALL BUSINESS PLAN ── -->
-    <div class="plan-panel">
-      <div class="plan-panel-header business">
-        <span class="plan-type-badge">🏢 Small Business Membership</span>
-        <h3>For Employers &amp; Their Teams</h3>
-        <p>Offer your team real healthcare value — at-cost labs, discounted IV &amp; wellness treatments, and one complimentary lab panel per enrolled employee. Minimum 5 employees required.</p>
-        <ul class="plan-benefits">
-          <li>✅ 10% off all IV &amp; wellness treatments (enrolled employees)</li>
-          <li>✅ Labs billed at our cost — zero markup</li>
-          <li>✅ At-cost POC testing (strep, flu, COVID, UTI)</li>
-          <li>✅ 1 complimentary basic lab panel per enrolled employee (~$35/person)</li>
-          <li>✅ Injectables &amp; aesthetics at standard pricing</li>
-          <li>✅ Minimum 5 enrolled employees</li>
-          <li class="exclude">⛔ Excludes discounts on Botox/Jeuveau, filler &amp; exosomes</li>
-        </ul>
+    <!-- ── SMALL BUSINESS CALLOUT ── -->
+    <div class="biz-callout">
+      <span class="biz-callout-icon">🏢</span>
+      <div class="biz-callout-text">
+        <h3>Running a Business?</h3>
+        <p>Offer your team at-cost labs, discounted IV &amp; wellness treatments, and direct provider access — starting at 5 employees. Full pricing and perks live on our dedicated Small Business DPC page.</p>
       </div>
-      <div class="plan-tiers">
-
-        <div class="membership-card">
-          <div class="membership-card-header adult">
-            <span class="membership-tier-label">Adult Member</span>
-            <h3>Individual Adult</h3>
-            <div class="age-range">Ages 21–54</div>
-            <div class="membership-price">$100<span>/month</span></div>
-          </div>
-          <div class="membership-card-body">
-            <p class="membership-detail">Standard adult employee rate. Includes all business plan benefits plus the complimentary annual lab panel.</p>
-            <div class="enrollment-fee"><span>One-time enrollment</span><strong>$150</strong></div>
-          </div>
-        </div>
-
-        <div class="membership-card">
-          <div class="membership-card-header golden">
-            <span class="membership-tier-label">Golden Member</span>
-            <h3>Senior Membership</h3>
-            <div class="age-range">Ages 55+</div>
-            <div class="membership-price">$130<span>/month</span></div>
-          </div>
-          <div class="membership-card-body">
-            <p class="membership-detail">For senior employees — all business plan benefits with extended visit times and priority scheduling.</p>
-            <div class="enrollment-fee"><span>One-time enrollment</span><strong>$150</strong></div>
-          </div>
-        </div>
-
-        <div class="membership-card">
-          <div class="membership-card-header family">
-            <span class="membership-tier-label">Family Plan</span>
-            <h3>Family Add-On</h3>
-            <div class="age-range">Spouse &amp; kids, ages 5–20</div>
-            <div class="membership-price" style="font-size:1.5rem;">Per-person<span style="display:block;font-size:0.82rem;">rates above apply</span></div>
-          </div>
-          <div class="membership-card-body">
-            <p class="membership-detail">Employees can add family members at the same age-tier rates. Kids (ages 5–20, guardian must be enrolled) are <strong>$50/month</strong> for the first two — additional children join for just <strong>$25/month</strong>. One family enrollment fee of $200 covers all dependents.</p>
-            <div class="enrollment-fee"><span>Family enrollment fee</span><strong>$200</strong></div>
-          </div>
-        </div>
-
-      </div>
+      <a href="/small-business" class="btn-hhc-outline">View Small Business Plans →</a>
     </div>
 
-    <p style="text-align:center;font-size:0.8rem;color:var(--gray);margin-top:8px;">
+    <p style="text-align:center;font-size:0.8rem;color:var(--gray);margin-top:24px;">
       We ask for a 3-month minimum commitment. Cancel anytime after with 30 days notice. Pricing subject to change — contact us to confirm current rates.
     </p>
   </div>
