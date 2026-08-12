@@ -93,7 +93,7 @@
       padding: 24px 0 24px 0;
     }
     .hhc-hero-img img {
-      width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block;
+      width: 100%; height: 100%; object-fit: cover; object-position: center bottom; display: block;
       border-radius: 24px;
     }
     .hhc-hero-img::before {
@@ -362,42 +362,6 @@
     .step-card p { font-size: 0.84rem; color: var(--gray); line-height: 1.6; margin: 0; }
 
     /* ======================================================
-       SMALL BUSINESS
-       ====================================================== */
-    .biz-benefits {
-      display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 20px; margin-top: 40px;
-    }
-    .biz-card {
-      background: rgba(255,255,255,0.08);
-      border: 1.5px solid rgba(93,217,232,0.25);
-      border-radius: 16px; padding: 22px 20px; transition: all 0.22s;
-    }
-    .biz-card:hover { background: rgba(93,217,232,0.12); border-color: var(--hhc-teal); }
-    .biz-card h4 { color: #fff; font-size: 0.95rem; margin-bottom: 6px; }
-    .biz-card p { font-size: 0.82rem; color: rgba(255,255,255,0.7); line-height: 1.55; margin: 0; }
-    .biz-card-icon { font-size: 1.6rem; margin-bottom: 10px; display: block; }
-
-    .biz-how-grid {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 20px; margin-top: 48px;
-    }
-    .biz-step {
-      text-align: center; padding: 24px 16px;
-      background: rgba(255,255,255,0.06);
-      border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);
-    }
-    .biz-step-num {
-      width: 44px; height: 44px; border-radius: 50%;
-      background: var(--hhc-teal); color: #fff;
-      font-weight: 800; font-size: 1rem;
-      display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 12px;
-    }
-    .biz-step h4 { color: #fff; font-size: 0.88rem; margin-bottom: 6px; }
-    .biz-step p { font-size: 0.78rem; color: rgba(255,255,255,0.65); line-height: 1.55; margin: 0; }
-
-    /* ======================================================
        CTA
        ====================================================== */
     .hhc-cta {
@@ -415,7 +379,6 @@
       .dpc-intro-grid { grid-template-columns: 1fr; gap: 36px; }
       .dpc-intro-img img { height: 340px; }
       .lab-pricing-grid { grid-template-columns: 1fr; gap: 28px; }
-      .biz-how-grid { grid-template-columns: repeat(2, 1fr); }
       .steps-grid { grid-template-columns: 1fr; }
       .steps-grid::before { display: none; }
     }
@@ -426,7 +389,6 @@
       .hhc-hero-img::before { display: none; }
       .plan-tiers { grid-template-columns: repeat(2, 1fr); padding: 20px; }
       .plan-panel-header { padding: 28px 24px; }
-      .biz-how-grid { grid-template-columns: 1fr; }
       .plan-tiers { grid-template-columns: 1fr; }
       .free-services { padding: 24px 20px; }
     }
@@ -943,70 +905,6 @@
         <h4>✅ Follow-Up & Thrive</h4>
         <p>Regular check-ins keep you on track — weekly for in-office programs, every four weeks for at-home plans. We adjust and support you every step of the way.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
-     SMALL BUSINESS
-     ============================================================ -->
-<section class="hhc-section navy-bg" id="business">
-  <div class="container">
-    <div class="hhc-section-header">
-      <span class="section-label" style="color:var(--hhc-teal);">For Employers</span>
-      <h2 style="color:#fff;">Healthcare Your Employees Will <em style="color:var(--hhc-teal);">Actually Use.</em></h2>
-      <p style="color:rgba(255,255,255,0.7);">Your employees are the heartbeat of your business, and their health is the foundation of your success. DPC gives your team unlimited primary care for one flat monthly fee.</p>
-    </div>
-
-    <div class="biz-benefits">
-      <div class="biz-card">
-        <span class="biz-card-icon">📈</span>
-        <h4>Boosted Productivity</h4>
-        <p>Minor health issues resolved quickly, reducing missed shifts and long absences.</p>
-      </div>
-      <div class="biz-card">
-        <span class="biz-card-icon">💰</span>
-        <h4>Significant Savings</h4>
-        <p>Early intervention helps teams avoid expensive urgent care visits and unnecessary ER trips.</p>
-      </div>
-      <div class="biz-card">
-        <span class="biz-card-icon">😌</span>
-        <h4>Reduced Stress</h4>
-        <p>Staff gets care without traditional insurance frustration or long wait times.</p>
-      </div>
-      <div class="biz-card">
-        <span class="biz-card-icon">🌟</span>
-        <h4>Attract & Retain Talent</h4>
-        <p>High-quality, personal healthcare is a powerful way to stand out as an employer of choice.</p>
-      </div>
-    </div>
-
-    <div class="biz-how-grid">
-      <div class="biz-step">
-        <div class="biz-step-num">1</div>
-        <h4>We Partner With You</h4>
-        <p>We design membership options tailored to your team size and budget.</p>
-      </div>
-      <div class="biz-step">
-        <div class="biz-step-num">2</div>
-        <h4>We Onboard Your Team</h4>
-        <p>We handle enrollment and employee education from start to finish.</p>
-      </div>
-      <div class="biz-step">
-        <div class="biz-step-num">3</div>
-        <h4>Your Team Gets Real Care</h4>
-        <p>At-cost labs, discounted IV &amp; wellness treatments, POC testing, and direct provider access.</p>
-      </div>
-      <div class="biz-step">
-        <div class="biz-step-num">4</div>
-        <h4>You Save Where It Matters</h4>
-        <p>Fewer disruptions, better retention, and predictable monthly costs.</p>
-      </div>
-    </div>
-
-    <div style="text-align:center;margin-top:48px;">
-      <p style="color:rgba(255,255,255,0.75);margin-bottom:24px;font-size:0.95rem;">Ready to build a healthier workplace?</p>
-      <a href="tel:6822836976" class="btn-hhc">📞 Request a Business Quote</a>
     </div>
   </div>
 </section>
