@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thyroid Optimization | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="Thyroid testing and optimization in Bedford, TX — full panel (not just TSH), real interpretation, and an ongoing treatment plan. Cash-pay care from Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/thyroid-optimization" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
+  <style>
+    :root {
+      --ty-navy:   #1a2744;
+      --ty-teal:   #1D9E75;
+      --ty-blue:   #3d6ee0;
+      --ty-cream:  #f7f9fc;
+    }
+
+    /* ---- Hero ---- */
+    .ty-hero {
+      background: linear-gradient(135deg, #e0ecfc 0%, #eaf7f2 55%, #e0f7fa 100%);
+      padding: 80px 0 64px;
+      position: relative; overflow: hidden;
+    }
+    .ty-hero::before {
+      content: ''; position: absolute;
+      top: -80px; right: -80px; width: 460px; height: 460px;
+      background: radial-gradient(circle, rgba(61,110,224,0.08) 0%, transparent 65%);
+      border-radius: 50%; pointer-events: none;
+    }
+    .ty-hero-content { max-width: 700px; position: relative; z-index: 1; }
+    .eyebrow-pill {
+      display: inline-flex; align-items: center;
+      background: rgba(61,110,224,0.10); border: 1px solid rgba(61,110,224,0.3);
+      color: var(--ty-blue); font-size: 0.75rem; font-weight: 800;
+      padding: 6px 16px; border-radius: 40px;
+      letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; color: rgba(0,0,0,0.45); margin-bottom: 24px; flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--ty-teal); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+    .ty-hero-content h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      color: var(--ty-navy); margin-bottom: 16px; line-height: 1.15;
+    }
+    .ty-hero-content .subhead {
+      font-size: 1.1rem; color: #4a5570; margin-bottom: 32px; line-height: 1.65;
+    }
+    .hero-cta-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-teal {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--ty-teal); color: #fff;
+      font-weight: 800; font-size: 0.95rem;
+      padding: 14px 28px; border-radius: 50px;
+      text-decoration: none; transition: background 0.2s, transform 0.2s;
+    }
+    .btn-teal:hover { background: #178a64; transform: translateY(-1px); }
+    .btn-outline-navy {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; color: var(--ty-navy);
+      font-weight: 800; font-size: 0.95rem;
+      padding: 13px 28px; border-radius: 50px;
+      border: 2px solid var(--ty-navy);
+      text-decoration: none; transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-navy:hover { background: var(--ty-navy); color: #fff; }
+
+    /* ---- Stat Bar ---- */
+    .ty-stat-bar { background: var(--ty-navy); padding: 28px 0; }
+    .ty-stat-bar-inner {
+      display: flex; justify-content: space-around; align-items: center;
+      flex-wrap: wrap; gap: 20px;
+    }
+    .ty-stat { text-align: center; }
+    .ty-stat .sn { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--ty-blue); display: block; line-height: 1; }
+    .ty-stat .sl { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-top: 4px; }
+    .ty-stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.12); }
+    @media (max-width: 640px) {
+      .ty-stat-bar-inner { gap: 12px; }
+      .ty-stat-divider { display: none; }
+      .ty-stat .sn { font-size: 1.5rem; }
+    }
+
+    /* ---- Section utilities ---- */
+    .section-label { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ty-blue); margin-bottom: 12px; }
+    .section-title { color: var(--ty-navy); font-size: clamp(1.5rem, 3vw, 2.2rem); margin-bottom: 14px; line-height: 1.2; }
+    .section-intro { color: #4a5570; font-size: 1rem; line-height: 1.75; max-width: 640px; }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-header .section-intro { margin: 12px auto 0; }
+
+    /* ---- Signs: two-column split (Hypo vs Hyper) ---- */
+    .signs-section { padding: 80px 0; background: #fff; }
+    .signs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px; }
+    .signs-box { background: var(--ty-navy); border-radius: 20px; padding: 36px 32px; color: #fff; }
+    .signs-box.blue { background: var(--ty-blue); }
+    .signs-box h3 { font-size: 1.05rem; font-weight: 800; margin-bottom: 6px; }
+    .signs-box .signs-sub { font-size: 0.82rem; color: rgba(255,255,255,0.65); margin-bottom: 22px; }
+    .signs-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+    .signs-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.92rem; line-height: 1.6; color: rgba(255,255,255,0.9); }
+    .sign-dot { width: 8px; height: 8px; background: var(--ty-teal); border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+    .signs-box.blue .sign-dot { background: #fff; }
+    @media (max-width: 800px) { .signs-grid { grid-template-columns: 1fr; gap: 24px; } }
+
+    /* ---- How It Works ---- */
+    .process-section { padding: 80px 0; background: var(--ty-cream); }
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 48px; }
+    .process-step { text-align: center; }
+    .ps-num {
+      width: 56px; height: 56px; background: var(--ty-blue); color: #fff;
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem; font-weight: 800; margin: 0 auto 18px;
+    }
+    .process-step h3 { font-size: 1rem; color: var(--ty-navy); margin-bottom: 8px; }
+    .process-step p { font-size: 0.88rem; color: #4a5570; line-height: 1.7; }
+    @media (max-width: 760px) { .process-steps { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+
+    /* ---- Candidate section ---- */
+    .candidate-section { padding: 80px 0; background: var(--ty-navy); }
+    .candidate-section .section-label { color: rgba(255,255,255,0.5); }
+    .candidate-section .section-title { color: #fff; }
+    .candidate-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; }
+    .candidate-col { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 20px; padding: 36px 28px; }
+    .candidate-col h3 { font-size: 1rem; font-weight: 800; margin-bottom: 20px; color: #fff; }
+    .candidate-col h3.green { color: var(--ty-blue); }
+    .candidate-col h3.red { color: #f87171; }
+    .candidate-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
+    .candidate-col li { display: flex; align-items: flex-start; gap: 12px; font-size: 0.9rem; color: rgba(255,255,255,0.8); line-height: 1.6; }
+    .check-dot { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; font-size: 0.7rem; font-weight: 800; }
+    .check-dot.green { background: rgba(61,110,224,0.25); color: var(--ty-blue); }
+    .check-dot.red { background: rgba(248,113,113,0.2); color: #f87171; }
+    @media (max-width: 640px) { .candidate-cols { grid-template-columns: 1fr; } }
+
+    /* ---- DPC Callout ---- */
+    .dpc-callout-section { padding: 64px 0; background: #fff; }
+    .dpc-callout {
+      display: flex; align-items: center; gap: 24px;
+      background: var(--ty-cream); border: 1.5px solid rgba(61,110,224,0.25);
+      border-radius: 20px; padding: 32px 36px; flex-wrap: wrap;
+    }
+    .dpc-callout-icon { font-size: 2.2rem; flex-shrink: 0; }
+    .dpc-callout-text { flex: 1; min-width: 240px; }
+    .dpc-callout-text h3 { color: var(--ty-navy); font-size: 1.15rem; margin-bottom: 6px; }
+    .dpc-callout-text p { color: #4a5570; font-size: 0.9rem; line-height: 1.6; margin: 0; }
+    .dpc-callout .btn-outline-navy { flex-shrink: 0; white-space: nowrap; border-color: var(--ty-blue); color: var(--ty-blue); }
+    .dpc-callout .btn-outline-navy:hover { background: var(--ty-blue); color: #fff; }
+    @media (max-width: 560px) { .dpc-callout { flex-direction: column; text-align: center; padding: 28px 24px; } }
+
+    /* ---- FAQ ---- */
+    .ty-faq { padding: 80px 0; background: var(--ty-cream); }
+    .faq-list { max-width: 760px; margin: 48px auto 0; display: flex; flex-direction: column; gap: 16px; }
+    .faq-item { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+    .faq-q {
+      width: 100%; background: none; border: none; text-align: left; cursor: pointer;
+      padding: 22px 24px; font-size: 1rem; font-weight: 700; color: var(--ty-navy);
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    }
+    .faq-q .faq-icon { font-size: 1.4rem; color: var(--ty-blue); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 24px 22px; font-size: 0.95rem; color: #4a5570; line-height: 1.75; }
+    .faq-item.open .faq-a { display: block; }
+
+    /* ---- CTA ---- */
+    .ty-cta {
+      padding: 80px 0;
+      background: linear-gradient(135deg, #e0ecfc 0%, #e0f7fa 100%);
+      text-align: center;
+    }
+    .ty-cta h2 { color: var(--ty-navy); font-size: clamp(1.6rem, 3.5vw, 2.4rem); margin-bottom: 16px; }
+    .ty-cta p { color: #4a5570; font-size: 1.05rem; max-width: 560px; margin: 0 auto 36px; line-height: 1.7; }
+    .cta-btn-row { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Things We Treat
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="ty-hero">
+  <div class="container">
+    <div class="ty-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span>Things We Treat</span>
+        <span>›</span>
+        <span>Thyroid Optimization</span>
+      </nav>
+      <span class="eyebrow-pill">Thyroid Care — Bedford, TX</span>
+      <h1>Thyroid Optimization, Done Properly</h1>
+      <p class="subhead">Fatigue, weight changes, brain fog, hair loss, feeling cold or overheated all the time — thyroid symptoms are easy to blame on everything else. We run a full thyroid panel (not just TSH), explain what's actually going on, and build a real plan around it.</p>
+      <div class="hero-cta-row">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book a Consultation</a>
+        <a href="tel:6822836976" class="btn-outline-navy">Call (682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAR -->
+<section class="ty-stat-bar">
+  <div class="container ty-stat-bar-inner">
+    <div class="ty-stat">
+      <span class="sn">1 in 8</span>
+      <span class="sl">Women will develop a thyroid disorder</span>
+    </div>
+    <div class="ty-stat-divider"></div>
+    <div class="ty-stat">
+      <span class="sn">~60%</span>
+      <span class="sl">Of people with thyroid disease don't know it</span>
+    </div>
+    <div class="ty-stat-divider"></div>
+    <div class="ty-stat">
+      <span class="sn">Full Panel</span>
+      <span class="sl">TSH, free T4, free T3, antibodies</span>
+    </div>
+    <div class="ty-stat-divider"></div>
+    <div class="ty-stat">
+      <span class="sn">Cash-Pay</span>
+      <span class="sl">No insurance hassle</span>
+    </div>
+  </div>
+</section>
+
+<!-- SIGNS: Hypo vs Hyper -->
+<section class="signs-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Is This You?</span>
+      <h2 class="section-title">Signs Worth Getting Checked</h2>
+      <p class="section-intro">Thyroid symptoms fall into two very different patterns depending on whether your thyroid is underactive or overactive — here's what to look for.</p>
+    </div>
+    <div class="signs-grid">
+      <div class="signs-box">
+        <h3>Underactive Thyroid</h3>
+        <div class="signs-sub">Hypothyroidism</div>
+        <ul class="signs-list">
+          <li><span class="sign-dot"></span>Persistent fatigue, even with enough sleep</li>
+          <li><span class="sign-dot"></span>Unexplained weight gain or trouble losing weight</li>
+          <li><span class="sign-dot"></span>Feeling cold when others aren't</li>
+          <li><span class="sign-dot"></span>Dry skin, brittle nails, hair thinning or loss</li>
+          <li><span class="sign-dot"></span>Brain fog, low mood, or depression</li>
+          <li><span class="sign-dot"></span>Constipation</li>
+        </ul>
+      </div>
+      <div class="signs-box blue">
+        <h3>Overactive Thyroid</h3>
+        <div class="signs-sub">Hyperthyroidism</div>
+        <ul class="signs-list">
+          <li><span class="sign-dot"></span>Unexplained weight loss despite normal eating</li>
+          <li><span class="sign-dot"></span>Racing heart, palpitations, or anxiety</li>
+          <li><span class="sign-dot"></span>Feeling hot, excess sweating</li>
+          <li><span class="sign-dot"></span>Hand tremors or restlessness</li>
+          <li><span class="sign-dot"></span>Trouble sleeping</li>
+          <li><span class="sign-dot"></span>Frequent bowel movements</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">The Process</span>
+      <h2 class="section-title">From Symptoms to a Real Plan</h2>
+      <p class="section-intro">TSH alone misses a lot. We look at the full picture.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="ps-num">1</div>
+        <h3>Initial Consultation</h3>
+        <p>Brittany reviews your symptoms, history, and any prior labs in detail.</p>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">2</div>
+        <h3>Full Thyroid Panel</h3>
+        <p>We order TSH, free T4, free T3, and thyroid antibodies — not just the single TSH value most offices check.</p>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">3</div>
+        <h3>Results Review</h3>
+        <p>We walk through your results together and explain what they actually mean for how you feel.</p>
+      </div>
+      <div class="process-step">
+        <div class="ps-num">4</div>
+        <h3>Ongoing Management</h3>
+        <p>Thyroid treatment often needs dose adjustments over time. We recheck labs and fine-tune your plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CANDIDATE -->
+<section class="candidate-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Candidacy</span>
+      <h2 class="section-title">Is This the Right Next Step for You?</h2>
+    </div>
+    <div class="candidate-cols">
+      <div class="candidate-col">
+        <h3 class="green">You May Be a Good Fit If...</h3>
+        <ul>
+          <li><span class="check-dot green">&#10003;</span>You have unexplained fatigue, weight changes, or mood shifts</li>
+          <li><span class="check-dot green">&#10003;</span>You've only ever had TSH checked, never a full panel</li>
+          <li><span class="check-dot green">&#10003;</span>You were told your labs are "normal" but still feel off</li>
+          <li><span class="check-dot green">&#10003;</span>You're already on thyroid medication but don't feel optimized</li>
+        </ul>
+      </div>
+      <div class="candidate-col">
+        <h3 class="red">Important Considerations</h3>
+        <ul>
+          <li><span class="check-dot red">&#10007;</span>Thyroid disease is managed long-term, not with a single visit</li>
+          <li><span class="check-dot red">&#10007;</span>Suspected thyroid nodules or structural concerns require imaging and, if needed, a specialist referral</li>
+          <li><span class="check-dot red">&#10007;</span>Severe hyperthyroidism (like thyroid storm) is an emergency — not something managed here</li>
+          <li><span class="check-dot red">&#10007;</span>Regular follow-up labs are required to safely adjust medication doses</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DPC CALLOUT -->
+<section class="dpc-callout-section">
+  <div class="container">
+    <div class="dpc-callout">
+      <span class="dpc-callout-icon">🩺</span>
+      <div class="dpc-callout-text">
+        <h3>Managing Thyroid Disease Long-Term?</h3>
+        <p>Thyroid dosing often needs adjusting over time. Happy Health Clinic's DPC membership includes at-cost labs and direct access to Brittany between visits — built for exactly this kind of long-term management.</p>
+      </div>
+      <a href="/happy-health-clinic" class="btn-outline-navy">See DPC Membership →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="ty-faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Questions</span>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Why isn't TSH alone enough?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">TSH is a useful screening test, but it doesn't tell the whole story. Free T4 and free T3 show your body's actual thyroid hormone levels, and thyroid antibody testing can catch autoimmune thyroid conditions like Hashimoto's before TSH ever moves out of range. Checking TSH alone is how a lot of thyroid disease gets missed or mismanaged.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What labs do you order?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Typically TSH, free T4, free T3, and thyroid antibodies (TPO and/or thyroglobulin antibodies) to check for autoimmune involvement. We tailor additional testing to your specific symptoms.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          I'm already on thyroid medication but still feel off — can you help?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Yes — this is one of the most common reasons patients come to us. We'll run a full panel to see whether your current dose and medication type are actually optimized for you, not just whether your TSH is "in range."</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What treatment options are there?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">For hypothyroidism, this usually means thyroid hormone replacement (like levothyroxine, sometimes combined with T3). For hyperthyroidism, treatment depends on the cause and severity, and may involve medication management or a referral to endocrinology for more complex cases. We'll walk through what's appropriate for you.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do I need to join Happy Health Clinic (DPC) for this?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">No — you can book a one-off consultation and lab review as a cash-pay visit. That said, thyroid dosing is usually fine-tuned over several rechecks, and our DPC membership (at-cost labs, direct provider access) tends to be the more affordable path for patients who know they'll need ongoing adjustments.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="ty-cta">
+  <div class="container">
+    <h2>Ready to Get a Real Answer?</h2>
+    <p>Get a full thyroid workup, explained in plain language, from Brittany Adams, APRN FNP-C. Cash-pay, no insurance required, same-day or next-day appointments.</p>
+    <div class="cta-btn-row">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-teal">Book a Consultation</a>
+      <a href="tel:6822836976" class="btn-outline-navy">Call (682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- Partner Strip -->
+<section class="partner-strip" aria-label="Our partners">
+  <div class="container partner-strip-inner">
+    <span class="partner-strip-label">Trusted Partners</span>
+    <div class="partner-strip-logos">
+      <img src="images/crunch-perks.png" alt="Crunch Fitness Perks Program Official Partner" class="logo-round" />
+      <img src="images/Fullscript.png" alt="Fullscript" />
+      <img src="images/WestdaleHillsGolf.png" alt="Westdale Hills Golf" />
+    </div>
+  </div>
+</section>
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/happy-health-clinic">Happy Health Clinic (DPC)</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/payment-plans">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Things We Treat -->
+      <div class="footer-col">
+        <h5>Things We Treat</h5>
+        <a href="/pcos">PCOS</a>
+        <a href="/thyroid-optimization">Thyroid Optimization</a>
+        <a href="/acne-management">Acne Management</a>
+        <a href="/hormone-optimization">Hormone Optimization</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky Bottom Bar -->
+<div class="bottom-bar" id="bottomBar" role="complementary" aria-label="VIP Club promotion">
+  <div class="vip-text">
+    <span class="vip-badge">VIP</span>
+    Join our <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">&nbsp;VIP DRIP CLUB&nbsp;</a> for the best pricing &amp; priority booking!
+  </div>
+  <div class="tip">PRO-TIP: Book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">vagaro.com/happydripiv</a> for instant confirmation</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
