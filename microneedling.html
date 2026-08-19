@@ -424,22 +424,7 @@
       text-transform: uppercase; color: var(--mn-rose); margin-bottom: 12px;
     }
     .faq-header h2 { color: var(--mn-navy); font-size: clamp(1.5rem, 3vw, 2.1rem); }
-    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
-    .faq-item { border: 1.5px solid rgba(192,85,106,0.15); border-radius: 16px; overflow: hidden; }
-    .faq-q {
-      width: 100%; background: none; border: none;
-      display: flex; justify-content: space-between; align-items: center;
-      gap: 16px; cursor: pointer; text-align: left;
-      font-family: 'Nunito Sans', sans-serif;
-      font-size: 1rem; font-weight: 700;
-      color: var(--mn-navy);
-      padding: 22px 24px;
-    }
-    .faq-q:hover { color: var(--mn-rose); }
-    .faq-icon { font-size: 1.4rem; color: var(--mn-rose); flex-shrink: 0; transition: transform 0.2s; }
-    .faq-item.open .faq-icon { transform: rotate(45deg); }
-    .faq-a { display: none; padding: 0 24px 22px; font-size: 0.95rem; color: #4a5570; line-height: 1.75; }
-    .faq-a a { color: var(--mn-rose); }
+    .faq-list { max-width: 760px; margin: 0 auto; }
 
     /* ---- CTA ---- */
     .mn-cta {
@@ -451,13 +436,6 @@
     .mn-cta p { color: #5a4a40; font-size: 1.05rem; max-width: 540px; margin: 0 auto 36px; line-height: 1.7; }
     .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
 
-    /* ---- Partner Strip ---- */
-    .partner-strip { background: #f9f8f7; border-top: 1px solid #ede8e3; border-bottom: 1px solid #ede8e3; padding: 20px 0; overflow: hidden; }
-    .partner-strip-inner { display: flex; align-items: center; gap: 0; width: max-content; animation: partnerScroll 22s linear infinite; }
-    .partner-strip-logos { display: flex; align-items: center; gap: 48px; padding: 0 24px; }
-    .partner-strip-logos img { height: 36px; width: auto; opacity: 0.55; filter: grayscale(1); transition: opacity 0.2s, filter 0.2s; }
-    .partner-strip-logos img:hover { opacity: 0.9; filter: grayscale(0); }
-    @keyframes partnerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
     /* ---- Responsive ---- */
     @media (max-width: 640px) {
@@ -924,74 +902,57 @@
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           Does microneedling hurt?
-          <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a" hidden>We apply a topical numbing cream before your session, so most patients describe the sensation as mild pressure or light scratching -- not painful. Discomfort is typically rated 2--3 out of 10 after numbing.</div>
+        <div class="faq-a" hidden><p>We apply a topical numbing cream before your session, so most patients describe the sensation as mild pressure or light scratching -- not painful. Discomfort is typically rated 2--3 out of 10 after numbing.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           How many sessions will I need?
-          <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a" hidden>Most patients see the best results with a series of 3--6 sessions spaced 4--6 weeks apart. Mild texture concerns may resolve in 3 sessions; deeper scarring or significant laxity may benefit from more. Your provider will build a plan at your consultation.</div>
+        <div class="faq-a" hidden><p>Most patients see the best results with a series of 3--6 sessions spaced 4--6 weeks apart. Mild texture concerns may resolve in 3 sessions; deeper scarring or significant laxity may benefit from more. Your provider will build a plan at your consultation.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           What's the difference between PRP, Exosomes, and Cellvane?
-          <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a" hidden>All three amplify your microneedling results by flooding the skin with regenerative signals. PRP uses your own blood plasma, making it completely autologous. Exosomes are nano-vesicles with billions of growth factors -- no blood draw required and with a strong anti-inflammatory effect. Cellvane is a precisely formulated bioactive serum optimized for transdermal delivery. Your provider will help you choose based on your goals and any preferences around the blood draw.</div>
+        <div class="faq-a" hidden><p>All three amplify your microneedling results by flooding the skin with regenerative signals. PRP uses your own blood plasma, making it completely autologous. Exosomes are nano-vesicles with billions of growth factors -- no blood draw required and with a strong anti-inflammatory effect. Cellvane is a precisely formulated bioactive serum optimized for transdermal delivery. Your provider will help you choose based on your goals and any preferences around the blood draw.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           How long is recovery?
-          <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a" hidden>Most patients experience redness similar to a mild sunburn for 24--72 hours. Exosomes and Cellvane tend to reduce post-treatment inflammation compared to PRP alone. Avoid makeup, sun exposure, and intense exercise for 24--48 hours after treatment. Full results build over 4--6 weeks as new collagen forms.</div>
+        <div class="faq-a" hidden><p>Most patients experience redness similar to a mild sunburn for 24--72 hours. Exosomes and Cellvane tend to reduce post-treatment inflammation compared to PRP alone. Avoid makeup, sun exposure, and intense exercise for 24--48 hours after treatment. Full results build over 4--6 weeks as new collagen forms.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           Can microneedling be done on darker skin tones?
-          <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a" hidden>Yes -- microneedling is safe for all Fitzpatrick skin types including deeper skin tones (types IV--VI). Unlike some laser treatments, microneedling does not use heat or target pigment, which makes it a great option for patients who want to avoid hyperpigmentation risk. Your provider will adjust needle depth and settings appropriately.</div>
+        <div class="faq-a" hidden><p>Yes -- microneedling is safe for all Fitzpatrick skin types including deeper skin tones (types IV--VI). Unlike some laser treatments, microneedling does not use heat or target pigment, which makes it a great option for patients who want to avoid hyperpigmentation risk. Your provider will adjust needle depth and settings appropriately.</p></div>
       </div>
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
           How soon will I see results?
-          <span class="faq-icon">+</span>
         </button>
-        <div class="faq-a" hidden>You may notice an initial "glow" within a week as surface-level skin renews. Deeper improvements -- reduced scars, tighter pores, smoother texture -- develop over 4--6 weeks as collagen remodels. Results from a full series continue improving for several months after your last session.</div>
+        <div class="faq-a" hidden><p>You may notice an initial "glow" within a week as surface-level skin renews. Deeper improvements -- reduced scars, tighter pores, smoother texture -- develop over 4--6 weeks as collagen remodels. Results from a full series continue improving for several months after your last session.</p></div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- PARTNER STRIP -->
-<div class="partner-strip" aria-hidden="true">
-  <div class="partner-strip-inner">
+<section class="partner-strip" aria-label="Our partners">
+  <div class="container partner-strip-inner">
+    <span class="partner-strip-label">Trusted Partners</span>
     <div class="partner-strip-logos">
-      <img src="images/Alma.png" alt="Alma" />
-      <img src="images/Fullscript-logo.png" alt="Fullscript" />
-      <img src="images/Vagaro.png" alt="Vagaro" />
-      <img src="images/PCAB.png" alt="PCAB" />
-      <img src="images/CliqHQ.png" alt="Cliq" />
-    </div>
-    <div class="partner-strip-logos" aria-hidden="true">
-      <img src="images/Alma.png" alt="" />
-      <img src="images/Fullscript-logo.png" alt="" />
-      <img src="images/Vagaro.png" alt="" />
-      <img src="images/PCAB.png" alt="" />
-      <img src="images/CliqHQ.png" alt="" />
+      <img src="images/crunch-perks.png" alt="Crunch Fitness Perks Program Official Partner" class="logo-round" />
     </div>
   </div>
-</div>
+</section>
 
 <!-- CTA -->
 <section class="mn-cta">
