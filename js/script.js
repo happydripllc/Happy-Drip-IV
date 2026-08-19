@@ -52,22 +52,41 @@ function handleSubscribe(e) {
   const email = input.value.trim();
   if (!email) return;
 
-  // Submit silently to Zoho Forms in the background
-  const data = new FormData();
-  data.append('Email', email);
-  data.append('zf_referrer_name', '');
-  data.append('zf_redirect_url', '');
-  data.append('zc_gad', '');
-  fetch(
-    'https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/CnV-rVDAJ7cUmgqBjpeG7tcmroxIvxns62sKUM_ypTU/htmlRecords/submit',
-    { method: 'POST', body: data, mode: 'no-cors' }
-  ).catch(() => {}); // opaque response — data is delivered, ignore the response
+  // Hidden iframe so Zoho's redirect response never touches our page
+  const iframeName = 'zf_hidden_' + Date.now();
+  const iframe = document.createElement('iframe');
+  iframe.name = iframeName;
+  iframe.style.cssText = 'display:none;position:absolute;width:0;height:0;border:0;';
+  document.body.appendChild(iframe);
 
-  // Update UI
+  // Temporary form that mirrors the real Zoho form — posts into the iframe
+  const form = document.createElement('form');
+  form.action = 'https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/CnV-rVDAJ7cUmgqBjpeG7tcmroxIvxns62sKUM_ypTU/htmlRecords/submit';
+  form.method = 'POST';
+  form.enctype = 'multipart/form-data';
+  form.acceptCharset = 'UTF-8';
+  form.target = iframeName;
+  form.style.display = 'none';
+
+  [['Email', email], ['zf_referrer_name', ''], ['zf_redirect_url', ''], ['zc_gad', '']].forEach(([name, value]) => {
+    const field = document.createElement('input');
+    field.type = 'hidden';
+    field.name = name;
+    field.value = value;
+    form.appendChild(field);
+  });
+
+  document.body.appendChild(form);
+  form.submit();
+
+  // Clean up after Zoho has had time to receive the post
+  setTimeout(() => { form.remove(); iframe.remove(); }, 5000);
+
+  // Update UI immediately
   btn.textContent = '✓';
   btn.style.background = '#2ecc71';
   input.value = '';
-  input.placeholder = 'Thanks! You\'re on the list.';
+  input.placeholder = "Thanks! You're on the list.";
   setTimeout(() => {
     btn.textContent = 'Go';
     btn.style.background = '';
