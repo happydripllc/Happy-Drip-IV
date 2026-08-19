@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microneedling | Vampire Facial, Exosomes &amp; Cellvane | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="Microneedling with Vampire Facial (PRP), Exosomes, and Cellvane in Bedford, TX. Minimize pores, reduce scars, and restore radiant skin. Administered by Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/microneedling" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
+  <style>
+    /* ======================================================
+       MICRONEEDLING — PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --mn-rose:   #c0556a;
+      --mn-copper: #b5733a;
+      --mn-gold:   #d4a853;
+      --mn-navy:   #1a2744;
+      --mn-blush:  #fce8ed;
+      --mn-cream:  #fdf6f0;
+      --mn-soft:   #f9f0e8;
+    }
+
+    /* ---- Hero ---- */
+    .mn-hero {
+      background: linear-gradient(135deg, #fce8ed 0%, #fdf6f0 55%, #fef9ec 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .mn-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -100px;
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(192,85,106,0.15) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .mn-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -50px; left: -70px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(181,115,58,0.10) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .mn-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      min-height: 520px;
+      position: relative; z-index: 1;
+    }
+    .mn-hero-content {
+      padding: 72px 48px 72px 24px;
+    }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; color: rgba(0,0,0,0.45); margin-bottom: 20px; flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--mn-rose); text-decoration: none; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--mn-rose);
+      background: var(--mn-blush);
+      border: 1.5px solid rgba(192,85,106,0.25);
+      padding: 6px 18px; border-radius: 40px;
+      margin-bottom: 20px;
+    }
+    .mn-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--mn-navy);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+    .mn-hero-content h1 em {
+      font-style: italic;
+      background: linear-gradient(135deg, var(--mn-rose), var(--mn-copper));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .mn-hero-tagline {
+      font-size: 1.05rem;
+      color: #5a4a40;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 480px;
+    }
+    .mn-hero-btns {
+      display: flex; gap: 14px; flex-wrap: wrap;
+    }
+    .mn-hero-img {
+      display: flex; align-items: center; justify-content: center;
+      padding: 40px 24px 40px 0;
+    }
+    .mn-hero-img img {
+      width: 100%; max-width: 460px; border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(192,85,106,0.18);
+    }
+    .mn-hero-badges {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px;
+    }
+    .mn-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff;
+      border: 1.5px solid rgba(192,85,106,0.2);
+      border-radius: 40px;
+      padding: 7px 14px;
+      font-size: 0.72rem; font-weight: 700;
+      color: var(--mn-navy);
+    }
+    .mn-badge-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--mn-rose); flex-shrink: 0;
+    }
+    @media (max-width: 860px) {
+      .mn-hero-inner { grid-template-columns: 1fr; }
+      .mn-hero-content { padding: 56px 24px 32px; }
+      .mn-hero-img { padding: 0 24px 48px; }
+      .mn-hero-img img { max-width: 100%; }
+    }
+
+    /* ---- Stat Bar ---- */
+    .mn-stat-bar { background: var(--mn-navy); padding: 28px 0; }
+    .mn-stat-row {
+      display: flex; justify-content: center; gap: 48px; flex-wrap: wrap;
+    }
+    .mn-stat { text-align: center; }
+    .mn-stat .sn { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--mn-gold); display: block; line-height: 1; }
+    .mn-stat .sl { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+    /* ---- What Is Microneedling ---- */
+    .what-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .what-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .what-text .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--mn-rose); margin-bottom: 12px;
+    }
+    .what-text h2 {
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      color: var(--mn-navy); margin-bottom: 18px; line-height: 1.2;
+    }
+    .what-text p {
+      color: #4a5570; font-size: 0.97rem; line-height: 1.8; margin-bottom: 16px;
+    }
+    .what-text p:last-child { margin-bottom: 0; }
+    .what-bullets {
+      list-style: none; display: flex; flex-direction: column; gap: 10px;
+      margin-top: 24px;
+    }
+    .what-bullets li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.9rem; color: #4a5570; line-height: 1.6;
+    }
+    .what-bullets li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--mn-rose);
+      margin-top: 6px;
+    }
+    .what-visual {
+      background: linear-gradient(135deg, var(--mn-blush) 0%, var(--mn-cream) 100%);
+      border-radius: 24px;
+      padding: 44px 36px;
+      border: 1.5px solid rgba(192,85,106,0.15);
+    }
+    .what-visual h3 {
+      color: var(--mn-navy); font-size: 1.1rem; margin-bottom: 20px;
+    }
+    .result-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .result-list li {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 0.9rem; color: #4a5570; font-weight: 600;
+    }
+    .result-icon {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: #fff;
+      border: 1.5px solid rgba(192,85,106,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; flex-shrink: 0;
+    }
+    @media (max-width: 860px) {
+      .what-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+
+    /* ---- Treatments ---- */
+    .treat-section {
+      padding: 88px 0 80px;
+      background: var(--mn-soft);
+    }
+    .treat-header { text-align: center; margin-bottom: 52px; }
+    .treat-header .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--mn-rose); margin-bottom: 12px;
+    }
+    .treat-header h2 { color: var(--mn-navy); font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 14px; }
+    .treat-header p { color: #4a5570; font-size: 1rem; max-width: 600px; margin: 0 auto; line-height: 1.7; }
+    .treat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .treat-card {
+      background: #fff;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1.5px solid rgba(192,85,106,0.12);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: box-shadow 0.25s, transform 0.25s;
+      display: flex; flex-direction: column;
+    }
+    .treat-card:hover {
+      box-shadow: 0 12px 40px rgba(192,85,106,0.14);
+      transform: translateY(-4px);
+    }
+    .treat-card-top {
+      padding: 36px 32px 28px;
+      flex: 1;
+    }
+    .treat-tag {
+      display: inline-block;
+      font-size: 0.65rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 12px; border-radius: 40px;
+      margin-bottom: 18px;
+    }
+    .treat-tag.vampire { background: #fce0e5; color: #b03050; }
+    .treat-tag.exosome { background: #e8f4f0; color: #1D9E75; }
+    .treat-tag.cellvane { background: #fef3e2; color: #b07030; }
+    .treat-card h3 {
+      font-size: 1.2rem; color: var(--mn-navy); margin-bottom: 10px; line-height: 1.25;
+    }
+    .treat-card .treat-sub {
+      font-size: 0.8rem; color: var(--mn-rose); font-weight: 700;
+      margin-bottom: 14px; display: block;
+    }
+    .treat-card p {
+      color: #4a5570; font-size: 0.88rem; line-height: 1.75; margin-bottom: 20px;
+    }
+    .treat-bullets { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .treat-bullets li {
+      display: flex; align-items: flex-start; gap: 8px;
+      font-size: 0.84rem; color: #4a5570; line-height: 1.55;
+    }
+    .treat-bullets li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 6px; height: 6px; border-radius: 50%;
+      margin-top: 7px;
+    }
+    .treat-card.vampire .treat-bullets li::before { background: #b03050; }
+    .treat-card.exosome .treat-bullets li::before { background: #1D9E75; }
+    .treat-card.cellvane .treat-bullets li::before { background: #b07030; }
+    .treat-card-footer {
+      padding: 18px 32px 28px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+    .treat-card-footer p {
+      font-size: 0.8rem; color: #888; line-height: 1.5; margin: 0;
+    }
+    @media (max-width: 900px) {
+      .treat-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+    }
+
+    /* ---- Compare Table ---- */
+    .compare-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .compare-header { text-align: center; margin-bottom: 48px; }
+    .compare-header .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--mn-rose); margin-bottom: 12px;
+    }
+    .compare-header h2 { color: var(--mn-navy); font-size: clamp(1.5rem, 3vw, 2.1rem); }
+    .compare-table-wrap { overflow-x: auto; }
+    .compare-table {
+      width: 100%; border-collapse: collapse;
+      font-size: 0.88rem; min-width: 600px;
+    }
+    .compare-table thead th {
+      padding: 14px 20px;
+      text-align: center;
+      font-weight: 800; font-size: 0.85rem;
+      color: #fff;
+    }
+    .compare-table thead th:first-child {
+      background: var(--mn-navy); text-align: left; border-radius: 14px 0 0 0;
+    }
+    .compare-table thead th.vampire-col { background: #c0556a; }
+    .compare-table thead th.exosome-col { background: #1D9E75; }
+    .compare-table thead th.cellvane-col { background: var(--mn-copper); border-radius: 0 14px 0 0; }
+    .compare-table tbody tr:nth-child(even) td { background: #faf8f6; }
+    .compare-table tbody td {
+      padding: 13px 20px; color: #4a5570;
+      border-bottom: 1px solid #f0ece8;
+      text-align: center;
+    }
+    .compare-table tbody td:first-child {
+      text-align: left; font-weight: 700; color: var(--mn-navy);
+    }
+    .check { color: #1D9E75; font-size: 1.1rem; font-weight: 800; }
+    .dash  { color: #ccc; }
+    .compare-table tfoot td {
+      padding: 10px 20px;
+      font-size: 0.75rem; color: #aaa;
+    }
+
+    /* ---- Process ---- */
+    .process-section {
+      padding: 88px 0 80px;
+      background: linear-gradient(135deg, var(--mn-blush) 0%, var(--mn-cream) 100%);
+    }
+    .process-header { text-align: center; margin-bottom: 52px; }
+    .process-header .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--mn-rose); margin-bottom: 12px;
+    }
+    .process-header h2 { color: var(--mn-navy); font-size: clamp(1.5rem, 3vw, 2.1rem); }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: calc(12.5% + 14px); right: calc(12.5% + 14px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--mn-rose), var(--mn-copper));
+      z-index: 0;
+    }
+    .process-step {
+      position: relative; z-index: 1; text-align: center;
+    }
+    .step-num {
+      width: 64px; height: 64px; border-radius: 50%;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .process-step:nth-child(1) .step-num { background: var(--mn-rose); box-shadow: 0 4px 18px rgba(192,85,106,0.35); }
+    .process-step:nth-child(2) .step-num { background: #b8607a; box-shadow: 0 4px 18px rgba(184,96,122,0.3); }
+    .process-step:nth-child(3) .step-num { background: #b87050; box-shadow: 0 4px 18px rgba(184,112,80,0.3); }
+    .process-step:nth-child(4) .step-num { background: var(--mn-copper); box-shadow: 0 4px 18px rgba(181,115,58,0.35); }
+    .process-step h3 { color: var(--mn-navy); font-size: 1rem; margin-bottom: 8px; }
+    .process-step p  { color: #5a4a40; font-size: 0.84rem; line-height: 1.65; margin: 0; }
+    @media (max-width: 860px) {
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 480px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+
+    /* ---- Who It's For ---- */
+    .who-section {
+      padding: 88px 0 80px;
+      background: var(--mn-navy);
+    }
+    .who-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 12px;
+    }
+    .who-section h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 16px; }
+    .who-section .who-intro { color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.7; margin-bottom: 44px; max-width: 600px; }
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+    .who-col {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 32px 28px;
+    }
+    .who-col h3 { font-size: 0.95rem; font-weight: 800; color: var(--mn-gold); margin-bottom: 18px; }
+    .who-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .who-col li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.55;
+    }
+    .who-dot {
+      flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; margin-top: 1px; color: #fff;
+    }
+    .who-dot.yes { background: #1D9E75; }
+    .who-dot.no  { background: #ef4444; }
+    @media (max-width: 640px) {
+      .who-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ---- FAQ ---- */
+    .faq-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-header .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--mn-rose); margin-bottom: 12px;
+    }
+    .faq-header h2 { color: var(--mn-navy); font-size: clamp(1.5rem, 3vw, 2.1rem); }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 8px; }
+    .faq-item { border: 1.5px solid rgba(192,85,106,0.15); border-radius: 16px; overflow: hidden; }
+    .faq-q {
+      width: 100%; background: none; border: none;
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 16px; cursor: pointer; text-align: left;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 1rem; font-weight: 700;
+      color: var(--mn-navy);
+      padding: 22px 24px;
+    }
+    .faq-q:hover { color: var(--mn-rose); }
+    .faq-icon { font-size: 1.4rem; color: var(--mn-rose); flex-shrink: 0; transition: transform 0.2s; }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-a { display: none; padding: 0 24px 22px; font-size: 0.95rem; color: #4a5570; line-height: 1.75; }
+    .faq-a a { color: var(--mn-rose); }
+
+    /* ---- CTA ---- */
+    .mn-cta {
+      padding: 88px 0 80px;
+      background: linear-gradient(135deg, var(--mn-blush) 0%, var(--mn-cream) 50%, #fef9ec 100%);
+      text-align: center;
+    }
+    .mn-cta h2 { color: var(--mn-navy); margin-bottom: 16px; font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+    .mn-cta p { color: #5a4a40; font-size: 1.05rem; max-width: 540px; margin: 0 auto 36px; line-height: 1.7; }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ---- Partner Strip ---- */
+    .partner-strip { background: #f9f8f7; border-top: 1px solid #ede8e3; border-bottom: 1px solid #ede8e3; padding: 20px 0; overflow: hidden; }
+    .partner-strip-inner { display: flex; align-items: center; gap: 0; width: max-content; animation: partnerScroll 22s linear infinite; }
+    .partner-strip-logos { display: flex; align-items: center; gap: 48px; padding: 0 24px; }
+    .partner-strip-logos img { height: 36px; width: auto; opacity: 0.55; filter: grayscale(1); transition: opacity 0.2s, filter 0.2s; }
+    .partner-strip-logos img:hover { opacity: 0.9; filter: grayscale(0); }
+    @keyframes partnerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 640px) {
+      .what-section,
+      .treat-section,
+      .compare-section,
+      .process-section,
+      .who-section,
+      .faq-section,
+      .mn-cta { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/microneedling">Microneedling</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Things We Treat
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/microneedling" class="sub-link">Microneedling</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="mn-hero">
+  <div class="container">
+    <div class="mn-hero-inner">
+      <div class="mn-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>›</span>
+          <a href="/jeuveau">Aesthetics</a>
+          <span>›</span>
+          <span>Microneedling</span>
+        </nav>
+        <span class="eyebrow">Microneedling &mdash; Bedford, TX</span>
+        <h1>Reveal Your<br><em>Radiant Skin.</em></h1>
+        <p class="mn-hero-tagline">Microneedling creates thousands of micro-channels in the skin, triggering your body's natural collagen and elastin production. We offer three powerful add-ons -- Vampire Facial (PRP), Exosomes, and Cellvane -- to amplify and accelerate your results.</p>
+        <div class="mn-hero-btns">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--mn-rose);border-color:var(--mn-rose);font-size:1rem;padding:15px 32px;">Book a Consultation</a>
+          <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:rgba(192,85,106,0.4);color:var(--mn-rose);">(682) 283-6976</a>
+        </div>
+        <div class="mn-hero-badges">
+          <span class="mn-badge"><span class="mn-badge-dot"></span>No surgery needed</span>
+          <span class="mn-badge"><span class="mn-badge-dot"></span>Minimal downtime</span>
+          <span class="mn-badge"><span class="mn-badge-dot"></span>All skin tones</span>
+        </div>
+      </div>
+      <div class="mn-hero-img">
+        <img src="images/microneedling-hero.jpg" onerror="this.style.display='none'" alt="Microneedling treatment at Happy Drip IV &amp; Wellness in Bedford, TX" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAR -->
+<div class="mn-stat-bar">
+  <div class="container">
+    <div class="mn-stat-row">
+      <div class="mn-stat">
+        <span class="sn">3–6</span>
+        <span class="sl">Recommended sessions</span>
+      </div>
+      <div class="mn-stat">
+        <span class="sn">30–60</span>
+        <span class="sl">Minutes per treatment</span>
+      </div>
+      <div class="mn-stat">
+        <span class="sn">24–72 hrs</span>
+        <span class="sl">Typical downtime</span>
+      </div>
+      <div class="mn-stat">
+        <span class="sn">3 mo+</span>
+        <span class="sl">Results can last</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHAT IS MICRONEEDLING -->
+<section class="what-section">
+  <div class="container">
+    <div class="what-inner">
+      <div class="what-text">
+        <span class="section-label">The Science</span>
+        <h2>Collagen Induction -- Your Skin's Repair Mode</h2>
+        <p>Microneedling (also called collagen induction therapy) uses a device with ultra-fine needles to create controlled micro-injuries in the skin. Your body responds by flooding the area with growth factors and new collagen -- the same proteins that keep skin firm, smooth, and youthful.</p>
+        <p>The result is tighter, more even-toned skin with visibly reduced pores, fine lines, and scarring -- all using your own biology. Add one of our three regenerative boosters and you accelerate results significantly.</p>
+        <ul class="what-bullets">
+          <li>Reduces acne scars, surgical scars, and stretch marks</li>
+          <li>Minimizes enlarged pores and uneven texture</li>
+          <li>Smooths fine lines and mild wrinkles</li>
+          <li>Improves hyperpigmentation and sun damage</li>
+          <li>Enhances absorption of topical serums</li>
+        </ul>
+      </div>
+      <div class="what-visual">
+        <h3>Common Results Patients Notice</h3>
+        <ul class="result-list">
+          <li><span class="result-icon">✨</span>Smoother, more even skin tone</li>
+          <li><span class="result-icon">💧</span>Improved hydration and "glow"</li>
+          <li><span class="result-icon">🔬</span>Reduced acne scarring</li>
+          <li><span class="result-icon">📏</span>Smaller-looking pores</li>
+          <li><span class="result-icon">💪</span>Firmer, tighter skin</li>
+          <li><span class="result-icon">🌙</span>Fewer fine lines over time</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THREE TREATMENTS -->
+<section class="treat-section">
+  <div class="container">
+    <div class="treat-header">
+      <span class="section-label">Your Options</span>
+      <h2>Three Ways to Boost Your Results</h2>
+      <p>Standard microneedling is powerful on its own. Pair it with one of our regenerative add-ons to supercharge healing and take results to the next level.</p>
+    </div>
+    <div class="treat-grid">
+
+      <!-- Vampire Facial -->
+      <div class="treat-card vampire">
+        <div class="treat-card-top">
+          <span class="treat-tag vampire">Vampire Facial</span>
+          <h3>PRP Microneedling</h3>
+          <span class="treat-sub">Platelet-Rich Plasma</span>
+          <p>We draw a small amount of your blood, spin it in a centrifuge to concentrate the growth-factor-rich plasma, and apply it directly during your microneedling session. The micro-channels deliver PRP deep into the dermis where it works best.</p>
+          <ul class="treat-bullets">
+            <li>Uses your own biology -- zero foreign substances</li>
+            <li>Concentrated growth factors accelerate tissue repair</li>
+            <li>Ideal for acne scars, dullness, and early aging</li>
+            <li>Pairs especially well with hair restoration too</li>
+          </ul>
+        </div>
+        <div class="treat-card-footer">
+          <p>Results build over 4--6 weeks as collagen remodeling continues. Most patients see best results after a series of 3 sessions.</p>
+        </div>
+      </div>
+
+      <!-- Exosomes -->
+      <div class="treat-card exosome">
+        <div class="treat-card-top">
+          <span class="treat-tag exosome">Exosomes</span>
+          <h3>Exosome Microneedling</h3>
+          <span class="treat-sub">Next-Gen Cell Signaling</span>
+          <p>Exosomes are nano-sized extracellular vesicles that carry regenerative signals between cells. Applied to skin after microneedling, they instruct surrounding cells to ramp up collagen production, reduce inflammation, and accelerate repair -- faster and more consistently than PRP for many patients.</p>
+          <ul class="treat-bullets">
+            <li>Billions of growth factors and signaling proteins per vial</li>
+            <li>No blood draw required -- ready immediately</li>
+            <li>Excellent for sensitive skin or those who want a faster session</li>
+            <li>Potent anti-inflammatory properties reduce downtime</li>
+          </ul>
+        </div>
+        <div class="treat-card-footer">
+          <p>Many patients choose exosomes for their consistency and the reduced redness compared to PRP. Ideal for first-timers.</p>
+        </div>
+      </div>
+
+      <!-- Cellvane -->
+      <div class="treat-card cellvane">
+        <div class="treat-card-top">
+          <span class="treat-tag cellvane">Cellvane</span>
+          <h3>Cellvane Microneedling</h3>
+          <span class="treat-sub">Advanced Regenerative Serum</span>
+          <p>Cellvane is a bioactive serum formulated with growth factors, peptides, and skin-regenerating actives designed specifically to be delivered via microneedling. It works synergistically with the micro-channel delivery system to optimize skin renewal at the cellular level.</p>
+          <ul class="treat-bullets">
+            <li>Precision-formulated for transdermal delivery</li>
+            <li>Targets fine lines, laxity, and uneven texture</li>
+            <li>No blood draw -- convenient same-day treatment</li>
+            <li>Strong option for mature or sun-damaged skin</li>
+          </ul>
+        </div>
+        <div class="treat-card-footer">
+          <p>Ask your provider which booster is best matched to your specific skin goals at your consultation.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE TABLE -->
+<section class="compare-section">
+  <div class="container">
+    <div class="compare-header">
+      <span class="section-label">Quick Comparison</span>
+      <h2>Which Add-On Is Right for You?</h2>
+    </div>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="vampire-col">Vampire Facial (PRP)</th>
+            <th class="exosome-col">Exosomes</th>
+            <th class="cellvane-col">Cellvane</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Uses your own blood</td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="dash">No</span></td>
+            <td><span class="dash">No</span></td>
+          </tr>
+          <tr>
+            <td>No blood draw needed</td>
+            <td><span class="dash">No</span></td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="check">Yes</span></td>
+          </tr>
+          <tr>
+            <td>Growth factors / cell signals</td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="check">Yes (billions)</span></td>
+            <td><span class="check">Yes</span></td>
+          </tr>
+          <tr>
+            <td>Anti-inflammatory boost</td>
+            <td><span class="dash">Moderate</span></td>
+            <td><span class="check">Strong</span></td>
+            <td><span class="check">Strong</span></td>
+          </tr>
+          <tr>
+            <td>Good for sensitive skin</td>
+            <td><span class="dash">Variable</span></td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="check">Yes</span></td>
+          </tr>
+          <tr>
+            <td>Ideal for acne scars</td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="check">Yes</span></td>
+          </tr>
+          <tr>
+            <td>Ideal for fine lines &amp; laxity</td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="check">Yes</span></td>
+            <td><span class="check">Yes</span></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="4">Not sure which to choose? Book a consultation and your provider will recommend the best option for your skin goals.</td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section">
+  <div class="container">
+    <div class="process-header">
+      <span class="section-label">What to Expect</span>
+      <h2>Your Treatment, Step by Step</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Consultation</h3>
+        <p>We review your skin concerns, goals, and history to choose the right microneedling depth and add-on for your specific needs.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Numbing</h3>
+        <p>A topical numbing cream is applied and left on for 30--45 minutes so you're comfortable throughout the session.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Treatment</h3>
+        <p>The microneedling device passes over your skin while your chosen booster (PRP, Exosomes, or Cellvane) is applied simultaneously.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>Aftercare</h3>
+        <p>You'll leave with post-care instructions. Expect mild redness for 24--72 hours. Results improve over 4--6 weeks as collagen builds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="who-section">
+  <div class="container">
+    <span class="who-label">Is This Right for Me?</span>
+    <h2>Good Candidates &amp; Considerations</h2>
+    <p class="who-intro">Microneedling works for a wide range of skin types and concerns. Here's a quick guide -- but your provider will give you a personalized recommendation at your consultation.</p>
+    <div class="who-grid">
+      <div class="who-col">
+        <h3>Great Candidates</h3>
+        <ul>
+          <li><span class="who-dot yes">✓</span>Acne scars or surgical scars</li>
+          <li><span class="who-dot yes">✓</span>Fine lines and early skin laxity</li>
+          <li><span class="who-dot yes">✓</span>Enlarged pores or rough texture</li>
+          <li><span class="who-dot yes">✓</span>Hyperpigmentation or sun damage</li>
+          <li><span class="who-dot yes">✓</span>Dull or uneven skin tone</li>
+          <li><span class="who-dot yes">✓</span>All Fitzpatrick skin types (I--VI)</li>
+        </ul>
+      </div>
+      <div class="who-col">
+        <h3>When to Wait or Discuss First</h3>
+        <ul>
+          <li><span class="who-dot no">!</span>Active acne breakouts in the treatment area</li>
+          <li><span class="who-dot no">!</span>Current use of isotretinoin (Accutane) or recent history</li>
+          <li><span class="who-dot no">!</span>Keloid scar tendency</li>
+          <li><span class="who-dot no">!</span>Pregnancy or nursing</li>
+          <li><span class="who-dot no">!</span>Active skin infection or open wounds</li>
+          <li><span class="who-dot no">!</span>Certain blood-thinning medications (discuss at consult)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="faq-header">
+      <span class="section-label">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Does microneedling hurt?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" hidden>We apply a topical numbing cream before your session, so most patients describe the sensation as mild pressure or light scratching -- not painful. Discomfort is typically rated 2--3 out of 10 after numbing.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How many sessions will I need?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" hidden>Most patients see the best results with a series of 3--6 sessions spaced 4--6 weeks apart. Mild texture concerns may resolve in 3 sessions; deeper scarring or significant laxity may benefit from more. Your provider will build a plan at your consultation.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What's the difference between PRP, Exosomes, and Cellvane?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" hidden>All three amplify your microneedling results by flooding the skin with regenerative signals. PRP uses your own blood plasma, making it completely autologous. Exosomes are nano-vesicles with billions of growth factors -- no blood draw required and with a strong anti-inflammatory effect. Cellvane is a precisely formulated bioactive serum optimized for transdermal delivery. Your provider will help you choose based on your goals and any preferences around the blood draw.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How long is recovery?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" hidden>Most patients experience redness similar to a mild sunburn for 24--72 hours. Exosomes and Cellvane tend to reduce post-treatment inflammation compared to PRP alone. Avoid makeup, sun exposure, and intense exercise for 24--48 hours after treatment. Full results build over 4--6 weeks as new collagen forms.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Can microneedling be done on darker skin tones?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" hidden>Yes -- microneedling is safe for all Fitzpatrick skin types including deeper skin tones (types IV--VI). Unlike some laser treatments, microneedling does not use heat or target pigment, which makes it a great option for patients who want to avoid hyperpigmentation risk. Your provider will adjust needle depth and settings appropriately.</div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How soon will I see results?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a" hidden>You may notice an initial "glow" within a week as surface-level skin renews. Deeper improvements -- reduced scars, tighter pores, smoother texture -- develop over 4--6 weeks as collagen remodels. Results from a full series continue improving for several months after your last session.</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER STRIP -->
+<div class="partner-strip" aria-hidden="true">
+  <div class="partner-strip-inner">
+    <div class="partner-strip-logos">
+      <img src="images/Alma.png" alt="Alma" />
+      <img src="images/Fullscript-logo.png" alt="Fullscript" />
+      <img src="images/Vagaro.png" alt="Vagaro" />
+      <img src="images/PCAB.png" alt="PCAB" />
+      <img src="images/CliqHQ.png" alt="Cliq" />
+    </div>
+    <div class="partner-strip-logos" aria-hidden="true">
+      <img src="images/Alma.png" alt="" />
+      <img src="images/Fullscript-logo.png" alt="" />
+      <img src="images/Vagaro.png" alt="" />
+      <img src="images/PCAB.png" alt="" />
+      <img src="images/CliqHQ.png" alt="" />
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="mn-cta">
+  <div class="container">
+    <h2>Ready to Reveal Your Best Skin?</h2>
+    <p>Book a consultation with Brittany Adams, APRN FNP-C, and we'll build a personalized microneedling plan around your skin goals and schedule.</p>
+    <div class="cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--mn-rose);border-color:var(--mn-rose);font-size:1.05rem;padding:16px 36px;">Book Your Consultation</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size:1.05rem;padding:16px 36px;border-color:rgba(192,85,106,0.4);color:var(--mn-rose);">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness" class="footer-logo" />
+      <div class="footer-brand-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Medical Services</h4>
+        <a href="/weightloss">Medical Weight Loss</a>
+        <a href="/happy-health-clinic">Happy Health Clinic</a>
+        <a href="/peptide-therapy/">Peptide Therapy</a>
+        <a href="/mens-health">Men's Health</a>
+      </div>
+      <div class="footer-col">
+        <h4>Aesthetics</h4>
+        <a href="/jeuveau">Botox &amp; Fillers</a>
+        <a href="/mesotox">Korean Glass Skin</a>
+        <a href="/microneedling">Microneedling</a>
+      </div>
+      <div class="footer-col">
+        <h4>IV Therapy</h4>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/i-do-drips">Bridal Drips</a>
+        <a href="/groups-events">Groups + Events</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <a href="/payment-plans">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/hipaa-notice">HIPAA Notice</a>
+        <a href="/terms">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. Bedford, TX &bull; (682) 283-6976</p>
+      <p class="footer-disclaimer">This website is for informational purposes only and does not constitute medical advice. Individual results vary. Consult your provider before starting any treatment. Happy Drip IV &amp; Wellness is a cash-pay practice and does not accept insurance.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js?v=20260630"></script>
+</body>
+</html>
