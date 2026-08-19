@@ -1005,51 +1005,83 @@
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <img src="images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness" class="footer-logo" />
-      <div class="footer-brand-text">
-        <span>Happy Drip IV</span>
-        <span>&amp; Wellness</span>
-      </div>
-    </div>
-    <div class="footer-links">
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
       <div class="footer-col">
-        <h4>Medical Services</h4>
-        <a href="/weightloss">Medical Weight Loss</a>
-        <a href="/happy-health-clinic">Happy Health Clinic</a>
-        <a href="/peptide-therapy/">Peptide Therapy</a>
-        <a href="/mens-health">Men's Health</a>
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
       </div>
+
+      <!-- Quick Links -->
       <div class="footer-col">
-        <h4>Aesthetics</h4>
-        <a href="/jeuveau">Botox &amp; Fillers</a>
-        <a href="/mesotox">Korean Glass Skin</a>
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Services -->
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+        <a href="/mesotox">Korean Glass Skin MesoTox</a>
         <a href="/microneedling">Microneedling</a>
       </div>
+
+      <!-- Subscribe -->
       <div class="footer-col">
-        <h4>IV Therapy</h4>
-        <a href="/iv-drip-menu">IV Drip Menu</a>
-        <a href="/i-do-drips">Bridal Drips</a>
-        <a href="/groups-events">Groups + Events</a>
-        <a href="/iron-infusion">Iron Infusion</a>
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <a href="/payment-plans">Payment Plans</a>
-        <a href="/#faq">FAQ</a>
-        <a href="/privacy-policy">Privacy Policy</a>
-        <a href="/hipaa-notice">HIPAA Notice</a>
-        <a href="/terms">Terms of Service</a>
-      </div>
+
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <p>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. Bedford, TX &bull; (682) 283-6976</p>
-      <p class="footer-disclaimer">This website is for informational purposes only and does not constitute medical advice. Individual results vary. Consult your provider before starting any treatment. Happy Drip IV &amp; Wellness is a cash-pay practice and does not accept insurance.</p>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
     </div>
   </div>
 </footer>
