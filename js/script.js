@@ -44,50 +44,55 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
+// ---- Persistent Zoho iframe (created once per page load, reused for all submits) ----
+(function () {
+  if (document.querySelector('iframe[name="zohoNewsletterFrame"]')) return;
+  var frame = document.createElement('iframe');
+  frame.name = 'zohoNewsletterFrame';
+  frame.style.display = 'none';
+  frame.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(frame);
+})();
+
 // ---- Email subscribe ----
 function handleSubscribe(e) {
   e.preventDefault();
-  const input = e.target.querySelector('input[type="email"]');
-  const btn = e.target.querySelector('button');
-  const email = input.value.trim();
+  var form = e.target;
+  var input = form.querySelector('input[type="email"]');
+  var btn   = form.querySelector('button');
+  var email = input.value.trim();
   if (!email) return;
 
-  // Hidden iframe so Zoho's redirect response never touches our page
-  const iframeName = 'zf_hidden_' + Date.now();
-  const iframe = document.createElement('iframe');
-  iframe.name = iframeName;
-  iframe.style.cssText = 'display:none;position:absolute;width:0;height:0;border:0;';
-  document.body.appendChild(iframe);
-
-  // Temporary form that mirrors the real Zoho form — posts into the iframe
-  const form = document.createElement('form');
-  form.action = 'https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/CnV-rVDAJ7cUmgqBjpeG7tcmroxIvxns62sKUM_ypTU/htmlRecords/submit';
-  form.method = 'POST';
-  form.enctype = 'multipart/form-data';
+  // Wire the existing form element to post to Zoho via the persistent iframe
+  form.action       = 'https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/CnV-rVDAJ7cUmgqBjpeG7tcmroxIvxns62sKUM_ypTU/htmlRecords/submit';
+  form.method       = 'POST';
+  form.enctype      = 'multipart/form-data';
   form.acceptCharset = 'UTF-8';
-  form.target = iframeName;
-  form.style.display = 'none';
+  form.target       = 'zohoNewsletterFrame';
 
-  [['Email', email], ['zf_referrer_name', ''], ['zf_redirect_url', ''], ['zc_gad', '']].forEach(([name, value]) => {
-    const field = document.createElement('input');
-    field.type = 'hidden';
-    field.name = name;
-    field.value = value;
-    form.appendChild(field);
+  // Zoho requires the field to be named "Email"
+  input.name = 'Email';
+
+  // Add Zoho hidden fields once
+  ['zf_referrer_name', 'zf_redirect_url', 'zc_gad'].forEach(function (n) {
+    if (!form.querySelector('[name="' + n + '"]')) {
+      var h = document.createElement('input');
+      h.type = 'hidden'; h.name = n; h.value = '';
+      form.appendChild(h);
+    }
   });
 
-  document.body.appendChild(form);
-  form.submit();
-
-  // Clean up after Zoho has had time to receive the post
-  setTimeout(() => { form.remove(); iframe.remove(); }, 5000);
-
-  // Update UI immediately
+  // Show success UI immediately
   btn.textContent = '✓';
   btn.style.background = '#2ecc71';
   input.value = '';
-  input.placeholder = "Thanks! You're on the list.";
-  setTimeout(() => {
+  input.placeholder = "You're on the list!";
+
+  // Let the browser do the real POST into the iframe on the next tick
+  // (deferred so DOM changes settle before submit fires — same pattern as Bear Pantry)
+  setTimeout(function () { form.submit(); }, 0);
+
+  setTimeout(function () {
     btn.textContent = 'Go';
     btn.style.background = '';
     input.placeholder = 'your@email.com';
