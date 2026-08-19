@@ -44,59 +44,65 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-// ---- Persistent Zoho iframe (created once per page load, reused for all submits) ----
-(function () {
-  if (document.querySelector('iframe[name="zohoNewsletterFrame"]')) return;
+// ---- Zoho newsletter setup (runs once on page load, before any submit) ----
+// Pre-wires every .subscribe-form with the Zoho action/target so the browser
+// can do a real form POST into the hidden iframe — same pattern as Bear Pantry.
+document.addEventListener('DOMContentLoaded', function () {
+  // 1. Persistent iframe — Zoho's redirect response loads here invisibly
   var frame = document.createElement('iframe');
   frame.name = 'zohoNewsletterFrame';
   frame.style.display = 'none';
   frame.setAttribute('aria-hidden', 'true');
   document.body.appendChild(frame);
-})();
 
-// ---- Email subscribe ----
-function handleSubscribe(e) {
-  e.preventDefault();
-  var form = e.target;
-  var input = form.querySelector('input[type="email"]');
-  var btn   = form.querySelector('button');
-  var email = input.value.trim();
-  if (!email) return;
+  // 2. Wire every subscribe form
+  document.querySelectorAll('.subscribe-form').forEach(function (form) {
+    form.action       = 'https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/CnV-rVDAJ7cUmgqBjpeG7tcmroxIvxns62sKUM_ypTU/htmlRecords/submit';
+    form.method       = 'POST';
+    form.enctype      = 'multipart/form-data';
+    form.acceptCharset = 'UTF-8';
+    form.target       = 'zohoNewsletterFrame';
 
-  // Wire the existing form element to post to Zoho via the persistent iframe
-  form.action       = 'https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/CnV-rVDAJ7cUmgqBjpeG7tcmroxIvxns62sKUM_ypTU/htmlRecords/submit';
-  form.method       = 'POST';
-  form.enctype      = 'multipart/form-data';
-  form.acceptCharset = 'UTF-8';
-  form.target       = 'zohoNewsletterFrame';
+    // Zoho needs the field named exactly "Email"
+    var emailInput = form.querySelector('input[type="email"]');
+    if (emailInput) emailInput.name = 'Email';
 
-  // Zoho requires the field to be named "Email"
-  input.name = 'Email';
-
-  // Add Zoho hidden fields once
-  ['zf_referrer_name', 'zf_redirect_url', 'zc_gad'].forEach(function (n) {
-    if (!form.querySelector('[name="' + n + '"]')) {
+    // Required hidden fields
+    ['zf_referrer_name', 'zf_redirect_url', 'zc_gad'].forEach(function (n) {
       var h = document.createElement('input');
       h.type = 'hidden'; h.name = n; h.value = '';
       form.appendChild(h);
-    }
+    });
   });
+});
 
-  // Show success UI immediately
-  btn.textContent = '✓';
-  btn.style.background = '#2ecc71';
-  input.value = '';
-  input.placeholder = "You're on the list!";
+// ---- Email subscribe ----
+// Does NOT call preventDefault for valid emails — lets the browser do the
+// real POST (form is already wired to Zoho + iframe by the setup above).
+function handleSubscribe(e) {
+  var form  = e.target;
+  var input = form.querySelector('input[type="email"]');
+  var btn   = form.querySelector('button');
+  var email = input.value.trim();
 
-  // Let the browser do the real POST into the iframe on the next tick
-  // (deferred so DOM changes settle before submit fires — same pattern as Bear Pantry)
-  setTimeout(function () { form.submit(); }, 0);
+  if (!email) {
+    e.preventDefault(); // block submit only if field is empty
+    return;
+  }
 
+  // Browser captures form data here (before any setTimeout), then submits.
+  // Update UI in next tick so the captured value is already en route to Zoho.
   setTimeout(function () {
-    btn.textContent = 'Go';
-    btn.style.background = '';
-    input.placeholder = 'your@email.com';
-  }, 4000);
+    btn.textContent = '✓';
+    btn.style.background = '#2ecc71';
+    input.value = '';
+    input.placeholder = "You're on the list!";
+    setTimeout(function () {
+      btn.textContent = 'Go';
+      btn.style.background = '';
+      input.placeholder = 'your@email.com';
+    }, 4000);
+  }, 0);
 }
 window.handleSubscribe = handleSubscribe;
 
