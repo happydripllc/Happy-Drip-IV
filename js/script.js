@@ -49,11 +49,25 @@ function handleSubscribe(e) {
   e.preventDefault();
   const input = e.target.querySelector('input[type="email"]');
   const btn = e.target.querySelector('button');
-  if (!input.value) return;
+  const email = input.value.trim();
+  if (!email) return;
+
+  // Submit silently to Zoho Forms in the background
+  const data = new FormData();
+  data.append('Email', email);
+  data.append('zf_referrer_name', '');
+  data.append('zf_redirect_url', '');
+  data.append('zc_gad', '');
+  fetch(
+    'https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/CnV-rVDAJ7cUmgqBjpeG7tcmroxIvxns62sKUM_ypTU/htmlRecords/submit',
+    { method: 'POST', body: data, mode: 'no-cors' }
+  ).catch(() => {}); // opaque response — data is delivered, ignore the response
+
+  // Update UI
   btn.textContent = '✓';
   btn.style.background = '#2ecc71';
   input.value = '';
-  input.placeholder = 'Thanks! Check your inbox.';
+  input.placeholder = 'Thanks! You\'re on the list.';
   setTimeout(() => {
     btn.textContent = 'Go';
     btn.style.background = '';
