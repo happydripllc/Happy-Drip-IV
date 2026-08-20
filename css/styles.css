@@ -343,6 +343,16 @@ p { line-height: 1.75; }
 }
 .dropdown .dropdown-group-item.nested::before { left: 30px; }
 
+/* Medical Services has 5 groups -- lay them out in 2 columns so the dropdown fits in the viewport */
+.dropdown:has(.dropdown-group) {
+  min-width: 480px;
+  column-count: 2;
+  column-gap: 8px;
+}
+.dropdown:has(.dropdown-group) .dropdown-group {
+  break-inside: avoid;
+}
+
 /* Mobile nested sub-links */
 .mobile-nav .sub-link.nested {
   padding-left: 36px !important;
