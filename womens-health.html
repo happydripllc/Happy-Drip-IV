@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women's Health Bedford TX | Hormone Therapy, PCOS &amp; More | Happy Drip IV &amp; Wellness</title>
+  <meta name="description" content="Women's health services in Bedford, TX -- hormone balancing, PCOS management, thyroid optimization, sexual wellness, and preventive lab panels. Cash-pay, no insurance needed. Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/womens-health" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
+  <style>
+    /* ======================================================
+       WOMEN'S HEALTH -- PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --wh-rose:   #b5506a;
+      --wh-rose2:  #d46882;
+      --wh-mauve:  #8b5e83;
+      --wh-cream:  #fdf5f8;
+      --wh-light:  #fce8ef;
+      --wh-dark:   #3d1a28;
+    }
+
+    /* ---- Hero ---- */
+    .wh-hero {
+      background: linear-gradient(135deg, #fce8ef 0%, #f5ecfa 50%, #fdf0f5 100%);
+      padding: 100px 0 72px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .wh-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 440px; height: 440px;
+      background: radial-gradient(circle, rgba(181,80,106,0.1) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .wh-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -60px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(139,94,131,0.08) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .wh-hero-content {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .wh-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(181,80,106,0.1);
+      border: 1px solid rgba(181,80,106,0.25);
+      color: var(--wh-rose);
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 6px 16px;
+      border-radius: 40px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .wh-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--wh-dark);
+      margin-bottom: 18px;
+      line-height: 1.12;
+    }
+    .wh-hero-content h1 em {
+      color: var(--wh-rose);
+      font-style: italic;
+    }
+    .wh-hero-content p {
+      font-size: 1.1rem;
+      color: #4a5570;
+      max-width: 580px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .wh-hero-btns {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-rose {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--wh-rose);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-rose:hover { background: #9e3f59; transform: translateY(-1px); }
+    .btn-outline-dark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--wh-dark);
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 13px 28px;
+      border-radius: 50px;
+      border: 2px solid var(--wh-dark);
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-dark:hover { background: var(--wh-dark); color: #fff; }
+
+    /* ---- Service Cards ---- */
+    .wh-services {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .wh-section-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--wh-rose);
+      margin-bottom: 12px;
+    }
+    .wh-section-title {
+      color: var(--wh-dark);
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .wh-section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .wh-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .wh-card {
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .wh-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.13);
+    }
+    .wh-card-header {
+      padding: 36px 32px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+    .wh-card-header.rose-bg {
+      background: linear-gradient(135deg, #b5506a 0%, #9e3f59 100%);
+    }
+    .wh-card-header.mauve-bg {
+      background: linear-gradient(135deg, #8b5e83 0%, #764e6e 100%);
+    }
+    .wh-card-header.dark-bg {
+      background: linear-gradient(135deg, #3d1a28 0%, #5a2840 100%);
+    }
+    .wh-card-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .wh-card-icon { font-size: 2.4rem; margin-bottom: 14px; display: block; }
+    .wh-card-header h2 {
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .wh-card-header p {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+    .wh-card-body {
+      padding: 32px;
+      background: #fff;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .wh-card-points {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .wh-card-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: #4a5570;
+      line-height: 1.6;
+    }
+    .wh-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+    .wh-dot.rose { background: var(--wh-rose); }
+    .wh-dot.mauve { background: var(--wh-mauve); }
+    .wh-dot.dark { background: var(--wh-dark); }
+    .wh-card-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      font-size: 0.92rem;
+      border-radius: 50px;
+      padding: 12px 24px;
+      text-decoration: none;
+      margin-top: auto;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .wh-card-cta.rose { background: var(--wh-rose); color: #fff; }
+    .wh-card-cta.rose:hover { background: #9e3f59; transform: translateY(-1px); }
+    .wh-card-cta.mauve { background: var(--wh-mauve); color: #fff; }
+    .wh-card-cta.mauve:hover { background: #764e6e; transform: translateY(-1px); }
+    .wh-card-cta.dark { background: var(--wh-dark); color: #fff; }
+    .wh-card-cta.dark:hover { background: #2a1018; transform: translateY(-1px); }
+
+    /* ---- Additional Services ---- */
+    .wh-more {
+      padding: 80px 0;
+      background: var(--wh-cream);
+    }
+    .wh-more-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .wh-more-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.06);
+      border-top: 4px solid var(--wh-rose);
+    }
+    .wh-more-icon { font-size: 1.8rem; margin-bottom: 12px; display: block; }
+    .wh-more-card h3 { font-size: 1.05rem; color: var(--wh-dark); margin-bottom: 8px; }
+    .wh-more-card p { font-size: 0.88rem; color: #666; line-height: 1.65; margin: 0; }
+
+    /* ---- Why Us ---- */
+    .wh-why {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .wh-why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .wh-why-card {
+      background: var(--wh-cream);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .wh-why-icon { font-size: 2rem; margin-bottom: 14px; display: block; }
+    .wh-why-card h3 { font-size: 1rem; color: var(--wh-dark); margin-bottom: 8px; }
+    .wh-why-card p { font-size: 0.88rem; color: #4a5570; line-height: 1.7; }
+
+    /* ---- FAQ ---- */
+    .wh-faq {
+      background: var(--wh-cream);
+      padding: 80px 0;
+    }
+
+    /* ---- CTA ---- */
+    .wh-cta {
+      padding: 80px 0;
+      background: linear-gradient(135deg, var(--wh-dark) 0%, #6e2a4a 100%);
+      text-align: center;
+    }
+    .wh-cta h2 {
+      color: #fff;
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      margin-bottom: 16px;
+    }
+    .wh-cta h2 em { color: var(--wh-rose2); font-style: italic; }
+    .wh-cta p {
+      color: rgba(255,255,255,0.78);
+      font-size: 1.05rem;
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .wh-cta-btns {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .btn-white-rose {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #fff;
+      color: var(--wh-rose);
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-white-rose:hover { background: var(--wh-light); transform: translateY(-1px); }
+    .btn-outline-white {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.95rem;
+      padding: 13px 28px;
+      border-radius: 50px;
+      border: 2px solid rgba(255,255,255,0.45);
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
+
+    @media (max-width: 900px) {
+      .wh-cards-grid,
+      .wh-more-grid,
+      .wh-why-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .wh-cards-grid,
+      .wh-more-grid,
+      .wh-why-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  Now accepting new patients -- same-day &amp; next-day appointments available in Bedford, TX.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/womens-health" class="dropdown-group-title">Women's Health</a>
+            <a href="/hormone-optimization" class="dropdown-group-item">Hormone Therapy</a>
+            <a href="/pcos" class="dropdown-group-item">PCOS Management</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/microneedling">Microneedling</a>
+          <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+          <a href="/laser-hair-removal">Laser Hair Removal</a>
+          <a href="/tattoo-removal">Tattoo Removal</a>
+          <a href="/prp-prf">PRP / PRF</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Things We Treat
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <a href="/womens-health" class="sub-link">Women's Health</a>
+    <a href="/hormone-optimization" class="sub-link nested">Hormone Therapy</a>
+    <a href="/pcos" class="sub-link nested">PCOS Management</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/microneedling" class="sub-link">Microneedling</a>
+    <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <a href="/laser-hair-removal" class="sub-link">Laser Hair Removal</a>
+    <a href="/tattoo-removal" class="sub-link">Tattoo Removal</a>
+    <a href="/prp-prf" class="sub-link">PRP / PRF</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="wh-hero">
+  <div class="container">
+    <div class="wh-hero-content">
+      <nav class="breadcrumb" aria-label="Breadcrumb" style="justify-content:center;margin-bottom:20px;">
+        <a href="/">Home</a>
+        <span>›</span>
+        <span>Medical Services</span>
+        <span>›</span>
+        <span>Women's Health</span>
+      </nav>
+      <span class="wh-eyebrow">Women's Health -- Bedford, TX</span>
+      <h1>Your Health Deserves<br><em>Actual Attention.</em></h1>
+      <p>Women's health is complex, and a rushed 10-minute appointment rarely cuts it. At Happy Drip IV &amp; Wellness, Brittany Adams, APRN FNP-C, takes the time to actually listen -- whether you're dealing with hormone chaos, a PCOS diagnosis, thyroid issues, or just a persistent feeling that something's off.</p>
+      <div class="wh-hero-btns">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-rose">Book a Visit</a>
+        <a href="tel:6822836976" class="btn-outline-dark">Call (682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE CARDS
+     ============================================================ -->
+<section class="wh-services">
+  <div class="container">
+    <div class="wh-section-header">
+      <span class="wh-section-label">What We Offer</span>
+      <h2 class="wh-section-title">Women's Health Services at Happy Drip</h2>
+      <p style="color:#555;max-width:600px;margin:0 auto;line-height:1.7;">From hormone balancing to PCOS and thyroid management, we offer a cash-pay, no-insurance approach built around your specific labs, symptoms, and goals.</p>
+    </div>
+    <div class="wh-cards-grid">
+
+      <!-- Card 1: Hormone Balancing -->
+      <div class="wh-card">
+        <div class="wh-card-header rose-bg">
+          <span class="wh-card-tag">Hormone Health</span>
+          <span class="wh-card-icon">&#9792;</span>
+          <h2>Hormone Balancing &amp; HRT</h2>
+          <p>Lab-guided hormone therapy for perimenopause, menopause, and hormonal imbalance -- designed around your bloodwork, not a one-size-fits-all protocol.</p>
+        </div>
+        <div class="wh-card-body">
+          <ul class="wh-card-points">
+            <li><span class="wh-dot rose"></span>Comprehensive hormone panel before any treatment</li>
+            <li><span class="wh-dot rose"></span>Estrogen, progesterone, and testosterone evaluation</li>
+            <li><span class="wh-dot rose"></span>Perimenopause and menopause symptom management</li>
+            <li><span class="wh-dot rose"></span>Mood, sleep, energy, libido, and weight concerns addressed</li>
+            <li><span class="wh-dot rose"></span>Ongoing monitoring with regular follow-up labs</li>
+          </ul>
+          <a href="/hormone-optimization" class="wh-card-cta rose">Learn About Hormone Therapy &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Card 2: PCOS -->
+      <div class="wh-card">
+        <div class="wh-card-header mauve-bg">
+          <span class="wh-card-tag">Metabolic Health</span>
+          <span class="wh-card-icon">&#128200;</span>
+          <h2>PCOS Management</h2>
+          <p>A thorough approach to polycystic ovary syndrome -- from proper diagnosis and lab evaluation to medication management and lifestyle support.</p>
+        </div>
+        <div class="wh-card-body">
+          <ul class="wh-card-points">
+            <li><span class="wh-dot mauve"></span>Complete PCOS lab panel (androgens, insulin, thyroid)</li>
+            <li><span class="wh-dot mauve"></span>Irregular cycle and ovulation support</li>
+            <li><span class="wh-dot mauve"></span>Insulin resistance and metabolic management</li>
+            <li><span class="wh-dot mauve"></span>Unwanted hair growth addressed (medical + aesthetic options)</li>
+            <li><span class="wh-dot mauve"></span>Weight management integrated when appropriate</li>
+          </ul>
+          <a href="/pcos" class="wh-card-cta mauve">Learn About PCOS Care &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Card 3: Thyroid -->
+      <div class="wh-card">
+        <div class="wh-card-header dark-bg">
+          <span class="wh-card-tag">Thyroid Health</span>
+          <span class="wh-card-icon">&#128293;</span>
+          <h2>Thyroid Optimization</h2>
+          <p>Feeling exhausted, gaining weight, losing hair, or just not feeling right? Comprehensive thyroid evaluation goes beyond a basic TSH to find the real picture.</p>
+        </div>
+        <div class="wh-card-body">
+          <ul class="wh-card-points">
+            <li><span class="wh-dot dark"></span>Full thyroid panel -- TSH, Free T3, Free T4, antibodies</li>
+            <li><span class="wh-dot dark"></span>Hypothyroid and Hashimoto's management</li>
+            <li><span class="wh-dot dark"></span>Medication management and dose optimization</li>
+            <li><span class="wh-dot dark"></span>Symptom-driven approach -- labs alone don't tell the whole story</li>
+            <li><span class="wh-dot dark"></span>Hair loss, fatigue, and weight concerns taken seriously</li>
+          </ul>
+          <a href="/thyroid-optimization" class="wh-card-cta dark">Learn About Thyroid Care &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ADDITIONAL SERVICES
+     ============================================================ -->
+<section class="wh-more">
+  <div class="container">
+    <div class="wh-section-header">
+      <span class="wh-section-label">Also Available</span>
+      <h2 class="wh-section-title">More Ways We Support Women's Wellness</h2>
+    </div>
+    <div class="wh-more-grid">
+      <div class="wh-more-card">
+        <span class="wh-more-icon">&#128203;</span>
+        <h3>Preventive Lab Panels</h3>
+        <p>Comprehensive women's health bloodwork including a full metabolic panel, CBC, thyroid, hormone levels, inflammatory markers, and vitamin status -- all in one visit.</p>
+      </div>
+      <div class="wh-more-card">
+        <span class="wh-more-icon">&#9878;</span>
+        <h3>Medical Weight Management</h3>
+        <p>Hormonal imbalance, PCOS, and thyroid issues all affect weight. We integrate medical weight loss when appropriate -- including GLP-1 medications when clinically indicated.</p>
+      </div>
+      <div class="wh-more-card">
+        <span class="wh-more-icon">&#128149;</span>
+        <h3>Sexual Wellness</h3>
+        <p>Low libido, hormonal shifts, and intimacy concerns are real and treatable. We provide a judgment-free space to address women's sexual health as part of overall wellbeing.</p>
+      </div>
+      <div class="wh-more-card">
+        <span class="wh-more-icon">&#127774;</span>
+        <h3>IV Therapy for Women</h3>
+        <p>Support energy, immunity, skin health, and recovery with our targeted IV drip menu -- popular add-ons include NAD+, glutathione, and vitamin C high-dose drips.</p>
+      </div>
+      <div class="wh-more-card">
+        <span class="wh-more-icon">&#128248;</span>
+        <h3>Aesthetic Services</h3>
+        <p>Hormonal acne, PCOS-related hair growth, and skin concerns can be addressed alongside your medical care. Ask about our aesthetic menu at your visit.</p>
+      </div>
+      <div class="wh-more-card">
+        <span class="wh-more-icon">&#128138;</span>
+        <h3>Peptide Therapy</h3>
+        <p>Certain peptides can support sleep, energy, body composition, and recovery. We'll discuss whether peptide protocols are appropriate for your goals at your consultation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY US
+     ============================================================ -->
+<section class="wh-why">
+  <div class="container">
+    <div class="wh-section-header">
+      <span class="wh-section-label">Why Happy Drip</span>
+      <h2 class="wh-section-title">A Different Kind of Women's Health Visit</h2>
+    </div>
+    <div class="wh-why-grid">
+      <div class="wh-why-card">
+        <span class="wh-why-icon">&#128203;</span>
+        <h3>Led by a Woman Who Gets It</h3>
+        <p>Brittany Adams, APRN FNP-C, is a board-certified family nurse practitioner who takes women's health seriously -- your symptoms aren't "just stress" or "normal for your age."</p>
+      </div>
+      <div class="wh-why-card">
+        <span class="wh-why-icon">&#9200;</span>
+        <h3>Actual Appointment Time</h3>
+        <p>No 10-minute slots where half the time is paperwork. We make space for a real conversation about what's going on -- and what you actually want to do about it.</p>
+      </div>
+      <div class="wh-why-card">
+        <span class="wh-why-icon">&#128179;</span>
+        <h3>Cash-Pay, No Insurance Drama</h3>
+        <p>No prior authorizations, no referrals, no insurance denials on your lab work. Transparent pricing, fast access, and no paperwork between you and your care.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="wh-faq">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="wh-section-label">Got Questions?</span>
+      <h2 class="wh-section-title">Women's Health FAQ</h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Do I need a referral to be seen for women's health at Happy Drip?</button>
+        <div class="faq-a" hidden>
+          <p>Nope. You can book directly online or call us. No referral, no gatekeeper, no waiting weeks for a primary care appointment just to get sent somewhere else. We're cash-pay and open to new patients.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Can you help if I've been told my labs are "normal" but I still feel awful?</button>
+        <div class="faq-a" hidden>
+          <p>Yes -- and this is one of the most common things we hear. Standard lab reference ranges are broad, and "normal" doesn't always mean optimal. We look at your numbers in context with your symptoms and help you understand what they actually mean for how you feel day to day.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">What does a first women's health visit look like?</button>
+        <div class="faq-a" hidden>
+          <p>We start with a thorough intake -- your symptoms, health history, current medications and supplements, and your goals. We'll discuss which labs make sense to run (either ordered here or from a recent panel you bring in), and from there we build a plan together. Nothing is prescribed without evaluation first.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">I think I might be in perimenopause. Can you help?</button>
+        <div class="faq-a" hidden>
+          <p>Absolutely. Perimenopause can start in your late 30s and early 40s and shows up as irregular cycles, sleep disruption, mood swings, weight changes, brain fog, and more -- often years before your last period. We'll evaluate your hormone levels and symptoms together and discuss what options are available to help you feel more like yourself.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Do you prescribe birth control or manage OB/GYN issues?</button>
+        <div class="faq-a" hidden>
+          <p>Our focus is on hormonal health, metabolic concerns, PCOS, thyroid, and general women's wellness -- we're not a dedicated OB/GYN practice and don't perform pelvic exams or Pap smears. We're happy to work alongside your OB/GYN for complementary care, and can refer you when something is outside our scope.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">How is pricing handled?</button>
+        <div class="faq-a" hidden>
+          <p>We're a cash-pay clinic -- no insurance accepted. Visit fees and lab costs are discussed at your appointment. We believe in transparent pricing so you always know what you're paying before anything happens. Flexible payment plan options are available -- ask at your visit.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA
+     ============================================================ -->
+<section class="wh-cta">
+  <div class="container">
+    <h2>You Deserve Care That<br><em>Actually Helps.</em></h2>
+    <p>Book a women's health visit with Brittany Adams, APRN FNP-C, in Bedford, TX. Same-day and next-day appointments available. Cash-pay, no insurance, no referrals needed.</p>
+    <div class="wh-cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-white-rose">Book Online Now</a>
+      <a href="tel:6822836976" class="btn-outline-white">Call (682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNER STRIP
+     ============================================================ -->
+<section class="partner-strip" aria-label="Our partners">
+  <div class="container partner-strip-inner">
+    <span class="partner-strip-label">Trusted Partners</span>
+    <div class="partner-strip-logos">
+      <img src="images/crunch-perks.png" alt="Crunch Fitness Perks Program Official Partner" class="logo-round" />
+      <img src="images/Fullscript.png" alt="Fullscript" />
+      <img src="images/WestdaleHillsGolf.png" alt="Westdale Hills Golf" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col footer-brand">
+        <a href="/" class="footer-logo" aria-label="Happy Drip IV &amp; Wellness Home">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness" class="footer-logo-img" />
+          <div class="footer-logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Bedford's cash-pay wellness and aesthetic clinic -- no insurance, no hassle, just results.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.563 9.876v-6.988H7.898V12h2.539V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.888h-2.33v6.988A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/payment-plans">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Aesthetics -->
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+        <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        <a href="/microneedling">VAMP&#8482; Microneedling</a>
+        <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+        <a href="/laser-hair-removal">Laser Hair Removal</a>
+        <a href="/tattoo-removal">Tattoo Removal</a>
+        <a href="/prp-prf">PRP / PRF</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Zoho hidden iframe -->
+<iframe id="zohoNewsletterFrame" name="zohoNewsletterFrame" style="display:none;" aria-hidden="true"></iframe>
+
+<script src="js/script.js?v=20260630"></script>
+</body>
+</html>
