@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hair Rejuvenation | PRP, Exosomes, Scalp Microneedling | Happy Drip IV &amp; Wellness — Bedford, TX</title>
+  <meta name="description" content="Comprehensive hair rejuvenation in Bedford, TX. Scalp microneedling, PRP injections, exosomes, GHK-Cu peptides, red light therapy, and hormonal optimization. Administered by Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/hair-rejuvenation" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
+  <style>
+    /* ======================================================
+       HAIR REJUVENATION — PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --hr-green:  #1e6b4a;
+      --hr-gold:   #c49a2a;
+      --hr-navy:   #1a2744;
+      --hr-sage:   #e8f2ec;
+      --hr-cream:  #fdf9f0;
+      --hr-warm:   #f7f3eb;
+    }
+
+    /* ---- Hero ---- */
+    .hr-hero {
+      background: linear-gradient(135deg, #e8f2ec 0%, #f7f3eb 55%, #fdf9f0 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .hr-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -100px;
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(30,107,74,0.10) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hr-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -60px; left: -80px;
+      width: 380px; height: 380px;
+      background: radial-gradient(circle, rgba(196,154,42,0.08) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hr-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      min-height: 520px;
+      position: relative; z-index: 1;
+    }
+    .hr-hero-content { padding: 72px 48px 72px 24px; }
+    .breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; color: rgba(0,0,0,0.45); margin-bottom: 20px; flex-wrap: wrap;
+    }
+    .breadcrumb a { color: var(--hr-green); text-decoration: none; }
+    .breadcrumb span { color: rgba(0,0,0,0.3); }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.72rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--hr-green);
+      background: var(--hr-sage);
+      border: 1.5px solid rgba(30,107,74,0.25);
+      padding: 6px 18px; border-radius: 40px;
+      margin-bottom: 20px;
+    }
+    .hr-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--hr-navy);
+      line-height: 1.12;
+      margin-bottom: 20px;
+    }
+    .hr-hero-content h1 em {
+      font-style: italic;
+      background: linear-gradient(135deg, var(--hr-green), var(--hr-gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hr-hero-tagline {
+      font-size: 1.05rem;
+      color: #3a4a3a;
+      line-height: 1.7;
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+    .hr-hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-green {
+      display: inline-flex; align-items: center;
+      background: var(--hr-green); color: #fff;
+      font-weight: 800; font-size: 1rem;
+      padding: 15px 32px; border-radius: 50px;
+      text-decoration: none; transition: background 0.2s;
+      border: 2px solid var(--hr-green);
+    }
+    .btn-green:hover { background: #165a3c; }
+    .btn-outline-green {
+      display: inline-flex; align-items: center;
+      background: transparent; color: var(--hr-green);
+      font-weight: 800; font-size: 1rem;
+      padding: 13px 32px; border-radius: 50px;
+      border: 2px solid rgba(30,107,74,0.4);
+      text-decoration: none; transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline-green:hover { background: var(--hr-green); color: #fff; }
+    .hr-hero-badges {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 28px;
+    }
+    .hr-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff;
+      border: 1.5px solid rgba(30,107,74,0.2);
+      border-radius: 40px;
+      padding: 7px 14px;
+      font-size: 0.72rem; font-weight: 700;
+      color: var(--hr-navy);
+    }
+    .hr-badge-dot {
+      width: 7px; height: 7px; border-radius: 50%;
+      background: var(--hr-green); flex-shrink: 0;
+    }
+    .hr-hero-img {
+      display: flex; align-items: center; justify-content: center;
+      padding: 40px 24px 40px 0;
+    }
+    .hr-hero-img img {
+      width: 100%; max-width: 460px; border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(30,107,74,0.15);
+    }
+    @media (max-width: 860px) {
+      .hr-hero-inner { grid-template-columns: 1fr; }
+      .hr-hero-content { padding: 56px 24px 32px; }
+      .hr-hero-img { padding: 0 24px 48px; }
+      .hr-hero-img img { max-width: 100%; }
+    }
+
+    /* ---- Stat Bar ---- */
+    .hr-stat-bar { background: var(--hr-navy); padding: 28px 0; }
+    .hr-stat-row { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .hr-stat { text-align: center; }
+    .hr-stat .sn { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--hr-gold); display: block; line-height: 1; }
+    .hr-stat .sl { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-top: 4px; }
+
+    /* ---- Why Hair Loss ---- */
+    .why-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .why-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+    .why-text .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--hr-green); margin-bottom: 12px;
+    }
+    .why-text h2 {
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      color: var(--hr-navy); margin-bottom: 18px; line-height: 1.2;
+    }
+    .why-text p { color: #4a5570; font-size: 0.97rem; line-height: 1.8; margin-bottom: 16px; }
+    .why-text p:last-child { margin-bottom: 0; }
+    .cause-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 28px;
+    }
+    .cause-pill {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--hr-sage);
+      border: 1px solid rgba(30,107,74,0.15);
+      border-radius: 12px; padding: 12px 16px;
+      font-size: 0.84rem; font-weight: 700; color: var(--hr-navy);
+    }
+    .cause-pill span { font-size: 1.2rem; }
+    .why-visual {
+      background: linear-gradient(135deg, var(--hr-sage) 0%, var(--hr-cream) 100%);
+      border-radius: 24px; padding: 40px 36px;
+      border: 1.5px solid rgba(30,107,74,0.15);
+    }
+    .why-visual h3 { color: var(--hr-navy); font-size: 1.1rem; margin-bottom: 20px; }
+    .why-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .why-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.9rem; color: #4a5570; line-height: 1.6;
+    }
+    .why-list li::before {
+      content: '';
+      flex-shrink: 0; width: 8px; height: 8px; border-radius: 50%;
+      background: var(--hr-green); margin-top: 6px;
+    }
+    @media (max-width: 860px) { .why-inner { grid-template-columns: 1fr; gap: 40px; } }
+    @media (max-width: 560px) { .cause-grid { grid-template-columns: 1fr; } }
+
+    /* ---- Treatments ---- */
+    .treat-section {
+      padding: 88px 0 80px;
+      background: var(--hr-warm);
+    }
+    .treat-header { text-align: center; margin-bottom: 52px; }
+    .treat-header .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--hr-green); margin-bottom: 12px;
+    }
+    .treat-header h2 { color: var(--hr-navy); font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 14px; }
+    .treat-header p { color: #4a5570; font-size: 1rem; max-width: 620px; margin: 0 auto; line-height: 1.7; }
+    .treat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .treat-card {
+      background: #fff;
+      border-radius: 20px;
+      border: 1.5px solid rgba(30,107,74,0.1);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      padding: 32px 28px 28px;
+      transition: box-shadow 0.25s, transform 0.25s;
+      position: relative;
+    }
+    .treat-card:hover {
+      box-shadow: 0 12px 40px rgba(30,107,74,0.12);
+      transform: translateY(-3px);
+    }
+    .treat-icon {
+      width: 52px; height: 52px; border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 18px;
+      background: var(--hr-sage);
+    }
+    .treat-tag {
+      display: inline-block;
+      font-size: 0.62rem; font-weight: 800; letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 10px; border-radius: 40px;
+      margin-bottom: 12px;
+      background: var(--hr-sage); color: var(--hr-green);
+      border: 1px solid rgba(30,107,74,0.2);
+    }
+    .treat-tag.special {
+      background: #fef3e2; color: #a06020;
+      border-color: rgba(160,96,32,0.25);
+    }
+    .treat-card h3 { font-size: 1.1rem; color: var(--hr-navy); margin-bottom: 10px; line-height: 1.25; }
+    .treat-card p { color: #4a5570; font-size: 0.87rem; line-height: 1.75; margin-bottom: 14px; }
+    .treat-bullets { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+    .treat-bullets li {
+      display: flex; align-items: flex-start; gap: 8px;
+      font-size: 0.83rem; color: #4a5570; line-height: 1.5;
+    }
+    .treat-bullets li::before {
+      content: '';
+      flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%;
+      background: var(--hr-green); margin-top: 6px;
+    }
+    .special-order-badge {
+      display: flex; align-items: center; gap: 8px;
+      background: #fef3e2;
+      border: 1px solid rgba(160,96,32,0.25);
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-top: 16px;
+      font-size: 0.78rem; color: #8a5010; line-height: 1.5;
+    }
+    .special-order-badge::before { content: '⏱'; font-size: 1rem; flex-shrink: 0; }
+    @media (max-width: 1000px) { .treat-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .treat-grid { grid-template-columns: 1fr; } }
+
+    /* ---- Approach ---- */
+    .approach-section {
+      padding: 88px 0 80px;
+      background: #fff;
+    }
+    .approach-header { text-align: center; margin-bottom: 52px; }
+    .approach-header .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--hr-green); margin-bottom: 12px;
+    }
+    .approach-header h2 { color: var(--hr-navy); font-size: clamp(1.5rem, 3vw, 2.1rem); }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 28px;
+      position: relative;
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px; left: calc(12.5% + 14px); right: calc(12.5% + 14px);
+      height: 2px;
+      background: linear-gradient(90deg, var(--hr-green), var(--hr-gold));
+      z-index: 0;
+    }
+    .process-step { position: relative; z-index: 1; text-align: center; }
+    .step-num {
+      width: 64px; height: 64px; border-radius: 50%;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 18px;
+    }
+    .process-step:nth-child(1) .step-num { background: var(--hr-green); box-shadow: 0 4px 18px rgba(30,107,74,0.35); }
+    .process-step:nth-child(2) .step-num { background: #2d8a60; box-shadow: 0 4px 18px rgba(45,138,96,0.3); }
+    .process-step:nth-child(3) .step-num { background: #a07020; box-shadow: 0 4px 18px rgba(160,112,32,0.3); }
+    .process-step:nth-child(4) .step-num { background: var(--hr-gold); box-shadow: 0 4px 18px rgba(196,154,42,0.35); }
+    .process-step h3 { color: var(--hr-navy); font-size: 1rem; margin-bottom: 8px; }
+    .process-step p { color: #4a5570; font-size: 0.84rem; line-height: 1.65; margin: 0; }
+    @media (max-width: 860px) {
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+      .process-steps::before { display: none; }
+    }
+    @media (max-width: 480px) { .process-steps { grid-template-columns: 1fr; } }
+
+    /* ---- Who It's For ---- */
+    .who-section {
+      padding: 88px 0 80px;
+      background: var(--hr-navy);
+    }
+    .who-label { display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 12px; }
+    .who-section h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 16px; }
+    .who-intro { color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.7; margin-bottom: 44px; max-width: 600px; }
+    .who-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .who-col {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px; padding: 32px 28px;
+    }
+    .who-col h3 { font-size: 0.95rem; font-weight: 800; color: var(--hr-gold); margin-bottom: 18px; }
+    .who-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .who-col li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.55;
+    }
+    .who-dot {
+      flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.65rem; font-weight: 800; margin-top: 1px; color: #fff;
+    }
+    .who-dot.yes { background: var(--hr-green); }
+    .who-dot.no  { background: #ef4444; }
+    @media (max-width: 640px) { .who-grid { grid-template-columns: 1fr; } }
+
+    /* ---- FAQ ---- */
+    .faq-section { padding: 88px 0 80px; background: #fff; }
+    .faq-header { text-align: center; margin-bottom: 48px; }
+    .faq-header .section-label {
+      display: block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--hr-green); margin-bottom: 12px;
+    }
+    .faq-header h2 { color: var(--hr-navy); font-size: clamp(1.5rem, 3vw, 2.1rem); }
+    .faq-list { max-width: 760px; margin: 0 auto; }
+
+    /* ---- CTA ---- */
+    .hr-cta {
+      padding: 88px 0 80px;
+      background: linear-gradient(135deg, var(--hr-sage) 0%, var(--hr-cream) 50%, #fdf9f0 100%);
+      text-align: center;
+    }
+    .hr-cta h2 { color: var(--hr-navy); margin-bottom: 16px; font-size: clamp(1.6rem, 3.5vw, 2.4rem); }
+    .hr-cta p { color: #3a4a3a; font-size: 1.05rem; max-width: 560px; margin: 0 auto 36px; line-height: 1.7; }
+    .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 640px) {
+      .why-section,
+      .treat-section,
+      .approach-section,
+      .who-section,
+      .faq-section,
+      .hr-cta { padding: 60px 0; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ANNOUNCEMENT BAR -->
+<div class="announcement-bar">
+  🌟 Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/microneedling">Microneedling</a>
+          <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Things We Treat
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/microneedling" class="sub-link">Microneedling</a>
+    <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hr-hero">
+  <div class="container">
+    <div class="hr-hero-inner">
+      <div class="hr-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>›</span>
+          <a href="/jeuveau">Aesthetics</a>
+          <span>›</span>
+          <span>Hair Rejuvenation</span>
+        </nav>
+        <span class="eyebrow">Hair Rejuvenation &mdash; Bedford, TX</span>
+        <h1>Restore Your Hair.<br><em>Root Cause First.</em></h1>
+        <p class="hr-hero-tagline">Hair loss has many causes -- and we treat all of them. We combine proven in-office therapies with lab-driven medical optimization so your hair has every advantage to grow back thicker, fuller, and healthier.</p>
+        <div class="hr-hero-btns">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-green">Book a Consultation</a>
+          <a href="tel:6822836976" class="btn-outline-green">(682) 283-6976</a>
+        </div>
+        <div class="hr-hero-badges">
+          <span class="hr-badge"><span class="hr-badge-dot"></span>Root cause approach</span>
+          <span class="hr-badge"><span class="hr-badge-dot"></span>Men &amp; women</span>
+          <span class="hr-badge"><span class="hr-badge-dot"></span>No surgery</span>
+        </div>
+      </div>
+      <div class="hr-hero-img">
+        <img src="images/hairloss.png" alt="Hair rejuvenation consultation at Happy Drip IV &amp; Wellness in Bedford, TX" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STAT BAR -->
+<div class="hr-stat-bar">
+  <div class="container">
+    <div class="hr-stat-row">
+      <div class="hr-stat">
+        <span class="sn">7</span>
+        <span class="sl">Treatment pathways</span>
+      </div>
+      <div class="hr-stat">
+        <span class="sn">Men &amp; Women</span>
+        <span class="sl">All hair loss patterns</span>
+      </div>
+      <div class="hr-stat">
+        <span class="sn">3–6 mo</span>
+        <span class="sl">When growth becomes visible</span>
+      </div>
+      <div class="hr-stat">
+        <span class="sn">Root Cause</span>
+        <span class="sl">We treat why, not just what</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHY HAIR LOSS HAPPENS -->
+<section class="why-section">
+  <div class="container">
+    <div class="why-inner">
+      <div class="why-text">
+        <span class="section-label">Understanding Hair Loss</span>
+        <h2>There Is Almost Always a "Why"</h2>
+        <p>Most hair loss is not random. It is driven by identifiable -- and often treatable -- root causes: hormonal shifts, nutritional deficiencies, scalp inflammation, circulation issues, or genetics. Treating the surface without addressing the cause leads to temporary results at best.</p>
+        <p>At Happy Drip IV &amp; Wellness, we take a comprehensive approach: identify contributing factors through labs and history, then layer the therapies most likely to address your specific pattern and cause.</p>
+        <div class="cause-grid">
+          <div class="cause-pill"><span>⚖️</span>Hormonal imbalance</div>
+          <div class="cause-pill"><span>🧬</span>Androgenetic pattern</div>
+          <div class="cause-pill"><span>🩸</span>Iron or ferritin deficiency</div>
+          <div class="cause-pill"><span>🫧</span>Thyroid dysfunction</div>
+          <div class="cause-pill"><span>😓</span>Chronic stress / cortisol</div>
+          <div class="cause-pill"><span>💊</span>Medication side effects</div>
+          <div class="cause-pill"><span>🔬</span>Scalp inflammation</div>
+          <div class="cause-pill"><span>🥗</span>Nutritional gaps</div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <h3>Signs We Look For</h3>
+        <ul class="why-list">
+          <li>Gradual thinning at the crown or temples</li>
+          <li>Wider part line or visible scalp</li>
+          <li>Excessive shedding (more than ~100 strands/day)</li>
+          <li>Hairline recession at the front</li>
+          <li>Diffuse thinning across the entire scalp</li>
+          <li>Brittle, breakage-prone hair</li>
+          <li>Patchy loss (may indicate alopecia areata)</li>
+          <li>Hair loss alongside fatigue, weight changes, or skin changes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEVEN TREATMENT PATHWAYS -->
+<section class="treat-section">
+  <div class="container">
+    <div class="treat-header">
+      <span class="section-label">Our Treatment Menu</span>
+      <h2>Seven Pathways to Fuller Hair</h2>
+      <p>We customize every hair rejuvenation plan. Most patients benefit from a combination of two or more approaches. Your provider will recommend the right stack at your consultation.</p>
+    </div>
+    <div class="treat-grid">
+
+      <!-- Scalp Microneedling -->
+      <div class="treat-card">
+        <div class="treat-icon">🪡</div>
+        <span class="treat-tag">In-Office</span>
+        <h3>Scalp Microneedling</h3>
+        <p>Controlled micro-channels in the scalp trigger a healing cascade -- increased blood flow, growth factor release, and stem cell activation in the hair follicle. A proven mechanical stimulus for dormant follicles.</p>
+        <ul class="treat-bullets">
+          <li>Stimulates follicle regeneration directly</li>
+          <li>Enhances absorption of topicals applied during session</li>
+          <li>Often combined with PRP or exosomes for maximum effect</li>
+          <li>Series of 4--6 sessions recommended</li>
+        </ul>
+      </div>
+
+      <!-- PRP -->
+      <div class="treat-card">
+        <div class="treat-icon">🩸</div>
+        <span class="treat-tag">In-Office</span>
+        <h3>PRP Injections</h3>
+        <p>Platelet-rich plasma is drawn from your own blood, concentrated, and injected directly into the scalp. The growth factors in PRP signal follicles to exit the resting phase and return to active growth.</p>
+        <ul class="treat-bullets">
+          <li>Uses your own biology -- no foreign substances</li>
+          <li>Directly activates hair follicle stem cells</li>
+          <li>Can be used alone or with scalp microneedling</li>
+          <li>Results continue building for 3--6 months</li>
+        </ul>
+      </div>
+
+      <!-- Exosomes -->
+      <div class="treat-card">
+        <div class="treat-icon">⚗️</div>
+        <span class="treat-tag special">Special Order</span>
+        <h3>Exosome Therapy</h3>
+        <p>Exosomes deliver billions of growth factors and regenerative signals directly to follicle cells -- without a blood draw. They carry more signaling molecules per vial than PRP and have a potent anti-inflammatory effect that reduces scalp conditions contributing to loss.</p>
+        <ul class="treat-bullets">
+          <li>Billions of growth factors per treatment</li>
+          <li>Especially effective for inflammatory hair loss</li>
+          <li>No blood draw required</li>
+          <li>Can be combined with microneedling for deeper delivery</li>
+        </ul>
+        <div class="special-order-badge">
+          Exosomes are special-ordered and typically take <strong>2--3 weeks</strong> to receive. Plan ahead when booking.
+        </div>
+      </div>
+
+      <!-- GHK-Cu / Peptides -->
+      <div class="treat-card">
+        <div class="treat-icon">🧬</div>
+        <span class="treat-tag">Peptide Protocol</span>
+        <h3>GHK-Cu &amp; Peptides</h3>
+        <p>GHK-Cu (copper peptide) is one of the most studied peptides for hair growth -- it stimulates follicle enlargement, prolongs the growth phase, and has strong anti-inflammatory properties. We offer both topical and injectable peptide protocols tailored to your needs.</p>
+        <ul class="treat-bullets">
+          <li>Enlarges miniaturized follicles</li>
+          <li>Extends the anagen (growth) phase</li>
+          <li>Reduces scalp inflammation</li>
+          <li>Pairs well with microneedling for enhanced penetration</li>
+        </ul>
+      </div>
+
+      <!-- Red Light Therapy -->
+      <div class="treat-card">
+        <div class="treat-icon">💡</div>
+        <span class="treat-tag">In-Office</span>
+        <h3>Red Light Therapy</h3>
+        <p>Low-level laser / red light (LLLT) energizes hair follicle cells by stimulating mitochondrial activity. More energy in the follicle cell means stronger, more active growth. FDA-cleared for androgenetic alopecia in both men and women.</p>
+        <ul class="treat-bullets">
+          <li>Stimulates mitochondrial function in follicle cells</li>
+          <li>Improves scalp circulation</li>
+          <li>Painless, non-invasive -- zero downtime</li>
+          <li>Complements all other pathways</li>
+        </ul>
+      </div>
+
+      <!-- Hormone / Vitamin / Lab Optimization -->
+      <div class="treat-card">
+        <div class="treat-icon">🔬</div>
+        <span class="treat-tag">Medical</span>
+        <h3>Hormone, Vitamin &amp; Lab Optimization</h3>
+        <p>Hair loss is frequently driven by something systemic -- low ferritin, thyroid dysfunction, elevated androgens, or vitamin D deficiency. We run a comprehensive lab panel, interpret results in context, and correct deficiencies that are silently blocking your hair growth.</p>
+        <ul class="treat-bullets">
+          <li>Full thyroid panel (TSH, free T3, free T4)</li>
+          <li>Ferritin, iron, and complete blood count</li>
+          <li>Hormonal workup (testosterone, DHEA, estrogen)</li>
+          <li>Vitamin D, B12, zinc, and more</li>
+        </ul>
+      </div>
+
+      <!-- Prescription Medications -->
+      <div class="treat-card">
+        <div class="treat-icon">💊</div>
+        <span class="treat-tag">Prescription</span>
+        <h3>Prescription Medications</h3>
+        <p>When appropriate, we can prescribe evidence-based medications that complement your non-prescription treatments. These may include topical or oral options depending on your hair loss pattern, labs, and medical history.</p>
+        <ul class="treat-bullets">
+          <li>Topical and oral options available</li>
+          <li>Tailored to your pattern and lab results</li>
+          <li>Managed alongside other therapies for synergy</li>
+          <li>Ongoing monitoring included in your plan</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- OUR APPROACH -->
+<section class="approach-section">
+  <div class="container">
+    <div class="approach-header">
+      <span class="section-label">How It Works</span>
+      <h2>Your Hair Rejuvenation Journey</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h3>Consultation &amp; Labs</h3>
+        <p>We review your history, pattern, and timeline. Labs are ordered to rule out systemic causes and identify nutritional or hormonal drivers.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h3>Personalized Plan</h3>
+        <p>Your provider builds a customized protocol -- selecting the right combination of in-office treatments, peptides, and medical management for your specific case.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h3>Treatment Series</h3>
+        <p>In-office sessions are spaced 4--6 weeks apart. At-home protocols run concurrently. We adjust as your hair responds over the first few months.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h3>Monitor &amp; Maintain</h3>
+        <p>Most patients see visible improvement at 3--6 months. We reassess labs, adjust the plan, and establish a maintenance cadence to hold and continue your results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="who-section">
+  <div class="container">
+    <span class="who-label">Is This Right for Me?</span>
+    <h2>Good Candidates &amp; Considerations</h2>
+    <p class="who-intro">Hair rejuvenation works for a wide range of patterns and causes. Here's a general guide -- your provider will give a personalized assessment at your consultation.</p>
+    <div class="who-grid">
+      <div class="who-col">
+        <h3>Great Candidates</h3>
+        <ul>
+          <li><span class="who-dot yes">✓</span>Gradual thinning or diffuse hair loss</li>
+          <li><span class="who-dot yes">✓</span>Androgenetic alopecia (male or female pattern)</li>
+          <li><span class="who-dot yes">✓</span>Post-partum hair shedding</li>
+          <li><span class="who-dot yes">✓</span>Hair loss tied to hormonal changes or deficiencies</li>
+          <li><span class="who-dot yes">✓</span>Early-to-moderate hair loss (follicles still present)</li>
+          <li><span class="who-dot yes">✓</span>Patients wanting to avoid or delay medications</li>
+          <li><span class="who-dot yes">✓</span>Those already on medications wanting to boost results</li>
+        </ul>
+      </div>
+      <div class="who-col">
+        <h3>When to Discuss First</h3>
+        <ul>
+          <li><span class="who-dot no">!</span>Completely bald areas with no follicular activity (follicles must be present)</li>
+          <li><span class="who-dot no">!</span>Active scalp infections or open wounds</li>
+          <li><span class="who-dot no">!</span>Certain autoimmune conditions (discuss at consult)</li>
+          <li><span class="who-dot no">!</span>Blood thinning medications prior to PRP (temporary pause may be needed)</li>
+          <li><span class="who-dot no">!</span>Pregnancy (some treatments deferred)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="faq-header">
+      <span class="section-label">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How long before I see results?
+        </button>
+        <div class="faq-a" hidden><p>Hair grows slowly -- most patients begin to notice reduced shedding within 4--8 weeks, with visible new growth and density improvements at 3--6 months. A full response to a treatment series is typically assessed at 6 months. Results continue to build with ongoing maintenance.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do I need all seven treatments?
+        </button>
+        <div class="faq-a" hidden><p>No. Most patients use a combination of 2--4 pathways depending on their specific cause and goals. For example, someone with androgenetic alopecia might do scalp microneedling + PRP + a prescription medication. Someone with post-partum loss driven by nutritional deficiency might focus on lab correction + red light therapy. Your provider will recommend the right stack for you.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Why do exosomes require a 2--3 week wait?
+        </button>
+        <div class="faq-a" hidden><p>Exosomes are a specialty biologic product that must be special-ordered and are not kept in stock. Once ordered, they typically arrive in 2--3 weeks. We recommend booking your consultation first so we can order in time for your first treatment session -- you won't be waiting idle; we'll use the time to complete labs and finalize your plan.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Is scalp microneedling painful?
+        </button>
+        <div class="faq-a" hidden><p>A topical numbing cream is applied beforehand, making the procedure comfortable for most patients. The scalp is more sensitive than facial skin, so some mild pressure and tingling is normal. Most patients rate the discomfort as a 2--3 out of 10 after numbing.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Can women be treated, or is this just for men?
+        </button>
+        <div class="faq-a" hidden><p>Absolutely -- we treat both men and women. Female pattern hair loss is extremely common, particularly around hormonal transitions (post-partum, perimenopause, thyroid changes). Many of our treatment pathways, including PRP, exosomes, GHK-Cu, red light therapy, and lab optimization, are equally effective regardless of sex.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do I need labs before starting?
+        </button>
+        <div class="faq-a" hidden><p>We strongly recommend labs before beginning any hair rejuvenation program. Treating the surface without ruling out a correctable root cause (low ferritin, thyroid dysfunction, hormonal imbalance) means you'll likely get partial results at best. Labs help us design the most targeted and effective protocol for your situation.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER STRIP -->
+<section class="partner-strip" aria-label="Our partners">
+  <div class="container partner-strip-inner">
+    <span class="partner-strip-label">Trusted Partners</span>
+    <div class="partner-strip-logos">
+      <img src="images/crunch-perks.png" alt="Crunch Fitness Perks Program Official Partner" class="logo-round" />
+      <img src="images/Fullscript.png" alt="Fullscript" />
+      <img src="images/WestdaleHillsGolf.png" alt="Westdale Hills Golf" />
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="hr-cta">
+  <div class="container">
+    <h2>Ready to Stop Losing and Start Growing?</h2>
+    <p>Book a consultation with Brittany Adams, APRN FNP-C. We'll identify your root cause, order labs if needed, and build a personalized hair rejuvenation plan around your specific pattern and goals.</p>
+    <div class="cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-green" style="font-size:1.05rem;padding:16px 36px;">Book Your Consultation</a>
+      <a href="tel:6822836976" class="btn-outline-green" style="font-size:1.05rem;padding:16px 36px;">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+        <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        <a href="/microneedling">Microneedling</a>
+        <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+      </div>
+
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js?v=20260630"></script>
+</body>
+</html>
