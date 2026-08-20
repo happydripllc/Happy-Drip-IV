@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laser Hair Removal Bedford TX | DFW Metroplex | Happy Drip IV &amp; Wellness</title>
+  <meta name="description" content="Permanent laser hair removal in Bedford, TX serving Hurst, Euless, Colleyville, Grapevine, and the DFW Metroplex. Smooth, lasting results administered by Brittany Adams, APRN FNP-C at Happy Drip IV &amp; Wellness." />
+  <link rel="canonical" href="https://www.happydripiv.com/laser-hair-removal" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
+  <style>
+    /* ======================================================
+       LASER HAIR REMOVAL -- PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --lhr-violet:  #6741d9;
+      --lhr-violet2: #8b62f7;
+      --lhr-rose:    #d96182;
+      --lhr-light:   #f0eaff;
+      --lhr-light2:  #fce8ef;
+      --lhr-dark:    #2a1254;
+    }
+
+    /* ---- Hero ---- */
+    .lhr-hero {
+      background: linear-gradient(135deg, #f0eaff 0%, #fce8ef 50%, #ede8fc 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .lhr-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -100px;
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(103,65,217,0.15) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .lhr-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -50px; left: -70px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(217,97,130,0.12) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .lhr-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 48px;
+      padding: 80px 0;
+    }
+    .lhr-hero-content .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--lhr-violet);
+      background: rgba(103,65,217,0.1);
+      border-radius: 20px;
+      padding: 5px 14px;
+      margin-bottom: 18px;
+    }
+    .lhr-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: var(--lhr-dark);
+    }
+    .lhr-hero-content h1 em {
+      color: var(--lhr-violet);
+      font-style: italic;
+    }
+    .lhr-hero-tagline {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 32px;
+    }
+    .lhr-hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .lhr-hero-img img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(103,65,217,0.2);
+    }
+
+    /* ---- What Section ---- */
+    .lhr-what {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .lhr-what-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .lhr-what-img img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    }
+    .lhr-what-content .section-eyebrow {
+      color: var(--lhr-violet);
+    }
+    .lhr-what-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .lhr-stat {
+      background: var(--lhr-light);
+      border-radius: 12px;
+      padding: 18px;
+      text-align: center;
+    }
+    .lhr-stat .stat-num {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--lhr-violet);
+      font-family: var(--font-heading);
+    }
+    .lhr-stat .stat-label {
+      font-size: 0.82rem;
+      color: #555;
+      line-height: 1.3;
+    }
+
+    /* ---- Area Cards ---- */
+    .lhr-areas {
+      background: var(--lhr-light);
+      padding: 80px 0;
+    }
+    .lhr-areas-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .lhr-area-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--lhr-violet);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .lhr-area-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(103,65,217,0.15);
+    }
+    .lhr-area-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .lhr-area-card h3 {
+      font-size: 1.15rem;
+      margin-bottom: 8px;
+      color: var(--lhr-dark);
+    }
+    .lhr-area-card p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ---- How It Works ---- */
+    .lhr-how {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .lhr-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .lhr-step {
+      text-align: center;
+    }
+    .lhr-step-num {
+      width: 52px;
+      height: 52px;
+      background: var(--lhr-violet);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .lhr-step h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      color: var(--lhr-dark);
+    }
+    .lhr-step p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ---- Service Area ---- */
+    .lhr-service-area {
+      background: var(--lhr-dark);
+      color: #fff;
+      padding: 60px 0;
+    }
+    .lhr-service-area h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .lhr-service-area h2 em {
+      color: var(--lhr-violet2);
+    }
+    .lhr-service-area p {
+      text-align: center;
+      color: rgba(255,255,255,0.8);
+      max-width: 680px;
+      margin: 0 auto 32px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .lhr-city-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .lhr-city-chip {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 24px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ---- Pricing ---- */
+    .lhr-pricing {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .lhr-pricing-callout {
+      background: linear-gradient(135deg, var(--lhr-light) 0%, var(--lhr-light2) 100%);
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      margin-top: 32px;
+      border: 2px solid rgba(103,65,217,0.15);
+    }
+    .lhr-pricing-callout .price-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--lhr-violet);
+      margin-bottom: 12px;
+    }
+    .lhr-pricing-callout h3 {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+      color: var(--lhr-dark);
+    }
+    .lhr-pricing-callout p {
+      max-width: 600px;
+      margin: 0 auto 28px;
+      color: #555;
+      line-height: 1.7;
+    }
+    .lhr-price-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ---- FAQ ---- */
+    .lhr-faq {
+      background: var(--lhr-light);
+      padding: 80px 0;
+    }
+
+    /* ---- Final CTA ---- */
+    .lhr-cta {
+      background: linear-gradient(135deg, var(--lhr-violet) 0%, var(--lhr-rose) 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .lhr-cta h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 16px;
+    }
+    .lhr-cta h2 em { color: rgba(255,255,255,0.85); font-style: italic; }
+    .lhr-cta p {
+      color: rgba(255,255,255,0.88);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .lhr-cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .lhr-cta .btn-outline {
+      border-color: rgba(255,255,255,0.6);
+      color: #fff;
+    }
+    .lhr-cta .btn-outline:hover {
+      background: rgba(255,255,255,0.12);
+    }
+
+    @media (max-width: 900px) {
+      .lhr-hero-inner,
+      .lhr-what-grid { grid-template-columns: 1fr; }
+      .lhr-hero-img { order: -1; }
+      .lhr-steps { grid-template-columns: repeat(2, 1fr); }
+      .lhr-areas-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .lhr-steps,
+      .lhr-areas-grid { grid-template-columns: 1fr; }
+      .lhr-what-stats { grid-template-columns: repeat(2, 1fr); }
+      .lhr-pricing-callout { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  Serving Bedford, Hurst, Euless, Colleyville, Grapevine, and the DFW Metroplex.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/microneedling">Microneedling</a>
+          <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+          <a href="/laser-hair-removal">Laser Hair Removal</a>
+          <a href="/tattoo-removal">Tattoo Removal</a>
+          <a href="/prp-prf">PRP / PRF</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Things We Treat
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/microneedling" class="sub-link">Microneedling</a>
+    <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <a href="/laser-hair-removal" class="sub-link">Laser Hair Removal</a>
+    <a href="/tattoo-removal" class="sub-link">Tattoo Removal</a>
+    <a href="/prp-prf" class="sub-link">PRP / PRF</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="lhr-hero">
+  <div class="container">
+    <div class="lhr-hero-inner">
+
+      <div class="lhr-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>›</span>
+          <span>Aesthetics</span>
+          <span>›</span>
+          <span>Laser Hair Removal</span>
+        </nav>
+        <span class="eyebrow">Laser Hair Removal -- Bedford, TX &amp; DFW</span>
+        <h1>Say Goodbye to Razors.<br><em>For Good.</em></h1>
+        <p class="lhr-hero-tagline">Tired of the endless shave-wax-repeat cycle? Laser hair removal at Happy Drip IV &amp; Wellness delivers smooth, long-lasting results -- so you can spend less time in front of the bathroom mirror and more time doing literally anything else.</p>
+        <div class="lhr-hero-btns">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--lhr-violet);border-color:var(--lhr-violet);font-size:1rem;padding:15px 32px;">Book a Consultation</a>
+          <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--lhr-violet);color:var(--lhr-violet);">(682) 283-6976</a>
+        </div>
+      </div>
+
+      <div class="lhr-hero-img">
+        <img src="images/wedding-laser.png" alt="Laser hair removal treatment at Happy Drip IV &amp; Wellness in Bedford, TX" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT IS LASER HAIR REMOVAL
+     ============================================================ -->
+<section class="lhr-what">
+  <div class="container">
+    <div class="lhr-what-grid">
+
+      <div class="lhr-what-img">
+        <img src="images/clinic.jpg" alt="Treatment room at Happy Drip IV and Wellness wellness clinic in Bedford TX" />
+      </div>
+
+      <div class="lhr-what-content">
+        <span class="section-eyebrow" style="color:var(--lhr-violet);">How It Works</span>
+        <h2>The Science Behind <em>Smooth Skin</em></h2>
+        <p>Laser hair removal works through a process called selective photothermolysis. In plain English: the laser targets the pigment (melanin) inside each hair follicle, heats it up, and damages the follicle enough to significantly slow -- or permanently stop -- regrowth. The surrounding skin stays completely unaffected.</p>
+        <p>Because hair grows in cycles, multiple sessions are needed to catch follicles in their active growth phase. Most clients see 70--90% permanent reduction after a full treatment series. Maintenance sessions can address any stragglers that pop back up.</p>
+        <p>At Happy Drip IV &amp; Wellness, every laser treatment is performed or directly supervised by Brittany Adams, APRN FNP-C -- not a random technician. Your skin (and your results) are in clinical hands.</p>
+        <div class="lhr-what-stats">
+          <div class="lhr-stat">
+            <span class="stat-num">6--8</span>
+            <span class="stat-label">Sessions for Best Results</span>
+          </div>
+          <div class="lhr-stat">
+            <span class="stat-num">4--6</span>
+            <span class="stat-label">Weeks Between Sessions</span>
+          </div>
+          <div class="lhr-stat">
+            <span class="stat-num">70--90%</span>
+            <span class="stat-label">Avg. Permanent Reduction</span>
+          </div>
+          <div class="lhr-stat">
+            <span class="stat-num">0</span>
+            <span class="stat-label">Days of Downtime</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TREATMENT AREAS
+     ============================================================ -->
+<section class="lhr-areas">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--lhr-violet);">Treatment Zones</span>
+      <h2 class="section-title">Where Can We <em>Treat?</em></h2>
+      <p class="section-intro" style="margin:0 auto 0;">Pretty much anywhere you have unwanted hair. Here are the most popular treatment areas we offer at our Bedford, TX clinic:</p>
+    </div>
+    <div class="lhr-areas-grid">
+      <div class="lhr-area-card">
+        <span class="lhr-area-icon">🦵</span>
+        <h3>Legs</h3>
+        <p>Full legs or lower legs only -- ditch the razor permanently and show off silky smooth skin year-round.</p>
+      </div>
+      <div class="lhr-area-card">
+        <span class="lhr-area-icon">💪</span>
+        <h3>Underarms</h3>
+        <p>One of our most popular areas. Fewer sessions needed, faster results, and no more ingrown hairs from shaving.</p>
+      </div>
+      <div class="lhr-area-card">
+        <span class="lhr-area-icon">👙</span>
+        <h3>Bikini / Brazilian</h3>
+        <p>From a basic bikini clean-up to a full Brazilian -- whatever your comfort level, we've got you covered (or uncovered, as it were).</p>
+      </div>
+      <div class="lhr-area-card">
+        <span class="lhr-area-icon">✨</span>
+        <h3>Face</h3>
+        <p>Upper lip, chin, sideburns, and more. Laser hair removal for the face is precise, gentle, and life-changing for those dealing with unwanted facial hair.</p>
+      </div>
+      <div class="lhr-area-card">
+        <span class="lhr-area-icon">🔙</span>
+        <h3>Back &amp; Shoulders</h3>
+        <p>A big area that can feel impossible to maintain on your own. One of the most requested treatments for our male clients too.</p>
+      </div>
+      <div class="lhr-area-card">
+        <span class="lhr-area-icon">💈</span>
+        <h3>Chest &amp; Abdomen</h3>
+        <p>From a quick chest clean-up to a full front-torso treatment, we customize based on your coverage goals.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS -- STEPS
+     ============================================================ -->
+<section class="lhr-how">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--lhr-violet);">Your Experience</span>
+      <h2 class="section-title">What to Expect <em>Step by Step</em></h2>
+    </div>
+    <div class="lhr-steps">
+      <div class="lhr-step">
+        <div class="lhr-step-num">1</div>
+        <h3>Consultation</h3>
+        <p>We review your skin tone, hair type, medical history, and treatment goals to create a personalized plan and confirm candidacy.</p>
+      </div>
+      <div class="lhr-step">
+        <div class="lhr-step-num">2</div>
+        <h3>Prep Day</h3>
+        <p>Shave the area 24 hours before (no waxing or plucking). Come in with clean skin -- no lotion, deodorant, or sunscreen on the treatment zone.</p>
+      </div>
+      <div class="lhr-step">
+        <div class="lhr-step-num">3</div>
+        <h3>Laser Session</h3>
+        <p>We apply a cooling gel or device, then deliver precise laser pulses to the treatment area. Most sessions feel like a quick snap of a rubber band -- totally doable.</p>
+      </div>
+      <div class="lhr-step">
+        <div class="lhr-step-num">4</div>
+        <h3>Repeat &amp; Rejoice</h3>
+        <p>Return every 4--6 weeks as scheduled. After your series, enjoy permanent hair reduction and say hello to your smoothest self.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE AREA
+     ============================================================ -->
+<section class="lhr-service-area">
+  <div class="container">
+    <h2>Serving <em>All of DFW</em></h2>
+    <p>Our Bedford, TX location puts us right in the heart of the Mid-Cities -- easy to reach from Hurst, Euless, Colleyville, Grapevine, Southlake, Keller, and the greater DFW Metroplex. No need to drive into Dallas or Fort Worth for quality laser treatments.</p>
+    <div class="lhr-city-chips">
+      <span class="lhr-city-chip">Bedford, TX</span>
+      <span class="lhr-city-chip">Hurst, TX</span>
+      <span class="lhr-city-chip">Euless, TX</span>
+      <span class="lhr-city-chip">Colleyville, TX</span>
+      <span class="lhr-city-chip">Grapevine, TX</span>
+      <span class="lhr-city-chip">Southlake, TX</span>
+      <span class="lhr-city-chip">Keller, TX</span>
+      <span class="lhr-city-chip">North Richland Hills, TX</span>
+      <span class="lhr-city-chip">Fort Worth, TX</span>
+      <span class="lhr-city-chip">DFW Metroplex</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="lhr-pricing" id="pricing">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--lhr-violet);">Pricing</span>
+      <h2 class="section-title">Transparent, <em>Personalized Quotes</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Pricing varies by treatment area size and the number of sessions recommended for your hair type and skin tone. We'll give you a clear, honest quote during your consultation -- no surprises, no pressure.</p>
+    </div>
+    <div class="lhr-pricing-callout">
+      <span class="price-eyebrow">Priced by Area at Consultation</span>
+      <h3>No mystery pricing. No pushy packages.</h3>
+      <p>During your free consultation, Brittany Adams, APRN FNP-C, will assess your hair and skin, map out your target areas, and give you a transparent quote for individual sessions and bundled package options. We also offer flexible payment plans -- ask us about financing.</p>
+      <div class="lhr-price-btns">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--lhr-violet);border-color:var(--lhr-violet);font-size:1rem;padding:15px 32px;">Book a Free Consult</a>
+        <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--lhr-violet);color:var(--lhr-violet);">(682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="lhr-faq">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--lhr-violet);">Got Questions?</span>
+      <h2 class="section-title">Laser Hair Removal <em>FAQ</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Does laser hair removal hurt?</button>
+        <div class="faq-a" hidden>
+          <p>Most people describe it as a quick snap or flick against the skin -- not exactly a spa day, but very tolerable. The sensation varies by area (underarms and bikini are more sensitive than legs, for example). We use cooling techniques to keep discomfort minimal, and the whole session goes by fast.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">How many sessions will I need?</button>
+        <div class="faq-a" hidden>
+          <p>Most clients need 6--8 sessions spaced 4--6 weeks apart to achieve optimal results. Hair grows in cycles, so each session targets follicles in their active growth phase. After your series, occasional maintenance sessions (once or twice a year) may be recommended for stragglers.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Does it work on all skin tones and hair colors?</button>
+        <div class="faq-a" hidden>
+          <p>Laser hair removal works best on darker hair against lighter skin -- the laser targets melanin contrast. It's less effective on very light, blonde, red, or gray hair since those follicles have little to no pigment for the laser to target. During your consultation, we'll be upfront about whether you're a good candidate and what kind of results you can realistically expect for your hair and skin type.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">How do I prepare for my appointment?</button>
+        <div class="faq-a" hidden>
+          <p>Shave the treatment area 24 hours before your session (do NOT wax or pluck -- the hair root needs to be present). Avoid tanning or self-tanner for at least 2 weeks prior. Come in with clean, dry skin -- skip lotion, deodorant, or sunscreen on the treatment zone. We'll walk you through full prep instructions after your consultation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Is there any downtime after laser hair removal?</button>
+        <div class="faq-a" hidden>
+          <p>None! You can go straight back to work, errands, or your afternoon. The treated area may look and feel slightly sunburned for a few hours after -- totally normal. We recommend avoiding heat (saunas, hot tubs) and direct sun exposure for 24--48 hours post-treatment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Is it really permanent?</button>
+        <div class="faq-a" hidden>
+          <p>Laser hair removal provides permanent hair <em>reduction</em> -- most clients see a 70--90% reduction after a full series, with remaining hairs growing back finer and lighter. True 100% permanent removal for every single follicle isn't guaranteed for everyone, but the difference is dramatic. Maintenance sessions a couple times a year keep things smooth long-term.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Can I get laser hair removal if I have PCOS or hormonal issues?</button>
+        <div class="faq-a" hidden>
+          <p>Yes -- and honestly, it's one of the most impactful treatments for women with PCOS dealing with unwanted facial or body hair. Since hormone fluctuations can stimulate new follicle activity, you may need more maintenance sessions than average. If you're managing a hormonal condition, we'll factor that into your treatment plan. We treat PCOS and hormone optimization at Happy Drip too -- ask us about a comprehensive approach.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="lhr-cta">
+  <div class="container">
+    <h2>Ready to <em>Ditch the Razor?</em></h2>
+    <p>Book your free laser hair removal consultation at our Bedford, TX clinic and find out exactly what to expect, how many sessions you'll need, and what it'll cost. No fluff, no pressure -- just straight answers.</p>
+    <div class="lhr-cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:#fff;color:var(--lhr-violet);border-color:#fff;font-size:1rem;padding:16px 36px;font-weight:800;">Book a Free Consult</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:16px 36px;">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNER STRIP
+     ============================================================ -->
+<section class="partner-strip">
+  <img src="images/crunch-perks.png" alt="Crunch Gym Perks partner" />
+  <img src="images/Fullscript.png" alt="Fullscript professional supplements partner" />
+  <img src="images/WestdaleHillsGolf.png" alt="Westdale Hills Golf partner" />
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col footer-brand">
+        <a href="/" class="footer-logo" aria-label="Happy Drip IV &amp; Wellness Home">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness" class="footer-logo-img" />
+          <div class="footer-logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Bedford's cash-pay wellness and aesthetic clinic -- no insurance, no hassle, just results.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.563 9.876v-6.988H7.898V12h2.539V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.888h-2.33v6.988A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/payment-plans">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Aesthetics -->
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+        <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        <a href="/microneedling">VAMP&#8482; Microneedling</a>
+        <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+        <a href="/laser-hair-removal">Laser Hair Removal</a>
+        <a href="/tattoo-removal">Tattoo Removal</a>
+        <a href="/prp-prf">PRP / PRF</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Zoho hidden iframe -->
+<iframe id="zohoNewsletterFrame" name="zohoNewsletterFrame" style="display:none;" aria-hidden="true"></iframe>
+
+<script src="js/script.js?v=20260630"></script>
+</body>
+</html>

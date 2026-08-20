@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRP / PRF Treatments Bedford TX | DFW | Happy Drip IV &amp; Wellness</title>
+  <meta name="description" content="PRP and PRF treatments in Bedford, TX serving Hurst, Euless, Colleyville, Grapevine, and the DFW Metroplex. Skin rejuvenation and hair restoration using your body's own growth factors. Administered by Brittany Adams, APRN FNP-C." />
+  <link rel="canonical" href="https://www.happydripiv.com/prp-prf" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
+  <style>
+    /* ======================================================
+       PRP / PRF -- PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --prp-gold:     #b8860b;
+      --prp-gold2:    #d4a520;
+      --prp-burgundy: #7b2d3c;
+      --prp-cream:    #fdf8f0;
+      --prp-light:    #fef3c7;
+      --prp-dark:     #3b1f0a;
+    }
+
+    /* ---- Hero ---- */
+    .prp-hero {
+      background: linear-gradient(135deg, #fef3c7 0%, #fdf8f0 50%, #fff8ed 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .prp-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -100px;
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(184,134,11,0.15) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .prp-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -50px; left: -70px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(123,45,60,0.1) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .prp-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 48px;
+      padding: 80px 0;
+    }
+    .prp-hero-content .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--prp-gold);
+      background: rgba(184,134,11,0.1);
+      border-radius: 20px;
+      padding: 5px 14px;
+      margin-bottom: 18px;
+    }
+    .prp-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: var(--prp-dark);
+    }
+    .prp-hero-content h1 em {
+      color: var(--prp-gold);
+      font-style: italic;
+    }
+    .prp-hero-tagline {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 32px;
+    }
+    .prp-hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .prp-hero-img img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(184,134,11,0.2);
+    }
+
+    /* ---- What Is Section ---- */
+    .prp-what {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .prp-tabs {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 36px;
+      flex-wrap: wrap;
+    }
+    .prp-tab {
+      padding: 10px 24px;
+      border-radius: 24px;
+      border: 2px solid var(--prp-gold);
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--prp-gold);
+      background: transparent;
+      cursor: default;
+    }
+    .prp-tab.active {
+      background: var(--prp-gold);
+      color: #fff;
+    }
+    .prp-compare-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 24px;
+    }
+    .prp-compare-card {
+      border-radius: 16px;
+      padding: 28px;
+      border: 2px solid;
+    }
+    .prp-compare-card.prp-card {
+      border-color: var(--prp-gold);
+      background: rgba(184,134,11,0.04);
+    }
+    .prp-compare-card.prf-card {
+      border-color: var(--prp-burgundy);
+      background: rgba(123,45,60,0.04);
+    }
+    .prp-compare-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 6px;
+    }
+    .prp-compare-card.prp-card h3 { color: var(--prp-gold); }
+    .prp-compare-card.prf-card h3 { color: var(--prp-burgundy); }
+    .prp-compare-card .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+    .prp-card .badge { background: rgba(184,134,11,0.15); color: var(--prp-gold); }
+    .prf-card .badge { background: rgba(123,45,60,0.12); color: var(--prp-burgundy); }
+    .prp-compare-card p {
+      font-size: 0.92rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ---- Applications ---- */
+    .prp-apps {
+      background: var(--prp-cream);
+      padding: 80px 0;
+    }
+    .prp-apps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .prp-app-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--prp-gold);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .prp-app-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(184,134,11,0.15);
+    }
+    .prp-app-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .prp-app-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--prp-dark);
+    }
+    .prp-app-card p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ---- Process ---- */
+    .prp-process {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .prp-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .prp-step {
+      text-align: center;
+    }
+    .prp-step-num {
+      width: 52px;
+      height: 52px;
+      background: var(--prp-gold);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .prp-step h3 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: var(--prp-dark);
+    }
+    .prp-step p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ---- Service Area ---- */
+    .prp-service-area {
+      background: var(--prp-dark);
+      color: #fff;
+      padding: 60px 0;
+    }
+    .prp-service-area h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .prp-service-area h2 em { color: var(--prp-gold2); }
+    .prp-service-area p {
+      text-align: center;
+      color: rgba(255,255,255,0.8);
+      max-width: 680px;
+      margin: 0 auto 32px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .prp-city-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .prp-city-chip {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 24px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ---- Pricing ---- */
+    .prp-pricing {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .prp-pricing-callout {
+      background: linear-gradient(135deg, var(--prp-light) 0%, var(--prp-cream) 100%);
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      margin-top: 32px;
+      border: 2px solid rgba(184,134,11,0.2);
+    }
+    .prp-pricing-callout .price-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--prp-gold);
+      margin-bottom: 12px;
+    }
+    .prp-pricing-callout h3 {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+      color: var(--prp-dark);
+    }
+    .prp-pricing-callout p {
+      max-width: 600px;
+      margin: 0 auto 28px;
+      color: #555;
+      line-height: 1.7;
+    }
+    .prp-price-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ---- FAQ ---- */
+    .prp-faq {
+      background: var(--prp-cream);
+      padding: 80px 0;
+    }
+
+    /* ---- Final CTA ---- */
+    .prp-cta {
+      background: linear-gradient(135deg, var(--prp-gold) 0%, var(--prp-burgundy) 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .prp-cta h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 16px;
+    }
+    .prp-cta h2 em { color: rgba(255,255,255,0.85); font-style: italic; }
+    .prp-cta p {
+      color: rgba(255,255,255,0.88);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .prp-cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .prp-cta .btn-outline {
+      border-color: rgba(255,255,255,0.5);
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .prp-hero-inner { grid-template-columns: 1fr; }
+      .prp-hero-img { order: -1; }
+      .prp-steps { grid-template-columns: repeat(2, 1fr); }
+      .prp-apps-grid,
+      .prp-compare-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .prp-steps,
+      .prp-apps-grid,
+      .prp-compare-grid { grid-template-columns: 1fr; }
+      .prp-pricing-callout { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  Serving Bedford, Hurst, Euless, Colleyville, Grapevine, and the DFW Metroplex.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/microneedling">Microneedling</a>
+          <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+          <a href="/laser-hair-removal">Laser Hair Removal</a>
+          <a href="/tattoo-removal">Tattoo Removal</a>
+          <a href="/prp-prf">PRP / PRF</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Things We Treat
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/microneedling" class="sub-link">Microneedling</a>
+    <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <a href="/laser-hair-removal" class="sub-link">Laser Hair Removal</a>
+    <a href="/tattoo-removal" class="sub-link">Tattoo Removal</a>
+    <a href="/prp-prf" class="sub-link">PRP / PRF</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="prp-hero">
+  <div class="container">
+    <div class="prp-hero-inner">
+
+      <div class="prp-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>›</span>
+          <span>Aesthetics</span>
+          <span>›</span>
+          <span>PRP / PRF</span>
+        </nav>
+        <span class="eyebrow">PRP &amp; PRF Treatments -- Bedford, TX &amp; DFW</span>
+        <h1>Your Body's Own<br><em>Healing Power.</em></h1>
+        <p class="prp-hero-tagline">Platelet-rich plasma (PRP) and platelet-rich fibrin (PRF) harness the regenerative power already inside you -- using concentrated growth factors from your own blood to rejuvenate skin, stimulate hair growth, and accelerate your body's natural healing processes.</p>
+        <div class="prp-hero-btns">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--prp-gold);border-color:var(--prp-gold);font-size:1rem;padding:15px 32px;">Book a Consultation</a>
+          <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--prp-gold);color:var(--prp-gold);">(682) 283-6976</a>
+        </div>
+      </div>
+
+      <div class="prp-hero-img">
+        <img src="images/prp.jpg" alt="PRP treatment preparation at Happy Drip IV &amp; Wellness in Bedford, TX" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRP vs PRF -- WHAT'S THE DIFFERENCE
+     ============================================================ -->
+<section class="prp-what">
+  <div class="container">
+    <div style="text-align:center; margin-bottom:8px;">
+      <span class="section-eyebrow" style="color:var(--prp-gold);">Understanding Your Options</span>
+      <h2 class="section-title">PRP vs. PRF -- <em>What's the Difference?</em></h2>
+      <p class="section-intro" style="margin:0 auto 32px;">Both start with a small draw of your own blood and a spin in a centrifuge -- but they produce different concentrations of growth factors with different release patterns.</p>
+    </div>
+    <div class="prp-compare-grid">
+      <div class="prp-compare-card prp-card">
+        <span class="badge">Standard</span>
+        <h3>PRP -- Platelet-Rich Plasma</h3>
+        <p>A liquid concentrate of platelets and growth factors separated from your blood. PRP delivers a fast, potent release of growth factors at the injection site. It's highly effective for skin rejuvenation, acne scarring, and certain hair restoration protocols. PRP has decades of clinical research behind it and is one of the most well-studied regenerative treatments available.</p>
+      </div>
+      <div class="prp-compare-card prf-card">
+        <span class="badge">Advanced</span>
+        <h3>PRF -- Platelet-Rich Fibrin</h3>
+        <p>A newer, more advanced formulation that creates a fibrin matrix -- essentially a slow-release scaffold that delivers growth factors over days rather than hours. PRF contains a higher concentration of platelets and also includes white blood cells and stem cells, which may support longer-lasting tissue regeneration. Many providers consider PRF the evolution of PRP.</p>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:#666;font-size:0.92rem;">During your consultation, Brittany Adams, APRN FNP-C, will help you determine which option -- or combination -- is right for your goals.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     APPLICATIONS
+     ============================================================ -->
+<section class="prp-apps">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--prp-gold);">What We Treat</span>
+      <h2 class="section-title">What Can PRP / PRF <em>Do for You?</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Growth factors are versatile. Here are some of the most popular ways we use PRP and PRF at our Bedford, TX clinic:</p>
+    </div>
+    <div class="prp-apps-grid">
+      <div class="prp-app-card">
+        <span class="prp-app-icon">✨</span>
+        <h3>Skin Rejuvenation</h3>
+        <p>Injected or microneedled into the skin, PRP/PRF stimulates collagen production and cellular turnover -- improving skin texture, tone, and radiance. Often called the "Vampire Facial" when combined with microneedling.</p>
+      </div>
+      <div class="prp-app-card">
+        <span class="prp-app-icon">🌀</span>
+        <h3>Acne Scarring</h3>
+        <p>Growth factors help remodel scar tissue and rebuild collagen in depressed or pitted acne scars, smoothing skin texture over a series of treatments.</p>
+      </div>
+      <div class="prp-app-card">
+        <span class="prp-app-icon">💧</span>
+        <h3>Fine Lines &amp; Wrinkles</h3>
+        <p>PRP/PRF doesn't freeze muscles like neurotoxins -- instead it rebuilds the skin from within, softening superficial lines by restoring volume and elasticity.</p>
+      </div>
+      <div class="prp-app-card">
+        <span class="prp-app-icon">🌱</span>
+        <h3>Hair Restoration</h3>
+        <p>Injected directly into the scalp, PRP/PRF growth factors stimulate dormant follicles, slow further loss, and support new growth. Often combined with other hair restoration protocols for best results.</p>
+      </div>
+      <div class="prp-app-card">
+        <span class="prp-app-icon">🌙</span>
+        <h3>Under-Eye Rejuvenation</h3>
+        <p>The delicate under-eye area responds beautifully to PRF -- thinning, crepey under-eye skin can appear firmer, brighter, and more youthful over a series of treatments.</p>
+      </div>
+      <div class="prp-app-card">
+        <span class="prp-app-icon">🔗</span>
+        <h3>Combined Treatments</h3>
+        <p>PRP/PRF amplifies results when paired with microneedling, laser, or other treatments. Ask us about combination protocols to maximize your outcomes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS
+     ============================================================ -->
+<section class="prp-process">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--prp-gold);">Your Experience</span>
+      <h2 class="section-title">Simple Process, <em>Powerful Results</em></h2>
+    </div>
+    <div class="prp-steps">
+      <div class="prp-step">
+        <div class="prp-step-num">1</div>
+        <h3>Consult &amp; Plan</h3>
+        <p>We review your skin goals, medical history, and current treatments to determine whether PRP, PRF, or a combined protocol is the right fit for you.</p>
+      </div>
+      <div class="prp-step">
+        <div class="prp-step-num">2</div>
+        <h3>Blood Draw</h3>
+        <p>A small sample of your blood (similar to a routine lab draw) is collected right here in our Bedford clinic -- quick and comfortable.</p>
+      </div>
+      <div class="prp-step">
+        <div class="prp-step-num">3</div>
+        <h3>Process &amp; Concentrate</h3>
+        <p>Your blood is spun in a centrifuge to isolate and concentrate the platelet-rich plasma or fibrin -- the good stuff your skin and scalp need.</p>
+      </div>
+      <div class="prp-step">
+        <div class="prp-step-num">4</div>
+        <h3>Apply &amp; Glow</h3>
+        <p>PRP/PRF is applied via injection or microneedling directly to the target area. Minimal downtime -- most clients return to their day within hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE AREA
+     ============================================================ -->
+<section class="prp-service-area">
+  <div class="container">
+    <h2>Serving the <em>Entire DFW Metroplex</em></h2>
+    <p>Located in Bedford, TX -- right in the heart of the Mid-Cities -- we're easy to reach from Hurst, Euless, Colleyville, Grapevine, Southlake, Keller, and surrounding communities. You shouldn't have to drive to Dallas for excellent regenerative aesthetics.</p>
+    <div class="prp-city-chips">
+      <span class="prp-city-chip">Bedford, TX</span>
+      <span class="prp-city-chip">Hurst, TX</span>
+      <span class="prp-city-chip">Euless, TX</span>
+      <span class="prp-city-chip">Colleyville, TX</span>
+      <span class="prp-city-chip">Grapevine, TX</span>
+      <span class="prp-city-chip">Southlake, TX</span>
+      <span class="prp-city-chip">Keller, TX</span>
+      <span class="prp-city-chip">North Richland Hills, TX</span>
+      <span class="prp-city-chip">Fort Worth, TX</span>
+      <span class="prp-city-chip">DFW Metroplex</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="prp-pricing" id="pricing">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--prp-gold);">Pricing</span>
+      <h2 class="section-title">Clear Pricing, <em>Personalized Plans</em></h2>
+      <p class="section-intro" style="margin:0 auto;">PRP and PRF pricing depends on the treatment area, whether we're combining it with another service, and how many sessions your plan includes. We'll lay it all out clearly at your consultation.</p>
+    </div>
+    <div class="prp-pricing-callout">
+      <span class="price-eyebrow">Priced Per Treatment at Consultation</span>
+      <h3>Transparent quotes. No hidden fees.</h3>
+      <p>During your free consultation, Brittany Adams, APRN FNP-C, will evaluate your goals and recommend a specific PRP or PRF protocol -- including the number of sessions, frequency, and any combination treatments that might amplify your results. We also offer flexible payment plan options so you can invest in your skin without stress.</p>
+      <div class="prp-price-btns">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--prp-gold);border-color:var(--prp-gold);font-size:1rem;padding:15px 32px;">Book a Free Consult</a>
+        <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--prp-gold);color:var(--prp-gold);">(682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="prp-faq">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--prp-gold);">Got Questions?</span>
+      <h2 class="section-title">PRP &amp; PRF <em>FAQ</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Is PRP / PRF safe?</button>
+        <div class="faq-a" hidden>
+          <p>Very. Because PRP and PRF are derived from your own blood, the risk of allergic reaction or rejection is essentially zero -- your body recognizes its own platelets. These treatments have decades of clinical use across medicine, from orthopedics to dentistry to aesthetics. All procedures at Happy Drip IV &amp; Wellness are performed or directly supervised by Brittany Adams, APRN FNP-C.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">How many sessions will I need?</button>
+        <div class="faq-a" hidden>
+          <p>It depends on what you're treating. For skin rejuvenation and fine lines, most clients see meaningful results after a series of 3 treatments spaced 4--6 weeks apart, with maintenance every 6--12 months. For hair restoration, protocols typically involve monthly sessions for 3--6 months initially. We'll give you a specific recommendation during your consultation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Does it hurt?</button>
+        <div class="faq-a" hidden>
+          <p>The blood draw is quick and feels like any routine lab draw. For facial or scalp injections, we apply topical numbing cream beforehand so the injections are very tolerable -- most people are surprised by how comfortable it is. Microneedled PRP/PRF involves mild sensations from the needling device, but numbing cream keeps it comfortable throughout.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">What is recovery like?</button>
+        <div class="faq-a" hidden>
+          <p>Minimal. After PRP/PRF injections, you may have some redness, mild swelling, or bruising at injection sites -- this typically resolves within 24--72 hours. After PRP/PRF microneedling, expect redness similar to a mild sunburn that fades within a day or two. Most clients return to normal activities the same day. We'll walk you through specific post-care instructions based on your treatment.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">When will I see results?</button>
+        <div class="faq-a" hidden>
+          <p>PRP and PRF work by stimulating your body's own regenerative processes -- so results build gradually over weeks to months. Some clients notice an initial glow within a week or two, but the real collagen remodeling and tissue regeneration continues for 3--6 months after treatment. Results often look best 2--3 months after completing a treatment series.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Can PRP / PRF be combined with other treatments?</button>
+        <div class="faq-a" hidden>
+          <p>Yes -- and combining treatments often produces significantly better results. PRP/PRF pairs particularly well with microneedling (the Vampire Facial), laser treatments, and other hair restoration protocols. At Happy Drip IV &amp; Wellness, we can build a comprehensive treatment plan that sequences multiple services for maximum impact. Ask us about combination protocols at your consult.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Who is a good candidate for PRP / PRF?</button>
+        <div class="faq-a" hidden>
+          <p>Most healthy adults are good candidates. PRP/PRF works especially well for those noticing early signs of aging, acne scarring, hair thinning, or dull skin who want a natural approach that works with their own biology. We'll review your health history at your consultation to confirm candidacy and rule out any contraindications (such as blood clotting disorders or certain medications).</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="prp-cta">
+  <div class="container">
+    <h2>Tap Into Your Body's <em>Own Potential</em></h2>
+    <p>Book your free PRP / PRF consultation at our Bedford, TX clinic. We'll map out a treatment plan that uses your own biology to get you glowing -- no fillers, no synthetics, just you -- amplified.</p>
+    <div class="prp-cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:#fff;color:var(--prp-gold);border-color:#fff;font-size:1rem;padding:16px 36px;font-weight:800;">Book a Free Consult</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:16px 36px;">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNER STRIP
+     ============================================================ -->
+<section class="partner-strip">
+  <img src="images/crunch-perks.png" alt="Crunch Gym Perks partner" />
+  <img src="images/Fullscript.png" alt="Fullscript professional supplements partner" />
+  <img src="images/WestdaleHillsGolf.png" alt="Westdale Hills Golf partner" />
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col footer-brand">
+        <a href="/" class="footer-logo" aria-label="Happy Drip IV &amp; Wellness Home">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness" class="footer-logo-img" />
+          <div class="footer-logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Bedford's cash-pay wellness and aesthetic clinic -- no insurance, no hassle, just results.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.563 9.876v-6.988H7.898V12h2.539V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.888h-2.33v6.988A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/payment-plans">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Aesthetics -->
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+        <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        <a href="/microneedling">VAMP&#8482; Microneedling</a>
+        <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+        <a href="/laser-hair-removal">Laser Hair Removal</a>
+        <a href="/tattoo-removal">Tattoo Removal</a>
+        <a href="/prp-prf">PRP / PRF</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Zoho hidden iframe -->
+<iframe id="zohoNewsletterFrame" name="zohoNewsletterFrame" style="display:none;" aria-hidden="true"></iframe>
+
+<script src="js/script.js?v=20260630"></script>
+</body>
+</html>

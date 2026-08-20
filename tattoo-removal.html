@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tattoo Removal Bedford TX | DFW Metroplex | Happy Drip IV &amp; Wellness</title>
+  <meta name="description" content="Professional tattoo removal in Bedford, TX serving Hurst, Euless, Colleyville, Grapevine, and the DFW Metroplex. Safe, effective laser tattoo removal administered by Brittany Adams, APRN FNP-C at Happy Drip IV &amp; Wellness." />
+  <link rel="canonical" href="https://www.happydripiv.com/tattoo-removal" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260726" />
+  <style>
+    /* ======================================================
+       TATTOO REMOVAL -- PAGE STYLES
+       ====================================================== */
+
+    :root {
+      --tr-ink:    #1e2d3d;
+      --tr-teal:   #14b8a6;
+      --tr-teal2:  #0d9488;
+      --tr-light:  #e6faf8;
+      --tr-slate:  #475569;
+      --tr-cream:  #f8fafc;
+    }
+
+    /* ---- Hero ---- */
+    .tr-hero {
+      background: linear-gradient(135deg, #e6faf8 0%, #f0f9ff 50%, #ecfdf5 100%);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .tr-hero::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -100px;
+      width: 480px; height: 480px;
+      background: radial-gradient(circle, rgba(20,184,166,0.15) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .tr-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -50px; left: -70px;
+      width: 360px; height: 360px;
+      background: radial-gradient(circle, rgba(30,45,61,0.07) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .tr-hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 48px;
+      padding: 80px 0;
+    }
+    .tr-hero-content .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--tr-teal);
+      background: rgba(20,184,166,0.1);
+      border-radius: 20px;
+      padding: 5px 14px;
+      margin-bottom: 18px;
+    }
+    .tr-hero-content h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: var(--tr-ink);
+    }
+    .tr-hero-content h1 em {
+      color: var(--tr-teal);
+      font-style: italic;
+    }
+    .tr-hero-tagline {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: 32px;
+    }
+    .tr-hero-btns {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .tr-hero-img img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(20,184,166,0.2);
+    }
+
+    /* ---- How It Works ---- */
+    .tr-how {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .tr-how-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .tr-how-img img {
+      width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    }
+    .tr-how-content .section-eyebrow {
+      color: var(--tr-teal);
+    }
+    .tr-how-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .tr-stat {
+      background: var(--tr-light);
+      border-radius: 12px;
+      padding: 18px;
+      text-align: center;
+    }
+    .tr-stat .stat-num {
+      display: block;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--tr-teal);
+      font-family: var(--font-heading);
+    }
+    .tr-stat .stat-label {
+      font-size: 0.82rem;
+      color: #555;
+      line-height: 1.3;
+    }
+
+    /* ---- What We Treat ---- */
+    .tr-what {
+      background: var(--tr-light);
+      padding: 80px 0;
+    }
+    .tr-what-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .tr-what-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+      border-top: 4px solid var(--tr-teal);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .tr-what-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(20,184,166,0.15);
+    }
+    .tr-what-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .tr-what-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--tr-ink);
+    }
+    .tr-what-card p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ---- Process Steps ---- */
+    .tr-process {
+      background: #fff;
+      padding: 80px 0;
+    }
+    .tr-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .tr-step {
+      text-align: center;
+    }
+    .tr-step-num {
+      width: 52px;
+      height: 52px;
+      background: var(--tr-teal);
+      color: #fff;
+      border-radius: 50%;
+      font-size: 1.4rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .tr-step h3 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: var(--tr-ink);
+    }
+    .tr-step p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ---- Service Area ---- */
+    .tr-service-area {
+      background: var(--tr-ink);
+      color: #fff;
+      padding: 60px 0;
+    }
+    .tr-service-area h2 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .tr-service-area h2 em {
+      color: var(--tr-teal);
+    }
+    .tr-service-area p {
+      text-align: center;
+      color: rgba(255,255,255,0.8);
+      max-width: 680px;
+      margin: 0 auto 32px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+    .tr-city-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .tr-city-chip {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 24px;
+      padding: 8px 20px;
+      font-size: 0.9rem;
+      color: #fff;
+      font-weight: 600;
+    }
+
+    /* ---- Pricing ---- */
+    .tr-pricing {
+      background: var(--tr-cream);
+      padding: 80px 0;
+    }
+    .tr-pricing-callout {
+      background: #fff;
+      border-radius: 20px;
+      padding: 48px 40px;
+      text-align: center;
+      margin-top: 32px;
+      border: 2px solid rgba(20,184,166,0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.06);
+    }
+    .tr-pricing-callout .price-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--tr-teal);
+      margin-bottom: 12px;
+    }
+    .tr-pricing-callout h3 {
+      font-size: 1.8rem;
+      margin-bottom: 14px;
+      color: var(--tr-ink);
+    }
+    .tr-pricing-callout p {
+      max-width: 600px;
+      margin: 0 auto 28px;
+      color: #555;
+      line-height: 1.7;
+    }
+    .tr-price-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* ---- FAQ ---- */
+    .tr-faq {
+      background: var(--tr-light);
+      padding: 80px 0;
+    }
+
+    /* ---- Final CTA ---- */
+    .tr-cta {
+      background: linear-gradient(135deg, var(--tr-ink) 0%, #0f3d38 100%);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .tr-cta h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 16px;
+    }
+    .tr-cta h2 em {
+      color: var(--tr-teal);
+      font-style: italic;
+    }
+    .tr-cta p {
+      color: rgba(255,255,255,0.88);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .tr-cta-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .tr-cta .btn-outline {
+      border-color: rgba(255,255,255,0.5);
+      color: #fff;
+    }
+
+    @media (max-width: 900px) {
+      .tr-hero-inner,
+      .tr-how-grid { grid-template-columns: 1fr; }
+      .tr-hero-img { order: -1; }
+      .tr-steps { grid-template-columns: repeat(2, 1fr); }
+      .tr-what-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .tr-steps,
+      .tr-what-grid { grid-template-columns: 1fr; }
+      .tr-how-stats { grid-template-columns: repeat(2, 1fr); }
+      .tr-pricing-callout { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR
+     ============================================================ -->
+<div class="announcement-bar">
+  Serving Bedford, Hurst, Euless, Colleyville, Grapevine, and the DFW Metroplex.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online →</a>
+</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text">
+        <span>Happy Drip IV</span>
+        <span>&amp; Wellness</span>
+      </div>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="/" class="nav-link">Home</a>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Medical Services
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/klow-peptide" class="dropdown-group-item">KLOW Peptide</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Aesthetics
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/microneedling">Microneedling</a>
+          <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+          <a href="/laser-hair-removal">Laser Hair Removal</a>
+          <a href="/tattoo-removal">Tattoo Removal</a>
+          <a href="/prp-prf">PRP / PRF</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          IV Therapy
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">
+          Things We Treat
+          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+      </div>
+      <div class="nav-item">
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </div>
+    </nav>
+
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/small-business" class="sub-link nested">Small Business DPC</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/klow-peptide" class="sub-link nested">KLOW Peptide</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/microneedling" class="sub-link">Microneedling</a>
+    <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <a href="/laser-hair-removal" class="sub-link">Laser Hair Removal</a>
+    <a href="/tattoo-removal" class="sub-link">Tattoo Removal</a>
+    <a href="/prp-prf" class="sub-link">PRP / PRF</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="tr-hero">
+  <div class="container">
+    <div class="tr-hero-inner">
+
+      <div class="tr-hero-content">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Home</a>
+          <span>›</span>
+          <span>Aesthetics</span>
+          <span>›</span>
+          <span>Tattoo Removal</span>
+        </nav>
+        <span class="eyebrow">Laser Tattoo Removal -- Bedford, TX &amp; DFW</span>
+        <h1>Ready to Move On?<br><em>We Can Help.</em></h1>
+        <p class="tr-hero-tagline">Whether it's an ex's name, a regrettable spring break decision, or just a design you've simply outgrown -- laser tattoo removal at Happy Drip IV &amp; Wellness safely and effectively fades unwanted ink so you can start fresh.</p>
+        <div class="tr-hero-btns">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--tr-teal);border-color:var(--tr-teal);font-size:1rem;padding:15px 32px;">Book a Consultation</a>
+          <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--tr-teal);color:var(--tr-teal);">(682) 283-6976</a>
+        </div>
+      </div>
+
+      <div class="tr-hero-img">
+        <img src="images/clinic.jpg" alt="Laser tattoo removal consultation at Happy Drip IV &amp; Wellness in Bedford, TX" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     HOW IT WORKS -- SCIENCE
+     ============================================================ -->
+<section class="tr-how">
+  <div class="container">
+    <div class="tr-how-grid">
+
+      <div class="tr-how-content">
+        <span class="section-eyebrow" style="color:var(--tr-teal);">The Science</span>
+        <h2>How Laser Tattoo <em>Removal Works</em></h2>
+        <p>Laser tattoo removal works by delivering high-intensity pulses of light energy into the skin. The laser targets the pigment in tattoo ink, shattering it into tiny fragments small enough for your immune system to naturally flush away over time.</p>
+        <p>Different ink colors absorb different wavelengths of light -- which is why darker inks (black, navy, dark green) tend to respond faster than lighter or more complex colors. Each session fades the tattoo progressively, with full removal taking multiple treatments depending on the size, age, colors, and depth of the ink.</p>
+        <p>All treatments at Happy Drip IV &amp; Wellness are performed or directly overseen by Brittany Adams, APRN FNP-C, who will assess your tattoo and create a realistic treatment plan tailored to you.</p>
+        <div class="tr-how-stats">
+          <div class="tr-stat">
+            <span class="stat-num">5--10</span>
+            <span class="stat-label">Avg. Sessions for Full Removal</span>
+          </div>
+          <div class="tr-stat">
+            <span class="stat-num">6--8</span>
+            <span class="stat-label">Weeks Between Sessions</span>
+          </div>
+          <div class="tr-stat">
+            <span class="stat-num">All</span>
+            <span class="stat-label">Skin Tones Treated</span>
+          </div>
+          <div class="tr-stat">
+            <span class="stat-num">0</span>
+            <span class="stat-label">Days of Downtime</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tr-how-img">
+        <img src="images/clinic.jpg" alt="Laser treatment room at Happy Drip IV and Wellness clinic in Bedford TX" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WHAT WE CAN TREAT
+     ============================================================ -->
+<section class="tr-what">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--tr-teal);">What We Treat</span>
+      <h2 class="section-title">Tattoos of All <em>Shapes and Sizes</em></h2>
+      <p class="section-intro" style="margin:0 auto;">From tiny regrets to full sleeves, we can help. Here's what laser tattoo removal can address:</p>
+    </div>
+    <div class="tr-what-grid">
+      <div class="tr-what-card">
+        <span class="tr-what-icon">🖤</span>
+        <h3>Black &amp; Dark Ink</h3>
+        <p>The easiest to remove -- dark pigment absorbs laser energy efficiently, often fading significantly within just a few sessions.</p>
+      </div>
+      <div class="tr-what-card">
+        <span class="tr-what-icon">🌈</span>
+        <h3>Multicolor Tattoos</h3>
+        <p>Colored inks require specific wavelengths. We'll assess your tattoo's palette and recommend the right protocol for multi-color work.</p>
+      </div>
+      <div class="tr-what-card">
+        <span class="tr-what-icon">✍️</span>
+        <h3>Old &amp; Faded Tattoos</h3>
+        <p>Older, already-faded tattoos often respond more quickly to treatment -- your immune system has already been at work for years.</p>
+      </div>
+      <div class="tr-what-card">
+        <span class="tr-what-icon">🔲</span>
+        <h3>Small &amp; Fine Line Tattoos</h3>
+        <p>Minimalist tattoos, fine lines, and small designs can often be fully removed in fewer sessions than larger, more saturated pieces.</p>
+      </div>
+      <div class="tr-what-card">
+        <span class="tr-what-icon">🎨</span>
+        <h3>Cover-Up Prep</h3>
+        <p>Not looking for full removal? Fading a tattoo enough to prep for a cover-up is a popular option -- we can fade it to the right level for your artist.</p>
+      </div>
+      <div class="tr-what-card">
+        <span class="tr-what-icon">💉</span>
+        <h3>Cosmetic Tattoos</h3>
+        <p>Microblading, lip liner, eyeliner tattoos, and other permanent cosmetics can also be addressed -- ask us about options at your consultation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROCESS STEPS
+     ============================================================ -->
+<section class="tr-process">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--tr-teal);">Your Journey</span>
+      <h2 class="section-title">What to Expect <em>Each Step</em></h2>
+    </div>
+    <div class="tr-steps">
+      <div class="tr-step">
+        <div class="tr-step-num">1</div>
+        <h3>Free Consult</h3>
+        <p>We assess the tattoo's size, colors, ink depth, age, and location to estimate the number of sessions and set realistic expectations.</p>
+      </div>
+      <div class="tr-step">
+        <div class="tr-step-num">2</div>
+        <h3>Laser Session</h3>
+        <p>We apply a cooling device before and during the session. The laser delivers rapid pulses to shatter ink particles. Most sessions take just minutes.</p>
+      </div>
+      <div class="tr-step">
+        <div class="tr-step-num">3</div>
+        <h3>Heal &amp; Wait</h3>
+        <p>Your immune system gets to work flushing fragmented ink. You'll notice fading between sessions. Wait 6--8 weeks before your next treatment.</p>
+      </div>
+      <div class="tr-step">
+        <div class="tr-step-num">4</div>
+        <h3>Clear Skin</h3>
+        <p>Repeat until you reach your goal -- whether that's complete removal or a lighter base ready for a fresh cover-up design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICE AREA
+     ============================================================ -->
+<section class="tr-service-area">
+  <div class="container">
+    <h2>Conveniently Located for <em>All of DFW</em></h2>
+    <p>Our Bedford, TX clinic sits right in the Mid-Cities corridor -- easy to reach from Hurst, Euless, Colleyville, Grapevine, Southlake, Keller, North Richland Hills, and all surrounding DFW communities. Quality laser tattoo removal doesn't have to mean a long drive into Dallas.</p>
+    <div class="tr-city-chips">
+      <span class="tr-city-chip">Bedford, TX</span>
+      <span class="tr-city-chip">Hurst, TX</span>
+      <span class="tr-city-chip">Euless, TX</span>
+      <span class="tr-city-chip">Colleyville, TX</span>
+      <span class="tr-city-chip">Grapevine, TX</span>
+      <span class="tr-city-chip">Southlake, TX</span>
+      <span class="tr-city-chip">Keller, TX</span>
+      <span class="tr-city-chip">North Richland Hills, TX</span>
+      <span class="tr-city-chip">Fort Worth, TX</span>
+      <span class="tr-city-chip">DFW Metroplex</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="tr-pricing" id="pricing">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--tr-teal);">Pricing</span>
+      <h2 class="section-title">Honest Pricing, <em>No Surprises</em></h2>
+      <p class="section-intro" style="margin:0 auto;">Tattoo removal pricing is highly individual -- it depends on the size, color complexity, number of sessions needed, and the location of your tattoo. We'll give you a real quote at your consultation.</p>
+    </div>
+    <div class="tr-pricing-callout">
+      <span class="price-eyebrow">Priced Per Session at Consultation</span>
+      <h3>Know exactly what you're paying before you commit.</h3>
+      <p>Brittany Adams, APRN FNP-C, will evaluate your tattoo at your free consultation and give you a clear, personalized quote. We offer both per-session pricing and multi-session packages. Ask about our payment plan options to spread the cost over time.</p>
+      <div class="tr-price-btns">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--tr-teal);border-color:var(--tr-teal);font-size:1rem;padding:15px 32px;">Book a Free Consult</a>
+        <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--tr-teal);color:var(--tr-teal);">(682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+     ============================================================ -->
+<section class="tr-faq">
+  <div class="container">
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="color:var(--tr-teal);">Got Questions?</span>
+      <h2 class="section-title">Tattoo Removal <em>FAQ</em></h2>
+    </div>
+
+    <div class="faq-list" role="list">
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Does tattoo removal hurt?</button>
+        <div class="faq-a" hidden>
+          <p>Honestly? A bit. Most people describe it as similar to a rubber band snapping quickly against the skin -- intense for a split second, then it's over. Sessions are very short (often just a few minutes for smaller tattoos), and we use cooling techniques to keep discomfort as low as possible. Most people find it very tolerable.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">How many sessions will I need?</button>
+        <div class="faq-a" hidden>
+          <p>On average, most tattoos require 5--10 sessions for significant to complete removal, spaced 6--8 weeks apart. Factors like tattoo age, ink colors, size, depth, and your immune health all affect the timeline. Amateur tattoos typically fade faster than professional ones. During your consultation, we'll give you a realistic estimate based on your specific tattoo.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Can tattoos be completely removed?</button>
+        <div class="faq-a" hidden>
+          <p>In many cases, yes -- especially for black and dark-colored tattoos. Some tattoos, particularly those with certain ink colors (light blues, greens, and yellows can be stubborn), may fade significantly but not disappear 100%. We'll set realistic expectations at your consultation so you know what "success" looks like for your specific tattoo.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Will it leave a scar?</button>
+        <div class="faq-a" hidden>
+          <p>Properly performed laser tattoo removal has a very low risk of scarring. Following aftercare instructions is key -- avoid picking or peeling treated skin, keep the area protected from the sun, and moisturize as directed. If the original tattoo was placed over a scar, that scar may still be visible after the ink is removed.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">What is the aftercare like?</button>
+        <div class="faq-a" hidden>
+          <p>Keep the treated area clean and moisturized. Avoid sun exposure and tanning for several weeks post-treatment. Don't pick at blistering or peeling skin -- that's your body doing its job. We'll send you home with full written aftercare instructions after every session.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" role="listitem">
+        <button class="faq-q" aria-expanded="false">Can I get tattoo removal if I want to replace the tattoo with a cover-up?</button>
+        <div class="faq-a" hidden>
+          <p>Absolutely -- and this is a very popular use case. You don't have to fully remove a tattoo to prep for a cover-up. Just a few fading sessions can lighten the existing ink enough to give your tattoo artist a lot more freedom with the new design. Let us know this is your goal at your consultation and we'll create a plan accordingly.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FINAL CTA
+     ============================================================ -->
+<section class="tr-cta">
+  <div class="container">
+    <h2>Time to Leave That Tattoo <em>Behind</em></h2>
+    <p>Book your free tattoo removal consultation at our Bedford, TX clinic. We'll take a close look at your tattoo, walk you through the process, and give you a transparent quote. No obligations -- just real information and real results.</p>
+    <div class="tr-cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--tr-teal);border-color:var(--tr-teal);font-size:1rem;padding:16px 36px;font-weight:800;">Book a Free Consult</a>
+      <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:16px 36px;">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PARTNER STRIP
+     ============================================================ -->
+<section class="partner-strip">
+  <img src="images/crunch-perks.png" alt="Crunch Gym Perks partner" />
+  <img src="images/Fullscript.png" alt="Fullscript professional supplements partner" />
+  <img src="images/WestdaleHillsGolf.png" alt="Westdale Hills Golf partner" />
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-col footer-brand">
+        <a href="/" class="footer-logo" aria-label="Happy Drip IV &amp; Wellness Home">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness" class="footer-logo-img" />
+          <div class="footer-logo-text">
+            <span>Happy Drip IV</span>
+            <span>&amp; Wellness</span>
+          </div>
+        </a>
+        <p class="footer-tagline">Bedford's cash-pay wellness and aesthetic clinic -- no insurance, no hassle, just results.</p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 10-11.563 9.876v-6.988H7.898V12h2.539V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.888h-2.33v6.988A10 10 0 0022 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@happydripiv" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/iv-drip-menu">IV Drip Menu</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/#about">About Brittany</a>
+        <a href="/payment-plans">Payment Plans</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+
+      <!-- Aesthetics -->
+      <div class="footer-col">
+        <h5>Aesthetics</h5>
+        <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+        <a href="/mesotox">Korean Glass Skin MesoTox</a>
+        <a href="/microneedling">VAMP&#8482; Microneedling</a>
+        <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+        <a href="/laser-hair-removal">Laser Hair Removal</a>
+        <a href="/tattoo-removal">Tattoo Removal</a>
+        <a href="/prp-prf">PRP / PRF</a>
+        <a href="/iron-infusion">Iron Infusion</a>
+      </div>
+
+      <!-- Subscribe -->
+      <div class="footer-col">
+        <h5>Stay Connected</h5>
+        <div class="footer-subscribe">
+          <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <button type="submit" aria-label="Subscribe">Go</button>
+          </form>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+        </div>
+        <div style="margin-top:20px;">
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div>
+        &copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas
+      </div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Zoho hidden iframe -->
+<iframe id="zohoNewsletterFrame" name="zohoNewsletterFrame" style="display:none;" aria-hidden="true"></iframe>
+
+<script src="js/script.js?v=20260630"></script>
+</body>
+</html>
