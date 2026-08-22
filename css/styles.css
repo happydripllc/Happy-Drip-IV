@@ -1107,6 +1107,36 @@ p { line-height: 1.75; }
 .footer-bottom-links a { color: rgba(255,255,255,0.45); transition: color 0.18s; }
 .footer-bottom-links a:hover { color: var(--teal); }
 
+/* ---- Inclusive welcome line ---- */
+.footer-inclusive {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.42);
+  letter-spacing: 0.01em;
+}
+.pride-flags {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+.pride-flag {
+  width: 22px;
+  height: 14px;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.pride-flag span {
+  flex: 1;
+  display: block;
+}
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

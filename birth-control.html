@@ -308,6 +308,93 @@
     }
     .btn-outline-white:hover { background: rgba(255,255,255,0.1); }
 
+    /* ---- Pricing highlight ---- */
+    .bc-pricing {
+      padding: 0 0 72px;
+      background: linear-gradient(135deg, #fce8ef 0%, #f5ecfa 50%, #fdf0f5 100%);
+    }
+    .bc-pricing-card {
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 8px 40px rgba(181,80,106,0.14);
+      padding: 48px 56px;
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .bc-price-block {
+      text-align: center;
+      flex-shrink: 0;
+      border-right: 2px solid var(--bc-light);
+      padding-right: 48px;
+    }
+    .bc-price-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--bc-rose);
+      margin-bottom: 8px;
+    }
+    .bc-price-number {
+      font-size: 4rem;
+      font-weight: 800;
+      color: var(--bc-dark);
+      line-height: 1;
+    }
+    .bc-price-sub {
+      font-size: 0.82rem;
+      color: #777;
+      margin-top: 6px;
+    }
+    .bc-pricing-details h3 {
+      font-size: 1.35rem;
+      color: var(--bc-dark);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .bc-pricing-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .bc-pricing-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.92rem;
+      color: #4a5570;
+      line-height: 1.6;
+    }
+    .bc-check {
+      color: var(--bc-rose);
+      font-weight: 800;
+      font-size: 1rem;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    @media (max-width: 700px) {
+      .bc-pricing-card {
+        flex-direction: column;
+        padding: 36px 28px;
+        gap: 28px;
+        text-align: center;
+      }
+      .bc-price-block {
+        border-right: none;
+        border-bottom: 2px solid var(--bc-light);
+        padding-right: 0;
+        padding-bottom: 28px;
+        width: 100%;
+      }
+    }
+
     @media (max-width: 900px) {
       .bc-options-grid,
       .bc-why-grid { grid-template-columns: repeat(2, 1fr); }
@@ -507,10 +594,35 @@
       </nav>
       <span class="bc-eyebrow">Birth Control -- Bedford, TX</span>
       <h1>Birth Control That Fits<br><em>Your Life.</em></h1>
-      <p>Getting your birth control managed or refilled shouldn't require a months-long wait or an unnecessary annual exam. Brittany Adams, APRN FNP-C, provides fast, judgment-free birth control consultations and refills at Happy Drip IV &amp; Wellness -- cash-pay, no insurance, no hassle.</p>
+      <p>A $50 asynchronous visit. Up to a year of refill orders sent directly to your pharmacy. No unnecessary exam, no months-long wait, no insurance needed. Brittany Adams, APRN FNP-C, makes it simple for qualified individuals.</p>
       <div class="bc-hero-btns">
-        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-rose">Book a Visit</a>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-rose">Start Your $50 Visit</a>
         <a href="tel:6822836976" class="btn-outline-dark">Call (682) 283-6976</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING HIGHLIGHT
+     ============================================================ -->
+<section class="bc-pricing">
+  <div class="container">
+    <div class="bc-pricing-card">
+      <div class="bc-price-block">
+        <span class="bc-price-label">Async Visit</span>
+        <div class="bc-price-number">$50</div>
+        <div class="bc-price-sub">flat fee, no insurance</div>
+      </div>
+      <div class="bc-pricing-details">
+        <h3>One Visit. Up to a Year of Refills.</h3>
+        <ul class="bc-pricing-list">
+          <li><span class="bc-check">&#10003;</span>Complete your visit asynchronously -- no appointment slot required, answer a short health questionnaire on your own time</li>
+          <li><span class="bc-check">&#10003;</span>Brittany reviews your history and prescribes the right method for qualified individuals</li>
+          <li><span class="bc-check">&#10003;</span>Refill orders sent to your local pharmacy for up to 12 months -- no repeat visits needed</li>
+          <li><span class="bc-check">&#10003;</span>No pelvic exam, no referral, no insurance required</li>
+        </ul>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-rose" style="font-size:0.92rem;padding:12px 24px;">Get Started for $50 &rarr;</a>
       </div>
     </div>
   </div>
@@ -581,23 +693,23 @@
     <div class="bc-steps">
       <div class="bc-step">
         <div class="bc-step-num">1</div>
-        <h3>Book Your Visit</h3>
-        <p>Schedule online or call us directly. New patients and established patients both welcome -- same-day and next-day slots are usually available.</p>
+        <h3>Complete Your $50 Async Visit</h3>
+        <p>Answer a short health questionnaire on your own time -- no scheduling, no waiting room. Pay the $50 flat fee and submit when you're ready.</p>
       </div>
       <div class="bc-step">
         <div class="bc-step-num">2</div>
-        <h3>Review Your History &amp; Goals</h3>
-        <p>Brittany will go over your health history, any side effects from past methods, and what you're looking to accomplish -- contraception only, or also addressing things like acne, irregular cycles, or cramps.</p>
+        <h3>Brittany Reviews Your History</h3>
+        <p>Brittany reviews your responses, any side-effect history from past methods, and your goals. She'll determine the right method and whether you qualify for the annual refill program.</p>
       </div>
       <div class="bc-step">
         <div class="bc-step-num">3</div>
-        <h3>Get Your Prescription</h3>
-        <p>We'll prescribe or refill the right option and send it to your preferred pharmacy -- or discuss a longer supply if that works better for your schedule.</p>
+        <h3>Prescription Sent to Your Pharmacy</h3>
+        <p>Your prescription is sent directly to your preferred local pharmacy -- with up to 12 months of refill orders for qualified individuals. No more hunting for appointments every few months.</p>
       </div>
       <div class="bc-step">
         <div class="bc-step-num">4</div>
         <h3>Follow-Up as Needed</h3>
-        <p>If you start something new and want to check in about side effects or switch methods, we're here. No need to wait months for an opening.</p>
+        <p>If something changes -- side effects, a new health concern, or you want to switch methods -- reach out and we'll get you sorted. No need to wait months for an opening.</p>
       </div>
     </div>
   </div>
@@ -713,7 +825,7 @@
       <div class="faq-item" role="listitem">
         <button class="faq-q" aria-expanded="false">How much does a birth control visit cost?</button>
         <div class="faq-a" hidden>
-          <p>We're a cash-pay clinic -- no insurance accepted. Visit fees are discussed at the time of booking so you know exactly what to expect. The prescription itself is sent to your pharmacy and priced separately based on the medication and your pharmacy. Many generic birth control options are available at low cost at major pharmacies.</p>
+          <p>The asynchronous visit is a flat $50 -- no insurance, no hidden fees. That covers Brittany's review and the prescription. The medication itself is filled at your pharmacy and priced separately; many generic options are available for very little at major chains. For qualified individuals, we send up to 12 months of refill orders so you're not paying another visit fee every few months.</p>
         </div>
       </div>
 
@@ -726,8 +838,8 @@
      ============================================================ -->
 <section class="bc-cta">
   <div class="container">
-    <h2>Ready to Get Your<br><em>Prescription Handled?</em></h2>
-    <p>Book a birth control consultation or refill visit with Brittany Adams, APRN FNP-C, in Bedford, TX. Same-day and next-day appointments available. Cash-pay, no insurance, no referrals needed.</p>
+    <h2>$50. One Visit.<br><em>A Year of Refills.</em></h2>
+    <p>Complete your asynchronous visit on your own time and get up to 12 months of refill orders sent to your local pharmacy. Brittany Adams, APRN FNP-C -- judgment-free, cash-pay, no referrals needed.</p>
     <div class="bc-cta-btns">
       <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-white-rose">Book Online Now</a>
       <a href="tel:6822836976" class="btn-outline-white">Call (682) 283-6976</a>
@@ -833,6 +945,29 @@
         <a href="/terms.html">Terms of Service</a>
         <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener">Book Online</a>
       </div>
+    </div>
+    <!-- Inclusive welcome -->
+    <div class="footer-inclusive">
+      <div class="pride-flags" aria-label="Pride and trans pride flags" aria-hidden="true">
+        <!-- Rainbow pride flag -->
+        <div class="pride-flag">
+          <span style="background:#e40303;"></span>
+          <span style="background:#ff8c00;"></span>
+          <span style="background:#ffed00;"></span>
+          <span style="background:#008026;"></span>
+          <span style="background:#004dff;"></span>
+          <span style="background:#750787;"></span>
+        </div>
+        <!-- Trans pride flag -->
+        <div class="pride-flag">
+          <span style="background:#55cdfc;"></span>
+          <span style="background:#f7a8b8;"></span>
+          <span style="background:#fff;"></span>
+          <span style="background:#f7a8b8;"></span>
+          <span style="background:#55cdfc;"></span>
+        </div>
+      </div>
+      <span>All genders, identities, and backgrounds welcome. Happy Drip is a safe and affirming space for everyone.</span>
     </div>
   </div>
 </footer>
