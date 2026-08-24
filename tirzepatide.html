@@ -124,8 +124,9 @@
       .page-hero-img img { height: 280px; }
       .testimonials-grid, .steps-grid { grid-template-columns: repeat(2, 1fr); }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
       .testimonials-grid, .steps-grid { grid-template-columns: 1fr; }
+      .results-section .container > div > div:first-child { display: none; }
     }
   </style>
 </head>
@@ -288,7 +289,7 @@
       </div>
     </div>
     <div class="page-hero-img">
-      <img src="images/GLPBeforeAndAfter.png" alt="GLP-1 weight loss before and after results -- Happy Drip IV & Wellness patient" />
+      <img src="images/KristineBeforeAndAfterTirzepatide.png" alt="Tirzepatide weight loss before and after -- Happy Drip patient Kristine lost 50 lbs" />
     </div>
   </div>
 </section>
@@ -391,18 +392,24 @@
       <span style="display:block;font-size:0.72rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:10px;">Patient Reviews</span>
       <h2>What Our Patients Say</h2>
     </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <p class="testimonial-text">"Brittany saved my life. From identifying my clinical depression to facilitating my 130+ lb weight loss, she has been pivotal in all of my most impactful health improvements. Let her change your life. You won't regret it."</p>
-        <div class="testimonial-author">Calliope P. <span class="testimonial-stat">130+ lbs lost</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;">
+      <div>
+        <img src="images/KristineBeforeAndAfterTirzepatide.png" alt="Tirzepatide before and after -- Happy Drip patient Kristine lost 50 lbs" style="width:100%;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,0.12);display:block;" />
+        <img src="images/CalliopeBeforeAndAfterSocialPost.png" alt="GLP-1 before and after -- Calliope lost 130+ lbs with medically supervised program" style="width:100%;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,0.12);display:block;margin-top:20px;" />
       </div>
-      <div class="testimonial-card">
-        <p class="testimonial-text">"This clinic helped me lose 50 pounds, but what made the experience exceptional was the staff. They were always genuine, kind, and incredibly helpful. I felt supported every step of the way."</p>
-        <div class="testimonial-author">Kristine M. <span class="testimonial-stat">50 lbs lost</span></div>
-      </div>
-      <div class="testimonial-card">
-        <p class="testimonial-text">"I have followed Brittany from a previous medical practice. She offers the ultimate, full package kind of service everyone wants when it comes to your health. She sets aside time to go over labs in detail."</p>
-        <div class="testimonial-author">Julie C.</div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <div class="testimonial-card">
+          <p class="testimonial-text">"Brittany saved my life. From identifying my clinical depression to facilitating my 130+ lb weight loss, she has been pivotal in all of my most impactful health improvements. Let her change your life. You won't regret it."</p>
+          <div class="testimonial-author">Calliope P. <span class="testimonial-stat">130+ lbs lost</span></div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"This clinic helped me lose 50 pounds, but what made the experience exceptional was the staff. They were always genuine, kind, and incredibly helpful. I felt supported every step of the way."</p>
+          <div class="testimonial-author">Kristine M. <span class="testimonial-stat">50 lbs lost</span></div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">"I have followed Brittany from a previous medical practice. She offers the ultimate, full package kind of service everyone wants when it comes to your health. She sets aside time to go over labs in detail."</p>
+          <div class="testimonial-author">Julie C.</div>
+        </div>
       </div>
     </div>
   </div>
