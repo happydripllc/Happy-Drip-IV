@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patient Results &amp; Before/After Gallery | Happy Drip IV &amp; Wellness</title>
+  <meta name="description" content="Real patient results from Happy Drip IV & Wellness in Bedford, TX. Before and after photos from weight loss, GLP-1 programs, and aesthetic treatments. Results vary." />
+  <link rel="canonical" href="https://www.happydripiv.com/gallery" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Patient Results &amp; Before/After Gallery | Happy Drip IV &amp; Wellness" />
+  <meta property="og:description" content="Real patient results from Happy Drip IV & Wellness in Bedford, TX. Weight loss, GLP-1 programs, and aesthetic treatments." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.happydripiv.com/gallery" />
+  <meta property="og:image" content="https://www.happydripiv.com/images/CalliopeBeforeAndAfterSocialPost.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=20260820" />
+  <style>
+    .gallery-hero {
+      background: linear-gradient(135deg, var(--teal-light) 0%, #e8f4f8 50%, #f0f9ff 100%);
+      padding: 72px 0 56px;
+      text-align: center;
+    }
+    .gallery-hero h1 { font-size: clamp(2rem, 4vw, 3rem); color: var(--navy); margin-bottom: 16px; }
+    .gallery-hero p { font-size: 1.05rem; color: #4a5570; max-width: 560px; margin: 0 auto 12px; line-height: 1.7; }
+    .gallery-disclaimer {
+      display: inline-block;
+      background: rgba(93,217,232,0.12);
+      border: 1px solid rgba(93,217,232,0.3);
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 0.78rem;
+      color: var(--navy);
+      max-width: 600px;
+      margin: 16px auto 0;
+      line-height: 1.6;
+    }
+
+    /* Filter tabs */
+    .gallery-filters {
+      padding: 32px 0 0;
+      background: #fff;
+      text-align: center;
+    }
+    .filter-tabs {
+      display: inline-flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 4px;
+      background: #f4f6f9;
+      border-radius: 50px;
+    }
+    .filter-tab {
+      padding: 8px 22px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      color: #666;
+      transition: background 0.2s, color 0.2s;
+    }
+    .filter-tab.active, .filter-tab:hover {
+      background: var(--navy);
+      color: #fff;
+    }
+
+    /* Gallery grid */
+    .gallery-section { padding: 48px 0 80px; background: #fff; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+    .gallery-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .gallery-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.13); }
+    .gallery-card-img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: top center;
+      max-height: 480px;
+    }
+    .gallery-card-body { padding: 20px 22px 24px; }
+    .gallery-tag {
+      display: inline-block;
+      background: var(--teal-light);
+      color: var(--teal-dark);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .gallery-card-body h3 { font-size: 1.05rem; color: var(--navy); margin-bottom: 8px; }
+    .gallery-card-body p { font-size: 0.88rem; color: #555; line-height: 1.65; margin: 0; }
+    .gallery-quote {
+      font-style: italic;
+      color: #4a5570;
+      font-size: 0.9rem;
+      border-left: 3px solid var(--teal);
+      padding-left: 14px;
+      margin-top: 14px;
+      line-height: 1.65;
+    }
+    .gallery-quote cite { display: block; font-style: normal; font-weight: 700; color: var(--navy); margin-top: 6px; font-size: 0.82rem; }
+
+    /* Testimonials strip */
+    .gallery-testimonials { padding: 72px 0; background: var(--navy); }
+    .gallery-testimonials h2 { color: #fff; text-align: center; margin-bottom: 40px; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+    .testimonials-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 760px) { .testimonials-row { grid-template-columns: 1fr; } }
+    .t-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    .t-stars { color: #f5c518; font-size: 1rem; margin-bottom: 12px; letter-spacing: 2px; }
+    .t-card p { color: rgba(255,255,255,0.82); font-size: 0.9rem; line-height: 1.7; font-style: italic; margin: 0 0 16px; }
+    .t-card cite { color: var(--teal); font-style: normal; font-weight: 700; font-size: 0.85rem; }
+
+    /* CTA */
+    .gallery-cta { padding: 72px 0; background: var(--teal-light); text-align: center; }
+    .gallery-cta h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: var(--navy); margin-bottom: 14px; }
+    .gallery-cta p { color: #4a5570; max-width: 480px; margin: 0 auto 32px; line-height: 1.7; }
+    .gallery-cta-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+
+    @media (max-width: 600px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-card-img { max-height: 360px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="announcement-bar">
+  Now accepting new patients! Same-day &amp; next-day appointments available.
+  <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener"> Book online &rarr;</a>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="/">Home</a></li>
+        <li class="has-dropdown">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">Medical Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="dropdown-menu" role="menu">
+            <div class="dropdown-group">
+              <div class="dropdown-group-label">Primary Care</div>
+              <a href="/happy-health-clinic" class="dropdown-group-item">Concierge Medicine</a>
+              <a href="/mens-health" class="dropdown-group-item">Men's Health</a>
+              <a href="/womens-health" class="dropdown-group-item">Women's Health</a>
+              <a href="/birth-control" class="dropdown-group-item">Birth Control</a>
+            </div>
+            <div class="dropdown-group">
+              <div class="dropdown-group-label">Weight Loss</div>
+              <a href="/weightloss" class="dropdown-group-item">Weight Loss Programs</a>
+              <a href="/semaglutide" class="dropdown-group-item nested">Semaglutide</a>
+              <a href="/tirzepatide" class="dropdown-group-item nested">Tirzepatide</a>
+            </div>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">Aesthetics <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="dropdown-menu" role="menu">
+            <a href="/jeuveau" class="dropdown-group-item">Botox (Jeuveau)</a>
+            <a href="/laser-hair-removal" class="dropdown-group-item">Laser Hair Removal</a>
+            <a href="/prp-prf" class="dropdown-group-item">PRP / PRF</a>
+            <a href="/microneedling" class="dropdown-group-item">Microneedling</a>
+            <a href="/red-light-therapy" class="dropdown-group-item">Red Light Therapy</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <button class="nav-dropdown-btn" aria-expanded="false" aria-haspopup="true">IV Therapy <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="dropdown-menu" role="menu">
+            <a href="/iv-drip-menu" class="dropdown-group-item">IV Drip Menu</a>
+            <a href="/iron-infusion" class="dropdown-group-item">Iron Infusions</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+        </li>
+        <li><a href="/payment-plans">Payment Plans</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="tel:6822836976" class="header-phone">(682) 283-6976</a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+    </div>
+    <button class="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+  <div class="mobile-nav-inner">
+    <a href="/">Home</a>
+    <a href="/happy-health-clinic">Concierge Medicine</a>
+    <a href="/mens-health">Men's Health</a>
+    <a href="/birth-control">Birth Control</a>
+    <a href="/weightloss">Weight Loss</a>
+    <a href="/semaglutide" class="sub-link nested">Semaglutide</a>
+    <a href="/tirzepatide" class="sub-link nested">Tirzepatide</a>
+    <a href="/jeuveau">Aesthetics &amp; Botox</a>
+    <a href="/laser-hair-removal">Laser Hair Removal</a>
+    <a href="/red-light-therapy">Red Light Therapy</a>
+    <a href="/iv-drip-menu">IV Therapy</a>
+    <a href="/iron-infusion">Iron Infusions</a>
+    <a href="/gallery">Patient Results</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:16px;justify-content:center;">Book Now</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="gallery-hero">
+  <div class="container">
+    <span class="section-label" style="display:block;margin-bottom:12px;">Real Patients. Real Results.</span>
+    <h1>Patient Results &amp; Before/After Gallery</h1>
+    <p>These are our actual patients, sharing their journeys with permission. Results vary based on individual health, goals, and program adherence.</p>
+    <div class="gallery-disclaimer">
+      Individual results vary and are not guaranteed. Photos are shared with patient consent. These results are not typical and may not reflect the outcome of every patient.
+    </div>
+  </div>
+</section>
+
+<!-- FILTER TABS -->
+<div class="gallery-filters">
+  <div class="container">
+    <div class="filter-tabs">
+      <button class="filter-tab active">All Results</button>
+      <button class="filter-tab">Weight Loss</button>
+      <button class="filter-tab">Provider Results</button>
+    </div>
+  </div>
+</div>
+
+<!-- GALLERY GRID -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-grid">
+
+      <!-- Calliope -->
+      <div class="gallery-card">
+        <img src="images/CalliopeBeforeAndAfterSocialPost.png" alt="Calliope before and after weight loss results at Happy Drip IV & Wellness" class="gallery-card-img" loading="lazy" />
+        <div class="gallery-card-body">
+          <span class="gallery-tag">Weight Loss</span>
+          <h3>Calliope P. -- 130+ lbs Lost</h3>
+          <p>Calliope combined GLP-1 therapy with lifestyle changes and lost over 130 lbs. Her transformation represents months of consistency and commitment alongside medical support.</p>
+          <div class="gallery-quote">
+            "I have lost over 130 lbs with the help of this team and I'm still going. Life-changing."
+            <cite>-- Calliope P.</cite>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kristine -->
+      <div class="gallery-card">
+        <img src="images/KristineBeforeAndAfterTirzepatide.png" alt="Kristine before and after tirzepatide weight loss program" class="gallery-card-img" loading="lazy" />
+        <div class="gallery-card-body">
+          <span class="gallery-tag">Tirzepatide</span>
+          <h3>Kristine M. -- Tirzepatide Program</h3>
+          <p>Kristine's results on a tirzepatide program speak for themselves. She started at a higher dose over several months and saw significant body composition changes.</p>
+          <div class="gallery-quote">
+            "The support from the team made all the difference. Brittany actually listens and adjusts your plan as you go."
+            <cite>-- Kristine M.</cite>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brittany (provider) -->
+      <div class="gallery-card">
+        <img src="images/BrittanyBeforeandAfter.png" alt="Brittany Adams, APRN FNP-C, before and after her own wellness journey" class="gallery-card-img" loading="lazy" />
+        <div class="gallery-card-body">
+          <span class="gallery-tag">Provider Results</span>
+          <h3>Brittany Adams, APRN FNP-C</h3>
+          <p>Brittany has personally walked the path her patients take. Her own wellness journey informed how she built Happy Drip's programs -- with empathy, clinical knowledge, and real experience.</p>
+          <div class="gallery-quote">
+            "I know what it feels like to struggle with your health and not feel seen. That's exactly why I built this practice."
+            <cite>-- Brittany Adams, APRN FNP-C</cite>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="gallery-testimonials" aria-labelledby="galleryTestimonialsHeading">
+  <div class="container">
+    <h2 id="galleryTestimonialsHeading">What Patients Are Saying</h2>
+    <div class="testimonials-row">
+      <div class="t-card">
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"I have lost over 130 lbs with the help of this team and I'm still going. The care and follow-up I get here is unlike anything I've experienced anywhere else."</p>
+        <cite>-- Calliope P., Weight Loss Patient</cite>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"Brittany is so knowledgeable and personable. She made me feel completely at ease, answered all my questions, and my results have been amazing."</p>
+        <cite>-- Asheleigh T., Aesthetics Patient</cite>
+      </div>
+      <div class="t-card">
+        <div class="t-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>"I've been going for IV therapy and weight management for months. The whole team is fantastic and the environment is warm and welcoming."</p>
+        <cite>-- Julie C., IV Therapy &amp; Weight Loss Patient</cite>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:32px;">
+      <a href="https://www.google.com/maps/search/Happy+Drip+IV+Wellness+Bedford+TX" target="_blank" rel="noopener" class="btn btn-white btn-lg">Read More Reviews on Google</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="gallery-cta">
+  <div class="container">
+    <h2>Ready to Start Your Own Journey?</h2>
+    <p>Book a consultation and let's talk about what's possible for you.</p>
+    <div class="gallery-cta-btns">
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book Now</a>
+      <a href="tel:6822836976" class="btn btn-outline btn-lg">(682) 283-6976</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" style="width:42px;height:50px;object-fit:contain;" />
+          <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
+        </div>
+        <p>813 Brown Trail #6B<br>Bedford, Texas 76022</p>
+        <p><a href="tel:6822836976">(682) 283-6976</a></p>
+        <p><a href="mailto:info@happydripiv.com">info@happydripiv.com</a></p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="/">Home</a>
+        <a href="/happy-health-clinic">Medical Services</a>
+        <a href="/iv-drip-menu">IV Therapy</a>
+        <a href="/jeuveau">Aesthetics</a>
+        <a href="/weightloss">Weight Loss</a>
+        <a href="/gallery">Patient Results</a>
+        <a href="/payment-plans">Payment Plans</a>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <a href="/semaglutide">Semaglutide</a>
+        <a href="/tirzepatide">Tirzepatide</a>
+        <a href="/jeuveau">Botox &amp; Fillers</a>
+        <a href="/laser-hair-removal">Laser Hair Removal</a>
+        <a href="/red-light-therapy">Red Light Therapy</a>
+        <a href="/birth-control">Birth Control</a>
+        <a href="/mens-health">Men's Health</a>
+      </div>
+      <div class="footer-col">
+        <h5>Book an Appointment</h5>
+        <p style="color:rgba(255,255,255,0.65);font-size:0.9rem;">Same-day &amp; next-day availability in Bedford, TX.</p>
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:12px;">Book Online</a>
+        <a href="tel:6822836976" class="btn btn-outline-white" style="width:100%;justify-content:center;margin-top:10px;">(682) 283-6976</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas</div>
+      <div class="footer-bottom-links">
+        <a href="/hipaa-notice.html">HIPAA Notice</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>
