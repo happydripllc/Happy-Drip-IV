@@ -259,14 +259,117 @@
 </div>
 
 <!-- ============================================================
+     VISITOR ROUTING
+     ============================================================ -->
+<section class="routing-section" aria-labelledby="routingHeading">
+  <div class="container">
+    <div class="section-header" style="margin-bottom:32px;">
+      <span class="section-label">Where Do You Want to Start?</span>
+      <h2 id="routingHeading">So, what brings you in?</h2>
+      <p>Pick the area that fits and we'll show you exactly what we offer -- no guessing, no runaround.</p>
+    </div>
+    <div class="routing-grid">
+      <a href="/weightloss" class="routing-card">
+        <div class="routing-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3>Weight Loss</h3>
+        <p>GLP-1 medications, peptides, and personalized programs that get results.</p>
+        <span class="routing-cta">See Programs &rarr;</span>
+      </a>
+      <a href="/iv-drip-menu" class="routing-card">
+        <div class="routing-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z"/></svg>
+        </div>
+        <h3>IV Therapy</h3>
+        <p>Hydration, vitamins, and recovery drips starting at $150 -- same-day available.</p>
+        <span class="routing-cta">View Drip Menu &rarr;</span>
+      </a>
+      <a href="/jeuveau" class="routing-card">
+        <div class="routing-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><circle cx="12" cy="12" r="3"/></svg>
+        </div>
+        <h3>Aesthetics</h3>
+        <p>Botox, fillers, laser, PRP, and microneedling -- look as good as you feel.</p>
+        <span class="routing-cta">Explore Treatments &rarr;</span>
+      </a>
+      <a href="/happy-health-clinic" class="routing-card">
+        <div class="routing-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Primary Care</h3>
+        <p>Sick visits, physicals, referrals, and same-day telemedicine -- no insurance needed.</p>
+        <span class="routing-cta">Learn More &rarr;</span>
+      </a>
+      <a href="/birth-control" class="routing-card">
+        <div class="routing-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Women's Health</h3>
+        <p>Birth control, hormone therapy, PCOS, and menopause care -- $50 async visits available.</p>
+        <span class="routing-cta">See Services &rarr;</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+.routing-section { padding: 64px 0; }
+.routing-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.routing-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border: 2px solid var(--teal-light);
+  border-radius: 16px;
+  padding: 28px 20px 22px;
+  text-decoration: none;
+  color: var(--body-text);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.routing-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 8px 24px rgba(93,217,232,0.18);
+  transform: translateY(-3px);
+}
+.routing-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--teal-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+.routing-icon svg { width: 22px; height: 22px; color: var(--teal-dark); }
+.routing-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--navy); margin: 0 0 8px; }
+.routing-card p { font-size: 0.875rem; line-height: 1.5; flex: 1; margin: 0 0 14px; }
+.routing-cta { font-size: 0.85rem; font-weight: 600; color: var(--teal-dark); margin-top: auto; }
+@media (max-width: 900px) {
+  .routing-grid { grid-template-columns: repeat(2, 1fr); }
+  .routing-grid .routing-card:last-child { grid-column: 1 / -1; }
+}
+@media (max-width: 540px) {
+  .routing-grid { grid-template-columns: 1fr; }
+  .routing-grid .routing-card:last-child { grid-column: auto; }
+}
+</style>
+
+<!-- ============================================================
      OUR SERVICES
      ============================================================ -->
 <section id="medical-services" class="services-section" aria-labelledby="servicesHeading">
   <div class="container">
     <div class="section-header">
       <span class="section-label">Our Services</span>
-      <h2 id="servicesHeading">Comprehensive Wellness Under One Roof</h2>
-      <p>From concierge medicine to cutting-edge aesthetics, we offer a full spectrum of health and wellness services personalized to you.</p>
+      <h2 id="servicesHeading">More Ways to Feel Like You</h2>
+      <p>From same-day care to aesthetics, IV therapy, and ongoing wellness support, Happy Drip brings practical, personalized healthcare together in one welcoming place.</p>
       <div class="section-divider"></div>
     </div>
     <div class="services-grid">
@@ -317,7 +420,7 @@
         </div>
         <h3>Specialized Men's Health</h3>
         <p>Testosterone therapy, erectile dysfunction treatment, hair loss solutions, and comprehensive men's wellness exams.</p>
-        <a href="/happy-health-clinic" class="learn-more">
+        <a href="/mens-health" class="learn-more">
           Learn More
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
@@ -330,6 +433,7 @@
         </div>
         <h3>Red Light Therapy</h3>
         <p>FDA-cleared red and near-infrared light therapy to reduce inflammation, promote skin rejuvenation, and boost cellular energy.</p>
+        <!-- TODO: No dedicated /red-light-therapy page yet -- linking to aesthetics page until one is created -->
         <a href="/jeuveau" class="learn-more">
           Learn More
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -382,6 +486,7 @@
         </div>
         <h3>Mental Health Support</h3>
         <p>Compassionate mental health consultations, medication management, and referral coordination for your emotional well-being.</p>
+        <!-- TODO: No dedicated /mental-health page yet -- linking to happy-health-clinic until one is created -->
         <a href="/happy-health-clinic" class="learn-more">
           Learn More
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -395,6 +500,7 @@
         </div>
         <h3>In-Office Procedures</h3>
         <p>Wart removal, earwax removal, ingrown nail treatment, suture removal, and more — handled in-office with expert precision.</p>
+        <!-- TODO: No dedicated /in-office-procedures page yet -- linking to happy-health-clinic until one is created -->
         <a href="/happy-health-clinic" class="learn-more">
           Learn More
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -471,7 +577,7 @@
           <div class="check" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          Advanced Anti-Aging &amp; Aesthetic Treatments
+          Advanced Aesthetic &amp; Skin-Rejuvenation Treatments
         </div>
         <div class="about-feature">
           <div class="check" aria-hidden="true">
@@ -506,16 +612,16 @@
     </div>
     <div class="feature-content">
       <span class="section-label">IV Therapy</span>
-      <h2 id="ivHeading">IV Hydration Therapy: Instant Revitalization</h2>
+      <h2 id="ivHeading">IV Hydration Therapy, Personalized for You</h2>
       <p>
-        While we offer cutting-edge treatments and longevity programs, IV Therapy remains one of our most popular services. We offer a comprehensive menu to help clients recover, restore, and revitalize.
+        IV Therapy is one of our most popular services. Whether you're recovering, rehydrating, or just looking for a boost, we put together a drip based on your goals and what your body needs that day.
       </p>
       <ul class="feature-list">
-        <li><strong>Rapid Hydration</strong> — Quality saline fluid delivery restoring energy, easing brain fog, and revitalizing depleted systems</li>
-        <li><strong>Electrolyte Balance</strong> — A precise electrolyte mix to combat dehydration, muscle cramps, and fatigue</li>
-        <li><strong>Antioxidant Defense</strong> — Medically superior antioxidants to combat free radicals, slow aging, and protect cellular health</li>
-        <li><strong>Medical Grade Vitamins</strong> — Pharmaceutically ranked essential vitamins in bioavailable IV form</li>
-        <li><strong>Metabolism Support</strong> — IV hydration paired with nutrients clinically shown to support metabolic function</li>
+        <li><strong>Hydration Support</strong> — IV fluids to help you rehydrate faster than drinking water alone, supporting energy and clarity</li>
+        <li><strong>Electrolyte Support</strong> — Personalized electrolyte blends to address dehydration, muscle fatigue, and general sluggishness</li>
+        <li><strong>Vitamin &amp; Nutrient Add-Ons</strong> — Add vitamins and nutrients based on your goals -- B12, Vitamin C, Glutathione, and more</li>
+        <li><strong>Recovery-Focused Options</strong> — Targeted combos for eligible patients dealing with hangovers, migraines, or illness</li>
+        <li><strong>Personalized Care</strong> — Your provider goes over your goals before every session so you get what you actually need</li>
       </ul>
       <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book an IV Session</a>
     </div>
@@ -529,7 +635,7 @@
   <div class="container">
     <div class="section-header">
       <span class="section-label" style="color:var(--teal); background:rgba(93,217,232,0.15);">Drip Menu</span>
-      <h2 id="pricingHeading">High-Dose Vitamin Infusions: Supercharged Nutrition</h2>
+      <h2 id="pricingHeading">IV Hydration &amp; Nutrient Infusions</h2>
       <p>Transparent pricing with no hidden fees. Add-on vitamins &amp; medications available for $30–$40 each.</p>
       <div class="section-divider"></div>
     </div>
@@ -577,7 +683,7 @@
       </div>
       <div class="feature-content">
         <span class="section-label">Aesthetics</span>
-        <h2 id="aestheticsHeading">Advanced Aesthetic &amp; Anti-Aging Treatments</h2>
+        <h2 id="aestheticsHeading">Advanced Aesthetic &amp; Skin-Rejuvenation Treatments</h2>
         <p>
           Our aesthetic services are designed to help you look as vibrant as you feel. We offer the latest in non-surgical rejuvenation — from Botox and laser to PRP and microneedling.
         </p>
@@ -600,13 +706,13 @@
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
               <h4>Laser Hair Removal</h4>
-              <p>Permanent hair reduction on all skin types with our advanced laser system.</p>
+              <p>Long-term hair reduction on all skin types with our advanced laser system.</p>
             </div>
           </div>
           <div class="aesthetic-item">
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
-              <h4>PRP / PFR Treatments</h4>
+              <h4>PRP / PRF Treatments</h4>
               <p>Platelet-rich plasma facials and under-eye treatments for natural rejuvenation.</p>
             </div>
           </div>
@@ -650,7 +756,7 @@
           We take a comprehensive, medically-supervised approach to weight loss, combining GLP-1 medications with personalized nutrition guidance, lifestyle coaching, and ongoing support.
         </p>
         <ul class="feature-list">
-          <li><strong>GLP-1 Medications</strong> — Semaglutide (Ozempic/Wegovy) and Tirzepatide (Mounjaro) programs</li>
+          <li><strong>GLP-1 Medications</strong> — Semaglutide and Tirzepatide programs tailored to your goals and dosing needs</li>
           <li><strong>Oral Medications</strong> — Affordable options covered through your pharmacy</li>
           <li><strong>Peptide Therapy</strong> — Advanced peptide protocols to support body composition</li>
           <li><strong>90-Day Programs</strong> — Structured 3-month plans for maximum results</li>
@@ -875,17 +981,6 @@
 <!-- ============================================================
      FOOTER
      ============================================================ -->
-<!-- Partner Strip -->
-<section class="partner-strip" aria-label="Our partners">
-  <div class="container partner-strip-inner">
-    <span class="partner-strip-label">Trusted Partners</span>
-    <div class="partner-strip-logos">
-      <img src="images/crunch-perks.png" alt="Crunch Fitness Perks Program Official Partner" class="logo-round" />
-      <img src="images/Fullscript.png" alt="Fullscript" />
-      <img src="images/WestdaleHillsGolf.png" alt="Westdale Hills Golf" />
-    </div>
-  </div>
-</section>
 <footer class="site-footer" aria-label="Site footer">
   <div class="container">
     <div class="footer-grid">
@@ -952,11 +1047,19 @@
         <h5>Stay Connected</h5>
         <div class="footer-subscribe">
           <p>Subscribe for wellness tips, promotions, and new service announcements. Get a <strong style="color:var(--teal);">$40 value</strong> bonus on your first visit!</p>
+          <!-- Submit handler wires to Zoho Campaigns via js/script.js handleSubscribe -->
           <form class="subscribe-form" onsubmit="handleSubscribe(event)" novalidate>
-            <input type="email" placeholder="your@email.com" aria-label="Email address" required />
+            <label for="footer-email" class="visually-hidden">Email address</label>
+            <input type="email" id="footer-email" name="email" placeholder="your@email.com" required />
             <button type="submit" aria-label="Subscribe">Go</button>
           </form>
-          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:4px;">No spam, ever. Unsubscribe anytime.</p>
+          <div style="margin-top:8px;">
+            <label style="display:flex;align-items:flex-start;gap:8px;font-size:0.75rem;color:rgba(255,255,255,0.55);cursor:pointer;">
+              <input type="checkbox" required style="margin-top:2px;flex-shrink:0;" />
+              <span>I agree to receive wellness tips, service updates, and promotional messages from Happy Drip IV &amp; Wellness. I can unsubscribe anytime.</span>
+            </label>
+          </div>
+          <p style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:6px;">You can unsubscribe anytime. See our <a href="/privacy-policy.html" style="color:rgba(255,255,255,0.6);">Privacy Policy</a>.</p>
         </div>
         <div style="margin-top:20px;">
           <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
