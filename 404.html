@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Happy Drip IV &amp; Wellness</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css?v=20260820" />
+  <style>
+    .not-found {
+      min-height: 72vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      background: linear-gradient(135deg, var(--teal-light) 0%, #e8f4f8 100%);
+    }
+    .not-found-inner { max-width: 560px; }
+    .not-found-code {
+      font-size: 7rem;
+      font-weight: 800;
+      color: var(--navy);
+      opacity: 0.08;
+      line-height: 1;
+      margin-bottom: -24px;
+      font-family: var(--font-heading);
+    }
+    .not-found-icon {
+      font-size: 3rem;
+      margin-bottom: 16px;
+      display: block;
+    }
+    .not-found-inner h1 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+    .not-found-inner p {
+      color: #4a5570;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .not-found-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 32px;
+    }
+    .not-found-quick {
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+    .not-found-quick p {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+    .quick-link {
+      background: #fff;
+      border: 1.5px solid var(--border);
+      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 7px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .quick-link:hover { border-color: var(--teal); color: var(--teal-dark); }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+      <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
+    </a>
+    <div class="header-actions">
+      <a href="tel:6822836976" class="header-phone">(682) 283-6976</a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+    </div>
+  </div>
+</header>
+
+<div class="not-found">
+  <div class="not-found-inner">
+    <div class="not-found-code">404</div>
+    <span class="not-found-icon">💧</span>
+    <h1>Looks Like This Page Took the Day Off</h1>
+    <p>We couldn't find what you were looking for. It may have moved, been renamed, or never existed. Let's get you back on track.</p>
+    <div class="not-found-links">
+      <a href="/" class="btn btn-primary btn-lg">Go Home</a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-outline btn-lg">Book an Appointment</a>
+    </div>
+    <div class="not-found-quick">
+      <p>Popular pages</p>
+      <div class="quick-links">
+        <a href="/iv-drip-menu" class="quick-link">IV Therapy</a>
+        <a href="/weightloss" class="quick-link">Weight Loss</a>
+        <a href="/jeuveau" class="quick-link">Botox</a>
+        <a href="/semaglutide" class="quick-link">Semaglutide</a>
+        <a href="/tirzepatide" class="quick-link">Tirzepatide</a>
+        <a href="/birth-control" class="quick-link">Birth Control</a>
+        <a href="/mens-health" class="quick-link">Men's Health</a>
+        <a href="/pricing" class="quick-link">Pricing</a>
+        <a href="/location" class="quick-link">Location &amp; Hours</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0;">
+      <div>&copy; <span id="footerYear"></span> Happy Drip IV &amp; Wellness. All rights reserved. | Bedford, Texas</div>
+      <div class="footer-bottom-links">
+        <a href="/privacy-policy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('footerYear').textContent = new Date().getFullYear();</script>
+<script src="/js/script.js"></script>
+</body>
+</html>

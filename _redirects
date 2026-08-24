@@ -1,4 +1,27 @@
-# Cloudflare Pages redirects
-/home    /    301
-/glp1-side-effects/*    /glp1-medications/side-effects/    301
-/pcos-thyroid-optimization    /pcos    301
+# Cloudflare Pages _redirects
+# Format: /old-path  /new-path  status-code
+
+# Common shorthand redirects
+/botox              /jeuveau             301
+/weight-loss        /weightloss          301
+/glp1               /glp1-medications    301
+/glp-1              /glp1-medications    301
+/mens               /mens-health         301
+/womens             /womens-health       301
+/iron               /iron-infusion       301
+/nad                /nad-plus            301
+/prp                /prp-prf             301
+/laser              /laser-hair-removal  301
+/book               https://www.vagaro.com/happydripiv  302
+/booking            https://www.vagaro.com/happydripiv  302
+/schedule           https://www.vagaro.com/happydripiv  302
+/appointments       https://www.vagaro.com/happydripiv  302
+/results            /gallery             301
+/before-after       /gallery             301
+/prices             /pricing             301
+/cost               /pricing             301
+/contact            /location            301
+/hours              /location            301
+/directions         /location            301
+/map                /location            301
+/blog/tirzepatide   /blog/tirzepatide-vs-semaglutide  301
