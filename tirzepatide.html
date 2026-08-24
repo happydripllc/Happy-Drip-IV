@@ -93,9 +93,73 @@
     .onboarding-price { font-family: var(--font-heading); font-size: 2.4rem; color: var(--gold); font-weight: 700; white-space: nowrap; }
     .onboarding-price span { font-size: 0.85rem; font-weight: 400; color: rgba(255,255,255,0.5); display: block; }
 
-    /* Testimonials */
-    .results-section { padding: 80px 0; background: var(--white); }
-    .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    /* Results section */
+    .results-section { padding: 80px 0; background: var(--navy); }
+    .results-section .section-eyebrow { color: var(--teal); background: rgba(93,217,232,0.12); }
+    .results-section h2 { color: #fff; }
+    .results-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-top: 48px;
+    }
+    .result-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .result-card-img-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+    .result-card-img-wrap img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      object-position: top center;
+      display: block;
+    }
+    .result-badge {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: var(--teal);
+      color: var(--navy);
+      font-size: 0.78rem;
+      font-weight: 800;
+      padding: 6px 14px;
+      border-radius: 30px;
+      letter-spacing: 0.03em;
+    }
+    .result-card-body {
+      padding: 22px 24px 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .result-quote {
+      font-style: italic;
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      flex: 1;
+      margin: 0 0 16px;
+    }
+    .result-name {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--teal);
+    }
+    .result-label {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.45);
+      margin-top: 2px;
+    }
+    @media (max-width: 900px) { .results-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; } }
+    /* legacy classes kept for compatibility */
     .testimonial-card { background: var(--off-white); border-radius: 16px; padding: 24px 28px; border-left: 4px solid var(--teal); }
     .testimonial-text { font-size: 0.92rem; color: var(--body-text); line-height: 1.75; margin-bottom: 14px; font-style: italic; }
     .testimonial-author { font-size: 0.82rem; font-weight: 800; color: var(--navy); }
@@ -132,7 +196,7 @@
     }
     @media (max-width: 700px) {
       .testimonials-grid, .steps-grid { grid-template-columns: 1fr; }
-      .results-section .container > div > div:first-child { display: none; }
+      .results-grid { grid-template-columns: 1fr; max-width: 480px; }
     }
   </style>
 </head>
@@ -391,34 +455,54 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="results-section">
+<!-- RESULTS -->
+<section class="results-section" aria-labelledby="resultsHeading">
   <div class="container">
-    <div style="text-align:center;margin-bottom:48px;">
-      <span style="display:block;font-size:0.72rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal-dark);margin-bottom:10px;">Patient Reviews</span>
-      <h2>What Our Patients Say</h2>
+    <div style="text-align:center;">
+      <span class="section-eyebrow" style="display:inline-block;font-size:0.72rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;">Real Patients</span>
+      <h2 id="resultsHeading" style="color:#fff;margin-bottom:8px;">Results Speak for Themselves</h2>
+      <p style="color:rgba(255,255,255,0.6);max-width:520px;margin:0 auto;font-size:0.9rem;">Individual results vary. Photos shared with patient consent.</p>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;">
-      <div>
-        <img src="images/KristineBeforeAndAfterTirzepatide.png" alt="Tirzepatide before and after -- Happy Drip patient Kristine lost 50 lbs" style="width:100%;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,0.12);display:block;" />
-        <img src="images/CalliopeBeforeAndAfterSocialPost.png" alt="GLP-1 before and after -- Calliope lost 130+ lbs with medically supervised program" style="width:100%;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,0.12);display:block;margin-top:20px;" />
-        <img src="images/BrittanyBeforeandAfter.png" alt="Brittany Adams, APRN FNP-C -- before and after personal weight loss transformation" style="width:100%;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,0.12);display:block;margin-top:20px;" />
-      </div>
-      <div style="display:flex;flex-direction:column;gap:20px;">
-        <div class="testimonial-card">
-          <p class="testimonial-text">"Brittany saved my life. From identifying my clinical depression to facilitating my 130+ lb weight loss, she has been pivotal in all of my most impactful health improvements. Let her change your life. You won't regret it."</p>
-          <div class="testimonial-author">Calliope P. <span class="testimonial-stat">130+ lbs lost</span></div>
+    <div class="results-grid">
+
+      <div class="result-card">
+        <div class="result-card-img-wrap">
+          <img src="images/KristineBeforeAndAfterTirzepatide.png" alt="Kristine before and after tirzepatide -- 50 lbs lost at Happy Drip IV & Wellness" loading="lazy" />
+          <span class="result-badge">50 lbs lost</span>
         </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">"This clinic helped me lose 50 pounds, but what made the experience exceptional was the staff. They were always genuine, kind, and incredibly helpful. I felt supported every step of the way."</p>
-          <div class="testimonial-author">Kristine M. <span class="testimonial-stat">50 lbs lost</span></div>
-        </div>
-        <div class="testimonial-card">
-          <p class="testimonial-text">"I have followed Brittany from a previous medical practice. She offers the ultimate, full package kind of service everyone wants when it comes to your health. She sets aside time to go over labs in detail."</p>
-          <div class="testimonial-author">Julie C.</div>
+        <div class="result-card-body">
+          <p class="result-quote">"This clinic helped me lose 50 pounds, but what made the experience exceptional was the staff. They were always genuine, kind, and incredibly helpful. I felt supported every step of the way."</p>
+          <div class="result-name">Kristine M.</div>
+          <div class="result-label">Tirzepatide Program</div>
         </div>
       </div>
+
+      <div class="result-card">
+        <div class="result-card-img-wrap">
+          <img src="images/CalliopeBeforeAndAfterSocialPost.png" alt="Calliope before and after GLP-1 weight loss program -- 130+ lbs lost" loading="lazy" />
+          <span class="result-badge">130+ lbs lost</span>
+        </div>
+        <div class="result-card-body">
+          <p class="result-quote">"Brittany saved my life. From identifying my clinical depression to facilitating my 130+ lb weight loss, she has been pivotal in all of my most impactful health improvements. Let her change your life."</p>
+          <div class="result-name">Calliope P.</div>
+          <div class="result-label">GLP-1 Program</div>
+        </div>
+      </div>
+
+      <div class="result-card">
+        <div class="result-card-img-wrap">
+          <img src="images/BrittanyBeforeandAfter.png" alt="Brittany Adams APRN FNP-C before and after her own wellness transformation" loading="lazy" />
+          <span class="result-badge">Provider Journey</span>
+        </div>
+        <div class="result-card-body">
+          <p class="result-quote">"I know what it feels like to struggle and not feel seen. That lived experience is exactly why I built this practice -- and why I'm committed to staying in it with you."</p>
+          <div class="result-name">Brittany Adams, APRN FNP-C</div>
+          <div class="result-label">Your Provider</div>
+        </div>
+      </div>
+
     </div>
+    <p style="text-align:center;font-size:0.75rem;color:rgba(255,255,255,0.3);margin-top:28px;">Results are not typical and are not guaranteed. Individual outcomes vary based on health history, adherence, and other factors.</p>
   </div>
 </section>
 
