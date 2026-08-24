@@ -643,6 +643,50 @@
 </section>
 
 <!-- ============================================================
+     PHOTO GALLERY STRIP
+     ============================================================ -->
+<section style="padding:40px 0;background:#fff;overflow:hidden;">
+  <style>
+    .photo-strip-track {
+      display: flex;
+      gap: 18px;
+      width: max-content;
+      animation: ivscroll 32s linear infinite;
+    }
+    .photo-strip-track:hover { animation-play-state: paused; }
+    .photo-strip-track img {
+      height: 260px;
+      width: auto;
+      border-radius: 16px;
+      object-fit: cover;
+      flex-shrink: 0;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.10);
+    }
+    @keyframes ivscroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+  <div style="overflow:hidden;">
+    <div class="photo-strip-track">
+      <img src="images/HusbandGettingIVDrip.png" alt="Patient receiving IV drip at Happy Drip IV & Wellness" />
+      <img src="images/MomGettingMyers.png" alt="Patient enjoying a Myers Cocktail IV drip" />
+      <img src="images/athletes_receiving_IV_recovery_drips.png" alt="Athletes receiving IV recovery drips" />
+      <img src="images/hotel_ivdrip.png" alt="Mobile IV drip therapy at hotel" />
+      <img src="images/bach-iv.png" alt="Bachelorette party IV drip experience" />
+      <img src="images/iv-therapy.jpg" alt="IV therapy session at Happy Drip" />
+      <!-- duplicate for seamless loop -->
+      <img src="images/HusbandGettingIVDrip.png" alt="Patient receiving IV drip at Happy Drip IV & Wellness" />
+      <img src="images/MomGettingMyers.png" alt="Patient enjoying a Myers Cocktail IV drip" />
+      <img src="images/athletes_receiving_IV_recovery_drips.png" alt="Athletes receiving IV recovery drips" />
+      <img src="images/hotel_ivdrip.png" alt="Mobile IV drip therapy at hotel" />
+      <img src="images/bach-iv.png" alt="Bachelorette party IV drip experience" />
+      <img src="images/iv-therapy.jpg" alt="IV therapy session at Happy Drip" />
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
      DRIP FINDER QUIZ
      ============================================================ -->
 <section id="drip-finder" style="background: linear-gradient(135deg, #f0ecfc 0%, #fde8f3 60%, #e0f7fa 100%); padding: 64px 0;">
