@@ -35,10 +35,13 @@ export async function onRequest({ env }) {
 
     const data = await resp.json();
 
+    // Temporary debug -- remove after confirming reviews field shape
+    const rawReviews = data.reviews ?? data.Reviews ?? null;
+
     payload = {
       rating:       data.rating        ?? null,
       totalRatings: data.userRatingCount ?? null,
-      reviews: (data.reviews ?? [])
+      reviews: (rawReviews ?? [])
         .filter(r => r.rating >= 4)
         .map(r => ({
           authorName:   r.authorAttribution?.displayName ?? 'Happy Drip Patient',
@@ -47,6 +50,7 @@ export async function onRequest({ env }) {
           relativeTime: r.relativePublishTimeDescription ?? '',
         })),
       updatedAt: new Date().toISOString(),
+      _debug: { topLevelKeys: Object.keys(data), rawReviewCount: rawReviews?.length ?? 'field missing', firstReview: rawReviews?.[0] ?? null },
     };
   } catch (err) {
     debugError = err.message;
