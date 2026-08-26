@@ -16,7 +16,7 @@ export async function onRequest({ env }) {
 
   try {
     const apiKey = env.GOOGLE_PLACES_API_KEY;
-    if (!apiKey) throw new Error('GOOGLE_PLACES_API_KEY not set');
+    if (!apiKey) throw new Error('GOOGLE_PLACES_API_KEY not set -- available keys: ' + Object.keys(env || {}).join(', '));
 
     const resp = await fetch(
       `https://places.googleapis.com/v1/places/${PLACE_ID}?languageCode=en`,
