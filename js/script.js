@@ -161,3 +161,114 @@ document.querySelectorAll('.service-card, .price-card, .wl-card, .testimonial-ca
   el.style.transition = 'opacity 0.45s ease, transform 0.45s ease, box-shadow 0.25s ease, border-color 0.25s ease';
   animateObserver.observe(el);
 });
+
+// ---- Reviews Carousel ----
+(function () {
+  const track = document.getElementById('reviewsTrack');
+  if (!track) return;
+
+  let current  = 0;
+  let autoTimer = null;
+
+  function cards() { return track.querySelectorAll('.review-card'); }
+
+  function buildDots() {
+    const container = document.getElementById('reviewsDots');
+    if (!container) return;
+    container.innerHTML = '';
+    cards().forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'reviews-dot' + (i === 0 ? ' active' : '');
+      btn.setAttribute('aria-label', 'Review ' + (i + 1));
+      btn.addEventListener('click', () => { stopAuto(); goTo(i); startAuto(); });
+      container.appendChild(btn);
+    });
+  }
+
+  function updateDots() {
+    document.querySelectorAll('.reviews-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  function goTo(idx) {
+    const all = cards();
+    if (!all.length) return;
+    current = ((idx % all.length) + all.length) % all.length;
+    all[current].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+    updateDots();
+  }
+
+  function startAuto() {
+    stopAuto();
+    autoTimer = setInterval(() => goTo(current + 1), 5500);
+  }
+  function stopAuto() {
+    if (autoTimer) { clearInterval(autoTimer); autoTimer = null; }
+  }
+
+  buildDots();
+  startAuto();
+
+  document.getElementById('reviewsPrev')?.addEventListener('click', () => { stopAuto(); goTo(current - 1); startAuto(); });
+  document.getElementById('reviewsNext')?.addEventListener('click', () => { stopAuto(); goTo(current + 1); startAuto(); });
+  track.addEventListener('mouseenter', stopAuto);
+  track.addEventListener('mouseleave', startAuto);
+
+  // ---- Helpers ----
+  function escHtml(s) {
+    return String(s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function initials(name) {
+    return (name || '').split(' ').map(w => w[0] || '').slice(0, 2).join('').toUpperCase() || '★';
+  }
+
+  function starStr(n) {
+    var s = Math.max(0, Math.min(5, n));
+    return '★'.repeat(s) + '☆'.repeat(5 - s);
+  }
+
+  function buildCard(r) {
+    var text = r.text.length > 220 ? r.text.slice(0, 220).trimEnd() + '…' : r.text;
+    return '<div class="review-card">' +
+      '<div class="review-card-header">' +
+        '<div class="review-avatar">' + escHtml(initials(r.authorName)) + '</div>' +
+        '<div>' +
+          '<div class="review-author-name">' + escHtml(r.authorName) + '</div>' +
+          '<div class="review-author-time">' + escHtml(r.relativeTime) + '</div>' +
+        '</div>' +
+        '<div class="review-google-badge" aria-label="Google review">G</div>' +
+      '</div>' +
+      '<div class="review-stars" aria-label="' + r.rating + ' stars">' + starStr(r.rating) + '</div>' +
+      '<p class="review-text">“' + escHtml(text) + '”</p>' +
+    '</div>';
+  }
+
+  // ---- Fetch live reviews from Pages Function ----
+  fetch('/api/reviews')
+    .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+    .then(function (data) {
+      if (!data.reviews || data.reviews.length === 0) return;
+
+      track.innerHTML = data.reviews.map(buildCard).join('');
+      current = 0;
+      buildDots();
+      stopAuto(); startAuto();
+
+      if (data.rating) {
+        var scoreEl = document.getElementById('reviewScore');
+        if (scoreEl) scoreEl.textContent = parseFloat(data.rating).toFixed(1);
+      }
+      if (data.totalRatings) {
+        var countEl = document.getElementById('reviewCount');
+        if (countEl) countEl.textContent = data.totalRatings + ' Google reviews';
+      }
+
+      var attr = document.getElementById('reviewsAttribution');
+      if (attr) attr.hidden = false;
+    })
+    .catch(function () { /* static fallback stays */ });
+})();

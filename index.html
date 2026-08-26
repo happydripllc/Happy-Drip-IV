@@ -939,35 +939,84 @@
 </section>
 
 <!-- ============================================================
-     TESTIMONIALS
+     PATIENT REVIEWS CAROUSEL
      ============================================================ -->
-<section class="testimonials-section" aria-labelledby="testimonialsHeading">
+<section class="reviews-section" aria-labelledby="reviewsHeading">
   <div class="container">
     <div class="section-header">
       <span class="section-label">Patient Reviews</span>
-      <h2 id="testimonialsHeading">What Our Patients Are Saying</h2>
+      <h2 id="reviewsHeading">What Our Patients Are Saying</h2>
       <div class="section-divider"></div>
     </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-        <p class="testimonial-text">"Brittany saved my life. From identifying my clinical depression to facilitating my 130+ lb weight loss, she has been pivotal in all of my most impactful health improvements. Let her change your life. You won't regret it."</p>
-        <div class="testimonial-author">Calliope P.</div>
-        <div class="testimonial-type">Weight Loss Patient &bull; 130+ lbs lost</div>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-        <p class="testimonial-text">"I Absolutely LOVE Happy Drip! The staff is so kind and take their time with you. I've been coming here for a while now and I wouldn't trade this experience for anything. Truly the best!"</p>
-        <div class="testimonial-author">Asheleigh T.</div>
-        <div class="testimonial-type">Happy Drip Patient</div>
-      </div>
-      <div class="testimonial-card">
-        <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
-        <p class="testimonial-text">"I have followed Brittany from a previous medical practice. She offers the ultimate, full package kind of service everyone wants when it comes to your health. She sets aside time to go over labs in detail -- something most providers just don't do."</p>
-        <div class="testimonial-author">Julie C.</div>
-        <div class="testimonial-type">Long-Time Patient</div>
+
+    <!-- Rating summary bar -->
+    <div class="reviews-summary">
+      <div class="reviews-summary-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <div class="reviews-summary-score" id="reviewScore">5.0</div>
+      <div class="reviews-summary-meta">
+        <span id="reviewCount">on Google</span>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c" target="_blank" rel="noopener" class="reviews-leave-link">Leave a review &rarr;</a>
       </div>
     </div>
+
+    <!-- Carousel track -- static cards are the fallback; replaced by live Google reviews when API loads -->
+    <div class="reviews-carousel-wrap">
+      <div class="reviews-track" id="reviewsTrack">
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">CP</div>
+            <div>
+              <div class="review-author-name">Calliope P.</div>
+              <div class="review-author-time">Weight Loss Patient &bull; 130+ lbs lost</div>
+            </div>
+          </div>
+          <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;Brittany saved my life. From identifying my clinical depression to facilitating my 130+ lb weight loss, she has been pivotal in all of my most impactful health improvements. Let her change your life. You won&rsquo;t regret it.&rdquo;</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">AT</div>
+            <div>
+              <div class="review-author-name">Asheleigh T.</div>
+              <div class="review-author-time">Happy Drip Patient</div>
+            </div>
+          </div>
+          <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;I Absolutely LOVE Happy Drip! The staff is so kind and take their time with you. I&rsquo;ve been coming here for a while now and I wouldn&rsquo;t trade this experience for anything. Truly the best!&rdquo;</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card-header">
+            <div class="review-avatar">JC</div>
+            <div>
+              <div class="review-author-name">Julie C.</div>
+              <div class="review-author-time">Long-Time Patient</div>
+            </div>
+          </div>
+          <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-text">&ldquo;I have followed Brittany from a previous medical practice. She offers the ultimate, full package kind of service everyone wants when it comes to your health. She sets aside time to go over labs in detail -- something most providers just don&rsquo;t do.&rdquo;</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Carousel nav controls -->
+    <div class="reviews-nav">
+      <button class="reviews-nav-btn" id="reviewsPrev" aria-label="Previous review">&#8592;</button>
+      <div class="reviews-dots" id="reviewsDots"></div>
+      <button class="reviews-nav-btn" id="reviewsNext" aria-label="Next review">&#8594;</button>
+    </div>
+
+    <!-- Google attribution -- shown only when live reviews load (required by Google ToS) -->
+    <div class="reviews-attribution" id="reviewsAttribution" hidden>
+      <span>Powered by</span>
+      <strong style="font-size:0.8rem;">
+        <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+      </strong>
+    </div>
+
   </div>
 </section>
 
