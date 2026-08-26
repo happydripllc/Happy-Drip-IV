@@ -3,7 +3,7 @@
 // Requires env var: GOOGLE_PLACES_API_KEY (set in Cloudflare Pages dashboard)
 
 const PLACE_ID  = 'ChIJmfpTtRDMM6MRnkpXDl57x0c';
-const CACHE_URL = 'https://happydripiv.com/__reviews_cache_v1';
+const CACHE_URL = 'https://happydripiv.com/__reviews_cache_v2';
 const CACHE_TTL = 86400; // 24 hours
 
 export async function onRequest({ env }) {
@@ -12,6 +12,8 @@ export async function onRequest({ env }) {
   if (cached) return cached;
 
   let payload;
+  let debugError = null;
+
   try {
     const apiKey = env.GOOGLE_PLACES_API_KEY;
     if (!apiKey) throw new Error('GOOGLE_PLACES_API_KEY not set');
@@ -26,7 +28,10 @@ export async function onRequest({ env }) {
       }
     );
 
-    if (!resp.ok) throw new Error(`Places API returned ${resp.status}`);
+    if (!resp.ok) {
+      const body = await resp.text();
+      throw new Error(`Places API ${resp.status}: ${body.slice(0, 200)}`);
+    }
 
     const data = await resp.json();
 
@@ -43,21 +48,29 @@ export async function onRequest({ env }) {
         })),
       updatedAt: new Date().toISOString(),
     };
-  } catch {
-    // Return empty payload -- client falls back to static reviews
+  } catch (err) {
+    debugError = err.message;
     payload = {
       rating: null, totalRatings: null,
       reviews: [], updatedAt: new Date().toISOString(),
+      _error: debugError, // temporary -- remove once working
     };
   }
 
+  // Only cache successful responses
   const response = new Response(JSON.stringify(payload), {
-    headers: {
-      'Content-Type':  'application/json',
-      'Cache-Control': `public, max-age=${CACHE_TTL}`,
-    },
+    headers: { 'Content-Type': 'application/json' },
   });
 
-  await cache.put(CACHE_URL, response.clone());
+  if (!debugError) {
+    const cacheable = new Response(JSON.stringify(payload), {
+      headers: {
+        'Content-Type':  'application/json',
+        'Cache-Control': `public, max-age=${CACHE_TTL}`,
+      },
+    });
+    await cache.put(CACHE_URL, cacheable);
+  }
+
   return response;
 }
