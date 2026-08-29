@@ -195,7 +195,8 @@ document.querySelectorAll('.service-card, .price-card, .wl-card, .testimonial-ca
     const all = cards();
     if (!all.length) return;
     current = ((idx % all.length) + all.length) % all.length;
-    track.scrollTo({ left: all[current].offsetLeft, behavior: 'smooth' });
+    const cardLeft = all[current].getBoundingClientRect().left - track.getBoundingClientRect().left;
+    track.scrollLeft += cardLeft;
     updateDots();
   }
 
