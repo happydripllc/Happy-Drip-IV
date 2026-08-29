@@ -23,6 +23,12 @@
     .blog-grid-section { padding: 64px 0 80px; }
     .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 32px; margin-top: 48px; }
 
+    @media (max-width: 640px) {
+      .blog-hero { padding: 40px 0 28px; }
+      .blog-grid-section { padding: 32px 0 48px; }
+      .blog-grid { margin-top: 24px; gap: 20px; }
+    }
+
     .blog-card {
       background: #fff; border-radius: 20px; overflow: hidden;
       box-shadow: 0 3px 20px rgba(0,0,0,0.07); border: 1.5px solid var(--border);
