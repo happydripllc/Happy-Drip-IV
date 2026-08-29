@@ -76,19 +76,132 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
-      <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
+    <a href="/" class="site-logo" aria-label="Happy Drip IV &amp; Wellness Home">
+      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness logo" class="logo-icon" />
       <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="/">Home</a></li>
-        <li><a href="/jeuveau">Aesthetics</a></li>
-        <li><a href="/weightloss">Weight Loss</a></li>
-        <li><a href="/iv-drip-menu">IV Therapy</a></li>
-        <li><a href="/blog">Blog</a></li>
-      </ul>
+      <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">Medical Services <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <div class="dropdown">
+          <div class="dropdown-group">
+            <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
+            <span class="dropdown-subcategory">Injectable Medications</span>
+            <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
+            <a href="/semaglutide" class="dropdown-group-item nested">Semaglutide</a>
+            <a href="/tirzepatide" class="dropdown-group-item nested">Tirzepatide</a>
+            <span class="dropdown-subcategory">Oral Medications</span>
+            <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
+            <a href="/happy-health-clinic" class="dropdown-group-item">Direct Primary Care</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
+            <a href="/nad-plus" class="dropdown-group-item">NAD+</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/mens-health" class="dropdown-group-title">Men's Health</a>
+            <a href="/sexual-health" class="dropdown-group-item">Sexual Health (ED)</a>
+            <a href="/trt" class="dropdown-group-item">Testosterone (TRT)</a>
+          </div>
+          <div class="dropdown-group">
+            <a href="/womens-health" class="dropdown-group-title">Women's Health</a>
+            <a href="/hormone-optimization" class="dropdown-group-item">Hormone Therapy</a>
+            <a href="/pcos" class="dropdown-group-item">PCOS Management</a>
+            <a href="/birth-control" class="dropdown-group-item">Birth Control</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">Aesthetics <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <div class="dropdown">
+          <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/mesotox">Korean Glass Skin MesoTox</a>
+          <a href="/microneedling">Microneedling</a>
+          <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+          <a href="/laser-hair-removal">Laser Hair Removal</a>
+          <a href="/tattoo-removal">Tattoo Removal</a>
+          <a href="/prp-prf">PRP / PRF</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">IV Therapy <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <div class="dropdown">
+          <a href="/iv-drip-menu">IV Drip Menu</a>
+          <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
+          <a href="/groups-events">Groups + Events</a>
+          <a href="/iron-infusion">Iron Infusion</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="#" class="nav-link" aria-haspopup="true">Things We Treat <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
+      </div>
+      <div class="nav-item"><a href="/payment-plans" class="nav-link">Payment Plans</a></div>
+      <div class="nav-item"><a href="/blog" class="nav-link">Blog</a></div>
+      <div class="nav-item"><a href="/#faq" class="nav-link">FAQ</a></div>
     </nav>
+    <div class="header-right">
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+        (682) 283-6976
+      </a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <span class="mobile-section-title">Medical Services</span>
+    <a href="/weightloss" class="sub-link">Medical Weight Loss</a>
+    <span class="mobile-subcategory">Injectable Medications</span>
+    <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
+    <a href="/semaglutide" class="sub-link nested">Semaglutide</a>
+    <a href="/tirzepatide" class="sub-link nested">Tirzepatide</a>
+    <span class="mobile-subcategory">Oral Medications</span>
+    <a href="/phentermine" class="sub-link nested">Phentermine</a>
+    <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>
+    <a href="/peptide-therapy/" class="sub-link">Peptide Therapy</a>
+    <a href="/nad-plus" class="sub-link nested">NAD+</a>
+    <a href="/mens-health" class="sub-link">Men's Health</a>
+    <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
+    <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
+    <a href="/womens-health" class="sub-link">Women's Health</a>
+    <a href="/hormone-optimization" class="sub-link nested">Hormone Therapy</a>
+    <a href="/pcos" class="sub-link nested">PCOS Management</a>
+    <a href="/birth-control" class="sub-link nested">Birth Control</a>
+    <span class="mobile-section-title">Aesthetics</span>
+    <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
+    <a href="/microneedling" class="sub-link">Microneedling</a>
+    <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <a href="/laser-hair-removal" class="sub-link">Laser Hair Removal</a>
+    <a href="/tattoo-removal" class="sub-link">Tattoo Removal</a>
+    <a href="/prp-prf" class="sub-link">PRP / PRF</a>
+    <span class="mobile-section-title">IV Therapy</span>
+    <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
+    <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
+    <a href="/groups-events" class="sub-link">Groups + Events</a>
+    <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/payment-plans">Payment Plans</a>
+    <a href="/blog">Blog</a>
+    <a href="/#faq">FAQ</a>
+  </nav>
+</header>
+
     <div class="header-actions">
       <a href="tel:6822836976" class="header-phone">(682) 283-6976</a>
       <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
