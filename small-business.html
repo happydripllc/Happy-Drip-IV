@@ -41,7 +41,7 @@
           {
             "@type": "Question",
             "name": "What is the minimum company size for the Small Business DPC plan?",
-            "acceptedAnswer": {"@type": "Answer", "text": "The minimum is 5 enrolled employees to activate the Small Business plan."}
+            "acceptedAnswer": {"@type": "Answer", "text": "The minimum is 2 eligible employees (employees only -- dependents, spouses, and family members do not count toward the minimum) to activate the Small Business plan."}
           },
           {
             "@type": "Question",
@@ -824,7 +824,7 @@
             <span class="sb-stat-label">Starting / Month<br>Ages 21--54</span>
           </div>
           <div class="sb-stat">
-            <span class="sb-stat-num">5+</span>
+            <span class="sb-stat-num">2+</span>
             <span class="sb-stat-label">Employees<br>Minimum</span>
           </div>
           <div class="sb-stat">
@@ -1196,7 +1196,7 @@
           </div>
         </div>
         <div id="min-warning" class="calc-warning" style="display:none;">
-          ⚠️ Minimum 5 enrolled employees required for the Small Business plan.
+          ⚠️ Minimum 2 eligible employees required. Dependents, spouses, and family members do not count toward the minimum.
         </div>
       </div>
 
@@ -1347,7 +1347,7 @@
       <div class="industry-chip">And more...</div>
     </div>
 
-    <p class="industries-note">Not in a category above? If you have 5 or more employees and you care about their access to primary care, this program is worth a conversation.</p>
+    <p class="industries-note">Not in a category above? If you have 2 or more eligible employees and you care about their access to primary care, this program is worth a conversation.</p>
   </div>
 </section>
 
@@ -1457,7 +1457,7 @@
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-a" hidden>
-          The minimum is 5 enrolled employees to activate the Small Business plan.
+          The minimum is 2 eligible employees. Dependents, spouses, and family members do not count toward satisfying the 2-employee minimum.
         </div>
       </div>
 
@@ -1752,7 +1752,7 @@
     <span class="vip-badge">DPC</span>
     Primary care for your team -- <a href="#lead-form">&nbsp;build a plan&nbsp;</a> or call <a href="tel:6822836976">&nbsp;(682) 283-6976&nbsp;</a>
   </div>
-  <div class="tip">Starting at $100/mo &bull; 5 employees min. &bull; At-cost labs</div>
+  <div class="tip">Starting at $100/mo &bull; 2 employees min. &bull; At-cost labs</div>
 </div>
 
 <script src="js/script.js?v=20260829"></script>
@@ -1784,7 +1784,7 @@
         extrakids = counts.extrakids, singles = counts.singles, families = counts.families;
     var totalEmployees = adults + golden;
     document.getElementById('total-employees').textContent = totalEmployees === 1 ? '1 employee' : totalEmployees + ' employees';
-    document.getElementById('min-warning').style.display = (totalEmployees > 0 && totalEmployees < 5) ? 'block' : 'none';
+    document.getElementById('min-warning').style.display = (totalEmployees > 0 && totalEmployees < 2) ? 'block' : 'none';
     var monthly = (adults * 100) + (golden * 130) + (kids * 50) + (extrakids * 25);
     var annual  = monthly * 12;
     var enrollment = (singles * ENROLL_SINGLE) + (families * ENROLL_FAMILY);
