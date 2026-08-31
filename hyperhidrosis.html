@@ -339,6 +339,46 @@
     }
 
     /* ======================================================
+       PRICING
+       ====================================================== */
+    .hh-pricing-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 22px; max-width: 900px; margin: 0 auto;
+    }
+    .hh-price-card {
+      background: #fff; border-radius: 22px; overflow: hidden;
+      border: 2px solid rgba(58,184,203,0.18);
+      box-shadow: 0 4px 24px rgba(26,39,68,0.07);
+      transition: all 0.22s;
+    }
+    .hh-price-card:hover { border-color: var(--hh-teal); transform: translateY(-3px); box-shadow: 0 12px 36px rgba(58,184,203,0.14); }
+    .hh-price-card-head {
+      background: linear-gradient(135deg, var(--hh-navy) 0%, var(--hh-slate) 100%);
+      padding: 24px 22px;
+    }
+    .hh-price-card-head h3 { color: #fff; font-size: 0.95rem; margin-bottom: 6px; }
+    .hh-price-card-head .hh-area-tag { background: rgba(58,184,203,0.2); color: var(--hh-teal); margin-bottom: 0; }
+    .hh-price-card-body { padding: 22px 22px 26px; }
+    .hh-price-num {
+      font-family: var(--font-heading); font-size: 2.4rem; font-weight: 700;
+      color: var(--hh-navy); line-height: 1; display: block; margin-bottom: 2px;
+    }
+    .hh-price-sub { font-size: 0.8rem; color: #7a8aa0; margin-bottom: 14px; display: block; }
+    .hh-price-breakdown {
+      background: var(--hh-cool); border-radius: 10px;
+      padding: 12px 14px; font-size: 0.82rem; color: #4a5570; line-height: 1.6;
+    }
+    .hh-price-breakdown strong { color: var(--hh-navy); }
+    .hh-price-note {
+      font-size: 0.75rem; color: #9aa0b0; margin-top: 12px; line-height: 1.55; display: block;
+    }
+    .hh-pricing-disclaimer {
+      text-align: center; margin-top: 28px;
+      font-size: 0.82rem; color: #7a8aa0; line-height: 1.65; max-width: 680px; margin-left: auto; margin-right: auto;
+    }
+    @media (max-width: 860px) { .hh-pricing-grid { grid-template-columns: 1fr; max-width: 460px; } }
+
+    /* ======================================================
        WHAT TO EXPECT
        ====================================================== */
     .hh-expect-grid {
@@ -800,6 +840,74 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+     ============================================================ -->
+<section class="hh-section navy" id="pricing">
+  <div class="container">
+    <div class="hh-section-header">
+      <span class="hh-eyebrow-sm">Transparent Pricing</span>
+      <h2 class="light">Simple, <em>Flat-Rate</em> Per Unit.</h2>
+      <p class="light">$10 per unit. The amounts below reflect typical treatment protocols -- your actual unit count may vary based on the area and your individual response. We confirm everything at your consultation.</p>
+    </div>
+
+    <div class="hh-pricing-grid">
+
+      <div class="hh-price-card">
+        <div class="hh-price-card-head">
+          <span class="hh-area-tag">Underarms</span>
+          <h3>Axillary Hyperhidrosis</h3>
+        </div>
+        <div class="hh-price-card-body">
+          <span class="hh-price-num">~$500</span>
+          <span class="hh-price-sub">per underarm &bull; ~50 units</span>
+          <div class="hh-price-breakdown">
+            <strong>Both underarms (bilateral):</strong> ~100 units &bull; ~$1,000<br>
+            $10/unit &bull; ~50 units per side
+          </div>
+          <span class="hh-price-note">Most patients treat both underarms in the same visit.</span>
+        </div>
+      </div>
+
+      <div class="hh-price-card">
+        <div class="hh-price-card-head">
+          <span class="hh-area-tag">Palms</span>
+          <h3>Palmar Hyperhidrosis</h3>
+        </div>
+        <div class="hh-price-card-body">
+          <span class="hh-price-num">~$500</span>
+          <span class="hh-price-sub">per hand &bull; ~50 units</span>
+          <div class="hh-price-breakdown">
+            <strong>Both hands (bilateral):</strong> ~100 units &bull; ~$1,000<br>
+            $10/unit &bull; ~50 units per hand
+          </div>
+          <span class="hh-price-note">Off-label use. Bilateral treatment is standard. We discuss candidacy at your consultation.</span>
+        </div>
+      </div>
+
+      <div class="hh-price-card">
+        <div class="hh-price-card-head">
+          <span class="hh-area-tag">Forehead &amp; Hairline</span>
+          <h3>Craniofacial Hyperhidrosis</h3>
+        </div>
+        <div class="hh-price-card-body">
+          <span class="hh-price-num">$10</span>
+          <span class="hh-price-sub">per unit &bull; amount varies</span>
+          <div class="hh-price-breakdown">
+            Unit count varies based on the size of the treatment area and your anatomy. <strong>Contact us for a personalized quote.</strong>
+          </div>
+          <span class="hh-price-note">Off-label use. Placement is thoughtful to preserve brow movement.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="hh-pricing-disclaimer" style="color:rgba(255,255,255,0.45);margin-top:28px;">
+      Pricing is based on $10/unit. Unit counts above are typical estimates -- actual units needed may vary. Final pricing is confirmed at your consultation. Cash-pay only -- no insurance accepted or required.
+    </p>
   </div>
 </section>
 
