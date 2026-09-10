@@ -37,6 +37,18 @@ ul { list-style: none; }
 button { cursor: pointer; border: none; font-family: inherit; }
 
 /* ---- Accessibility ---- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .skip-link {
   position: absolute;
   top: -100%;
@@ -232,6 +244,7 @@ p { line-height: 1.75; }
   position: sticky;
   top: 0;
   z-index: 800;
+  width: 100vw;
   box-shadow: 0 2px 16px rgba(13,27,62,0.25);
 }
 .header-inner {
@@ -1135,7 +1148,7 @@ p { line-height: 1.75; }
 .site-footer {
   background: var(--navy);
   color: rgba(255,255,255,0.8);
-  padding: 64px 0 32px;
+  padding: 64px 0 88px;
   border-top: 3px solid var(--teal-dark);
 }
 .footer-grid {
