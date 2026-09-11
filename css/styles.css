@@ -244,7 +244,6 @@ p { line-height: 1.75; }
   position: sticky;
   top: 0;
   z-index: 800;
-  width: 100vw;
   box-shadow: 0 2px 16px rgba(13,27,62,0.25);
 }
 .header-inner {
@@ -1170,6 +1169,7 @@ p { line-height: 1.75; }
 .footer-logo .logo-text span:last-child { color: var(--teal); font-size: 0.65rem; }
 .footer-col p { font-size: 0.87rem; line-height: 1.7; margin-bottom: 8px; }
 .footer-col a { display: block; font-size: 0.87rem; color: rgba(255,255,255,0.72); margin-bottom: 9px; transition: color 0.18s; }
+.footer-col p a { display: inline; margin-bottom: 0; }
 .footer-col a:hover { color: var(--teal); }
 .footer-social { display: flex; gap: 12px; margin-top: 8px; }
 .footer-social .social-btn {
