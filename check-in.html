@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check In | Happy Drip IV &amp; Wellness</title>
+  <meta name="description" content="Check in for your Happy Drip IV &amp; Wellness visit or event — returning guests and new patients start here." />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="canonical" href="https://www.happydripiv.com/check-in" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #0d1b3e;
+      --navy-mid: #1a2f5e;
+      --teal: #5dd9e8;
+      --teal-dark: #3ab8cb;
+      --teal-text: #0c7285;
+      --teal-light: #e0f7fa;
+      --gold: #c9a227;
+      --body-text: #374151;
+      --font-heading: 'Playfair Display', Georgia, serif;
+      --font-body: 'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--body-text);
+      line-height: 1.6;
+      min-height: 100vh;
+      background: linear-gradient(170deg, #d9f4f9 0%, #f4fbfd 45%, #fdf1f7 100%);
+      position: relative;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+
+    /* ---- Floating bubbles (decorative) ---- */
+    .bubbles { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+    .bubble {
+      position: absolute; bottom: -80px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), rgba(93,217,232,0.25));
+      border: 1px solid rgba(93,217,232,0.35);
+      animation: rise linear infinite;
+    }
+    .bubble:nth-child(1) { left: 6%;  width: 34px; height: 34px; animation-duration: 16s; animation-delay: 0s; }
+    .bubble:nth-child(2) { left: 22%; width: 18px; height: 18px; animation-duration: 12s; animation-delay: 3s; }
+    .bubble:nth-child(3) { left: 41%; width: 44px; height: 44px; animation-duration: 20s; animation-delay: 1s; }
+    .bubble:nth-child(4) { left: 63%; width: 24px; height: 24px; animation-duration: 14s; animation-delay: 5s; }
+    .bubble:nth-child(5) { left: 80%; width: 38px; height: 38px; animation-duration: 18s; animation-delay: 2s; }
+    .bubble:nth-child(6) { left: 92%; width: 16px; height: 16px; animation-duration: 11s; animation-delay: 6s; }
+    @keyframes rise {
+      0%   { transform: translateY(0) translateX(0); opacity: 0; }
+      10%  { opacity: 1; }
+      100% { transform: translateY(-115vh) translateX(24px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bubble { animation: none; opacity: 0.5; bottom: auto; top: 12%; }
+      .bubble:nth-child(even) { top: 68%; }
+    }
+
+    /* ---- Layout ---- */
+    .wrap {
+      position: relative; z-index: 1;
+      max-width: 520px; margin: 0 auto;
+      padding: 40px 20px 32px;
+    }
+
+    /* ---- Header ---- */
+    .hero { text-align: center; margin-bottom: 32px; }
+    .logo-badge {
+      width: 84px; height: 84px; margin: 0 auto 18px;
+      background: #fff; border-radius: 50%;
+      box-shadow: 0 6px 24px rgba(13,27,62,0.12);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-badge img { width: 44px; height: 52px; object-fit: contain; }
+    .brand {
+      font-size: 0.75rem; font-weight: 800; letter-spacing: 0.14em;
+      text-transform: uppercase; color: var(--teal-text); margin-bottom: 10px;
+    }
+    h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 8vw, 2.6rem);
+      color: var(--navy); line-height: 1.15; margin-bottom: 12px;
+    }
+    .hero p { font-size: 1.05rem; color: #4a5570; max-width: 380px; margin: 0 auto; }
+
+    .pick-label {
+      text-align: center; font-size: 0.75rem; font-weight: 800;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--navy-mid); opacity: 0.7; margin-bottom: 16px;
+    }
+
+    /* ---- Choice cards (add more <a class="choice"> blocks here for future forms) ---- */
+    .choices { display: flex; flex-direction: column; gap: 18px; }
+    .choice {
+      display: block; position: relative;
+      background: #fff; border-radius: 24px;
+      padding: 26px 24px 24px;
+      box-shadow: 0 6px 28px rgba(13,27,62,0.09);
+      border: 2px solid transparent;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .choice:hover { transform: translateY(-3px); box-shadow: 0 12px 36px rgba(13,27,62,0.14); }
+    .choice:active { transform: translateY(-1px); }
+    .choice:focus-visible { outline: 3px solid var(--navy); outline-offset: 3px; }
+    .choice-returning { border-color: var(--teal); }
+    .choice-new { background: var(--navy); color: #fff; }
+    .choice-new:focus-visible { outline-color: var(--teal); }
+
+    .choice-icon {
+      width: 52px; height: 52px; border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.7rem; margin-bottom: 14px;
+      background: var(--teal-light);
+    }
+    .choice-new .choice-icon { background: rgba(255,255,255,0.12); }
+    .choice-tag {
+      display: inline-block; font-size: 0.7rem; font-weight: 800;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--teal-text); margin-bottom: 6px;
+    }
+    .choice-new .choice-tag { color: var(--teal); }
+    .choice h2 {
+      font-family: var(--font-heading);
+      font-size: 1.45rem; color: var(--navy); line-height: 1.2; margin-bottom: 8px;
+    }
+    .choice-new h2 { color: #fff; }
+    .choice p { font-size: 0.95rem; line-height: 1.6; color: #4a5570; margin-bottom: 20px; }
+    .choice-new p { color: rgba(255,255,255,0.8); }
+    .choice-btn {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      background: var(--teal); color: var(--navy);
+      font-weight: 800; font-size: 1rem;
+      padding: 15px 24px; border-radius: 50px;
+      transition: background 0.2s;
+    }
+    .choice:hover .choice-btn { background: var(--teal-dark); }
+    .choice-new .choice-btn { background: #fff; }
+    .choice-new:hover .choice-btn { background: var(--teal-light); }
+
+    /* ---- Help + footer ---- */
+    .help {
+      text-align: center; margin-top: 28px;
+      font-size: 0.92rem; color: #4a5570;
+    }
+    .help strong { color: var(--navy); }
+    .footer {
+      text-align: center; margin-top: 32px; padding-top: 22px;
+      border-top: 1px solid rgba(13,27,62,0.1);
+      font-size: 0.8rem; color: #6b7280; line-height: 1.7;
+    }
+    .footer a { color: var(--teal-text); font-weight: 700; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="bubbles" aria-hidden="true">
+    <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+    <span class="bubble"></span><span class="bubble"></span><span class="bubble"></span>
+  </div>
+
+  <main class="wrap">
+
+    <header class="hero">
+      <div class="logo-badge">
+        <img src="images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness logo" />
+      </div>
+      <div class="brand">Happy Drip IV &amp; Wellness</div>
+      <h1>Welcome! Let&rsquo;s get you checked in&nbsp;💧</h1>
+      <p>Pick the option that fits you and it&rsquo;ll only take a moment.</p>
+    </header>
+
+    <div class="pick-label">Which one is you?</div>
+
+    <div class="choices">
+
+      <a class="choice choice-returning" href="https://forms.zohopublic.com/infohappy1/form/StayConnected/formperma/N3YLur5Qi_PZc3FKcjb-luTEFdKU9tinAfDTbOOW-kA">
+        <div class="choice-icon" aria-hidden="true">👋</div>
+        <span class="choice-tag">Returning Guest</span>
+        <h2>I&rsquo;ve been here before</h2>
+        <p>Been to one of our events or gotten a B12 with us before? No medical questionnaire needed &mdash; just check in with your name, birthday, and email or phone.</p>
+        <span class="choice-btn">Quick Check-In <span aria-hidden="true">&rarr;</span></span>
+      </a>
+
+      <a class="choice choice-new" href="https://forms.zohopublic.com/infohappy1/form/B12ShotCheckIn/formperma/_LY0Ntp4vb5ecSUyXEdqr9KpgMDQ6PVcW-TDEKtAXzc">
+        <div class="choice-icon" aria-hidden="true">✨</div>
+        <span class="choice-tag">New Patient</span>
+        <h2>This is my first time</h2>
+        <p>Welcome! Please complete our full health questionnaire and consent form so we can take great care of you.</p>
+        <span class="choice-btn">Start New Patient Form <span aria-hidden="true">&rarr;</span></span>
+      </a>
+
+    </div>
+
+    <p class="help"><strong>Not sure which one?</strong> Just ask any of our team &mdash; we&rsquo;ll point you the right way.</p>
+
+    <footer class="footer">
+      Happy Drip IV &amp; Wellness &middot; Bedford, TX<br />
+      <a href="tel:6822836976">(682) 283-6976</a> &middot;
+      <a href="/hipaa-notice.html">HIPAA Notice</a> &middot;
+      <a href="/">happydripiv.com</a>
+    </footer>
+
+  </main>
+
+</body>
+</html>
