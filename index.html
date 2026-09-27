@@ -3,57 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Drip IV & Wellness | IV Therapy, Botox & Longevity Medicine | Bedford, TX</title>
-  <meta name="description" content="Happy Drip IV & Wellness -- your DFW clinic for IV Therapy, Botox, Laser & Longevity Medicine. Led by Brittany Adams, APRN FNP-C in Bedford, Texas." />
-  <meta name="keywords" content="IV therapy Bedford TX, Botox DFW, weight loss clinic, concierge medicine, laser treatments, PRP, red light therapy, Happy Drip IV" />
+  <title>Happy Drip IV & Wellness | Medical Wellness & Weight Loss | Bedford, TX</title>
+  <meta name="description" content="Happy Drip IV & Wellness is a provider-led medical wellness clinic in Bedford, TX: medical weight loss, IV therapy, personalized healthcare & aesthetics." />
   <link rel="canonical" href="https://www.happydripiv.com/" />
-  <!-- LocalBusiness schema -->
+  <!-- MedicalClinic + founder schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    "name": "Happy Drip IV & Wellness",
-    "description": "Cash-pay concierge wellness clinic in Bedford, TX offering IV therapy, GLP-1 weight loss programs, Botox, laser, PRP, red light therapy, birth control, and men's and women's health services.",
-    "url": "https://www.happydripiv.com",
-    "telephone": "+16822836976",
-    "email": "info@happydripiv.com",
-    "image": "https://www.happydripiv.com/images/clinic.jpg",
-    "logo": "https://www.happydripiv.com/images/happy-drip-logo.png",
-    "priceRange": "$$",
-    "paymentAccepted": "Cash, Credit Card, HSA, FSA",
-    "currenciesAccepted": "USD",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "813 Brown Trail #6B",
-      "addressLocality": "Bedford",
-      "addressRegion": "TX",
-      "postalCode": "76022",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 32.8443,
-      "longitude": -97.1436
-    },
-    "areaServed": [
-      "Bedford, TX", "Hurst, TX", "Euless, TX", "Colleyville, TX",
-      "Grapevine, TX", "Keller, TX", "Southlake, TX", "North Richland Hills, TX",
-      "Fort Worth, TX", "Arlington, TX", "DFW Metroplex"
-    ],
-    "medicalSpecialty": [
-      "IV Therapy", "Weight Loss", "Aesthetics", "Primary Care",
-      "Women's Health", "Men's Health"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/happydripiv",
-      "https://www.instagram.com/happydripiv",
-      "https://www.tiktok.com/@happydripiv"
+    "@graph": [
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "alternateName": "Happy Drip",
+        "description": "Provider-led medical wellness clinic in Bedford, TX offering medical weight management, IV therapy, iron infusions, personalized primary care through Happy Health Clinic, men's and women's health, and medical aesthetics. Cash-pay with itemized invoices for HSA/FSA submission.",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "email": "info@happydripiv.com",
+        "image": "https://www.happydripiv.com/images/clinic.jpg",
+        "logo": "https://www.happydripiv.com/images/happy-drip-logo.png",
+        "priceRange": "$$",
+        "paymentAccepted": "Cash, Credit Card, HSA, FSA",
+        "currenciesAccepted": "USD",
+        "medicalSpecialty": "PrimaryCare",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 32.8443,
+          "longitude": -97.1436
+        },
+        "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c",
+        "areaServed": [
+          "Bedford, TX", "Hurst, TX", "Euless, TX", "Colleyville, TX",
+          "Grapevine, TX", "Keller, TX", "Southlake, TX", "North Richland Hills, TX",
+          "Fort Worth, TX", "Arlington, TX", "Dallas-Fort Worth"
+        ],
+        "founder": { "@id": "https://www.happydripiv.com/#brittany-adams" },
+        "employee": { "@id": "https://www.happydripiv.com/#brittany-adams" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Happy Drip IV & Wellness services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medical Weight Loss", "url": "https://www.happydripiv.com/weightloss" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "GLP-1 Medications", "url": "https://www.happydripiv.com/glp1-medications/" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IV Therapy", "url": "https://www.happydripiv.com/iv-drip-menu" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Iron Infusions", "url": "https://www.happydripiv.com/iron-infusion" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Primary Care (Happy Health Clinic)", "url": "https://www.happydripiv.com/happy-health-clinic" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Women's Health", "url": "https://www.happydripiv.com/womens-health" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Men's Health", "url": "https://www.happydripiv.com/mens-health" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wrinkle Relaxers (Jeuveau)", "url": "https://www.happydripiv.com/jeuveau" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Laser Hair Removal", "url": "https://www.happydripiv.com/laser-hair-removal" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PRP / PRF Treatments", "url": "https://www.happydripiv.com/prp-prf" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Microneedling", "url": "https://www.happydripiv.com/microneedling" } }
+          ]
+        },
+        "sameAs": [
+          "https://www.facebook.com/happydripiv",
+          "https://www.instagram.com/happydripiv",
+          "https://www.tiktok.com/@happydripiv",
+          "https://www.yelp.com/biz/happy-drip-iv-wellness"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "jobTitle": "Board-Certified Family Nurse Practitioner and Founder",
+        "image": "https://www.happydripiv.com/images/headshot-alt.jpg",
+        "url": "https://www.happydripiv.com/#provider",
+        "worksFor": { "@id": "https://www.happydripiv.com/#clinic" }
+      }
     ]
   }
   </script>
   <!-- Open Graph -->
-  <meta property="og:title" content="Happy Drip IV & Wellness | Bedford, TX" />
-  <meta property="og:description" content="IV Therapy, Botox, Laser & Longevity Medicine in the DFW area. Book your appointment today." />
+  <meta property="og:title" content="Happy Drip IV & Wellness | Medical Wellness in Bedford, TX" />
+  <meta property="og:description" content="Provider-led medical wellness in Bedford, TX: medical weight loss, IV therapy, personalized healthcare & aesthetics. Book your appointment today." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.happydripiv.com/" />
   <meta property="og:image" content="https://www.happydripiv.com/images/clinic.jpg" />
@@ -62,6 +95,64 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css?v=20260911" />
+  <style>
+    /* ---- Homepage SEO pass: hero H1 wraps the eyebrow pill + branded line (visuals unchanged) ---- */
+    .hero-content h1 { display: block; background: none; padding: 0; }
+    .hero-content h1 .hero-eyebrow-box { display: flex; width: fit-content; max-width: 100%; }
+    .hero-h1-brand {
+      display: inline;
+      background: rgba(255,255,255,0.88);
+      padding: 4px 8px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+    .hero-sub {
+      display: inline-block;
+      max-width: 100%;
+      margin-top: 16px;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.88);
+      border-radius: 8px;
+      color: var(--navy);
+      font-size: 1.02rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+    .hero-text-link { display: none; }
+    @media (max-width: 640px) {
+      .hero-h1-brand { background: none; padding: 0; }
+      .hero-sub { display: block; margin-top: 14px; padding: 0; background: none; color: var(--body-text); font-size: 1rem; font-weight: 600; }
+      .hero-text-link { display: block; text-align: center; font-weight: 700; font-size: 0.9rem; color: var(--teal-text); text-decoration: underline; }
+    }
+
+    /* ---- Service directory: accent the primary service lines ---- */
+    .service-card--major::before { transform: scaleX(1); }
+
+    /* ---- Heading-level fixes (h4 -> h3) with the original look ---- */
+    .aesthetic-item h3 { font-size: 0.92rem; font-weight: 600; color: var(--navy); margin-bottom: 4px; }
+    .aesthetic-item h3 a:hover { color: var(--teal-text); text-decoration: underline; }
+    .payment-card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; }
+
+    /* ---- Inline links, CTA rows, weight-loss credibility callout ---- */
+    .feature-list a { color: var(--teal-text); text-decoration: underline; text-underline-offset: 2px; }
+    .feature-cta-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .text-link { font-weight: 700; color: var(--teal-text); text-decoration: underline; text-underline-offset: 3px; }
+    .text-link:hover { color: var(--navy); }
+    .wl-credibility {
+      margin: 0 0 24px;
+      padding: 14px 18px;
+      background: var(--white);
+      border-left: 4px solid #e0579a;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .wl-credibility strong { color: var(--navy); }
+    .provider-focus { margin-top: 16px; font-size: 0.9rem; color: var(--body-text); }
+    .provider-focus strong { color: var(--navy); }
+    .provider-title { font-weight: 700; color: var(--teal-text); margin-bottom: 16px; }
+    .faq-a a { color: var(--teal-dark); font-weight: 600; }
+  </style>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -263,8 +354,11 @@
   </picture>
   <div class="hero-overlay">
     <div class="container hero-content">
-      <p class="hero-eyebrow-box">Fort Worth's happy place for IV therapy, integrative medicine &amp; aesthetics.</p>
-      <h1 id="heroHeading">WELCOME<br>TO YOUR<br>WELLNESS ERA.</h1>
+      <h1 id="heroHeading">
+        <span class="hero-eyebrow-box">Provider-led medical wellness &bull; Bedford, TX</span>
+        <span class="hero-h1-brand">WELCOME<br>TO YOUR<br>WELLNESS ERA.</span>
+      </h1>
+      <p class="hero-sub">Happy Drip IV &amp; Wellness: IV therapy, medical weight loss, personalized healthcare &amp; aesthetics -- all in one happy little clinic.</p>
       <div class="hero-btns">
         <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn-book-hero">BOOK HERE</a>
         <a href="tel:6822836976" class="btn-phone-hero">
@@ -277,6 +371,7 @@
           <span class="phone-num">📞 (682) 283-6976</span>
           <span class="phone-sub">Call or Text to Book Now!</span>
         </a>
+        <a href="sms:+16822836976" class="hero-text-link">Prefer to text? Message us</a>
       </div>
       <a href="tel:6822836976" class="btn-calltext-hero">CALL OR TEXT TO BOOK NOW!</a>
     </div>
@@ -293,7 +388,7 @@
       5.0 stars on Google
     </span>
     <span style="color:#f5c518;font-size:1.05rem;letter-spacing:2px;" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-    <a href="https://www.google.com/maps/search/Happy+Drip+IV+Wellness+Bedford+TX" target="_blank" rel="noopener" style="font-size:0.85rem;font-weight:700;color:var(--teal-dark);text-decoration:underline;">Read patient reviews &rarr;</a>
+    <a href="https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c" target="_blank" rel="noopener" style="font-size:0.85rem;font-weight:700;color:var(--teal-dark);text-decoration:underline;">Read our Google reviews &rarr;</a>
   </div>
 </div>
 
@@ -341,8 +436,8 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 8v4l3 3"/></svg>
         </div>
         <h3>Weight Loss</h3>
-        <p>GLP-1 medications, peptides, and personalized programs that get results.</p>
-        <span class="routing-cta">See Programs &rarr;</span>
+        <p>Provider-led GLP-1 medications, peptides, and personalized programs with real follow-up.</p>
+        <span class="routing-cta">Explore Medical Weight Loss &rarr;</span>
       </a>
       <a href="/iv-drip-menu" class="routing-card">
         <div class="routing-icon" aria-hidden="true">
@@ -350,15 +445,15 @@
         </div>
         <h3>IV Therapy</h3>
         <p>Hydration, vitamins, and recovery drips starting at $150 -- same-day available.</p>
-        <span class="routing-cta">View Drip Menu &rarr;</span>
+        <span class="routing-cta">View IV Therapy Menu &rarr;</span>
       </a>
       <a href="/jeuveau" class="routing-card">
         <div class="routing-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><circle cx="12" cy="12" r="3"/></svg>
         </div>
         <h3>Aesthetics</h3>
-        <p>Botox, fillers, laser, PRP, and microneedling -- look as good as you feel.</p>
-        <span class="routing-cta">Explore Treatments &rarr;</span>
+        <p>Wrinkle relaxers, fillers, laser, PRP, and microneedling -- natural-looking, provider-administered.</p>
+        <span class="routing-cta">Explore Aesthetics &rarr;</span>
       </a>
       <a href="/happy-health-clinic" class="routing-card">
         <div class="routing-icon" aria-hidden="true">
@@ -366,15 +461,15 @@
         </div>
         <h3>Primary Care</h3>
         <p>Sick visits, physicals, referrals, and same-day telemedicine -- no insurance needed.</p>
-        <span class="routing-cta">Learn More &rarr;</span>
+        <span class="routing-cta">See Happy Health Clinic &rarr;</span>
       </a>
-      <a href="/birth-control" class="routing-card">
+      <a href="/womens-health" class="routing-card">
         <div class="routing-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
         </div>
         <h3>Women's Health</h3>
         <p>Birth control via $50 async visit. Hormone therapy, PCOS, and menopause care also available -- consult for pricing.</p>
-        <span class="routing-cta">See Services &rarr;</span>
+        <span class="routing-cta">Explore Women's Health &rarr;</span>
       </a>
     </div>
   </div>
@@ -436,165 +531,152 @@
     <div class="section-header">
       <span class="section-label">Our Services</span>
       <h2 id="servicesHeading">More Ways to Feel Like You</h2>
-      <p>From same-day care to aesthetics, IV therapy, and ongoing wellness support, Happy Drip brings practical, personalized healthcare together in one welcoming place.</p>
+      <p>Weight loss, IV therapy, everyday healthcare, and aesthetics -- all under one roof at our Bedford, TX clinic.</p>
       <div class="section-divider"></div>
     </div>
     <div class="services-grid">
-
-      <!-- 1 -->
-      <div class="service-card">
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-        </div>
-        <h3>Concierge Medicine</h3>
-        <p>Sick visits, medication refills, physicals, and same-day appointments with a provider who truly knows you. Telemedicine available.</p>
-        <a href="/happy-health-clinic" class="learn-more">
-          Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <!-- 2 -->
-      <div class="service-card">
+      <div class="service-card service-card--major">
         <div class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M12 8v4l3 3"/></svg>
         </div>
-        <h3>Medically-Assisted Weight Loss</h3>
-        <p>GLP-1 medications (Semaglutide, Tirzepatide), oral medications, peptides, and nutrition counseling for lasting results.</p>
+        <h3>Medical Weight Loss</h3>
+        <p>GLP-1 medications (semaglutide, tirzepatide), oral options, and peptides, with nutrition support and real follow-up.</p>
         <a href="/weightloss" class="learn-more">
-          Learn More
+          Explore Medical Weight Loss
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
-      <!-- 3 -->
-      <div class="service-card">
+      <div class="service-card service-card--major">
         <div class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
         </div>
         <h3>IV Therapy &amp; Vitality</h3>
         <p>Myers Cocktail, Hangover Recovery, Migraine Relief, Immunity Boost, and custom vitamin infusions starting at $150.</p>
         <a href="/iv-drip-menu" class="learn-more">
-          Learn More
+          View IV Therapy Menu
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
-      <!-- 4 -->
+      <div class="service-card service-card--major">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+        </div>
+        <h3>Iron Infusions</h3>
+        <p>IV iron infusions for iron deficiency and anemia. $250 per 200mg infusion, with affordable lab panels available if needed.</p>
+        <a href="/iron-infusion" class="learn-more">
+          See Iron Infusions
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card service-card--major">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+        </div>
+        <h3>Wrinkle Relaxers (Jeuveau&reg;)</h3>
+        <p>Smooth fine lines and prevent new ones with Jeuveau&reg;, the neurotoxin we use, administered by a provider for natural-looking results.</p>
+        <a href="/jeuveau" class="learn-more">
+          Explore Jeuveau&reg; Wrinkle Relaxers
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card service-card--major">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3>Advanced Laser Treatments</h3>
+        <p>Laser hair removal, tattoo removal, and IPL photofacials for smoother, clearer skin.</p>
+        <a href="/laser-hair-removal" class="learn-more">
+          View Laser Treatments
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h3>Concierge Medicine</h3>
+        <p>Primary care at Happy Health Clinic: sick visits, refills, physicals, and same-day appointments with a provider who actually knows you. Telemedicine available.</p>
+        <a href="/happy-health-clinic" class="learn-more">
+          Explore Happy Health Clinic
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
       <div class="service-card">
         <div class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M12 12v.01"/></svg>
         </div>
-        <h3>Specialized Men's Health</h3>
-        <p>Testosterone therapy, erectile dysfunction treatment, hair loss solutions, and comprehensive men's wellness exams.</p>
+        <h3>Specialized Men&rsquo;s Health</h3>
+        <p>Testosterone therapy, ED treatment, hair loss solutions, and men&rsquo;s wellness exams.</p>
         <a href="/mens-health" class="learn-more">
-          Learn More
+          Explore Men&rsquo;s Health
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
-      <!-- 5 -->
-      <div class="service-card">
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
-        </div>
-        <h3>Red Light Therapy</h3>
-        <p>FDA-cleared red and near-infrared light therapy to reduce inflammation, promote skin rejuvenation, and boost cellular energy.</p>
-        <a href="/red-light-therapy" class="learn-more">
-          Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <!-- 6 -->
       <div class="service-card">
         <div class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
         </div>
-        <h3>Birth Control &amp; Women's Health</h3>
-        <p>Birth control managed via $50 async visit -- one-year refills when clinically appropriate. Hormone therapy, PCOS, and menopause care available separately. Cash-pay, no insurance needed.</p>
+        <h3>Birth Control &amp; Women&rsquo;s Health</h3>
+        <p>Birth control via $50 async visit -- one-year refills when clinically appropriate. Hormone therapy, PCOS, and menopause care available separately. Cash-pay, no insurance needed.</p>
         <a href="/birth-control" class="learn-more">
-          Learn More
+          Explore Birth Control Refills
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
-      <!-- 7 -->
       <div class="service-card">
         <div class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="6"/><path d="M8 14l-2 6h12l-2-6"/></svg>
         </div>
         <h3>PRP &amp; Microneedling</h3>
-        <p>Platelet-rich plasma facials, VAMP™ microneedling, and hair restoration treatments to help you look and feel your best.</p>
+        <p>Platelet-rich plasma facials, VAMP&trade; microneedling, and hair restoration treatments.</p>
         <a href="/prp-prf" class="learn-more">
-          Learn More
+          Explore PRP &amp; Microneedling
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
-      <!-- 8 -->
       <div class="service-card">
         <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
         </div>
-        <h3>Advanced Laser Treatments</h3>
-        <p>Laser hair removal, tattoo removal, photofacials, and skin resurfacing for a clearer, smoother complexion.</p>
-        <a href="/laser-hair-removal" class="learn-more">
-          Learn More
+        <h3>Red Light Therapy</h3>
+        <p>FDA-cleared red and near-infrared light sessions to support skin rejuvenation and recovery.</p>
+        <a href="/red-light-therapy" class="learn-more">
+          Explore Red Light Therapy
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
-      <!-- 9 -->
       <div class="service-card">
         <div class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.56.93 6.17 2.45"/></svg>
         </div>
         <h3>Mental Health Support</h3>
-        <p>Compassionate mental health consultations, medication management, and referral coordination for your emotional well-being.</p>
+        <p>Mental health consultations, medication management, and referral coordination.</p>
         <!-- TODO: No dedicated /mental-health page yet -- linking to happy-health-clinic until one is created -->
         <a href="/happy-health-clinic" class="learn-more">
-          Learn More
+          Ask About Mental Health Care
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
 
-      <!-- 10 -->
       <div class="service-card">
         <div class="service-icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6M9 12h6M9 15h4"/></svg>
         </div>
         <h3>In-Office Procedures</h3>
-        <p>Wart removal, earwax removal, ingrown nail treatment, suture removal, and more -- handled in-office with expert precision.</p>
+        <p>Wart removal, earwax removal, ingrown nail treatment, suture removal, and more -- handled in-office.</p>
         <!-- TODO: No dedicated /in-office-procedures page yet -- linking to happy-health-clinic until one is created -->
         <a href="/happy-health-clinic" class="learn-more">
-          Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <!-- 11 -->
-      <div class="service-card">
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M22 12h-6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
-        </div>
-        <h3>Iron Infusions</h3>
-        <p>IV iron infusion therapy for iron deficiency and anemia. $250 per 200mg infusion with affordable lab panels available if needed.</p>
-        <a href="/iron-infusion" class="learn-more">
-          Learn More
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
-      </div>
-
-      <!-- 12 -->
-      <div class="service-card">
-        <div class="service-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-        </div>
-        <h3>Flexible Visit Options</h3>
-        <p>In-person, same-day, next-day, and virtual telemedicine appointments -- scheduled around your life, not ours.</p>
-        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="learn-more">
-          Book Now
+          Ask About In-Office Procedures
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
@@ -623,39 +705,39 @@
 <section id="about" class="about-intro" aria-labelledby="aboutHeading">
   <div class="container about-inner">
     <div class="about-logo-wrap">
-      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="about-big-logo" />
-      <p class="about-tagline">"Your best self awaits, and we're here to make achieving your goals straightforward and sustainable."</p>
+      <img src="images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="about-big-logo" width="200" height="200" loading="lazy" />
+      <p class="about-tagline">Provider-led. Transparent. Never a conveyor belt.</p>
     </div>
     <div class="about-content">
-      <span class="section-label">About Us</span>
-      <h2 id="aboutHeading">Happy Drip IV &amp; Wellness: Your DFW Clinic for IV Therapy, Botox, Laser &amp; Longevity Medicine</h2>
+      <span class="section-label">Why Happy Drip</span>
+      <h2 id="aboutHeading">Healthcare, but make it Happy.</h2>
       <p>
-        At <strong>Happy Drip IV &amp; Wellness</strong>, we bridge the gap between essential medical care and advanced wellness treatments. Our goal is to help you look, feel, and function at your absolute best.
+        We&rsquo;re somewhere between the doctor&rsquo;s office you can never get into and the med spa that can&rsquo;t manage the rest of your health.
       </p>
       <p>
-        We offer a full spectrum of services -- from concierge primary care and medically-supervised weight loss to aesthetic treatments and IV nutrition therapy -- all under one roof in <strong>Bedford, Texas</strong>.
+        <strong>Happy Drip IV &amp; Wellness</strong> is a provider-led medical wellness clinic in <strong>Bedford, TX</strong> offering personalized healthcare, medical weight management, IV therapy, and aesthetics -- with transparent pricing, real conversations, and care that doesn&rsquo;t feel like a conveyor belt.
       </p>
       <p>
-        We are a <strong>cash-pay practice</strong> following the concierge medicine model, offering transparent pricing with no surprise bills. We provide itemized invoices for HSA/FSA submission and offer flexible payment plans.
+        We&rsquo;re a <strong>cash-pay practice</strong> following the concierge medicine model, so there are no surprise bills. We provide itemized invoices for HSA/FSA submission and offer flexible payment plans.
       </p>
       <div class="about-features">
         <div class="about-feature">
           <div class="check" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          Advanced Aesthetic &amp; Skin-Rejuvenation Treatments
+          Provider-led care from a board-certified Family Nurse Practitioner
         </div>
         <div class="about-feature">
           <div class="check" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          Health, Longevity &amp; Core Wellness Programs
+          Health, Longevity &amp; Core Wellness Programs -- including NAD+ and peptide therapy
         </div>
         <div class="about-feature">
           <div class="check" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          Medical Weight Loss &amp; Core Wellness Programs
+          Medical care, wellness, and aesthetics under one roof
         </div>
         <div class="about-feature">
           <div class="check" aria-hidden="true">
@@ -674,13 +756,13 @@
 <section id="iv-therapy" class="feature-section alt" aria-labelledby="ivHeading">
   <div class="container feature-inner">
     <div class="feature-img">
-      <img src="images/iv-therapy.jpg" alt="IV therapy drip in a relaxing clinic setting" loading="lazy" />
+      <img src="images/iv-therapy.jpg" alt="IV therapy drip in a relaxing clinic setting" width="896" height="1152" loading="lazy" />
     </div>
     <div class="feature-content">
       <span class="section-label">IV Therapy</span>
-      <h2 id="ivHeading">IV Hydration Therapy, Personalized for You</h2>
+      <h2 id="ivHeading">IV Therapy in Bedford, Built Around What You Need</h2>
       <p>
-        IV Therapy is one of our most popular services. Whether you're recovering, rehydrating, or just looking for a boost, we put together a drip based on your goals and what your body needs that day.
+        IV therapy is one of our most popular services at our Bedford, TX clinic. Whether you're recovering, rehydrating, or just looking for a boost, we put together a drip based on your goals and what your body needs that day.
       </p>
       <ul class="feature-list">
         <li><strong>Hydration Support</strong> -- IV fluids to help you rehydrate faster than drinking water alone, supporting energy and clarity</li>
@@ -689,7 +771,11 @@
         <li><strong>Recovery-Focused Options</strong> -- Targeted combos for eligible patients dealing with hangovers, migraines, or illness</li>
         <li><strong>Personalized Care</strong> -- Your provider goes over your goals before every session so you get what you actually need</li>
       </ul>
-      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book an IV Session</a>
+      <div class="feature-cta-row">
+        <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book an IV Session</a>
+        <a href="/iv-drip-menu" class="text-link">View IV Therapy Menu</a>
+        <a href="/iron-infusion" class="text-link">Need iron? See Iron Infusions</a>
+      </div>
     </div>
   </div>
 </section>
@@ -733,7 +819,8 @@
     </div>
     <p class="addons-note">Add-ons include: <strong>Glutathione, NAD+, Vitamin D, Zofran, Toradol</strong> &amp; more -- $30–$40 each.</p>
     <div style="text-align:center; margin-top:36px;">
-      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-white btn-lg">View Full Drip Menu &amp; Book</a>
+      <a href="/iv-drip-menu" class="btn btn-white btn-lg">View the Full IV Drip Menu</a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-outline-white btn-lg" style="margin-left:12px;">Book an IV Session</a>
     </div>
   </div>
 </section>
@@ -745,54 +832,54 @@
   <div class="container">
     <div class="feature-inner reverse">
       <div class="feature-img">
-        <img src="images/botox.jpg" alt="Aesthetic treatments at Happy Drip IV & Wellness" loading="lazy" />
+        <img src="images/botox.jpg" alt="Aesthetic treatments at Happy Drip IV & Wellness" width="445" height="577" loading="lazy" />
       </div>
       <div class="feature-content">
         <span class="section-label">Aesthetics</span>
-        <h2 id="aestheticsHeading">Advanced Aesthetic &amp; Skin-Rejuvenation Treatments</h2>
+        <h2 id="aestheticsHeading">Good Work Shouldn&rsquo;t Scream &ldquo;I Had Work Done.&rdquo;</h2>
         <p>
-          Our aesthetic services are designed to help you look as vibrant as you feel. We offer the latest in non-surgical rejuvenation -- from Botox and laser to PRP and microneedling.
+          Provider-administered aesthetics in Bedford, TX, aimed at natural-looking results. Looking for Botox? We use Jeuveau&reg;, a separate wrinkle-relaxer brand. Plus fillers, laser, PRP, and microneedling.
         </p>
         <div class="aesthetics-grid">
           <div class="aesthetic-item">
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
-              <h4>Jeuveau® (Botox)</h4>
+              <h3><a href="/jeuveau">Wrinkle Relaxers (Jeuveau®)</a></h3>
               <p>Smooth fine lines and prevent new wrinkles with our neurotoxin treatments.</p>
             </div>
           </div>
           <div class="aesthetic-item">
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
-              <h4>Dermal Fillers</h4>
+              <h3>Dermal Fillers</h3>
               <p>Restore volume and contour with Versa and other premium hyaluronic acid fillers.</p>
             </div>
           </div>
           <div class="aesthetic-item">
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
-              <h4>Laser Hair Removal</h4>
+              <h3><a href="/laser-hair-removal">Laser Hair Removal</a></h3>
               <p>Long-term hair reduction on all skin types with our advanced laser system.</p>
             </div>
           </div>
           <div class="aesthetic-item">
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
-              <h4>PRP / PRF Treatments</h4>
+              <h3><a href="/prp-prf">PRP / PRF Treatments</a></h3>
               <p>Platelet-rich plasma facials and under-eye treatments for natural rejuvenation.</p>
             </div>
           </div>
           <div class="aesthetic-item">
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
-              <h4>VAMP™ Microneedling</h4>
+              <h3><a href="/microneedling">VAMP™ Microneedling</a></h3>
               <p>Collagen-stimulating microneedling with PRP for texture, tone, and glow.</p>
             </div>
           </div>
           <div class="aesthetic-item">
             <div class="aesthetic-dot" aria-hidden="true"></div>
             <div>
-              <h4>Tattoo Removal &amp; Photofacials</h4>
+              <h3><a href="/tattoo-removal">Tattoo Removal &amp; Photofacials</a></h3>
               <p>Laser tattoo removal and IPL photofacials for pigment correction and skin clarity.</p>
             </div>
           </div>
@@ -811,22 +898,23 @@
 <section id="weight-loss" class="feature-section alt" aria-labelledby="wlHeading">
   <div class="container">
     <div class="section-header">
-      <span class="section-label">Weight Loss</span>
-      <h2 id="wlHeading">Medical Weight Loss &amp; Core Wellness Programs</h2>
+      <span class="section-label">Medical Weight Loss</span>
+      <h2 id="wlHeading">Medical Weight Loss With a Provider Who&rsquo;s Been There</h2>
       <p>Ready to make a lasting change? Our Medical Weight Loss Programs are designed to meet you where you are.</p>
       <div class="section-divider"></div>
     </div>
     <div class="feature-inner" style="margin-top:40px;">
       <div class="feature-content">
+        <p class="wl-credibility"><strong>Provider-led by an NP who has personally lost 160+ lbs.</strong> Her story isn&rsquo;t a promise of your results -- individual results vary -- but she gets it.</p>
         <p>
-          We take a comprehensive, medically-supervised approach to weight loss, combining GLP-1 medications with personalized nutrition guidance, lifestyle coaching, and ongoing support.
+          Provider-led medical weight management in Bedford, TX: GLP-1 medications and other options matched to you, with nutrition guidance, ongoing follow-up, and transparent pricing.
         </p>
         <ul class="feature-list">
-          <li><strong>GLP-1 Medications</strong> -- Semaglutide and Tirzepatide programs tailored to your goals and dosing needs</li>
-          <li><strong>Oral Medications</strong> -- Affordable options covered through your pharmacy</li>
-          <li><strong>Peptide Therapy</strong> -- Advanced peptide protocols to support body composition</li>
-          <li><strong>90-Day Programs</strong> -- Structured 3-month plans for maximum results</li>
-          <li><strong>Comprehensive Support</strong> -- Ongoing check-ins, lab monitoring, and care plan adjustments</li>
+          <li><span><strong><a href="/glp1-medications/">GLP-1 Medications</a></strong> -- <a href="/semaglutide">Semaglutide</a> and <a href="/tirzepatide">Tirzepatide</a> programs tailored to your goals and dosing needs</span></li>
+          <li><span><strong><a href="/phentermine">Oral Medications</a></strong> -- Affordable options covered through your pharmacy</span></li>
+          <li><span><strong><a href="/peptide-therapy/">Peptide Therapy</a></strong> -- Advanced peptide protocols to support body composition</span></li>
+          <li><span><strong>90-Day Programs</strong> -- Structured 3-month plans for maximum results</span></li>
+          <li><span><strong>Comprehensive Support</strong> -- Ongoing check-ins, lab monitoring, and care plan adjustments</span></li>
         </ul>
       </div>
       <div>
@@ -853,7 +941,8 @@
           </div>
         </div>
         <div style="text-align:center; margin-top:24px;">
-          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Start Your Journey</a>
+          <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book a Weight Loss Consult</a>
+          <p style="margin-top:14px;"><a href="/weightloss" class="text-link">Explore Medical Weight Loss</a></p>
         </div>
       </div>
     </div>
@@ -866,7 +955,7 @@
 <section id="provider" class="provider-section" aria-labelledby="providerHeading">
   <div class="container provider-inner">
     <div class="provider-photo-wrap">
-      <img src="images/headshot-alt.jpg" alt="Brittany Adams APRN FNP-C, provider at Happy Drip IV & Wellness" class="provider-photo" loading="lazy" />
+      <img src="images/headshot-alt.jpg" alt="Brittany Adams APRN FNP-C, provider at Happy Drip IV & Wellness" class="provider-photo" width="896" height="1195" loading="lazy" />
       <div class="provider-badge">
         <div class="cred">APRN FNP-C</div>
         <div class="cred-label">Board Certified</div>
@@ -874,9 +963,10 @@
     </div>
     <div class="provider-content">
       <div class="role">Meet Your Provider</div>
-      <h2 id="providerHeading">Brittany Adams</h2>
+      <h2 id="providerHeading">Brittany Adams, APRN, FNP-C</h2>
+      <p class="provider-title">Board-Certified Family Nurse Practitioner &bull; Founder, Happy Drip IV &amp; Wellness</p>
       <p>
-        Brittany Adams is a board-certified Family Nurse Practitioner (APRN FNP-C) with a passion for combining essential primary care with advanced wellness and aesthetic treatments.
+        Brittany is a board-certified Family Nurse Practitioner with a passion for combining essential primary care with advanced wellness and aesthetic treatments -- and the reason Happy Drip is provider-led.
       </p>
       <p>
         With extensive clinical experience across family medicine, urgent care, and aesthetics, Brittany founded Happy Drip IV &amp; Wellness to create a space where patients receive personalized, high-quality care without the frustrations of traditional healthcare.
@@ -890,18 +980,11 @@
           Board-Certified Family Nurse Practitioner
         </li>
         <li>
-          <span>IV Certified</span>
-          Advanced IV Therapy &amp; Hydration
-        </li>
-        <li>
-          <span>Aesthetic</span>
-          Botox, Fillers, Laser, PRP
-        </li>
-        <li>
-          <span>Med Weight Loss</span>
-          GLP-1 Specialist
+          <span>Founder</span>
+          Happy Drip IV &amp; Wellness
         </li>
       </ul>
+      <p class="provider-focus"><strong>Clinical focus:</strong> Medical Weight Management &bull; IV Therapy &bull; Aesthetic Medicine</p>
     </div>
   </div>
 </section>
@@ -913,30 +996,30 @@
   <div class="container">
     <div class="section-header">
       <span class="section-label">Flexible Scheduling</span>
-      <h2 id="paymentHeading">Flexible Scheduling for Your Convenience</h2>
-      <p>We understand that busy schedules are a reality. That's why Happy Drip provides flexible scheduling and payment options to accommodate your health.</p>
+      <h2 id="paymentHeading">Booking Should Be the Easy Part</h2>
+      <p>Busy schedule? Same. That's why we offer flexible scheduling, telemedicine, and payment options.</p>
       <div class="section-divider"></div>
     </div>
     <div class="payment-cards">
       <div class="payment-card">
         <div class="pay-icon" aria-hidden="true">💳</div>
-        <h4>HSA / FSA Accepted</h4>
+        <h3>HSA / FSA Accepted</h3>
         <p>We provide itemized superbills so you can submit to your HSA or FSA for reimbursement on eligible services.</p>
       </div>
       <div class="payment-card">
         <div class="pay-icon" aria-hidden="true">📱</div>
-        <h4>Payment Plans</h4>
+        <h3>Payment Plans</h3>
         <p>Flexible payment plan options available for larger treatment packages. Ask us about financing during your consultation.</p>
       </div>
       <div class="payment-card">
         <div class="pay-icon" aria-hidden="true">💻</div>
-        <h4>Telemedicine</h4>
+        <h3>Telemedicine</h3>
         <p>Virtual appointments available for follow-ups, medication refills, and consultations -- from the comfort of home.</p>
       </div>
       <div class="payment-card">
         <div class="pay-icon" aria-hidden="true">⚡</div>
-        <h4>Same-Day Booking</h4>
-        <p>We offer same-day and next-day appointment slots. Call or book online -- no long wait times.</p>
+        <h3>Same-Day Booking</h3>
+        <p>We offer same-day and next-day appointment slots. Book online, or call or text (682) 283-6976 -- no long wait times.</p>
       </div>
     </div>
   </div>
@@ -959,7 +1042,7 @@
       <div class="reviews-summary-score" id="reviewScore">5.0</div>
       <div class="reviews-summary-meta">
         <span id="reviewCount">on Google</span>
-        <a href="https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c" target="_blank" rel="noopener" class="reviews-leave-link">Leave a review &rarr;</a>
+        <a href="https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c" target="_blank" rel="noopener" class="reviews-leave-link">Read or leave a Google review &rarr;</a>
       </div>
     </div>
 
@@ -1036,6 +1119,30 @@
     </div>
     <div class="faq-list" id="faqList">
       <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is Happy Drip IV &amp; Wellness?</button>
+        <div class="faq-a" hidden>
+          <p>Happy Drip is a provider-led medical wellness clinic in Bedford, TX. We offer medical weight management, IV therapy and iron infusions, personalized primary care through <a href="/happy-health-clinic">Happy Health Clinic</a>, men&rsquo;s and women&rsquo;s health, and medical aesthetics -- all in one place, with transparent cash-pay pricing.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need to know which service to book?</button>
+        <div class="faq-a" hidden>
+          <p>Nope. If you&rsquo;re not sure where to start, call or text us at <a href="tel:6822836976">(682) 283-6976</a> and we&rsquo;ll point you in the right direction.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Who provides care at Happy Drip?</button>
+        <div class="faq-a" hidden>
+          <p>Brittany Adams, APRN, FNP-C, is a board-certified Family Nurse Practitioner and the founder of Happy Drip IV &amp; Wellness. She collaborates with Dr. E. Levasseur-Sanchez on clinical standards and patient safety. <a href="#provider">Meet Brittany</a>.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you offer medical weight loss, IV therapy, iron infusions, and aesthetics?</button>
+        <div class="faq-a" hidden>
+          <p>Yes to all of it. Our provider-led <a href="/weightloss">medical weight loss</a> program includes <a href="/semaglutide">semaglutide</a> and <a href="/tirzepatide">tirzepatide</a>. <a href="/iv-drip-menu">IV therapy</a> starts at $150, and <a href="/iron-infusion">iron infusions</a> are $250 per 200mg infusion. Aesthetics include <a href="/jeuveau">wrinkle relaxers (Jeuveau&reg;)</a>, <a href="/laser-hair-removal">laser hair removal</a>, <a href="/prp-prf">PRP</a>, and <a href="/microneedling">microneedling</a>.</p>
+        </div>
+      </div>
+      <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Do you accept insurance?</button>
         <div class="faq-a" hidden>
           <p>We are a cash-pay, concierge-model practice and do not bill insurance directly. However, we provide itemized invoices that you can submit to your HSA/FSA for reimbursement on eligible services.</p>
@@ -1050,7 +1157,7 @@
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">How do I book an appointment?</button>
         <div class="faq-a" hidden>
-          <p>You can book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="color:var(--teal-dark);font-weight:600;">vagaro.com/happydripiv</a> or call us at (682) 283-6976. We'll help you find the right service and time slot.</p>
+          <p>You can book online at <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" style="color:var(--teal-dark);font-weight:600;">vagaro.com/happydripiv</a>, or call or text us at <a href="tel:6822836976">(682) 283-6976</a>. We'll help you find the right service and time slot.</p>
         </div>
       </div>
       <div class="faq-item">
@@ -1062,7 +1169,7 @@
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Where are you located?</button>
         <div class="faq-a" hidden>
-          <p>We are located at <strong>813 Brown Trail #6B, Bedford, Texas 76022</strong> -- conveniently in the DFW Metroplex, serving patients from Bedford, Hurst, Euless, Grapevine, Southlake, and surrounding areas.</p>
+          <p>We are located at <strong>813 Brown Trail #6B, Bedford, Texas 76022</strong> -- in the DFW Mid-Cities, serving patients from Bedford, Hurst, Euless, Grapevine, Southlake, Fort Worth, and the greater Dallas-Fort Worth area.</p>
         </div>
       </div>
       <div class="faq-item">
@@ -1080,15 +1187,15 @@
      ============================================================ -->
 <section class="cta-section" aria-labelledby="ctaHeading">
   <div class="container cta-content">
-    <span class="section-label" style="color:var(--teal);background:rgba(93,217,232,0.15);margin-bottom:16px;">Ready to Start?</span>
-    <h2 id="ctaHeading">Your Best Self Awaits</h2>
-    <p>Achieving your health and wellness goals is straightforward and sustainable with the right team. Let us help you look, feel, and function at your absolute best.</p>
+    <span class="section-label" style="color:var(--teal);background:rgba(93,217,232,0.15);margin-bottom:16px;">Not Sure Where to Start?</span>
+    <h2 id="ctaHeading">Okay, what are we fixing first?</h2>
+    <p>Whether you came here for your health, your weight, your skin, your energy -- or because you Googled something at 2 a.m. and now have questions -- we'll help you figure out where to start.</p>
     <div class="cta-btns">
-      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book Your Appointment</a>
-      <a href="tel:6822836976" class="btn btn-outline-white btn-lg">(682) 283-6976</a>
+      <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book an Appointment</a>
+      <a href="tel:6822836976" class="btn btn-outline-white btn-lg">Call or Text (682) 283-6976</a>
     </div>
     <div class="cta-phone-link">
-      Questions? Email us at <a href="mailto:info@happydripiv.com" style="margin-left:6px;">info@happydripiv.com</a>
+      Prefer a text? <a href="sms:+16822836976" style="margin-left:6px;">Message us</a> &nbsp;&bull;&nbsp; Or email <a href="mailto:info@happydripiv.com" style="margin-left:6px;">info@happydripiv.com</a>
     </div>
   </div>
 </section>
@@ -1149,13 +1256,13 @@
       <div class="footer-col">
         <h5>Services</h5>
         <a href="/iv-drip-menu">IV Drip Menu</a>
-        <a href="/jeuveau">Botox &amp; Fillers</a>
+        <a href="/jeuveau">Wrinkle Relaxers (Jeuveau&reg;)</a>
         <a href="/laser-hair-removal">Laser Hair Removal</a>
         <a href="/prp-prf">PRP / PRF</a>
         <a href="/weightloss">GLP-1 Programs</a>
         <a href="/happy-health-clinic">Concierge Medicine</a>
-        <a href="/happy-health-clinic">Men's Health</a>
-        <a href="/happy-health-clinic">Women's Health</a>
+        <a href="/mens-health">Men's Health</a>
+        <a href="/womens-health">Women's Health</a>
       </div>
 
       <!-- Subscribe -->
