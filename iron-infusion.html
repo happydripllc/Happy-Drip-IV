@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iron Infusion Therapy | Happy Drip IV & Wellness -- Bedford, TX</title>
+  <title>Iron Infusion in Bedford, TX | $250 IV Iron | Happy Drip IV & Wellness</title>
   <meta name="description" content="IV iron infusion therapy in Bedford, TX. $250 per 200mg infusion. Labs required -- use yours or order through us. Administered by Brittany Adams, APRN FNP-C." />
   <link rel="canonical" href="https://www.happydripiv.com/iron-infusion" />
   <!-- Open Graph -->
-  <meta property="og:title" content="Iron Infusion Therapy | Happy Drip IV & Wellness -- Bedford, TX" />
+  <meta property="og:title" content="Iron Infusion in Bedford, TX | $250 IV Iron | Happy Drip IV & Wellness" />
   <meta property="og:description" content="IV iron infusion therapy in Bedford, TX. $250 per 200mg infusion. Labs required -- use yours or order through us. Administered by Brittany Adams, APRN FNP-C." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.happydripiv.com/iron-infusion" />
@@ -15,6 +15,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <!-- MedicalProcedure schema: connects this service to the canonical clinic + provider entities -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MedicalProcedure",
+        "@id": "https://www.happydripiv.com/iron-infusion#procedure",
+        "name": "IV Iron Infusion",
+        "alternateName": "Iron Sucrose Infusion",
+        "description": "Provider-led IV iron infusion for patients with documented iron deficiency, administered at Happy Drip IV & Wellness in Bedford, TX. Recent labs (hemoglobin/CBC and serum ferritin) are reviewed before treatment.",
+        "procedureType": "Noninvasive",
+        "bodyLocation": "Vein (intravenous)",
+        "preparation": "Recent labs required: hemoglobin (or a CBC) and serum ferritin, generally within the last 90 days. Patients may bring existing labs or have an Anemia Panel or Iron Panel drawn on-site.",
+        "howPerformed": "Iron sucrose is administered intravenously in a single session, typically running 30-60 minutes, followed by a 30-minute observation period.",
+        "followUp": "Number of infusions needed varies by the severity of iron deficiency and is determined by the provider based on lab results.",
+        "performer": { "@type": "Person", "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams", "name": "Brittany Adams, APRN FNP-C", "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c" },
+        "location": { "@id": "https://www.happydripiv.com/#clinic" },
+        "offers": {
+          "@type": "Offer",
+          "price": "250",
+          "priceCurrency": "USD",
+          "description": "Per 200mg IV iron infusion. Includes provider consultation, IV placement, infusion administration, and 30-minute post-infusion monitoring.",
+          "url": "https://www.happydripiv.com/iron-infusion",
+          "availability": "https://schema.org/InStock"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/iron-infusion#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.happydripiv.com/" },
+          { "@type": "ListItem", "position": 2, "name": "IV Therapy", "item": "https://www.happydripiv.com/iv-drip-menu" },
+          { "@type": "ListItem", "position": 3, "name": "Iron Infusion", "item": "https://www.happydripiv.com/iron-infusion" }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="css/styles.css?v=20260911" />
   <style>
     /* ======================================================
@@ -267,6 +306,16 @@
       padding: 80px 0;
       background: #fff;
     }
+    .iron-anemia-note {
+      max-width: 720px; margin: 0 auto 40px;
+      background: var(--soft-lavender-bg);
+      border: 1.5px solid rgba(197,180,232,0.45);
+      border-radius: 14px;
+      padding: 24px 28px;
+      text-align: center;
+    }
+    .iron-anemia-note h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 10px; }
+    .iron-anemia-note p { font-size: 0.9rem; color: #5a5070; line-height: 1.7; margin: 0; }
     .candidates-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -856,14 +905,14 @@
       </nav>
       <span class="eyebrow">IV Iron Infusion &mdash; Bedford, TX</span>
       <h1>Finally Feel Like<br><em>Yourself Again.</em></h1>
-      <p class="hero-sub">Iron deficiency is one of the most massively underdiagnosed conditions in the U.S. -- affecting millions who've been told their labs are "normal." IV iron bypasses your gut entirely, replenishing your stores faster than any oral supplement ever could.</p>
+      <p class="hero-sub">Iron deficiency is common and frequently overlooked -- many patients are told their labs are &ldquo;normal&rdquo; when a full iron panel was never actually checked. IV iron bypasses your gut entirely, replenishing your stores faster than oral supplements typically can.</p>
       <div class="hero-ctas">
         <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);font-size:1rem;padding:15px 32px;">Book Your Infusion</a>
         <a href="tel:6822836976" class="btn btn-outline" style="font-size:1rem;padding:15px 32px;border-color:var(--teal);color:#0d7a8a;">(682) 283-6976</a>
       </div>
     </div>
     <div class="page-hero-img">
-      <img src="images/iron-infusion-peace-sign.png" alt="Happy patient giving a peace sign during her IV iron infusion at Happy Drip IV & Wellness" loading="eager" />
+      <img src="images/iron-infusion-peace-sign.png" alt="Happy patient giving a peace sign during her IV iron infusion at Happy Drip IV & Wellness" width="1086" height="1448" loading="eager" fetchpriority="high" />
     </div>
   </div>
 </section>
@@ -876,27 +925,27 @@
     <div class="symptoms-header">
       <span class="section-eyebrow">Recognize These?</span>
       <h2 class="section-title">Sound <em>Familiar?</em></h2>
-      <p class="section-intro" style="margin:0 auto;">Iron deficiency doesn't always look like what you'd expect. Many patients have been dismissed for years -- the fatigue, the fog, the hair loss written off as stress or aging. Sound like you?</p>
+      <p class="section-intro" style="margin:0 auto;">Iron deficiency doesn't always look like what you'd expect. Many patients have been dismissed for years -- the fatigue, the fog, the hair loss written off as stress or aging. Sound like you? These symptoms can have plenty of other causes too, which is exactly why labs -- not guesswork -- decide whether iron is actually the issue.</p>
     </div>
 
     <!-- 3 image cards -->
     <div class="symptom-cards">
       <div class="symptom-card">
-        <img src="images/chronic-fatigue.png" alt="Woman on couch looking exhausted -- a sign of chronic fatigue from iron deficiency" />
+        <img src="images/chronic-fatigue.png" alt="Woman on couch looking exhausted -- a sign of chronic fatigue from iron deficiency" width="2848" height="1600" loading="lazy" />
         <div class="symptom-card-body">
           <h3>Constant Fatigue &amp; Low Energy</h3>
           <p>Iron is essential for making hemoglobin, which carries oxygen to every cell. Low iron = your body is literally running low on fuel -- even after a full night's sleep.</p>
         </div>
       </div>
       <div class="symptom-card">
-        <img src="images/dizzy-and-lightheaded.png" alt="Woman holding her head, dizzy and lightheaded from iron deficiency anemia" />
+        <img src="images/dizzy-and-lightheaded.png" alt="Woman holding her head, dizzy and lightheaded from iron deficiency anemia" width="2848" height="1600" loading="lazy" />
         <div class="symptom-card-body">
           <h3>Dizziness, Brain Fog &amp; Shortness of Breath</h3>
           <p>When oxygen delivery is compromised, your brain and muscles feel it first -- leaving you lightheaded, unable to concentrate, and winded by everyday activities.</p>
         </div>
       </div>
       <div class="symptom-card">
-        <img src="images/hairloss.png" alt="Hairbrush showing significant hair shedding and thinning from iron deficiency" />
+        <img src="images/hairloss.png" alt="Hairbrush showing significant hair shedding and thinning from iron deficiency" width="2848" height="1600" loading="lazy" />
         <div class="symptom-card-body">
           <h3>Hair Shedding &amp; Thinning</h3>
           <p>Your body prioritizes vital organs when iron is low, leaving hair follicles under-nourished. Excess shedding and thinning are among the most common -- and most distressing -- signs of deficiency.</p>
@@ -956,7 +1005,7 @@
 <section class="comfort-section">
   <div class="container comfort-grid">
     <div class="comfort-img">
-      <img src="images/iron-infusion-brunette-woman.png" alt="Patient relaxing in a comfortable recliner during her IV iron infusion at Happy Drip IV & Wellness" loading="lazy" />
+      <img src="images/iron-infusion-brunette-woman.png" alt="Patient relaxing in a comfortable recliner during her IV iron infusion at Happy Drip IV & Wellness" width="1086" height="1448" loading="lazy" />
     </div>
     <div class="comfort-text">
       <span class="section-eyebrow">The Vibe</span>
@@ -975,6 +1024,11 @@
       <span class="section-eyebrow">Is This Right for You?</span>
       <h2 class="section-title">Good Candidates &amp; <em>Contraindications</em></h2>
       <p class="section-intro" style="margin:0 auto;">A provider review is required before your infusion -- here's a general guide to help you understand if IV iron is a fit.</p>
+    </div>
+
+    <div class="iron-anemia-note">
+      <h3>Low iron and anemia aren&rsquo;t exactly the same thing.</h3>
+      <p>Ferritin reflects how much iron your body has in storage; hemoglobin reflects whether that shortage has progressed to anemia. It's possible to run low on iron stores before hemoglobin drops out of the normal range -- which is one reason a &ldquo;normal&rdquo; CBC alone doesn't always tell the full story. Whether IV iron makes sense for your specific numbers is something Brittany reviews case by case, using your full panel rather than a single value.</p>
     </div>
 
     <div class="candidates-grid">
@@ -1172,7 +1226,7 @@
       <div class="process-step">
         <div class="step-num">2</div>
         <h3>Provider Reviews &amp; Clears You</h3>
-        <p>Brittany Adams, APRN FNP-C, reviews your labs and health history to confirm you're a candidate and determine the right dose for your needs.</p>
+        <p><a href="/brittany-adams-aprn-fnp-c" style="color:inherit;text-decoration:underline;">Brittany Adams, APRN FNP-C</a>, reviews your labs and health history to confirm you're a candidate and determine the right dose for your needs.</p>
       </div>
       <div class="process-step">
         <div class="step-num">3</div>
@@ -1207,11 +1261,12 @@
         <div class="price-big">$250</div>
         <div class="price-sub">per 200mg infusion</div>
         <div class="price-note">
-          Includes provider consultation, IV placement, infusion administration, and 30-minute post-infusion monitoring. Administered by Brittany Adams, APRN FNP-C.
+          Includes provider consultation, IV placement, infusion administration, and 30-minute post-infusion monitoring. Administered by <a href="/brittany-adams-aprn-fnp-c" style="color:inherit;text-decoration:underline;">Brittany Adams, APRN FNP-C</a>.
         </div>
         <div style="margin-top:24px;">
           <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="background:var(--pink);border-color:var(--pink);width:100%;justify-content:center;">Book Now</a>
         </div>
+        <p style="font-size:0.78rem;color:#8a7aa0;margin-top:14px;line-height:1.5;">Cash-pay &bull; Itemized receipts available for HSA/FSA-eligible expenses</p>
       </div>
 
       <!-- Lab pricing -->
@@ -1246,6 +1301,7 @@
         <div class="pricing-tip">
           <strong>Already have labs?</strong> Bring them -- but confirm they include <strong>both Hgb (or CBC) and Ferritin</strong>. Labs must be within the last 90 days. Ferritin only = appointment rescheduled.
         </div>
+        <p style="font-size:0.82rem;color:#5a7080;margin-top:12px;line-height:1.55;">Not sure if your labs qualify? <a href="tel:6822836976" style="color:var(--teal);font-weight:700;">Call or text (682) 283-6976</a> and we&rsquo;ll take a look.</p>
 
         <p style="font-size:0.82rem;color:#5a7080;margin-top:16px;line-height:1.55;">Can't afford your full infusion today? Ask us about our payment plan options.</p>
       </div>
@@ -1272,7 +1328,7 @@
           <span class="faq-chevron" aria-hidden="true">&#8964;</span>
         </button>
         <div class="faq-answer">
-          Yes -- iron sucrose (the form we use) has an excellent safety record. Serious allergic reactions occur in approximately 1 in 200,000 infusions. That's why we monitor you for the full 30 minutes after your infusion is complete. Your safety is our top priority, and Brittany is trained to handle any adverse reactions should they occur.
+          Yes -- iron sucrose (the form we use) has an excellent safety record. Serious reactions are uncommon with modern IV iron formulations, but they can occur. That's why iron infusions are administered with clinical monitoring and a post-infusion observation period -- we monitor you for the full 30 minutes after your infusion is complete. Your safety is our top priority, and Brittany is trained to handle any adverse reactions should they occur.
         </div>
       </div>
 
