@@ -16,10 +16,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "MedicalBusiness",
-        "name": "Happy Drip IV & Wellness",
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/iv-therapy-watauga#service",
+        "name": "IV Therapy in Watauga, TX",
+        "serviceType": "IV hydration and nutrient therapy",
         "description": "Personalized IV therapy clinic serving Watauga, TX. Myers Cocktail, NAD+, hydration drips, and more. Cash-pay, no IV bar gimmicks.",
         "url": "https://www.happydripiv.com/iv-therapy-watauga",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Watauga",
+          "addressRegion": "TX"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
         "telephone": "+16822836976",
         "address": {
           "@type": "PostalAddress",
@@ -29,40 +45,84 @@
           "postalCode": "76022",
           "addressCountry": "US"
         },
-        "areaServed": {"@type": "City", "name": "Watauga", "addressRegion": "TX"},
-        "priceRange": "$$",
-        "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c"]
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/iv-therapy-watauga#breadcrumb",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.happydripiv.com"},
-          {"@type": "ListItem", "position": 2, "name": "IV Therapy", "item": "https://www.happydripiv.com/iv-drip-menu"},
-          {"@type": "ListItem", "position": 3, "name": "IV Therapy Near Watauga", "item": "https://www.happydripiv.com/iv-therapy-watauga"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "IV Therapy",
+            "item": "https://www.happydripiv.com/iv-drip-menu"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IV Therapy Near Watauga",
+            "item": "https://www.happydripiv.com/iv-therapy-watauga"
+          }
         ]
       },
       {
         "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/iv-therapy-watauga#faq",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "Is there an IV therapy clinic near Watauga, TX?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes -- Happy Drip IV & Wellness is in Bedford, about 15 minutes from Watauga. We offer personalized IV therapy including Myers Cocktail, NAD+, hydration drips, and more."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- Happy Drip is in Bedford, about 15 minutes from Watauga via Rufe Snow Drive south to TX-183. We offer personalized IV drips and a full clinical intake before every infusion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes Happy Drip different from an IV bar near Watauga?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At Happy Drip, Brittany Adams, APRN FNP-C does a real intake before every drip -- she asks what you're there for, reviews your health, and recommends the right drip and add-ons for what you actually need. You're not picking off a laminated menu and hoping for the best."
+            }
           },
           {
             "@type": "Question",
             "name": "How far is Happy Drip from Watauga?",
-            "acceptedAnswer": {"@type": "Answer", "text": "About 15 minutes via Rufe Snow Drive south to TX-183 or Harwood Road. We're at 813 Brown Trail #6B in Bedford."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About 15 minutes. Head south on Rufe Snow Drive to TX-183 E (Airport Freeway), exit Brown Trail, and we're at 813 Brown Trail #6B in Bedford. Free parking."
+            }
           },
           {
             "@type": "Question",
-            "name": "What makes Happy Drip different from an IV bar?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Happy Drip is a clinical practice, not a menu-based IV bar. Brittany Adams, APRN FNP-C does a real intake before every infusion -- she asks what you're there for, reviews your health, and recommends the right drip for you. You're not guessing from a laminated menu."}
+            "name": "Do you offer B-12 shots near Watauga?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- B-12 injections are available as a quick standalone service. In and out in minutes. Popular for energy, mood, and metabolic support."
+            }
           },
           {
             "@type": "Question",
-            "name": "What IV drips are available near Watauga?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Myers Cocktail (starting at $150), NAD+ IV and IM, hydration drip, high-dose vitamin C, beauty drip, and more. Boosters like glutathione, B12, and zinc can be added. Brittany customizes your drip at your intake."}
+            "name": "Do I need to book ahead or can I walk in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Appointments are required so every patient gets real clinical time. Same-day and next-day slots are frequently open -- book online through Vagaro or call (682) 283-6976."
+            }
           }
         ]
       }
@@ -121,8 +181,8 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="site-logo" aria-label="Happy Drip IV &amp; Wellness Home">
-      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness logo" class="logo-icon" />
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
       <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
@@ -136,6 +196,7 @@
             <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
             <a href="/semaglutide" class="dropdown-group-item nested">Semaglutide</a>
             <a href="/tirzepatide" class="dropdown-group-item nested">Tirzepatide</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
             <span class="dropdown-subcategory">Oral Medications</span>
             <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
           </div>
@@ -214,6 +275,7 @@
     <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
     <a href="/semaglutide" class="sub-link nested">Semaglutide</a>
     <a href="/tirzepatide" class="sub-link nested">Tirzepatide</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
     <span class="mobile-subcategory">Oral Medications</span>
     <a href="/phentermine" class="sub-link nested">Phentermine</a>
     <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>

@@ -235,47 +235,114 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "What is red light therapy?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Red light therapy uses specific wavelengths of red (630-700nm) and near-infrared (800-900nm) light delivered by an FDA-cleared device. The light penetrates the skin and is absorbed by cells, where it supports mitochondrial function and energy production. It is a non-invasive, non-thermal treatment with no UV exposure."
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/red-light-therapy#service",
+        "name": "Red Light Therapy",
+        "serviceType": "Red and near-infrared light therapy",
+        "description": "FDA-cleared red and near-infrared light therapy in Bedford, TX. Reduce inflammation, support skin rejuvenation, and boost cellular energy. Cash-pay, no insurance needed. Brittany Adams, APRN FNP-C.",
+        "url": "https://www.happydripiv.com/red-light-therapy",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
         }
       },
       {
-        "@type": "Question",
-        "name": "Is red light therapy safe?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Our device is FDA-cleared and uses non-UV light wavelengths that do not cause burns or cellular damage. Most patients find sessions comfortable and relaxing. We review your health history before each course of treatment."
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
         }
       },
       {
-        "@type": "Question",
-        "name": "How many sessions do I need?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most patients start to notice results after 4-6 sessions. For optimal outcomes, a series of 8-12 sessions over 4-6 weeks is typical, followed by maintenance sessions as needed. Your provider will recommend a schedule based on your goals."
-        }
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
-        "@type": "Question",
-        "name": "What can red light therapy help with?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Red light therapy is used to support skin tone and texture improvement, reduce the appearance of fine lines, support post-workout muscle recovery, and reduce localized inflammation. Individual results vary."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/red-light-therapy#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Red Light Therapy",
+            "item": "https://www.happydripiv.com/red-light-therapy"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "Does it hurt?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Red light therapy is painless. Most patients describe the experience as warm and relaxing. Sessions typically last 10-20 minutes."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/red-light-therapy#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is red light therapy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Red light therapy uses specific wavelengths of red (630-700nm) and near-infrared (800-900nm) light delivered by an FDA-cleared device. The light penetrates the skin and is absorbed by cells, supporting mitochondrial function and energy production. It is a non-invasive, non-thermal treatment with no UV exposure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is it safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our device is FDA-cleared and uses non-UV wavelengths that do not cause burns or cellular damage. Most patients find sessions comfortable and relaxing. We review your health history before each course of treatment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many sessions do I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most patients start noticing results after 4-6 sessions. For optimal outcomes, a series of 8-12 sessions over 4-6 weeks is typical, followed by maintenance as needed. Your provider will recommend a schedule based on your goals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it hurt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Red light therapy is painless. Most patients describe the experience as warm and relaxing. Sessions typically last 10-20 minutes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I combine red light therapy with other treatments?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often, yes. Many patients combine red light therapy with IV therapy, weight loss programs, or aesthetic treatments. Your provider will let you know if there are any reasons to space out treatments based on your plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you accept insurance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Happy Drip is a cash-pay clinic. We do not bill insurance. We can provide an itemized receipt for potential HSA/FSA submission. Payment is due at the time of service."
+            }
+          }
+        ]
       }
     ]
   }
@@ -293,8 +360,8 @@
 <!-- HEADER -->
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="site-logo" aria-label="Happy Drip IV &amp; Wellness Home">
-      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness logo" class="logo-icon" />
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
       <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
@@ -308,6 +375,7 @@
             <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
             <a href="/semaglutide" class="dropdown-group-item nested">Semaglutide</a>
             <a href="/tirzepatide" class="dropdown-group-item nested">Tirzepatide</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
             <span class="dropdown-subcategory">Oral Medications</span>
             <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
           </div>
@@ -386,6 +454,7 @@
     <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
     <a href="/semaglutide" class="sub-link nested">Semaglutide</a>
     <a href="/tirzepatide" class="sub-link nested">Tirzepatide</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
     <span class="mobile-subcategory">Oral Medications</span>
     <a href="/phentermine" class="sub-link nested">Phentermine</a>
     <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>

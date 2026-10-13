@@ -19,79 +19,144 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "How much does tirzepatide cost at Happy Drip?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tirzepatide runs $195–$360/month depending on your dose. All programs are all-inclusive -- medication, supplies, overnight shipping, your $50 provider visit & management fee, text support, and a custom nutrition guide. Exact pricing is determined at your consultation based on your clinical plan."
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/tirzepatide#service",
+        "name": "Tirzepatide Weight Loss Program",
+        "serviceType": "Medical weight management with tirzepatide",
+        "description": "Tirzepatide weight loss program in Bedford, TX for $195-$360/month, dose-dependent. GLP-1 + GIP dual-action formula. Includes medication, shipping, text support & nutrition guide. No insurance needed. Brittany Adams, APRN FNP-C.",
+        "url": "https://www.happydripiv.com/tirzepatide",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
         }
       },
       {
-        "@type": "Question",
-        "name": "What is the difference between tirzepatide and semaglutide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Semaglutide activates the GLP-1 receptor only. Tirzepatide activates both GLP-1 and GIP receptors simultaneously, which generally produces greater weight loss, stronger appetite suppression, and better blood sugar control. Clinical studies showed tirzepatide users lost significantly more weight on average."
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
         }
       },
       {
-        "@type": "Question",
-        "name": "Is tirzepatide the same as Mounjaro or Zepbound?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Tirzepatide is the active ingredient in those brand-name medications. We prescribe compounded tirzepatide with B3, providing the same mechanism of action at a significantly lower cost without insurance required."
-        }
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
-        "@type": "Question",
-        "name": "Do I need insurance for tirzepatide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. We are a cash-pay clinic. No insurance is accepted or required. Pricing is transparent and all-inclusive -- no surprises."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/tirzepatide#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Weight Loss",
+            "item": "https://www.happydripiv.com/weightloss"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Tirzepatide",
+            "item": "https://www.happydripiv.com/tirzepatide"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "Should I choose semaglutide or tirzepatide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Both are excellent options, and this is ultimately a clinical decision Brittany makes with you, not a self-diagnosis. Semaglutide is a great first GLP-1 experience and costs less; tirzepatide tends to produce faster and more pronounced weight loss due to its dual mechanism. See our full comparison for general information, then Brittany will review your health history and recommend the right fit at your consultation."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How long before I see results?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most patients notice significant appetite reduction within 1-2 weeks. Measurable weight loss typically begins within 4-6 weeks. Tirzepatide's dual mechanism often produces faster early results than semaglutide alone."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I switch from semaglutide to tirzepatide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. If you're currently on semaglutide and want to try tirzepatide, Brittany can transition you at any time if it makes clinical sense for your goals and response to treatment so far."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I need labs before starting tirzepatide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Not always. Labs aren't required for everyone, but Brittany may recommend or request them based on your health history -- for example, they're required if you're being treated for diabetes. If you're not seeing the results you expect on your program, we'll typically check labs at a follow-up visit to see what's going on. If you want more comprehensive lab monitoring alongside your program, that's available through Happy Health Clinic."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Do I have to come into the office for tirzepatide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "An initial consultation with Brittany Adams, APRN FNP-C is required to evaluate whether tirzepatide is appropriate for you, and your medication ships directly to your door. Follow-up visits can be done via telemedicine, available in Colorado, Florida, Iowa, New Mexico, New York, Oklahoma, Texas, and Washington."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/tirzepatide#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does tirzepatide cost at Happy Drip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tirzepatide runs $195–$360/month depending on your dose. All programs are all-inclusive -- medication, supplies, overnight shipping, your $50 provider visit & management fee, text support, and a custom nutrition guide. Exact pricing is determined at your consultation based on your clinical plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between tirzepatide and semaglutide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semaglutide activates the GLP-1 receptor only. Tirzepatide activates both GLP-1 and GIP receptors simultaneously, which generally produces greater weight loss, stronger appetite suppression, and better blood sugar control. Clinical studies showed tirzepatide users lost significantly more weight on average."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is tirzepatide the same as Mounjaro or Zepbound?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tirzepatide is the active ingredient in those brand-name medications. We prescribe compounded tirzepatide with B3, providing the same mechanism of action at a significantly lower cost without insurance required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need insurance for tirzepatide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. We are a cash-pay clinic. No insurance is accepted or required. Pricing is transparent and all-inclusive -- no surprises."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I choose semaglutide or tirzepatide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are excellent options, and this is ultimately a clinical decision Brittany makes with you, not a self-diagnosis. Semaglutide is a great first GLP-1 experience and costs less; tirzepatide tends to produce faster and more pronounced weight loss due to its dual mechanism. See our full comparison for general information, then Brittany will review your health history and recommend the right fit at your consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long before I see results?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most patients notice significant appetite reduction within 1-2 weeks. Measurable weight loss typically begins within 4-6 weeks. Tirzepatide's dual mechanism often produces faster early results than semaglutide alone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I switch from semaglutide to tirzepatide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. If you're currently on semaglutide and want to try tirzepatide, Brittany can transition you at any time if it makes clinical sense for your goals and response to treatment so far."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need labs before starting tirzepatide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not always. Labs aren't required for everyone, but Brittany may recommend or request them based on your health history -- for example, they're required if you're being treated for diabetes. If you're not seeing the results you expect on your program, we'll typically check labs at a follow-up visit to see what's going on. If you want more comprehensive lab monitoring alongside your program, that's available through Happy Health Clinic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to come into the office for tirzepatide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An initial consultation with Brittany Adams, APRN FNP-C is required to evaluate whether tirzepatide is appropriate for you, and your medication ships directly to your door. Follow-up visits can be done via telemedicine, available in Colorado, Florida, Iowa, New Mexico, New York, Oklahoma, Texas, and Washington."
+            }
+          }
+        ]
       }
     ]
   }
@@ -515,6 +580,7 @@
         <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:16px;font-size:0.88rem;">Book a Consult</a>
       </div>
     </div>
+    <p style="text-align:center;margin-top:32px;font-size:0.92rem;line-height:2;color:var(--body-text);">Not sure which medication fits? <a href="/semaglutide" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">See the semaglutide program</a> &middot; <a href="/blog/tirzepatide-vs-semaglutide" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">read the comparison</a> &middot; <a href="/glp1-medications/side-effects/" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">GLP-1 side effects guide</a> &middot; <a href="/weightloss" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">all weight loss options</a></p>
   </div>
 </section>
 

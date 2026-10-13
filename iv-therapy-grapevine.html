@@ -16,10 +16,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "MedicalBusiness",
-        "name": "Happy Drip IV & Wellness",
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/iv-therapy-grapevine#service",
+        "name": "IV Therapy in Grapevine, TX",
+        "serviceType": "IV hydration and nutrient therapy",
         "description": "IV therapy clinic serving Grapevine, TX with Myers Cocktail, NAD+, hydration drips, and immune support infusions. Cash-pay, same-day appointments.",
         "url": "https://www.happydripiv.com/iv-therapy-grapevine",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Grapevine",
+          "addressRegion": "TX"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
         "telephone": "+16822836976",
         "address": {
           "@type": "PostalAddress",
@@ -29,45 +45,100 @@
           "postalCode": "76022",
           "addressCountry": "US"
         },
-        "areaServed": {"@type": "City", "name": "Grapevine", "addressRegion": "TX"},
-        "priceRange": "$$",
-        "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c"]
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/iv-therapy-grapevine#breadcrumb",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.happydripiv.com"},
-          {"@type": "ListItem", "position": 2, "name": "IV Therapy", "item": "https://www.happydripiv.com/iv-drip-menu"},
-          {"@type": "ListItem", "position": 3, "name": "IV Therapy Near Grapevine", "item": "https://www.happydripiv.com/iv-therapy-grapevine"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "IV Therapy",
+            "item": "https://www.happydripiv.com/iv-drip-menu"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "IV Therapy Near Grapevine",
+            "item": "https://www.happydripiv.com/iv-therapy-grapevine"
+          }
         ]
       },
       {
         "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/iv-therapy-grapevine#faq",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "Is there an IV therapy clinic near Grapevine, TX?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes -- Happy Drip IV & Wellness is in Bedford, about 15 minutes from Historic Downtown Grapevine via TX-121 or TX-183. Myers Cocktail starts at $150."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- Happy Drip IV & Wellness is in Bedford, about 15 minutes from Historic Downtown Grapevine via TX-121 or TX-183. Myers Cocktail starts at $150 and same-day appointments are often available."
+            }
           },
           {
             "@type": "Question",
-            "name": "What is the best IV drip for a hangover?",
-            "acceptedAnswer": {"@type": "Answer", "text": "The Myers Cocktail is our most popular for recovery -- IV fluids, B vitamins, B12, magnesium, and vitamin C. Most patients feel significantly better within an hour. Starting at $150."}
+            "name": "What's the most popular IV drip near Grapevine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Myers Cocktail is our most requested drip -- magnesium, B vitamins, B12, vitamin C, and IV fluids. It's great for energy, immunity, recovery, and general wellbeing. Starting at $150."
+            }
           },
           {
             "@type": "Question",
-            "name": "Can I get IV therapy before a flight out of DFW?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. A hydration drip before a long flight is one of the best things you can do for your body. We're about 15 minutes from DFW Airport -- book a same-day or next-day appointment online at Vagaro."}
+            "name": "Can I get IV therapy before flying out of DFW Airport?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. We're about 15 minutes from DFW and often have same-day morning availability. A hydration drip before a long flight is one of the best things you can do for your body -- you'll arrive actually hydrated instead of depleted."
+            }
           },
           {
             "@type": "Question",
             "name": "How long does a Myers Cocktail take?",
-            "acceptedAnswer": {"@type": "Answer", "text": "About 45-60 minutes from intake to out the door. You can read, scroll, or just relax while the drip runs."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About 45-60 minutes from intake to out the door. Most patients read, scroll, or just relax while the drip runs. Some drips (like NAD+) take longer depending on dose."
+            }
           },
           {
             "@type": "Question",
             "name": "Do you take walk-ins for IV therapy near Grapevine?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Happy Drip is appointment-based to make sure every patient gets dedicated care. Same-day and next-day appointments are frequently available -- book online through Vagaro."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Happy Drip is appointment-based so every patient gets focused, clinical care. Same-day and next-day appointments are frequently available -- book online through Vagaro or call (682) 283-6976."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is IV therapy safe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, when administered by a qualified provider. At Happy Drip, every drip is overseen by Brittany Adams, APRN FNP-C. She does a brief intake before each infusion to review your history and what you're there for. This is clinical IV therapy, not a vending machine."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Happy Drip offer NAD+ near Grapevine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- both IV NAD+ and IM (intramuscular injection) NAD+ are available. IV NAD+ takes longer but delivers a higher dose; IM is faster. Brittany reviews your goals at consultation and recommends the right option. See our NAD+ page for details."
+            }
           }
         ]
       }
@@ -125,8 +196,8 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="site-logo" aria-label="Happy Drip IV &amp; Wellness Home">
-      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness logo" class="logo-icon" />
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
       <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
@@ -140,6 +211,7 @@
             <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
             <a href="/semaglutide" class="dropdown-group-item nested">Semaglutide</a>
             <a href="/tirzepatide" class="dropdown-group-item nested">Tirzepatide</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
             <span class="dropdown-subcategory">Oral Medications</span>
             <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
           </div>
@@ -218,6 +290,7 @@
     <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
     <a href="/semaglutide" class="sub-link nested">Semaglutide</a>
     <a href="/tirzepatide" class="sub-link nested">Tirzepatide</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
     <span class="mobile-subcategory">Oral Medications</span>
     <a href="/phentermine" class="sub-link nested">Phentermine</a>
     <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>

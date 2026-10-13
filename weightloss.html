@@ -16,56 +16,114 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://www.happydripiv.com/weightloss#faq",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Am I a candidate for GLP-1 medications?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Most adults with a BMI of 27+ or those struggling with weight-related health conditions may qualify. We conduct a thorough health history review at your consultation to determine eligibility. Certain medical conditions may affect candidacy."
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/weightloss#service",
+        "name": "Medical Weight Loss",
+        "serviceType": "Provider-led medical weight management",
+        "description": "Medically supervised weight loss with Semaglutide & Tirzepatide (GLP-1) programs at Happy Drip IV & Wellness in Bedford, TX. Transparent pricing, real results.",
+        "url": "https://www.happydripiv.com/weightloss",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
         }
       },
       {
-        "@type": "Question",
-        "name": "What's the difference between Semaglutide and Tirzepatide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Both are GLP-1 receptor agonists that reduce appetite and support weight loss. Tirzepatide (Mounjaro/Zepbound) is a dual GIP/GLP-1 agonist and may produce greater weight loss results for some patients. We'll help you choose the right option at your consultation."
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
         }
       },
       {
-        "@type": "Question",
-        "name": "How much weight can I expect to lose?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Results vary widely from person to person. In clinical studies, people taking GLP-1 medications along with lifestyle changes lost meaningful weight on average (see the research), but your results depend on your dose, consistency, nutrition, activity, and how your body responds. Brittany will set realistic expectations with you at your consultation."
-        }
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
-        "@type": "Question",
-        "name": "Do you accept insurance for weight loss?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We are a cash-pay practice and do not bill insurance directly. However, we provide itemized invoices for HSA/FSA reimbursement on eligible services. Some oral medications may be covered by your pharmacy insurance."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/weightloss#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Weight Loss",
+            "item": "https://www.happydripiv.com/weightloss"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "How do I take the injections?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Semaglutide and Tirzepatide are weekly self-administered subcutaneous injections. We provide full injection training at your first appointment -- most patients find it quick and nearly painless."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I do this via telemedicine?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes! We offer telemedicine weight loss consultations in Colorado, Florida, Iowa, New Mexico, New York, Oklahoma, Texas, and Washington. After your virtual visit, medications can be shipped to your door or sent to your local pharmacy. Phentermine is the exception -- as a controlled substance, it can only be prescribed to patients located in Texas."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/weightloss#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Am I a candidate for GLP-1 medications?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most adults with a BMI of 27+ or those struggling with weight-related health conditions may qualify. We conduct a thorough health history review at your consultation to determine eligibility. Certain medical conditions may affect candidacy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between Semaglutide and Tirzepatide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are GLP-1 receptor agonists that reduce appetite and support weight loss. Tirzepatide (Mounjaro/Zepbound) is a dual GIP/GLP-1 agonist and may produce greater weight loss results for some patients. We'll help you choose the right option at your consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much weight can I expect to lose?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Results vary widely from person to person. In clinical studies, people taking GLP-1 medications along with lifestyle changes lost meaningful weight on average (see the research), but your results depend on your dose, consistency, nutrition, activity, and how your body responds. Brittany will set realistic expectations with you at your consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you accept insurance for weight loss?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are a cash-pay practice and do not bill insurance directly. However, we provide itemized invoices for HSA/FSA reimbursement on eligible services. Some oral medications may be covered by your pharmacy insurance."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I take the injections?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semaglutide and Tirzepatide are weekly self-administered subcutaneous injections. We provide full injection training at your first appointment -- most patients find it quick and nearly painless."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I do this via telemedicine?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We offer telemedicine weight loss consultations in Colorado, Florida, Iowa, New Mexico, New York, Oklahoma, Texas, and Washington. After your virtual visit, medications can be shipped to your door or sent to your local pharmacy. Phentermine is the exception -- as a controlled substance, it can only be prescribed to patients located in Texas."
+            }
+          }
+        ]
       }
     ]
   }
@@ -687,6 +745,8 @@
       </div>
 
     </div>
+
+    <p style="text-align:center;margin-top:32px;font-size:0.92rem;line-height:2;color:var(--body-text);">Compare your options: <a href="/semaglutide" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">semaglutide program</a> &middot; <a href="/tirzepatide" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">tirzepatide program</a> &middot; <a href="/phentermine" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">phentermine</a> &middot; <a href="/glp1-medications/" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">how GLP-1 medications work</a><br>Coming from nearby? <a href="/weight-loss-fort-worth" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">Medical weight loss for Fort Worth</a> &middot; <a href="/weight-loss-hurst" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">Hurst</a> &middot; <a href="/weight-loss-roanoke" style="color:var(--teal-dark);font-weight:700;text-decoration:underline;text-underline-offset:2px;">Roanoke</a></p>
 
     <div class="disclaimer">
       <p><strong>Medical Disclaimer:</strong> Results vary by individual. GLP-1 medications are prescription-only and require a medical consultation to determine eligibility. Pricing is subject to change. We are a cash-pay practice; we provide itemized invoices for HSA/FSA reimbursement. Contact us at <a href="tel:6822836976" style="color:var(--teal-dark);">(682) 283-6976</a> with any questions.</p>

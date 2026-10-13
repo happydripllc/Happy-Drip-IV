@@ -12,6 +12,68 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.happydripiv.com/i-do-drips" />
   <meta property="og:image" content="https://www.happydripiv.com/images/clinic.jpg" />
+  <!-- Service + breadcrumb schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/i-do-drips#service",
+        "name": "'I DO' Drips Bridal IV Therapy",
+        "serviceType": "IV therapy for bridal parties",
+        "description": "DFW's best-kept bridal beauty secret. Bridal IV drips, laser, facials & recovery packages for brides, bridesmaids & bachelorette parties. Bedford, TX.",
+        "url": "https://www.happydripiv.com/i-do-drips",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/i-do-drips#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "'I DO' Drips",
+            "item": "https://www.happydripiv.com/i-do-drips"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />

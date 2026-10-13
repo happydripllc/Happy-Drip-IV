@@ -12,6 +12,68 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.happydripiv.com/peptide-therapy/" />
   <meta property="og:image" content="https://www.happydripiv.com/images/clinic.jpg" />
+  <!-- Service + breadcrumb schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/peptide-therapy/#service",
+        "name": "Peptide Therapy",
+        "serviceType": "Prescription peptide therapy",
+        "description": "Personalized peptide therapy protocols for recovery, anti-aging, weight loss & longevity. Prescribed by Brittany Adams, APRN FNP-C in Bedford, TX.",
+        "url": "https://www.happydripiv.com/peptide-therapy/",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/peptide-therapy/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Peptide Therapy",
+            "item": "https://www.happydripiv.com/peptide-therapy/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -489,20 +551,12 @@
   <div class="container header-inner">
     <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
       <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
-      <div class="logo-text">
-        <span>Happy Drip IV</span>
-        <span>&amp; Wellness</span>
-      </div>
+      <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
       <div class="nav-item">
-        <a href="/" class="nav-link">Home</a>
-      </div>
-      <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          Medical Services
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
+        <a href="#" class="nav-link" aria-haspopup="true">Medical Services <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
         <div class="dropdown">
           <div class="dropdown-group">
             <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
@@ -517,7 +571,7 @@
           <div class="dropdown-group">
             <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
             <a href="/happy-health-clinic" class="dropdown-group-item">Direct Primary Care</a>
-          <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
           </div>
           <div class="dropdown-group">
             <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
@@ -538,22 +592,20 @@
         </div>
       </div>
       <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          Aesthetics
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
+        <a href="#" class="nav-link" aria-haspopup="true">Aesthetics <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
         <div class="dropdown">
           <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/hyperhidrosis">Hyperhidrosis Treatment</a>
           <a href="/mesotox">Korean Glass Skin MesoTox</a>
           <a href="/microneedling">Microneedling</a>
           <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+          <a href="/laser-hair-removal">Laser Hair Removal</a>
+          <a href="/tattoo-removal">Tattoo Removal</a>
+          <a href="/prp-prf">PRP / PRF</a>
         </div>
       </div>
       <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          IV Therapy
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
+        <a href="#" class="nav-link" aria-haspopup="true">IV Therapy <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
         <div class="dropdown">
           <a href="/iv-drip-menu">IV Drip Menu</a>
           <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
@@ -562,10 +614,7 @@
         </div>
       </div>
       <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          Things We Treat
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
+        <a href="#" class="nav-link" aria-haspopup="true">Things We Treat <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
         <div class="dropdown">
           <a href="/pcos">PCOS</a>
           <a href="/thyroid-optimization">Thyroid Optimization</a>
@@ -573,23 +622,17 @@
           <a href="/hormone-optimization">Hormone Optimization</a>
         </div>
       </div>
-      <div class="nav-item">
-        <a href="/payment-plans" class="nav-link">Payment Plans</a>
-      </div>
+      <div class="nav-item"><a href="/payment-plans" class="nav-link">Payment Plans</a></div>
       <div class="nav-item"><a href="/blog" class="nav-link">Blog</a></div>
-      <div class="nav-item">
-        <a href="/#faq" class="nav-link">FAQ</a>
-      </div>
+      <div class="nav-item"><a href="/#faq" class="nav-link">FAQ</a></div>
     </nav>
     <div class="header-right">
-      <a href="tel:6822836976" class="header-phone">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
         (682) 283-6976
       </a>
       <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
@@ -618,9 +661,13 @@
     <a href="/birth-control" class="sub-link nested">Birth Control</a>
     <span class="mobile-section-title">Aesthetics</span>
     <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/hyperhidrosis" class="sub-link">Hyperhidrosis Treatment</a>
     <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
     <a href="/microneedling" class="sub-link">Microneedling</a>
     <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <a href="/laser-hair-removal" class="sub-link">Laser Hair Removal</a>
+    <a href="/tattoo-removal" class="sub-link">Tattoo Removal</a>
+    <a href="/prp-prf" class="sub-link">PRP / PRF</a>
     <span class="mobile-section-title">IV Therapy</span>
     <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
     <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>

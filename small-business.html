@@ -16,10 +16,21 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "MedicalBusiness",
-        "name": "Happy Health Clinic",
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/small-business#service",
+        "name": "Small Business Direct Primary Care (DPC) Memberships",
+        "serviceType": "Direct primary care membership for small business employers",
         "description": "Direct Primary Care practice offering small business employer DPC memberships in Bedford, TX.",
         "url": "https://www.happydripiv.com/small-business",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
         "telephone": "+16822836976",
         "address": {
           "@type": "PostalAddress",
@@ -28,25 +39,93 @@
           "addressRegion": "TX",
           "postalCode": "76022",
           "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
         }
       },
       {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
+      },
+      {
         "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/small-business#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Does Direct Primary Care replace health insurance?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No. Direct Primary Care is not health insurance. It does not replace coverage for emergencies, hospitalizations, specialists, major procedures, or services outside the membership."}
+            "name": "Does DPC replace health insurance? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Direct Primary Care is not health insurance. A DPC membership provides access to primary care services within the scope of the program -- it does not replace coverage for emergencies, hospitalizations, specialist visits, major procedures, surgery, or services outside the membership. Employees still need separate coverage for those services."
+            }
           },
           {
             "@type": "Question",
-            "name": "What is the minimum company size for the Small Business DPC plan?",
-            "acceptedAnswer": {"@type": "Answer", "text": "The minimum is 2 eligible employees (employees only -- dependents, spouses, and family members do not count toward the minimum) to activate the Small Business plan."}
+            "name": "Can we offer this if we already provide health insurance? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. DPC can work alongside an existing group health plan by giving employees a simpler, more direct way to access routine primary care. If you have questions about how DPC interacts with specific plan types -- particularly HSA-qualified high-deductible plans -- we recommend checking with your benefits advisor."
+            }
           },
           {
             "@type": "Question",
-            "name": "Can employees add family members to the DPC membership?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes. Enrolled employees can add dependents (ages 5-20, guardian must be enrolled) at $50/month for the first two children and $25/month for each additional child. A one-time family enrollment fee of $200 covers all dependents."}
+            "name": "Does the company have to pay the full membership? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Businesses can choose to fully sponsor memberships, split the cost with employees, or make membership available as a voluntary employee benefit. Happy Health Clinic receives the full applicable membership amount regardless of how the employer and employee arrange it between themselves."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the minimum company size? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The minimum is 2 eligible employees. Dependents, spouses, and family members do not count toward satisfying the 2-employee minimum."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can employees add family members? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Enrolled employees can add dependents at per-person age-tier rates. Children (ages 5--20, guardian must be enrolled) are $50/month for the first two and $25/month for each additional child. A one-time family enrollment fee of $200 covers all dependents."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can employees use telehealth? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Telehealth is available when clinically appropriate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if an employee needs a specialist or hospital care? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Happy Health Clinic manages primary care needs within the scope of the membership. When specialist care, emergency services, or hospitalization is needed, we provide appropriate referrals and guidance. DPC does not replace insurance coverage for those services -- employees need separate coverage for care outside the membership."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a limit on how often employees can be seen? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The membership provides access to primary care services within the scope of the program. We don't impose arbitrary visit caps for care that falls within our scope -- but the membership isn't a guarantee of unlimited access to every possible clinical service. When in doubt about whether something is covered, reach out and ask us before your employee shows up."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do Chamber partnerships work? +",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Happy Health Clinic works with local Chambers and business organizations to explore healthcare benefit options for member businesses. If you're a Chamber executive or a business owner who came through your Chamber, we'd love to talk about what a partnership could look like for your organization and its members."
+            }
           }
         ]
       }

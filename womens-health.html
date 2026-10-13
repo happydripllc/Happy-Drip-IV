@@ -16,56 +16,114 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://www.happydripiv.com/womens-health#faq",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Do I need a referral to be seen for women's health at Happy Drip?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Nope. You can book directly online or call us. No referral, no gatekeeper, no waiting weeks for a primary care appointment just to get sent somewhere else. We're cash-pay and open to new patients."
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/womens-health#service",
+        "name": "Women's Health",
+        "serviceType": "Primary care and treatment for women",
+        "description": "Women's health services in Bedford, TX -- hormone balancing, PCOS management, thyroid optimization, sexual wellness, and preventive lab panels. Cash-pay, no insurance needed. Brittany Adams, APRN FNP-C.",
+        "url": "https://www.happydripiv.com/womens-health",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
         }
       },
       {
-        "@type": "Question",
-        "name": "Can you help if I've been told my labs are \"normal\" but I still feel awful?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes -- and this is one of the most common things we hear. Standard lab reference ranges are broad, and \"normal\" doesn't always mean optimal. We look at your numbers in context with your symptoms and help you understand what they actually mean for how you feel day to day."
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
         }
       },
       {
-        "@type": "Question",
-        "name": "What does a first women's health visit look like?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We start with a thorough intake -- your symptoms, health history, current medications and supplements, and your goals. We'll discuss which labs make sense to run (either ordered here or from a recent panel you bring in), and from there we build a plan together. Nothing is prescribed without evaluation first."
-        }
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
-        "@type": "Question",
-        "name": "I think I might be in perimenopause. Can you help?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. Perimenopause can start in your late 30s and early 40s and shows up as irregular cycles, sleep disruption, mood swings, weight changes, brain fog, and more -- often years before your last period. We'll evaluate your hormone levels and symptoms together and discuss what options are available to help you feel more like yourself."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/womens-health#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Women's Health",
+            "item": "https://www.happydripiv.com/womens-health"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "Do you prescribe birth control or manage OB/GYN issues?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Our focus is on hormonal health, metabolic concerns, PCOS, thyroid, and general women's wellness -- we're not a dedicated OB/GYN practice and don't perform pelvic exams or Pap smears. We're happy to work alongside your OB/GYN for complementary care, and can refer you when something is outside our scope."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is pricing handled?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We're a cash-pay clinic -- no insurance accepted. Visit fees and lab costs are discussed at your appointment. We believe in transparent pricing so you always know what you're paying before anything happens. Flexible payment plan options are available -- ask at your visit."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/womens-health#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a referral to be seen for women's health at Happy Drip?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nope. You can book directly online or call us. No referral, no gatekeeper, no waiting weeks for a primary care appointment just to get sent somewhere else. We're cash-pay and open to new patients."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you help if I've been told my labs are \"normal\" but I still feel awful?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- and this is one of the most common things we hear. Standard lab reference ranges are broad, and \"normal\" doesn't always mean optimal. We look at your numbers in context with your symptoms and help you understand what they actually mean for how you feel day to day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does a first women's health visit look like?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We start with a thorough intake -- your symptoms, health history, current medications and supplements, and your goals. We'll discuss which labs make sense to run (either ordered here or from a recent panel you bring in), and from there we build a plan together. Nothing is prescribed without evaluation first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "I think I might be in perimenopause. Can you help?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Perimenopause can start in your late 30s and early 40s and shows up as irregular cycles, sleep disruption, mood swings, weight changes, brain fog, and more -- often years before your last period. We'll evaluate your hormone levels and symptoms together and discuss what options are available to help you feel more like yourself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you prescribe birth control or manage OB/GYN issues?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our focus is on hormonal health, metabolic concerns, PCOS, thyroid, and general women's wellness -- we're not a dedicated OB/GYN practice and don't perform pelvic exams or Pap smears. We're happy to work alongside your OB/GYN for complementary care, and can refer you when something is outside our scope."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is pricing handled?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We're a cash-pay clinic -- no insurance accepted. Visit fees and lab costs are discussed at your appointment. We believe in transparent pricing so you always know what you're paying before anything happens. Flexible payment plan options are available -- ask at your visit."
+            }
+          }
+        ]
       }
     ]
   }

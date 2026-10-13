@@ -16,56 +16,120 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://www.happydripiv.com/glp1-medications/#faq",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "How exactly does a GLP-1 medication cause weight loss?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "It slows how quickly your stomach empties and acts on appetite centers in the brain, so you feel full on less food and think about food less throughout the day. Over weeks, that calorie reduction adds up to meaningful weight loss."
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/glp1-medications/#service",
+        "name": "GLP-1 Medications (Semaglutide and Tirzepatide)",
+        "serviceType": "Medical weight management with GLP-1 medications",
+        "description": "How semaglutide and tirzepatide actually work, the clinical benefits beyond weight loss, and how to know which GLP-1 is right for you. Bedford, TX.",
+        "url": "https://www.happydripiv.com/glp1-medications/",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
         }
       },
       {
-        "@type": "Question",
-        "name": "Are GLP-1 medications safe long-term?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Semaglutide and tirzepatide have years of clinical trial and real-world data behind them, including long-term cardiovascular and safety studies. As with any prescription medication, ongoing monitoring matters, which is why we do regular check-ins and lab review."
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
         }
       },
       {
-        "@type": "Question",
-        "name": "Will I gain the weight back if I stop taking it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Appetite and hunger signals tend to return once the medication is stopped, so weight regain is common without a maintenance plan. We work with patients on tapering strategies and lifestyle habits designed to help hold results."
-        }
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
-        "@type": "Question",
-        "name": "Is tirzepatide really more effective than semaglutide?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "In the SURMOUNT-5 head-to-head trial (Aronne et al., N Engl J Med 2025), adults taking tirzepatide lost more weight on average than those taking semaglutide at 72 weeks (20.2% vs. 13.7%), likely because tirzepatide targets an additional hormone pathway. Those are averages from FDA-approved products at maximum tolerated doses, individual response varies, and semaglutide works very well for many people."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/glp1-medications/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Medical Weight Loss",
+            "item": "https://www.happydripiv.com/weightloss"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "GLP-1 Medications",
+            "item": "https://www.happydripiv.com/glp1-medications/"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "Do GLP-1s help with anything besides weight loss?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes -- clinical research also shows benefits for blood sugar control, cardiovascular risk reduction, and in some studies, improvements in sleep apnea and joint pain related to excess weight."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What's the difference between Ozempic, Wegovy, Mounjaro, and Zepbound?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ozempic and Wegovy are both semaglutide; Mounjaro and Zepbound are both tirzepatide. The brand names differ by FDA-approved use and dosing, but the active medication in each pair is the same. We prescribe based on what's clinically appropriate for you."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/glp1-medications/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How exactly does a GLP-1 medication cause weight loss?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It slows how quickly your stomach empties and acts on appetite centers in the brain, so you feel full on less food and think about food less throughout the day. Over weeks, that calorie reduction adds up to meaningful weight loss."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are GLP-1 medications safe long-term?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Semaglutide and tirzepatide have years of clinical trial and real-world data behind them, including long-term cardiovascular and safety studies. As with any prescription medication, ongoing monitoring matters, which is why we do regular check-ins and lab review."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will I gain the weight back if I stop taking it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Appetite and hunger signals tend to return once the medication is stopped, so weight regain is common without a maintenance plan. We work with patients on tapering strategies and lifestyle habits designed to help hold results."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is tirzepatide really more effective than semaglutide?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In the SURMOUNT-5 head-to-head trial (Aronne et al., N Engl J Med 2025), adults taking tirzepatide lost more weight on average than those taking semaglutide at 72 weeks (20.2% vs. 13.7%), likely because tirzepatide targets an additional hormone pathway. Those are averages from FDA-approved products at maximum tolerated doses, individual response varies, and semaglutide works very well for many people."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do GLP-1s help with anything besides weight loss?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- clinical research also shows benefits for blood sugar control, cardiovascular risk reduction, and in some studies, improvements in sleep apnea and joint pain related to excess weight."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between Ozempic, Wegovy, Mounjaro, and Zepbound?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ozempic and Wegovy are both semaglutide; Mounjaro and Zepbound are both tirzepatide. The brand names differ by FDA-approved use and dosing, but the active medication in each pair is the same. We prescribe based on what's clinically appropriate for you."
+            }
+          }
+        ]
       }
     ]
   }
@@ -269,20 +333,12 @@
   <div class="container header-inner">
     <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
       <img src="../images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
-      <div class="logo-text">
-        <span>Happy Drip IV</span>
-        <span>& Wellness</span>
-      </div>
+      <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
+      <div class="nav-item"><a href="/" class="nav-link">Home</a></div>
       <div class="nav-item">
-        <a href="/" class="nav-link">Home</a>
-      </div>
-      <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          Medical Services
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
+        <a href="#" class="nav-link" aria-haspopup="true">Medical Services <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
         <div class="dropdown">
           <div class="dropdown-group">
             <a href="/weightloss" class="dropdown-group-title">Medical Weight Loss</a>
@@ -297,7 +353,7 @@
           <div class="dropdown-group">
             <a href="/happy-health-clinic" class="dropdown-group-title">Happy Health Clinic (DPC)</a>
             <a href="/happy-health-clinic" class="dropdown-group-item">Direct Primary Care</a>
-          <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
+            <a href="/small-business" class="dropdown-group-item">Small Business DPC</a>
           </div>
           <div class="dropdown-group">
             <a href="/peptide-therapy/" class="dropdown-group-title">Peptide Therapy</a>
@@ -318,34 +374,20 @@
         </div>
       </div>
       <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          Things We Treat
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
-        <div class="dropdown">
-          <a href="/pcos">PCOS</a>
-          <a href="/thyroid-optimization">Thyroid Optimization</a>
-          <a href="/acne-management">Acne Management</a>
-          <a href="/hormone-optimization">Hormone Optimization</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          Aesthetics
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
+        <a href="#" class="nav-link" aria-haspopup="true">Aesthetics <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
         <div class="dropdown">
           <a href="/jeuveau">Jeuveau&#174; (Botox)</a>
+          <a href="/hyperhidrosis">Hyperhidrosis Treatment</a>
           <a href="/mesotox">Korean Glass Skin MesoTox</a>
           <a href="/microneedling">Microneedling</a>
           <a href="/hair-rejuvenation">Hair Rejuvenation</a>
+          <a href="/laser-hair-removal">Laser Hair Removal</a>
+          <a href="/tattoo-removal">Tattoo Removal</a>
+          <a href="/prp-prf">PRP / PRF</a>
         </div>
       </div>
       <div class="nav-item">
-        <a href="#" class="nav-link" aria-haspopup="true">
-          IV Therapy
-          <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </a>
+        <a href="#" class="nav-link" aria-haspopup="true">IV Therapy <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
         <div class="dropdown">
           <a href="/iv-drip-menu">IV Drip Menu</a>
           <a href="/i-do-drips">&#39;I DO&#39; Drips (Bridal)</a>
@@ -354,22 +396,25 @@
         </div>
       </div>
       <div class="nav-item">
-        <a href="/payment-plans" class="nav-link">Payment Plans</a>
+        <a href="#" class="nav-link" aria-haspopup="true">Things We Treat <svg class="arrow" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+        <div class="dropdown">
+          <a href="/pcos">PCOS</a>
+          <a href="/thyroid-optimization">Thyroid Optimization</a>
+          <a href="/acne-management">Acne Management</a>
+          <a href="/hormone-optimization">Hormone Optimization</a>
+        </div>
       </div>
+      <div class="nav-item"><a href="/payment-plans" class="nav-link">Payment Plans</a></div>
       <div class="nav-item"><a href="/blog" class="nav-link">Blog</a></div>
-      <div class="nav-item">
-        <a href="/#faq" class="nav-link">FAQ</a>
-      </div>
+      <div class="nav-item"><a href="/#faq" class="nav-link">FAQ</a></div>
     </nav>
     <div class="header-right">
-      <a href="tel:6822836976" class="header-phone">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+      <a href="tel:6822836976" class="header-phone" aria-label="Call us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.01 2.22 2 2 0 012 .04h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
         (682) 283-6976
       </a>
       <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary">Book Now</a>
-      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
@@ -392,21 +437,29 @@
     <a href="/mens-health" class="sub-link">Men's Health</a>
     <a href="/sexual-health" class="sub-link nested">Sexual Health (ED)</a>
     <a href="/trt" class="sub-link nested">Testosterone (TRT)</a>
-    <span class="mobile-section-title">Things We Treat</span>
-    <a href="/pcos" class="sub-link">PCOS</a>
-    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
-    <a href="/acne-management" class="sub-link">Acne Management</a>
-    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
+    <a href="/womens-health" class="sub-link">Women's Health</a>
+    <a href="/hormone-optimization" class="sub-link nested">Hormone Therapy</a>
+    <a href="/pcos" class="sub-link nested">PCOS Management</a>
+    <a href="/birth-control" class="sub-link nested">Birth Control</a>
     <span class="mobile-section-title">Aesthetics</span>
     <a href="/jeuveau" class="sub-link">Jeuveau&#174; (Botox)</a>
+    <a href="/hyperhidrosis" class="sub-link">Hyperhidrosis Treatment</a>
     <a href="/mesotox" class="sub-link">Korean Glass Skin MesoTox</a>
     <a href="/microneedling" class="sub-link">Microneedling</a>
     <a href="/hair-rejuvenation" class="sub-link">Hair Rejuvenation</a>
+    <a href="/laser-hair-removal" class="sub-link">Laser Hair Removal</a>
+    <a href="/tattoo-removal" class="sub-link">Tattoo Removal</a>
+    <a href="/prp-prf" class="sub-link">PRP / PRF</a>
     <span class="mobile-section-title">IV Therapy</span>
     <a href="/iv-drip-menu" class="sub-link">IV Drip Menu</a>
     <a href="/i-do-drips" class="sub-link">&#39;I DO&#39; Drips (Bridal)</a>
     <a href="/groups-events" class="sub-link">Groups + Events</a>
     <a href="/iron-infusion" class="sub-link">Iron Infusion</a>
+    <span class="mobile-section-title">Things We Treat</span>
+    <a href="/pcos" class="sub-link">PCOS</a>
+    <a href="/thyroid-optimization" class="sub-link">Thyroid Optimization</a>
+    <a href="/acne-management" class="sub-link">Acne Management</a>
+    <a href="/hormone-optimization" class="sub-link">Hormone Optimization</a>
     <a href="/payment-plans">Payment Plans</a>
     <a href="/blog">Blog</a>
     <a href="/#faq">FAQ</a>

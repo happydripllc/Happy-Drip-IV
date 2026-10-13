@@ -16,64 +16,122 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "@id": "https://www.happydripiv.com/birth-control#faq",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "Do I need a pelvic exam or Pap smear to get birth control here?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Current clinical guidelines do not require a pelvic exam before prescribing hormonal contraceptives. We'll review your health history and any relevant information, but you won't need to schedule a separate OB/GYN exam just to get a prescription. If you're due for a Pap smear or pelvic exam, we'll let you know and can refer you to a trusted provider."
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/birth-control#service",
+        "name": "Birth Control Management and Refills",
+        "serviceType": "Birth control prescription management",
+        "description": "Birth control management and prescription refills in Bedford, TX. Pill, patch, ring, and hormonal options reviewed by Brittany Adams, APRN FNP-C. Cash-pay, no insurance needed. Serving Hurst, Euless, Colleyville, Grapevine, and DFW.",
+        "url": "https://www.happydripiv.com/birth-control",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
         }
       },
       {
-        "@type": "Question",
-        "name": "Can I get my birth control prescription on the first visit?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes -- in most cases. After a brief health history review and discussion of your goals, Brittany can prescribe or refill your birth control at that same appointment and send it to your preferred pharmacy. If something in your history warrants more evaluation first, we'll let you know upfront."
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
         }
       },
       {
-        "@type": "Question",
-        "name": "What types of birth control can you prescribe?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We can prescribe combined oral contraceptives (the pill), progestin-only pills (mini-pill), the contraceptive patch, and the vaginal ring. We can also provide thorough counseling on all methods -- including the shot, implant, and IUDs -- and help you weigh your options even if we refer you elsewhere for insertion or administration."
-        }
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
-        "@type": "Question",
-        "name": "Can you manage birth control if I also have PCOS or hormonal issues?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes -- and this is actually a common intersection we see. Certain contraceptives can help regulate cycles, reduce androgen levels, and manage hormonal acne alongside providing contraception. We'll look at your full picture, including any PCOS or hormone-related concerns, and find an approach that addresses multiple goals at once."
-        }
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/birth-control#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Birth Control",
+            "item": "https://www.happydripiv.com/birth-control"
+          }
+        ]
       },
       {
-        "@type": "Question",
-        "name": "Do you manage IUDs or the implant?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We don't perform IUD insertions or implant placements here -- those require a procedural visit with an OB/GYN. However, we're happy to discuss these options in detail, help you understand what to expect, and provide a referral when that's the right direction. If you already have an IUD or implant, we can still help manage any side effects or hormonal concerns."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I switch birth control methods at my appointment?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely. If your current method isn't working for you -- whether it's side effects, convenience, or a change in your health situation -- we'll talk through other options and transition you when it's safe to do so. You're not locked into anything."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much does a birth control visit cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The asynchronous visit is a flat $50 -- no insurance, no hidden fees. That covers Brittany's review and the prescription. The medication itself is filled at your pharmacy and priced separately; many generic options are available for very little at major chains. For qualified individuals, we send up to 12 months of refill orders so you're not paying another visit fee every few months."
-        }
+        "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/birth-control#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do I need a pelvic exam or Pap smear to get birth control here?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Current clinical guidelines do not require a pelvic exam before prescribing hormonal contraceptives. We'll review your health history and any relevant information, but you won't need to schedule a separate OB/GYN exam just to get a prescription. If you're due for a Pap smear or pelvic exam, we'll let you know and can refer you to a trusted provider."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I get my birth control prescription on the first visit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- in most cases. After a brief health history review and discussion of your goals, Brittany can prescribe or refill your birth control at that same appointment and send it to your preferred pharmacy. If something in your history warrants more evaluation first, we'll let you know upfront."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of birth control can you prescribe?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We can prescribe combined oral contraceptives (the pill), progestin-only pills (mini-pill), the contraceptive patch, and the vaginal ring. We can also provide thorough counseling on all methods -- including the shot, implant, and IUDs -- and help you weigh your options even if we refer you elsewhere for insertion or administration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you manage birth control if I also have PCOS or hormonal issues?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- and this is actually a common intersection we see. Certain contraceptives can help regulate cycles, reduce androgen levels, and manage hormonal acne alongside providing contraception. We'll look at your full picture, including any PCOS or hormone-related concerns, and find an approach that addresses multiple goals at once."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you manage IUDs or the implant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We don't perform IUD insertions or implant placements here -- those require a procedural visit with an OB/GYN. However, we're happy to discuss these options in detail, help you understand what to expect, and provide a referral when that's the right direction. If you already have an IUD or implant, we can still help manage any side effects or hormonal concerns."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I switch birth control methods at my appointment?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. If your current method isn't working for you -- whether it's side effects, convenience, or a change in your health situation -- we'll talk through other options and transition you when it's safe to do so. You're not locked into anything."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a birth control visit cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The asynchronous visit is a flat $50 -- no insurance, no hidden fees. That covers Brittany's review and the prescription. The medication itself is filled at your pharmacy and priced separately; many generic options are available for very little at major chains. For qualified individuals, we send up to 12 months of refill orders so you're not paying another visit fee every few months."
+            }
+          }
+        ]
       }
     ]
   }

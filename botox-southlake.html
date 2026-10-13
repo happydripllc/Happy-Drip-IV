@@ -16,10 +16,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "MedicalBusiness",
-        "name": "Happy Drip IV & Wellness",
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/botox-southlake#service",
+        "name": "Aesthetic Treatments in Southlake, TX",
+        "serviceType": "Aesthetic medicine (Jeuveau, microneedling, PRP/PRF)",
         "description": "Aesthetic clinic serving Southlake, TX with Jeuveau neurotoxin, microneedling, PRP/PRF, and other aesthetic services. No insurance required, cash-pay.",
         "url": "https://www.happydripiv.com/botox-southlake",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Southlake",
+          "addressRegion": "TX"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
         "telephone": "+16822836976",
         "address": {
           "@type": "PostalAddress",
@@ -29,45 +45,92 @@
           "postalCode": "76022",
           "addressCountry": "US"
         },
-        "areaServed": {"@type": "City", "name": "Southlake", "addressRegion": "TX"},
-        "priceRange": "$$",
-        "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c"]
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/botox-southlake#breadcrumb",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.happydripiv.com"},
-          {"@type": "ListItem", "position": 2, "name": "Aesthetics", "item": "https://www.happydripiv.com/jeuveau"},
-          {"@type": "ListItem", "position": 3, "name": "Aesthetics Near Southlake", "item": "https://www.happydripiv.com/botox-southlake"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Aesthetics",
+            "item": "https://www.happydripiv.com/jeuveau"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Aesthetics Near Southlake",
+            "item": "https://www.happydripiv.com/botox-southlake"
+          }
         ]
       },
       {
         "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/botox-southlake#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Where is the nearest Botox or Jeuveau clinic to Southlake, TX?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Happy Drip IV & Wellness is in Bedford, about 15 minutes from Southlake Town Square via TX-26 E. Jeuveau starts at $9/unit."}
+            "name": "Where is the nearest Botox or Jeuveau clinic to Southlake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Happy Drip is in Bedford, about 15 minutes from Southlake Town Square via TX-26 E. We're at 813 Brown Trail #6B -- free parking right out front."
+            }
           },
           {
             "@type": "Question",
             "name": "What is the difference between Botox and Jeuveau?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Jeuveau (prabotulinumtoxinA) was FDA-approved specifically for cosmetic use -- unlike Botox, which was developed for medical conditions first. Both are neurotoxins that relax facial muscles to reduce wrinkles, with very similar results. Jeuveau starts at $9/unit at Happy Drip."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Both are botulinum toxin type A neurotoxins that temporarily relax facial muscles to reduce wrinkles. Jeuveau was FDA-approved specifically for cosmetic use, while Botox was originally developed for medical conditions. The results are very similar. Jeuveau starts at $9/unit at Happy Drip. For a full comparison, check out our Botox vs. Jeuveau blog post."
+            }
           },
           {
             "@type": "Question",
             "name": "How much does Jeuveau cost near Southlake?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Jeuveau starts at $9/unit at Happy Drip. The total cost depends on how many units are used, which varies by treatment area and your anatomy. Brittany reviews this at your consultation."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Jeuveau is $9/unit at Happy Drip. The total depends on the areas treated and your anatomy -- a single area like the forehead typically requires 10-20 units, though Brittany assesses this at your consultation. No packages or memberships required."
+            }
           },
           {
             "@type": "Question",
-            "name": "Do I need a consultation before getting Jeuveau near Southlake?",
-            "acceptedAnswer": {"@type": "Answer", "text": "For new patients, yes -- Brittany does a brief intake to review your goals and treatment areas before injecting. Same-day appointments are often available."}
+            "name": "Do I need a consultation before getting Jeuveau?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For new patients, yes -- Brittany does a brief intake before injecting. Same-day appointments are frequently available. If you're a returning patient, you can often book a treatment appointment directly."
+            }
           },
           {
             "@type": "Question",
-            "name": "Do you offer other aesthetics besides Botox near Southlake?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes -- Happy Drip also offers microneedling, Mesotox, PRP/PRF, laser hair removal, tattoo removal, acne management, hair rejuvenation, and red light therapy."}
+            "name": "Do you offer filler or lip filler near Southlake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We do not currently offer dermal filler. Our neurotoxin menu includes Jeuveau for wrinkle relaxation and Mesotox for skin quality. For volume and structural work, we're happy to refer you to a provider who specializes in filler."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you take insurance for aesthetics near Southlake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aesthetic services are not covered by insurance. Happy Drip is a cash-pay practice -- pricing is straightforward and you know exactly what you're paying before your appointment. HSA and FSA funds are accepted for eligible services."
+            }
           }
         ]
       }
@@ -122,8 +185,8 @@
 
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="site-logo" aria-label="Happy Drip IV &amp; Wellness Home">
-      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV &amp; Wellness logo" class="logo-icon" />
+    <a href="/" class="site-logo" aria-label="Happy Drip IV & Wellness Home">
+      <img src="/images/happy-drip-logo.png" alt="Happy Drip IV & Wellness logo" class="logo-icon" />
       <div class="logo-text"><span>Happy Drip IV</span><span>&amp; Wellness</span></div>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
@@ -137,6 +200,7 @@
             <a href="/glp1-medications/" class="dropdown-group-item">GLP-1 Medications</a>
             <a href="/semaglutide" class="dropdown-group-item nested">Semaglutide</a>
             <a href="/tirzepatide" class="dropdown-group-item nested">Tirzepatide</a>
+            <a href="/glp1-medications/side-effects/" class="dropdown-group-item nested">GLP-1 Side Effects</a>
             <span class="dropdown-subcategory">Oral Medications</span>
             <a href="/phentermine" class="dropdown-group-item">Phentermine</a>
           </div>
@@ -215,6 +279,7 @@
     <a href="/glp1-medications/" class="sub-link nested">GLP-1 Medications</a>
     <a href="/semaglutide" class="sub-link nested">Semaglutide</a>
     <a href="/tirzepatide" class="sub-link nested">Tirzepatide</a>
+    <a href="/glp1-medications/side-effects/" class="sub-link nested-2">GLP-1 Side Effects</a>
     <span class="mobile-subcategory">Oral Medications</span>
     <a href="/phentermine" class="sub-link nested">Phentermine</a>
     <a href="/happy-health-clinic" class="sub-link">Happy Health Clinic (DPC)</a>

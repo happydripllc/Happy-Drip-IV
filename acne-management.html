@@ -12,6 +12,68 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.happydripiv.com/acne-management" />
   <meta property="og:image" content="https://www.happydripiv.com/images/clinic.jpg" />
+  <!-- Service + breadcrumb schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/acne-management#service",
+        "name": "Acne Management",
+        "serviceType": "Medical acne evaluation and treatment",
+        "description": "Medical acne management in Bedford, TX -- real evaluation of hormonal, cystic, and adult acne with a personalized treatment plan. Cash-pay care from Brittany Adams, APRN FNP-C.",
+        "url": "https://www.happydripiv.com/acne-management",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
+        "telephone": "+16822836976",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "813 Brown Trail #6B",
+          "addressLocality": "Bedford",
+          "addressRegion": "TX",
+          "postalCode": "76022",
+          "addressCountry": "US"
+        },
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/acne-management#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Acne Management",
+            "item": "https://www.happydripiv.com/acne-management"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
