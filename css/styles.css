@@ -252,7 +252,7 @@ p { line-height: 1.75; }
   justify-content: space-between;
   gap: 16px;
   height: 72px;
-  padding-right: 140px;
+  max-width: 1440px;
 }
 
 /* Logo */
@@ -284,13 +284,13 @@ p { line-height: 1.75; }
 }
 
 /* Nav */
-.main-nav { display: flex; align-items: center; gap: 4px; }
+.main-nav { display: flex; align-items: center; gap: 2px; }
 .nav-item { position: relative; }
 .nav-link {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 8px 12px;
+  padding: 8px 10px;
   color: rgba(255,255,255,0.88);
   font-size: 0.84rem;
   font-weight: 600;
@@ -1294,6 +1294,12 @@ p { line-height: 1.75; }
 .faq-q:hover { background: var(--off-white); }
 .faq-a { padding: 0 24px 20px; background: var(--light-blue); }
 .faq-a p { font-size: 0.95rem; color: var(--body-text); }
+
+/* Full desktop nav needs ~1300px; below that use the hamburger so Book Now is never clipped */
+@media (max-width: 1320px) {
+  .main-nav { display: none; }
+  .hamburger { display: flex; }
+}
 
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
