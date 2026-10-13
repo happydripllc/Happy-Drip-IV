@@ -25,3 +25,21 @@
 /directions         /location            301
 /map                /location            301
 /blog/tirzepatide   /blog/tirzepatide-vs-semaglutide  301
+
+# Old-site URLs reported as 404 in Search Console
+/terms-of-service           /terms                              301
+/hipaa-notice-1             /hipaa-notice                       301
+/faq                        /                                   301
+/laser-treatments           /laser-hair-removal                 301
+/dermal-fillers             /jeuveau                            301
+/botox-recommended-doses    /blog/botox-vs-jeuveau              301
+/jeuveau%C2%AE              /jeuveau                            301
+/bc-renew                   /birth-control                      301
+/bc-refills                 /birth-control                      301
+/bc-management              /birth-control                      301
+/groups-+-events            /groups-events                      301
+/acne/acne-scars            /acne-management                    301
+/prp/pfr                    /prp-prf                            301
+/vamp%E2%84%A2-microneedling /microneedling                     301
+/glp1-side-effects          /glp1-medications/side-effects/     301
+/glp1-side-effects/         /glp1-medications/side-effects/     301
