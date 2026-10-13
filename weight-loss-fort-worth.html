@@ -16,10 +16,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "MedicalBusiness",
-        "name": "Happy Drip IV & Wellness",
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/weight-loss-fort-worth#service",
+        "name": "Medical Weight Loss in Fort Worth, TX",
+        "serviceType": "Medical weight loss and obesity medicine (semaglutide and tirzepatide)",
         "description": "Concierge-model medical weight loss clinic serving Fort Worth, TX with semaglutide and tirzepatide GLP-1 medications. Cash-pay, no insurance required.",
         "url": "https://www.happydripiv.com/weight-loss-fort-worth",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Fort Worth",
+          "addressRegion": "TX"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
         "telephone": "+16822836976",
         "address": {
           "@type": "PostalAddress",
@@ -29,46 +45,84 @@
           "postalCode": "76022",
           "addressCountry": "US"
         },
-        "areaServed": {"@type": "City", "name": "Fort Worth", "addressRegion": "TX"},
-        "medicalSpecialty": "Obesity Medicine",
-        "priceRange": "$$",
-        "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c"]
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/weight-loss-fort-worth#breadcrumb",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.happydripiv.com"},
-          {"@type": "ListItem", "position": 2, "name": "Weight Loss", "item": "https://www.happydripiv.com/weightloss"},
-          {"@type": "ListItem", "position": 3, "name": "Medical Weight Loss Fort Worth", "item": "https://www.happydripiv.com/weight-loss-fort-worth"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Weight Loss",
+            "item": "https://www.happydripiv.com/weightloss"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Medical Weight Loss Fort Worth",
+            "item": "https://www.happydripiv.com/weight-loss-fort-worth"
+          }
         ]
       },
       {
         "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/weight-loss-fort-worth#faq",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "How far is Happy Drip from Fort Worth?",
-            "acceptedAnswer": {"@type": "Answer", "text": "About 20 minutes from downtown Fort Worth via I-820 E to TX-121, then exit Brown Trail. We're in Bedford at 813 Brown Trail #6B, in the heart of the Mid-Cities corridor."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About 20 minutes from downtown Fort Worth via I-820 E to TX-121, then exit Brown Trail. We're in Bedford at 813 Brown Trail #6B, in the heart of the Mid-Cities corridor."
+            }
           },
           {
             "@type": "Question",
             "name": "Is there a GLP-1 clinic near Fort Worth, TX?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes -- Happy Drip IV & Wellness is in Bedford, about 20 minutes from downtown Fort Worth. We prescribe and manage both semaglutide and tirzepatide for qualified patients."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- Happy Drip IV & Wellness is in Bedford, about 20 minutes from downtown Fort Worth. We prescribe and manage both semaglutide and tirzepatide for qualified patients."
+            }
           },
           {
             "@type": "Question",
             "name": "Do I need insurance for semaglutide near Fort Worth?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No insurance is required. Happy Drip is a cash-pay concierge practice. Semaglutide is $165-$250/month and tirzepatide is $195-$360/month (dose-dependent). Many patients use HSA or FSA funds."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No insurance is required. Happy Drip is a cash-pay concierge practice. Semaglutide is $165-$250/month and tirzepatide is $195-$360/month (dose-dependent). Many patients use HSA or FSA funds."
+            }
           },
           {
             "@type": "Question",
             "name": "Does Happy Drip offer Ozempic or Wegovy near Fort Worth?",
-            "acceptedAnswer": {"@type": "Answer", "text": "We prescribe semaglutide -- the same active ingredient found in Ozempic and Wegovy -- compounded by a licensed pharmacy. $165-$250/month depending on dose, with no insurance needed."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We prescribe semaglutide -- the same active ingredient found in Ozempic and Wegovy -- compounded by a licensed pharmacy. $165-$250/month depending on dose, with no insurance needed."
+            }
           },
           {
             "@type": "Question",
             "name": "Do I need a referral to get semaglutide near Fort Worth?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No referral needed. Book a consultation directly online and Brittany Adams, APRN FNP-C will evaluate you at your first visit."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No referral needed. Book a consultation directly online and Brittany Adams, APRN FNP-C will evaluate you at your first visit."
+            }
           }
         ]
       }
@@ -408,7 +462,7 @@
   <div class="container" style="max-width:680px;">
     <span class="section-label" style="color:#5dd9e8;">Fort Worth's Weight Loss Clinic in the Mid-Cities</span>
     <h2 style="color:#fff;margin:12px 0 16px;">Ready to Start? Your Consultation Is One Click Away.</h2>
-    <p style="color:rgba(255,255,255,0.75);margin-bottom:28px;">Cash-pay. No insurance needed. HSA/FSA accepted. Semaglutide from $165/mo, tirzepatide from $195/mo. About 20 minutes from Fort Worth.</p>
+    <p style="color:rgba(255,255,255,0.75);margin-bottom:28px;">Cash-pay. No insurance needed. HSA/FSA accepted. Semaglutide $165&ndash;$250/mo, tirzepatide $195&ndash;$360/mo (dose-dependent). About 20 minutes from Fort Worth.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
       <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book Your Consultation</a>
       <a href="tel:6822836976" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,0.4);">(682) 283-6976</a>

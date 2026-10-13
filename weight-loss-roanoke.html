@@ -16,10 +16,26 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "MedicalBusiness",
-        "name": "Happy Drip IV & Wellness",
+        "@type": "Service",
+        "@id": "https://www.happydripiv.com/weight-loss-roanoke#service",
+        "name": "Medical Weight Loss in Roanoke, TX",
+        "serviceType": "Medical weight loss and obesity medicine (semaglutide and tirzepatide)",
         "description": "Medical weight loss clinic serving Roanoke, TX with semaglutide and tirzepatide GLP-1 medications. Concierge model, cash-pay, no insurance required.",
         "url": "https://www.happydripiv.com/weight-loss-roanoke",
+        "provider": {
+          "@id": "https://www.happydripiv.com/#clinic"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": "Roanoke",
+          "addressRegion": "TX"
+        }
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://www.happydripiv.com/#clinic",
+        "name": "Happy Drip IV & Wellness",
+        "url": "https://www.happydripiv.com/",
         "telephone": "+16822836976",
         "address": {
           "@type": "PostalAddress",
@@ -29,41 +45,76 @@
           "postalCode": "76022",
           "addressCountry": "US"
         },
-        "areaServed": {"@type": "City", "name": "Roanoke", "addressRegion": "TX"},
-        "medicalSpecialty": "Obesity Medicine",
-        "priceRange": "$$",
-        "sameAs": ["https://www.google.com/maps/place/?q=place_id:ChIJmfpTtRDMM6MRnkpXDl57x0c"]
+        "founder": {
+          "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c#brittany-adams",
+        "name": "Brittany Adams",
+        "honorificSuffix": "APRN, FNP-C",
+        "url": "https://www.happydripiv.com/brittany-adams-aprn-fnp-c"
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://www.happydripiv.com/weight-loss-roanoke#breadcrumb",
         "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.happydripiv.com"},
-          {"@type": "ListItem", "position": 2, "name": "Weight Loss", "item": "https://www.happydripiv.com/weightloss"},
-          {"@type": "ListItem", "position": 3, "name": "Medical Weight Loss Roanoke", "item": "https://www.happydripiv.com/weight-loss-roanoke"}
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.happydripiv.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Weight Loss",
+            "item": "https://www.happydripiv.com/weightloss"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Medical Weight Loss Roanoke",
+            "item": "https://www.happydripiv.com/weight-loss-roanoke"
+          }
         ]
       },
       {
         "@type": "FAQPage",
+        "@id": "https://www.happydripiv.com/weight-loss-roanoke#faq",
         "mainEntity": [
           {
             "@type": "Question",
             "name": "Is there a GLP-1 weight loss clinic near Roanoke, TX?",
-            "acceptedAnswer": {"@type": "Answer", "text": "Yes -- Happy Drip IV & Wellness is in Bedford, about 25 minutes from Roanoke via TX-114 E or US-377 S to TX-183. We prescribe semaglutide and tirzepatide for qualified patients."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes -- Happy Drip IV & Wellness is in Bedford, about 25 minutes from Roanoke via TX-114 E or US-377 S to TX-183. We prescribe semaglutide and tirzepatide for qualified patients."
+            }
           },
           {
             "@type": "Question",
             "name": "Does Happy Drip offer Ozempic or Wegovy near Roanoke?",
-            "acceptedAnswer": {"@type": "Answer", "text": "We prescribe semaglutide -- the same active ingredient as Ozempic and Wegovy -- compounded by a licensed pharmacy. $165-$250/month depending on dose, no insurance required."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We prescribe semaglutide -- the same active ingredient as Ozempic and Wegovy -- compounded by a licensed pharmacy. $165-$250/month depending on dose, no insurance required."
+            }
           },
           {
             "@type": "Question",
             "name": "How far is Happy Drip from Roanoke?",
-            "acceptedAnswer": {"@type": "Answer", "text": "About 25 minutes via TX-114 E to TX-121 S, then exit Brown Trail. We're at 813 Brown Trail #6B in Bedford."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About 25 minutes via TX-114 E to TX-121 S, then exit Brown Trail. We're at 813 Brown Trail #6B in Bedford."
+            }
           },
           {
             "@type": "Question",
             "name": "Do I need insurance for semaglutide near Roanoke?",
-            "acceptedAnswer": {"@type": "Answer", "text": "No insurance needed. Happy Drip is a cash-pay concierge practice. Semaglutide is $165-$250/month and tirzepatide is $195-$360/month (dose-dependent). HSA and FSA funds are accepted."}
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No insurance needed. Happy Drip is a cash-pay concierge practice. Semaglutide is $165-$250/month and tirzepatide is $195-$360/month (dose-dependent). HSA and FSA funds are accepted."
+            }
           }
         ]
       }
@@ -285,7 +336,7 @@
     </div>
     <p style="font-size:1.02rem;line-height:1.8;color:#374151;margin-bottom:18px;">Roanoke has been one of the fastest-growing areas in Tarrant County for years. New neighborhoods, new families, and a community that's settled in and put down roots. But access to specialty healthcare -- especially the kind of concierge, one-on-one weight loss management that GLP-1 medications require -- hasn't grown at the same pace.</p>
     <p style="font-size:1.02rem;line-height:1.8;color:#374151;margin-bottom:18px;">Happy Drip is about 25 minutes from Roanoke, but that drive puts you in a very different kind of care environment. No "weight loss program" to buy into, no prepackaged meals, no rotating staff. Just Brittany Adams -- a board-certified family nurse practitioner -- doing a real evaluation, writing a personalized plan, and staying in your corner as you work through it.</p>
-    <p style="font-size:1.02rem;line-height:1.8;color:#374151;">Cash-pay, transparent pricing, no insurance games. Semaglutide from $165/month, tirzepatide from $195/month. You know what you're paying before you walk in the door.</p>
+    <p style="font-size:1.02rem;line-height:1.8;color:#374151;">Cash-pay, transparent pricing, no insurance games. Semaglutide $165&ndash;$250/month, tirzepatide $195&ndash;$360/month (dose-dependent). You know what you're paying before you walk in the door.</p>
   </div>
 </section>
 
@@ -392,7 +443,7 @@
   <div class="container" style="max-width:680px;">
     <span class="section-label" style="color:#f5c06a;">Serving Roanoke from Bedford, TX</span>
     <h2 style="color:#fff;margin:12px 0 16px;">The Drive Is Worth It. Book Your Consultation.</h2>
-    <p style="color:rgba(255,255,255,0.75);margin-bottom:28px;">Cash-pay. No insurance needed. HSA/FSA accepted. Semaglutide from $165/mo, tirzepatide from $195/mo. About 25 minutes from Roanoke.</p>
+    <p style="color:rgba(255,255,255,0.75);margin-bottom:28px;">Cash-pay. No insurance needed. HSA/FSA accepted. Semaglutide $165&ndash;$250/mo, tirzepatide $195&ndash;$360/mo (dose-dependent). About 25 minutes from Roanoke.</p>
     <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
       <a href="https://www.vagaro.com/happydripiv" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book Your Consultation</a>
       <a href="tel:6822836976" class="btn btn-outline btn-lg" style="color:#fff;border-color:rgba(255,255,255,0.4);">(682) 283-6976</a>
