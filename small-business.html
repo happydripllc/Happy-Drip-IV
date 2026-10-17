@@ -118,14 +118,6 @@
               "@type": "Answer",
               "text": "The membership provides access to primary care services within the scope of the program. We don't impose arbitrary visit caps for care that falls within our scope -- but the membership isn't a guarantee of unlimited access to every possible clinical service. When in doubt about whether something is covered, reach out and ask us before your employee shows up."
             }
-          },
-          {
-            "@type": "Question",
-            "name": "How do Chamber partnerships work? +",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Happy Health Clinic works with local Chambers and business organizations to explore healthcare benefit options for member businesses. If you're a Chamber executive or a business owner who came through your Chamber, we'd love to talk about what a partnership could look like for your organization and its members."
-            }
           }
         ]
       }
@@ -575,33 +567,6 @@
     }
 
     /* ======================================================
-       CHAMBER
-       ====================================================== */
-    .chamber-inner {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 52px; align-items: start;
-    }
-    .chamber-eyebrow {
-      display: inline-block; font-size: 0.68rem; font-weight: 800;
-      letter-spacing: 0.14em; text-transform: uppercase;
-      color: var(--hhc-teal); margin-bottom: 16px;
-    }
-    .chamber-left h2 { color: #fff; font-size: clamp(1.5rem, 2.5vw, 2.1rem); margin-bottom: 16px; }
-    .chamber-left p { color: rgba(255,255,255,0.72); font-size: 0.95rem; line-height: 1.8; }
-    .chamber-left p + p { margin-top: 12px; }
-    .chamber-benefits { display: flex; flex-direction: column; gap: 14px; margin-top: 8px; }
-    .chamber-benefit { display: flex; align-items: flex-start; gap: 12px; }
-    .cb-check {
-      width: 22px; height: 22px; border-radius: 50%;
-      background: var(--hhc-teal); color: #fff;
-      font-size: 0.7rem; font-weight: 800;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; margin-top: 1px;
-    }
-    .chamber-benefit span { font-size: 0.88rem; color: rgba(255,255,255,0.85); line-height: 1.55; }
-    .chamber-benefit span strong { color: #fff; }
-
-    /* ======================================================
        CAPACITY
        ====================================================== */
     .capacity-content { max-width: 680px; margin: 0 auto; text-align: center; }
@@ -674,7 +639,6 @@
     .form-success { display: none; text-align: center; padding: 20px 0; }
     .form-success h3 { color: var(--hhc-teal-deep); font-size: 1.4rem; margin-bottom: 12px; }
     .form-success p { color: var(--gray); font-size: 0.95rem; line-height: 1.72; }
-    .form-chamber-name { display: none; }
 
     /* ======================================================
        FINAL CTA
@@ -711,7 +675,6 @@
       .why-diff-points      { grid-template-columns: 1fr; }
       .contribution-grid    { grid-template-columns: 1fr; }
       .example-grid         { grid-template-columns: 1fr; }
-      .chamber-inner        { grid-template-columns: 1fr; gap: 28px; }
       .tier-cards           { grid-template-columns: repeat(2, 1fr); }
       .form-grid            { grid-template-columns: 1fr; }
       .problem-scenarios    { grid-template-columns: 1fr; }
@@ -1435,50 +1398,6 @@
 </section>
 
 <!-- ============================================================
-     CHAMBER
-     ============================================================ -->
-<section class="sb-section navy-bg" id="chamber">
-  <div class="container">
-    <div class="chamber-inner">
-      <div class="chamber-left">
-        <span class="chamber-eyebrow">For Chambers of Commerce</span>
-        <h2>Give Your Members a Healthcare Benefit Built for Small Business.</h2>
-        <p>Happy Health Clinic is building relationships with local Chambers of Commerce to give member businesses access to a meaningful small-business healthcare resource.</p>
-        <p>We're not asking you to advertise a clinic. We want to create real value for your members -- small businesses that are often too small to access meaningful employee healthcare benefits on their own.</p>
-        <div style="margin-top:28px;">
-          <a href="#lead-form" class="btn-sb" onclick="document.getElementById('lead-chamber').value='Yes';" style="display:inline-flex;">Talk With Us About a Chamber Partnership</a>
-          <p style="font-size:0.78rem;color:rgba(255,255,255,0.4);margin-top:12px;">You can note your Chamber interest in the form below.</p>
-        </div>
-      </div>
-      <div>
-        <div class="chamber-benefits">
-          <div class="chamber-benefit">
-            <span class="cb-check">✓</span>
-            <span>Give member businesses <strong>a direct path to discussing primary-care benefit options</strong> for their teams -- no homework required on their end.</span>
-          </div>
-          <div class="chamber-benefit">
-            <span class="cb-check">✓</span>
-            <span><strong>Educational sessions about direct primary care</strong> and small-business healthcare options for member events and programming.</span>
-          </div>
-          <div class="chamber-benefit">
-            <span class="cb-check">✓</span>
-            <span>A <strong>differentiated Chamber member benefit</strong> your businesses can actually use -- not just a coupon or a discount on something they'd never buy.</span>
-          </div>
-          <div class="chamber-benefit">
-            <span class="cb-check">✓</span>
-            <span><strong>Potential Chamber-exclusive enrollment opportunities</strong> when available and approved -- we'll discuss what makes sense for your organization.</span>
-          </div>
-          <div class="chamber-benefit">
-            <span class="cb-check">✓</span>
-            <span>A local healthcare practice that <strong>shows up for DFW small businesses</strong> the same way they show up for their communities.</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================================
      CAPACITY
      ============================================================ -->
 <section class="sb-section alt" id="capacity">
@@ -1584,14 +1503,6 @@
         </div>
       </div>
 
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="false">
-          How do Chamber partnerships work?
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-a" hidden>
-          Happy Health Clinic works with local Chambers and business organizations to explore healthcare benefit options for member businesses. If you're a Chamber executive or a business owner who came through your Chamber, we'd love to talk about what a partnership could look like for your organization and its members.
-        </div>
       </div>
 
     </div>
@@ -1652,7 +1563,7 @@
               </select>
             </div>
 
-            <div class="form-field">
+            <div class="form-field full">
               <label class="form-label" for="lead-structure">How are you thinking about offering this?</label>
               <select id="lead-structure" class="form-select">
                 <option value="">Select...</option>
@@ -1661,21 +1572,6 @@
                 <option>Voluntary employee benefit (employee pays)</option>
                 <option>Not sure yet</option>
               </select>
-            </div>
-
-            <div class="form-field">
-              <label class="form-label" for="lead-chamber">Are you a Chamber of Commerce member?</label>
-              <select id="lead-chamber" class="form-select" onchange="toggleChamberName(this.value)">
-                <option value="">Select...</option>
-                <option>Yes</option>
-                <option>No</option>
-                <option>Not sure</option>
-              </select>
-            </div>
-
-            <div class="form-field form-chamber-name full" id="chamber-name-field">
-              <label class="form-label" for="lead-chamber-name">Which Chamber?</label>
-              <input type="text" id="lead-chamber-name" class="form-input" placeholder="e.g. Bedford Chamber of Commerce" />
             </div>
 
             <div class="form-field full">
@@ -1714,7 +1610,6 @@
 
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
       <a href="#lead-form" class="btn-sb" style="font-size:1rem;padding:16px 34px;">Build a Plan for Your Team</a>
-      <a href="#chamber" class="btn-sb-outline" style="font-size:1rem;padding:16px 34px;">Chamber Partnership</a>
     </div>
 
     <div class="sb-cta-contact">
@@ -1780,7 +1675,6 @@
         <a href="#dpc-explained">What Is DPC?</a>
         <a href="#benefits">What's Included</a>
         <a href="#pricing">Pricing</a>
-        <a href="#chamber">Chamber Partnership</a>
         <a href="#faq">FAQ</a>
         <a href="#lead-form">Build a Plan</a>
       </div>
@@ -1890,12 +1784,6 @@
     }
   }
 
-  // ── CHAMBER NAME TOGGLE ──────────────────────────────────────
-  function toggleChamberName(val) {
-    var field = document.getElementById('chamber-name-field');
-    field.style.display = val === 'Yes' ? 'flex' : 'none';
-  }
-
   // ── LEAD FORM SUBMIT ─────────────────────────────────────────
   function submitLeadForm(e) {
     e.preventDefault();
@@ -1906,8 +1794,6 @@
     var employees = document.getElementById('lead-employees').value.trim();
     var insurance = document.getElementById('lead-insurance').value;
     var structure = document.getElementById('lead-structure').value;
-    var chamber   = document.getElementById('lead-chamber').value;
-    var chamberNm = document.getElementById('lead-chamber-name').value.trim();
     var message   = document.getElementById('lead-message').value.trim();
 
     if (!name || !company || !email) {
@@ -1927,8 +1813,6 @@
       'Approximate employees: ' + (employees || 'Not provided'),
       'Currently offers insurance: ' + (insurance || 'Not provided'),
       'Contribution structure interest: ' + (structure || 'Not provided'),
-      'Chamber member: ' + (chamber || 'Not provided'),
-      'Chamber name: ' + (chamberNm || 'N/A'),
       'Message: ' + (message || 'None')
     ].join('\n');
 
